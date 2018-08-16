@@ -5025,3 +5025,17 @@ section {
     }
 }
 /*# sourceMappingURL=__bloko-imports_41b20bbe85af8515b6fcac3cf4568cd0.css.map */
+
+
+.bloko-icon_favorite {
+    background-image: url(../images/favorite-icon__min_.svg);
+}
+.bloko-icon_fb {
+    background-image: url(../images/fb-icon__min_.svg);
+}
+.bloko-icon_vk {
+    background-image: url(../images/vk-icon__min_.svg);
+}
+.bloko-icon_twitter {
+    background-image: url(../images/twitter-icon__min_.svg);
+}
