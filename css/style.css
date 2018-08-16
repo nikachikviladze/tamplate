@@ -1017,7 +1017,7 @@ section {
     background-image: url(../images/check__min_.svg)
 }
 .bloko-checkbox__input:indeterminate + .bloko-checkbox__text:before {
-    background-image: url(../../../bloko/blocks/checkbox/indeterminate__min_.svg)
+    background-image: url(../images/indeterminate__min_.svg)
 }
 .bloko-checkbox:hover .bloko-checkbox__input:checked + .bloko-checkbox__text:before,
 .bloko-checkbox:hover .bloko-checkbox__input:indeterminate + .bloko-checkbox__text:before {
@@ -2471,7 +2471,7 @@ section {
     display: inline-block;
     width: 40px;
     height: 40px;
-    background: url(../../../bloko/blocks/modal/close-button__min_.svg) no-repeat 0 0;
+    background: url(../images/close-button__min_.svg) no-repeat 0 0;
     background-size: 200%
 }
 .bloko-modal-header {
@@ -5038,4 +5038,13 @@ section {
 }
 .bloko-icon_twitter {
     background-image: url(../images/twitter-icon__min_.svg);
+}
+.bloko-icon_list-more {
+    background-image: url(../images/list-more-icon__min_.svg);
+}
+.bloko-icon_chevron-right {
+    background-image: url(../images/chevron-right-icon__min_.svg);
+}
+.bloko-icon_remove {
+    background-image: url(../images/remove-icon__min_.svg);
 }
