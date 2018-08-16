@@ -773,7 +773,7 @@
     top: 12px;
     width: 12px;
     height: 11px;
-    background: url(../blocks/navi/images/external__min_.svg) 0 0 no-repeat;
+    background: url(../images/external__min_.svg) 0 0 no-repeat;
     background-size: 200%
 }
 .navi-dropdown-link_external:hover:after {
@@ -4601,7 +4601,7 @@ aside.cms-aside {
     display: inline-block
 }
 .ajaxspin-small {
-    background: url(../blocks/ajaxspin/ajaxspin-small__min_.gif) no-repeat 0 50%;
+    background: url(../images/ajaxspin-small__min_.gif) no-repeat 0 50%;
     height: 16px;
     width: 16px;
     display: inline-block
