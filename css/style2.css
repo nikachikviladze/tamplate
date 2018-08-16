@@ -7394,7 +7394,7 @@ small {
 .employerlistsearch__title-link {
     float: right;
     padding-left: 40px;
-    background: url(../blocks/employerlistsearch/ka-link__min_.png) no-repeat;
+    background: url(../images/ka-link__min_.png) no-repeat;
     line-height: 43px
 }
 .l-lite .employerlistsearch__title-link {
@@ -17549,4 +17549,6 @@ html > body .formleft:first-letter {
 .b-article-breadcrumbs {
     font-size: small
 }
-/*# sourceMappingURL=__globals_9565a55b69a6e44f4fb9945b466aea7d.css.map */
+.bloko-icon_done {
+    background-image: url(../images/done-icon__min_.svg);
+}
