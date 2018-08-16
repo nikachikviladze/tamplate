@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="//static.copiny.com/css/styles.css?v=1429862583" media="all" rel="stylesheet" type="text/css" >
+		<link href="/topics/rss" rel="alternate" type="application/rss+xml" title="Лента новых тем" >
+		<link href="//static.copiny.com/design/hh/custom.css?v=1461160647" media="all" rel="stylesheet" type="text/css" >
+		<link href="//static.copiny.com/custom/hh/hh.css?v=1445859582" media="all" rel="stylesheet" type="text/css" >
+		<script type="text/javascript" src="//static.copiny.com/js/jquery-1.7.1.min.js?v=1338369250"></script>
+		<script type="text/javascript" src="//static.copiny.com/js/jquery-ui-1.8.17.custom.min.js?v=1338369250"></script>
+		<script type="text/javascript" src="//static.copiny.com/js/jquery.placeholder.min.js?v=1390290254"></script>
+		<script type="text/javascript" src="//static.copiny.com/js/mechanics.js?v=1495628677"></script>
+		<script type="text/javascript" src="//static.copiny.com/js/widget/amplify.min.js?v=1394024981"></script>
+		<script type="text/javascript" src="//static.copiny.com/locale/copiny2015/ru.js?v=1441014496"></script>
+		<script type="text/javascript" src="//static.copiny.com/copiny2015/js/vendor/gettext.js?v=1436269425"></script>
+		
+		<script type="text/javascript" src="//static.copiny.com/js/wysiwyg.js?v=1517405508"></script>
+		<link rel="icon" href="http://i.hh.ru/favicons/hh.ru.ico" type="image/x-icon" />
+		<title>Сообщество поддержки</title>
+	</head>
+	<body class="">
+		<div id ="top-bar-container"></div>
+		<div id="header">
+			<div class="l-container">
+				<a href="http://hh.ru/"><img src="//static.copiny.com/custom/hh/logo.png?v=1516630576" width="40" height="40" alt="hh.ru"/></a>
+				Сообщество поддержки        
+				<form action="/index/search">
+					<input type="text" name="text" placeholder="Поиск по сообществу" />
+				</form>
+			</div>
+		</div>
+		<div class="l-big">
+			<div class="l-container">
+				<div class="b-tabs b-tabs-simple">
+					<div class="tabs-group f-left">
+						<div class="tab active"><span class="left"></span><span class="menu-link"><a href="/">Главная</a></span><span class="right"></span></div>
+						<div class="tab"><span class="left"></span><span class="menu-link"><a href="/topics">Темы</a></span><span class="right"></span></div>
+						<div class="tab"><span class="left"></span><span class="menu-link"><a href="/knowledgebase">База знаний</a></span><span class="right"></span></div>
+						<div class="f-clear"></div>
+					</div>
+					<div class="b-search-n f-right">
+						<div class="l-search">
+							<div class="delimeter f-left"></div>
+							<form action="/index/search" method="get">
+								<input class="f-left" id="search-input" type="text" name="text" placeholder="Поиск по сообществу">
+								<div class="button f-left" onclick="$(this).closest('form').submit();"></div>
+							</form>
+							<div class="f-clear"></div>
+						</div>
+						<div id="authState" style="float:right;">
+							<div class="l-nic">
+								<input id="authorized_as" type="hidden" value="10420673" >
+								<div class="pic f-left"><img alt="" src="//static.copiny.com/images/empty-avatar.png?v=1338369250"></div>
+								<div class="name f-left">
+									<div class="nic-shadow"></div>
+									Dexter Sajaia
+								</div>
+								<div id="nic-button" class="button f-right"></div>
+								<div class="f-clear"></div>
+								<ul id="nic-menu" class="nic-menu">
+									<li><a href="/user/profile/id/10420673"><span>Профиль</span></a></li>
+									<li><a href="/user/edit-profile/id/10420673"><span>Настройки</span></a></li>
+									<li><a href="/auth/logout"><span>Выход</span></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="f-clear"></div>
+					</div>
+					<div class="f-clear"></div>
+				</div>
+				<div class="b-tab-content">
+					<form action="/" method="post" onsubmit="return copinyLiveSearch.submit(this);">
+						<div class="c-tabs">
+							<input id="search_type"
+								type="hidden" name="type"
+								value="question" />
+							<h2>Найдите похожие темы или создайте новую</h2>
+							<div class="c-search question">
+								<div class="c-search-box f-left">
+									<input id="big-search-input" type="text" name="title"
+										placeholder="Есть вопрос? Введите его сюда"
+										autocomplete="off"
+										onkeyup="copinyLiveSearch.input(this.value);"
+										maxlength="255">
+								</div>
+								<a class="c-button f-right question"
+									href="/topics/new?title="
+									onclick="$('input:submit', $(this).closest('form')).click();return false;"
+									>Продолжить</a>
+								<div class="f-clear"></div>
+								<div id="searchResult" class="c-search-results g-hidden"></div>
+								<input type="submit" class="g-hidden">
+							</div>
+						</div>
+					</form>
+					<div class="c-special-discussions">
+						<h1>Важные темы</h1>
+						<div class="tip">Самые обсуждаемые вопросы, идеи, проблемы и благодарности</div>
+						<ul class="c-discussions f-line">
+							<li class="c-discussion">
+								<div class="c-discussion-wrap">
+									<div class="c-shadow"></div>
+									<a class="praise" href="/praise/details/id/16314">Благодарность всем сотрудникам!</a>
+								</div>
+							</li>
+							<li class="c-discussion">
+								<div class="c-discussion-wrap">
+									<div class="c-shadow"></div>
+									<a class="praise" href="/praise/details/id/20912">СПАСИБО.</a>
+								</div>
+							</li>
+							<li class="c-discussion">
+								<div class="c-discussion-wrap">
+									<div class="c-shadow"></div>
+									<a class="praise" href="/praise/details/id/21725">Благодарность.</a>
+								</div>
+							</li>
+							<li class="c-discussion">
+								<div class="c-discussion-wrap">
+									<div class="c-shadow"></div>
+									<a class="praise" href="/praise/details/id/21985">Благодарность</a>
+								</div>
+							</li>
+							<li class="c-discussion">
+								<div class="c-discussion-wrap">
+									<div class="c-shadow"></div>
+									<a class="praise" href="/praise/details/id/22080">Благодарность</a>
+								</div>
+							</li>
+							<li class="c-discussion">
+								<div class="c-discussion-wrap">
+									<div class="c-shadow"></div>
+									<a class="praise" href="/praise/details/id/22103">18 лет бывает только раз. Для каждого это значит что-то особенное!</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="b-two-cols f-line">
+					<div class="c-left-col">
+						<h1 style="padding-top: 10px;">Категории</h1>
+						<div class="b-cat ">
+							<div class="b-cat-img f-left"><a href="/categories/parent/id/6473"><img src="images/feedback/6473.jpg?1375180533"></a></div>
+							<div class="b-cat-content">
+								<a class="title" href="/categories/parent/id/6473">Соискателям</a>         
+								<ul>
+									<li>Тем: <span>3664</span></li>
+									<li>Ответов: <span>9513</span></li>
+									<li class="li-sub-cats" onclick="catSlide(this); return false;">
+										<div class="slide hide"></div>
+										<div style="display: inline; margin-left: 5px;">Подкатегорий: <span>5</span></div>
+									</li>
+								</ul>
+							</div>
+							<div class="f-clear"></div>
+							<div class="b-sub-cats">
+								<div class="b-sub-cat">
+									<div class="b-sub-cat-img f-left"><a href="/categories/show/id/6477"><img src="images/feedback//category-small.png?v=1338369250"></a></div>
+									<div class="b-sub-cat-content">
+										<a href="/categories/show/id/6477">Технические вопросы</a>
+										<ul>
+											<li>Тем: 1138</li>
+											<li>Ответов: 2555</li>
+										</ul>
+									</div>
+								</div>
+								<div class="b-sub-cat">
+									<div class="b-sub-cat-img f-left"><a href="/categories/show/id/6474"><img src="images/feedback//category-small.png?v=1338369250"></a></div>
+									<div class="b-sub-cat-content">
+										<a href="/categories/show/id/6474">Создание резюме, отклики на вакансии, настройки видимости</a>
+										<ul>
+											<li>Тем: 1043</li>
+											<li>Ответов: 2599</li>
+										</ul>
+									</div>
+								</div>
+								<div class="b-sub-cat">
+									<div class="b-sub-cat-img f-left"><a href="/categories/show/id/7060"><img src="images/feedback//category-small.png?v=1338369250"></a></div>
+									<div class="b-sub-cat-content">
+										<a href="/categories/show/id/7060">Остальные вопросы соискателей</a>
+										<ul>
+											<li>Тем: 558</li>
+											<li>Ответов: 1827</li>
+										</ul>
+									</div>
+								</div>
+								<div class="b-sub-cat">
+									<div class="b-sub-cat-img f-left"><a href="/categories/show/id/6475"><img src="images/feedback//category-small.png?v=1338369250"></a></div>
+									<div class="b-sub-cat-content">
+										<a href="/categories/show/id/6475">Всё о поиске вакансий</a>
+										<ul>
+											<li>Тем: 490</li>
+											<li>Ответов: 1365</li>
+										</ul>
+									</div>
+								</div>
+								<div class="b-sub-cat">
+									<div class="b-sub-cat-img f-left"><a href="/categories/show/id/6537"><img src="images/feedback//category-small.png?v=1338369250"></a></div>
+									<div class="b-sub-cat-content">
+										<a href="/categories/show/id/6537">Платные сервисы для соискателей</a>
+										<ul>
+											<li>Тем: 435</li>
+											<li>Ответов: 1167</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="f-clear"></div>
+						</div>
+						<div class="b-cat have-border">
+							<div class="b-cat-img f-left"><a href="/categories/parent/id/7064"><img src="images/feedback//7064.png?1395376745"></a></div>
+							<div class="b-cat-content">
+								<a class="title" href="/categories/parent/id/7064">Карьерный консультант</a>         
+								<ul>
+									<li>Тем: <span>2875</span></li>
+									<li>Ответов: <span>9143</span></li>
+									<li class="li-sub-cats" onclick="catSlide(this); return false;">
+										<div class="slide hide"></div>
+										<div style="display: inline; margin-left: 5px;">Подкатегорий: <span>7</span></div>
+									</li>
+								</ul>
+							</div>
+							<div class="f-clear"></div>
+							
+								
+							<div class="f-clear"></div>
+						</div>
+						<div class="b-cat have-border">
+							<div class="b-cat-img f-left"><a href="/categories/parent/id/6635"><img src="images/feedback/6635.jpg?1380291859"></a></div>
+							<div class="b-cat-content">
+								<a class="title" href="/categories/parent/id/6635">Отзывы о hh.ru</a>         
+								<ul>
+									<li>Тем: <span>2211</span></li>
+									<li>Ответов: <span>8402</span></li>
+									<li class="li-sub-cats" onclick="catSlide(this); return false;">
+										<div class="slide hide"></div>
+										<div style="display: inline; margin-left: 5px;">Подкатегорий: <span>3</span></div>
+									</li>
+								</ul>
+							</div>
+							<div class="f-clear"></div>
+							<div class="b-sub-cats">
+								<div class="b-sub-cat">
+									<div class="b-sub-cat-img f-left"><a href="/categories/show/id/7045"><img src="//static.copiny.com/images/category-small.png?v=1338369250"></a></div>
+									<div class="b-sub-cat-content">
+										<a href="/categories/show/id/7045">Отзывы о работодателях</a>
+										<ul>
+											<li>Тем: 1574</li>
+											<li>Ответов: 6333</li>
+										</ul>
+									</div>
+								</div>
+								<div class="b-sub-cat">
+									<div class="b-sub-cat-img f-left"><a href="/categories/show/id/7062"><img src="//static.copiny.com/images/category-small.png?v=1338369250"></a></div>
+									<div class="b-sub-cat-content">
+										<a href="/categories/show/id/7062">Предложения по улучшению сервисов сайта</a>
+										<ul>
+											<li>Тем: 575</li>
+											<li>Ответов: 1834</li>
+										</ul>
+									</div>
+								</div>
+								<div class="b-sub-cat">
+									<div class="b-sub-cat-img f-left"><a href="/categories/show/id/7061"><img src="//static.copiny.com/images/category-small.png?v=1338369250"></a></div>
+									<div class="b-sub-cat-content">
+										<a href="/categories/show/id/7061">Благодарности и пожелания</a>
+										<ul>
+											<li>Тем: 62</li>
+											<li>Ответов: 235</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="f-clear"></div>
+						</div>
+						<div class="b-cat have-border">
+							<div class="b-cat-img f-left"><a href="/categories/parent/id/8560"><img src="images/feedback/8560.jpg?1460356118"></a></div>
+							<div class="b-cat-content">
+								<a class="title" href="/categories/parent/id/8560">Работодателям</a>         
+								<ul>
+									<li>Тем: <span>954</span></li>
+									<li>Ответов: <span>1929</span></li>
+									<li class="li-sub-cats" onclick="catSlide(this); return false;">
+										<div class="slide hide"></div>
+										<div style="display: inline; margin-left: 5px;">Подкатегорий: <span>6</span></div>
+									</li>
+								</ul>
+							</div>
+							<div class="f-clear"></div>
+							<div class="b-sub-cats">
+								<div class="b-sub-cat">
+									<div class="b-sub-cat-img f-left"><a href="/categories/show/id/6472"><img src="//static.copiny.com/images/category-small.png?v=1338369250"></a></div>
+									<div class="b-sub-cat-content">
+										<a href="/categories/show/id/6472">Размещение и редактирование вакансии</a>
+										<ul>
+											<li>Тем: 294</li>
+											<li>Ответов: 558</li>
+										</ul>
+									</div>
+								</div>
+								<div class="b-sub-cat">
+									<div class="b-sub-cat-img f-left"><a href="/categories/show/id/8564"><img src="//static.copiny.com/images/category-small.png?v=1338369250"></a></div>
+									<div class="b-sub-cat-content">
+										<a href="/categories/show/id/8564">Технические вопросы</a>
+										<ul>
+											<li>Тем: 212</li>
+											<li>Ответов: 460</li>
+										</ul>
+									</div>
+								</div>
+								<div class="b-sub-cat">
+									<div class="b-sub-cat-img f-left"><a href="/categories/show/id/8563"><img src="//static.copiny.com/images/category-small.png?v=1338369250"></a></div>
+									<div class="b-sub-cat-content">
+										<a href="/categories/show/id/8563">Остальные вопросы работодателей</a>
+										<ul>
+											<li>Тем: 151</li>
+											<li>Ответов: 296</li>
+										</ul>
+									</div>
+								</div>
+								<div class="b-sub-cat">
+									<div class="b-sub-cat-img f-left"><a href="/categories/show/id/6449"><img src="//static.copiny.com/images/category-small.png?v=1338369250"></a></div>
+									<div class="b-sub-cat-content">
+										<a href="/categories/show/id/6449">Платные сервисы для работодателей</a>
+										<ul>
+											<li>Тем: 138</li>
+											<li>Ответов: 254</li>
+										</ul>
+									</div>
+								</div>
+								<div class="b-sub-cat">
+									<div class="b-sub-cat-img f-left"><a href="/categories/show/id/6465"><img src="//static.copiny.com/images/category-small.png?v=1338369250"></a></div>
+									<div class="b-sub-cat-content">
+										<a href="/categories/show/id/6465">Все о поиске резюме</a>
+										<ul>
+											<li>Тем: 87</li>
+											<li>Ответов: 193</li>
+										</ul>
+									</div>
+								</div>
+								<div class="b-sub-cat">
+									<div class="b-sub-cat-img f-left"><a href="/categories/show/id/6471"><img src="//static.copiny.com/images/category-small.png?v=1338369250"></a></div>
+									<div class="b-sub-cat-content">
+										<a href="/categories/show/id/6471">Работа с откликами на вакансии</a>
+										<ul>
+											<li>Тем: 38</li>
+											<li>Ответов: 111</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="f-clear"></div>
+						</div>
+						<div class="b-cat have-border">
+							<div class="b-cat-img f-left"><a href="/categories/parent/id/6455"><img src="images/feedback/6455.jpg?1375180577"></a></div>
+							<div class="b-cat-content">
+								<a class="title" href="/categories/parent/id/6455">Регистрация</a>         
+								<ul>
+									<li>Тем: <span>185</span></li>
+									<li>Ответов: <span>464</span></li>
+									<li class="li-sub-cats" onclick="catSlide(this); return false;">
+										<div class="slide hide"></div>
+										<div style="display: inline; margin-left: 5px;">Подкатегорий: <span>2</span></div>
+									</li>
+								</ul>
+							</div>
+							<div class="f-clear"></div>
+							<div class="b-sub-cats">
+								<div class="b-sub-cat">
+									<div class="b-sub-cat-img f-left"><a href="/categories/show/id/6456"><img src="//static.copiny.com/images/category-small.png?v=1338369250"></a></div>
+									<div class="b-sub-cat-content">
+										<a href="/categories/show/id/6456">Регистрация работодателей</a>
+										<ul>
+											<li>Тем: 132</li>
+											<li>Ответов: 330</li>
+										</ul>
+									</div>
+								</div>
+								<div class="b-sub-cat">
+									<div class="b-sub-cat-img f-left"><a href="/categories/show/id/6457"><img src="//static.copiny.com/images/category-small.png?v=1338369250"></a></div>
+									<div class="b-sub-cat-content">
+										<a href="/categories/show/id/6457">Регистрация соискателей</a>
+										<ul>
+											<li>Тем: 53</li>
+											<li>Ответов: 134</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="f-clear"></div>
+						</div>
+						<div class="b-cat have-border">
+							<div class="b-cat-img f-left"><a href="/categories/show/id/6479"><img src="images/feedback/6479.jpg?1375442377"></a></div>
+							<div class="b-cat-content">
+								<a class="title" href="/categories/show/id/6479">Вопросы к маркетингу hh.ru</a>         
+								<ul>
+									<li>Тем: <span>20</span></li>
+									<li>Ответов: <span>54</span></li>
+								</ul>
+							</div>
+							<div class="f-clear"></div>
+							<div class="f-clear"></div>
+						</div>
+						<hr style="margin-top: 24px; border: none; border-bottom: 1px solid #ADADAD;">
+						<h1 style="margin-top: 15px; padding-bottom: 5px;">Новые темы</h1>
+						<ul class="b-items new-list">
+							<li class="c-item question">
+								<div class="d-icon"></div>
+								<div class="d-subject f-left ">
+									<a class="c-title" href="/question/details/id/671717">Оцените резюме</a>
+									<div class="d-info">
+										<div class="c-shadow"></div>
+										<div class="d-value">
+											<span class="d-time" title="16&nbsp;августа&nbsp;2018 в&nbsp;21:36">
+											<strong>20 минут назад</strong>
+											</span>
+											<span class="d-category">
+											в <a href="/categories/show/id/7119">Как грамотно составить резюме</a>
+											</span>
+										</div>
+										<div class="f-clear"></div>
+									</div>
+								</div>
+								<div class="d-author f-right">
+									<a href="/user/profile/id/10420747">Филипп Старков</a>        
+								</div>
+								<div class="f-clear"></div>
+							</li>
+							<li class="c-item question">
+								<div class="d-icon"></div>
+								<div class="d-subject f-left ">
+									<a class="c-title" href="/question/details/id/671715">Уважаемые эксперты, оцените резюме, пожалуйста.</a>
+									<div class="d-info">
+										<div class="c-shadow"></div>
+										<div class="d-value">
+											<span class="d-time" title="16&nbsp;августа&nbsp;2018 в&nbsp;21:03">
+											<strong>53 минуты назад</strong>
+											</span>
+											<span class="d-category">
+											в <a href="/categories/show/id/6474">Создание резюме, отклики на вакансии, настройки видимости</a>
+											</span>
+										</div>
+										<div class="f-clear"></div>
+									</div>
+								</div>
+								<div class="d-author f-right">
+									<a href="/user/profile/id/9940792">Ирина Телятникова</a>        
+								</div>
+								<div class="f-clear"></div>
+							</li>
+							<li class="c-item idea">
+								<div class="d-icon"></div>
+								<div class="d-subject f-left ">
+									<span class="solved" title="Решено!"></span>
+									<a class="c-title" href="/idea/details/id/83819">Улучшение списка компаний, для которых моё резюме ннжоступнл.</a>
+									<div class="d-info">
+										<div class="c-shadow"></div>
+										<div class="d-value">
+											<span class="d-time" title="16&nbsp;августа&nbsp;2018 в&nbsp;20:29">
+											<strong>более часа назад</strong>
+											</span>
+											<span class="d-category">
+											в <a href="/categories/show/id/7062">Предложения по улучшению сервисов сайта</a>
+											</span>
+										</div>
+										<div class="f-clear"></div>
+									</div>
+								</div>
+								<div class="d-author f-right">
+									<a href="/user/profile/id/2957590">Игорь Морозов</a>        
+								</div>
+								<div class="f-clear"></div>
+							</li>
+							<li class="c-item question">
+								<div class="d-icon"></div>
+								<div class="d-subject f-left ">
+									<span class="solved" title="Решено!"></span>
+									<a class="c-title" href="/question/details/id/671709">удаление учетной записи</a>
+									<div class="d-info">
+										<div class="c-shadow"></div>
+										<div class="d-value">
+											<span class="d-time" title="16&nbsp;августа&nbsp;2018 в&nbsp;20:04">
+											<strong>более часа назад</strong>
+											</span>
+											<span class="d-category">
+											в <a href="/categories/show/id/6456">Регистрация работодателей</a>
+											</span>
+										</div>
+										<div class="f-clear"></div>
+									</div>
+								</div>
+								<div class="d-author f-right">
+									<a href="/user/profile/id/10420587">Геннадий Алексеев</a>        
+								</div>
+								<div class="f-clear"></div>
+							</li>
+							<li class="c-item question">
+								<div class="d-icon"></div>
+								<div class="d-subject f-left ">
+									<a class="c-title" href="/question/details/id/671702">Резюме</a>
+									<div class="d-info">
+										<div class="c-shadow"></div>
+										<div class="d-value">
+											<span class="d-time" title="16&nbsp;августа&nbsp;2018 в&nbsp;18:19">
+											<strong>более 3 часов назад</strong>
+											</span>
+											<span class="d-category">
+											в <a href="/categories/show/id/7119">Как грамотно составить резюме</a>
+											</span>
+										</div>
+										<div class="f-clear"></div>
+									</div>
+								</div>
+								<div class="d-author f-right">
+									<a href="/user/profile/id/6615717">Нам Николай</a>        
+								</div>
+								<div class="f-clear"></div>
+							</li>
+							<li class="c-item question">
+								<div class="d-icon"></div>
+								<div class="d-subject f-left ">
+									<span class="solved" title="Решено!"></span>
+									<a class="c-title" href="/question/details/id/671695">изменить почту</a>
+									<div class="d-info">
+										<div class="c-shadow"></div>
+										<div class="d-value">
+											<span class="d-time" title="16&nbsp;августа&nbsp;2018 в&nbsp;17:35">
+											<strong>более 4 часов назад</strong>
+											</span>
+											<span class="d-category">
+											в <a href="/categories/show/id/8564">Технические вопросы</a>
+											</span>
+										</div>
+										<div class="f-clear"></div>
+									</div>
+								</div>
+								<div class="d-author f-right">
+									<a href="/user/profile/id/10420126">Ксения Карелина</a>        
+								</div>
+								<div class="f-clear"></div>
+							</li>
+							<li class="c-item question">
+								<div class="d-icon"></div>
+								<div class="d-subject f-left ">
+									<a class="c-title" href="/question/details/id/671691">Здравствуйте! просмотрите моё резюме, пожалуйста</a>
+									<div class="d-info">
+										<div class="c-shadow"></div>
+										<div class="d-value">
+											<span class="d-time" title="16&nbsp;августа&nbsp;2018 в&nbsp;17:03">
+											<strong>более 4 часов назад</strong>
+											</span>
+											<span class="d-category">
+											в <a href="/categories/show/id/7119">Как грамотно составить резюме</a>
+											</span>
+										</div>
+										<div class="f-clear"></div>
+									</div>
+								</div>
+								<div class="d-author f-right">
+									<a href="/user/profile/id/9939904">Дамира Акчурина</a>        
+								</div>
+								<div class="f-clear"></div>
+							</li>
+							<li class="c-item question">
+								<div class="d-icon"></div>
+								<div class="d-subject f-left ">
+									<span class="solved" title="Решено!"></span>
+									<a class="c-title" href="/question/details/id/671689">зарплата по договоренности</a>
+									<div class="d-info">
+										<div class="c-shadow"></div>
+										<div class="d-value">
+											<span class="d-time" title="16&nbsp;августа&nbsp;2018 в&nbsp;16:46">
+											<strong>5 часов назад</strong>
+											</span>
+											<span class="d-category">
+											в <a href="/categories/show/id/6474">Создание резюме, отклики на вакансии, настройки видимости</a>
+											</span>
+										</div>
+										<div class="f-clear"></div>
+									</div>
+								</div>
+								<div class="d-author f-right">
+									<a href="/user/profile/id/9776082">Наталия Морозова</a>        
+								</div>
+								<div class="f-clear"></div>
+							</li>
+							<li class="c-item problem">
+								<div class="d-icon"></div>
+								<div class="d-subject f-left ">
+									<span class="solved" title="Решено!"></span>
+									<a class="c-title" href="/problem/details/id/281512">Изменить имя</a>
+									<div class="d-info">
+										<div class="c-shadow"></div>
+										<div class="d-value">
+											<span class="d-time" title="16&nbsp;августа&nbsp;2018 в&nbsp;16:25">
+											<strong>более 5 часов назад</strong>
+											</span>
+											<span class="d-category">
+											в <a href="/categories/show/id/8564">Технические вопросы</a>
+											</span>
+										</div>
+										<div class="f-clear"></div>
+									</div>
+								</div>
+								<div class="d-author f-right">
+									<a href="/user/profile/id/10415930">Дмитрий Соболь</a>        
+								</div>
+								<div class="f-clear"></div>
+							</li>
+							<li class="c-item problem">
+								<div class="d-icon"></div>
+								<div class="d-subject f-left ">
+									<span class="solved" title="Решено!"></span>
+									<a class="c-title" href="/problem/details/id/281511">Прошу удалить аккаунт</a>
+									<div class="d-info">
+										<div class="c-shadow"></div>
+										<div class="d-value">
+											<span class="d-time" title="16&nbsp;августа&nbsp;2018 в&nbsp;15:57">
+											<strong>6 часов назад</strong>
+											</span>
+											<span class="d-category">
+											в <a href="/categories/show/id/6456">Регистрация работодателей</a>
+											</span>
+										</div>
+										<div class="f-clear"></div>
+									</div>
+								</div>
+								<div class="d-author f-right">
+									<a href="/user/profile/id/10419962">Анна Рясина</a>        
+								</div>
+								<div class="f-clear"></div>
+							</li>
+						</ul>
+						<a class="show-all f-right" href="/topics"><strong>Показать все »</strong></a>
+					</div>
+					<div class="c-m-border"></div>
+					<div class="c-right-col">
+						<div class="c-social-r">
+							<span  class="c-description">
+								<p>Рады приветствовать вас в Сообществе поддержки пользователей hh.ru!</p>
+								<p></p>
+								<p>Здесь Вы можете написать свои пожелания, предложить идею или оставить отзыв.</p>
+							</span>
+							<p class="allnews"><a href="/news">Новости сообщества »</a></p>
+							<a href="http://hh.ru"
+								class="e-home"
+								target="_blank">
+								<div class="c-shadow"></div>
+								Наш сайт
+							</a>
+							<a href="http://feedback.hh.ru/article/details/id/2636"
+								class="e-home"
+								target="_blank">
+								<div class="c-shadow"></div>
+								Правила поведения в сообществе
+							</a>
+							<a href="http://hh.ru/poll"
+								class="e-home"
+								target="_blank">
+								<div class="c-shadow"></div>
+								Оцените нас
+							</a>
+							<a href="/topics/rss" class="e-rss">
+								<div class="c-shadow"></div>
+								Подписаться на обновления
+							</a>
+						</div>
+						<div class="b-right-block">
+							<div class="social-widget vkontakte">
+							</div>
+							<div class="social-widget facebook">
+								<iframe src="//www.facebook.com/plugins/likebox.php?href=http://www.facebook.com/headhuntergroup&amp;width=310&amp;colorscheme=light&amp;show_faces=true&amp;stream=false&amp;header=false&amp;height=256" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:310px; height:256px; margin-top:4px"  allowTransparency="true"></iframe>
+							</div>
+						</div>
+						<div class="b-right-block b-right-stat">
+							<ul class="c-statistics">
+								<li>
+									<div class="f-left e-q">35129</div>
+									<div class="f-left e-tip">тем</div>
+									<div class="f-clear"></div>
+								</li>
+								<li>
+									<div class="f-left e-q">109780</div>
+									<div class="f-left e-tip">ответов</div>
+									<div class="f-clear"></div>
+								</li>
+								<li>
+									<div class="f-left e-q">296923</div>
+									<div class="f-left e-tip">участника</div>
+									<div class="f-clear"></div>
+								</li>
+							</ul>
+						</div>
+						<div class="b-copyright">
+							<a href="http://copiny.com/" class="workin" target="_blank" rel="nofollow"><img src="/static/main/images/logo_powerby.png?1" width="90" height="32" alt=""></a>
+						</div>
+					</div>
+					<div class="f-clear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="footer" class="l-container">
+			<ul class="social-img">
+				<li><a href="https://vk.com/headhunter" class="vk"></a></li>
+				<li><a href="http://www.facebook.com/headhuntergroup" class="fb"></a></li>
+				<li><a href="https://twitter.com/hh_ru" class="tw"></a></li>
+			</ul>
+			<div class="copyright">
+				&copy;&nbsp;Группа компаний HeadHunter, 2000 &dash; 2018    
+			</div>
+			<div class="extlinks">
+				<a href="http://hh.ru/article/28">О HeadHunter</a> <a href="http://hh.ru/article/2067">Работодателям</a> <a href="http://hh.ru/article/2">Соискателям</a><a
+					href="/m/?session=1534445835770863170#!/"
+					onclick="createCookie('cpn-layout', 'mobile', 'feedback.hh.ru', 365);"
+					class="to-mobile f-left" >
+				Мобильная версия</a>
+			</div>
+		</div>
+		<div id="popup-poll" style="display:none;">
+			<center>Загрузка...</center>
+		</div>
+		<script type="text/javascript" src="/static/js/popuplib.js?1"></script>
+		<script type="text/javascript">
+			authOpener = popupManager.createPopupOpener(
+			{
+			  'onCloseHandler' : function() {
+			      checkAuth('check');
+			  }
+			});
+			authOpener.url = "http:\/\/hh.ru\/account\/login?backUrl=http%3A%2F%2Ffeedback.hh.ru%2Fauth%2Fclose";
+		</script>
+		<!-- Yandex.Metrika counter -->
+		
+		<noscript>
+			<img src="https://sb.scorecardresearch.com/p?c1=2&c2=21790979&c4=http%3A//feedback.hh.ru/">
+		</noscript>
+	</body>
+</html>
