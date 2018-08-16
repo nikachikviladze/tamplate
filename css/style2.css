@@ -5838,10 +5838,10 @@ aside.cms-aside {
     visibility: hidden;
     float: right;
     margin-top: 6px;
-    background: url(../blocks/clusters/hidden__min_.svg) 0 0
+    background: url(../images/hidden__min_.svg) 0 0
 }
 .clusters-group_collapse .clusters-group-title__expander {
-    background: url(../blocks/clusters/visible__min_.svg) 0 0
+    background: url(../images/visible__min_.svg) 0 0
 }
 .clusters-list__item {
     line-height: 10px;
@@ -12384,7 +12384,7 @@ small {
     left: -10px;
     width: 100px;
     height: 75px;
-    background: url(../blocks/saved-search-subscription/plane__min_.png) 0 50% no-repeat
+    background: url(../images/plane__min_.png) 0 50% no-repeat
 }
 .saved-search-subscription-plane_collapsed {
     cursor: pointer
