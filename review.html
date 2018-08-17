@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html class="desktop">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Работа, вакансии, база резюме, поиск работы на HeadHunter</title>
+      <script>
+         window.bloko = {
+             fontUrl: 'css/fonts.css'
+         };
+         window.globalVars = {
+             locale: 'ru_RU',
+             country: '1',
+             area: '113',
+             build: '18.33.2.2',
+             lang: 'RU' || 'RU',
+             requestId: '15342618419950966f77a630d0882ad4',
+             sentryDSN: 'https://021a400d5c554c00a0b92ac575ff4768@sentry.hh.ru/6',
+             siteId: '1' || '1',
+             staticHost: 'https://i.hh.ru',
+             timeStamp: '1534261842',
+             userType: '' || 'anonymous',
+             cryptedUserId: '',
+             employerState: '',
+             login: "",
+             userId: '',
+             hhid: '',
+         
+             autotestsComponentsInitEnd: false,
+           
+             requirejsWaitSeconds: 15,
+         
+             performanceObserverEnabled: false,
+         
+             features: {"employer_extensions_to_detect": "{\"vera\": \"veraBar\", \"friendwork\": \"fwi-popup\", \"potok\": \"potok_io__chrome_extension_iframe\"}", "fingerprinting_enable": false, "disable_counters": false, "sentry_logging": true, "secure_portal_enabled": false},
+             variables:
+         {"mapping":"__mapping","buildFolderName":"/jsbuild","lux.main":"/luxbuild/lux.main.00341d6afada1bf24dad.js","lux.vendors":"/luxbuild/lux.vendors.034a8b7fde847c178f3c.js","lux.bloko":"/luxbuild/lux.bloko.976e7e8a731965abebbb.js","buildCombineFilePath":"/jsbuild/501e50de-combined.js","buildLibsFilePath":"/jsbuild/45955efd-libs.js","buildMappingFilePath":"/jsbuild/105b7c30-mapping.js"}
+         
+         };
+      </script>
+      <link rel="stylesheet" href="css/review.css">
+      <link rel="stylesheet" href="css/style2.css">
+
+      <script  src="js/mapping.js"></script>
+      <script  src="js/libs.js"></script>
+      <script src="js/combined.js"></script>
+      <script src="js/network.js"></script>
+      <meta name="viewport" content="width=device-width">
+   </head>
+   <body class="l-ambient s-friendly custom-font-allowed">
+      <div class="print-logo-wrapper">
+         <img src="images/logo.svg" class="print-logo" alt="hh.ru">
+      </div>
+      <div class="navi HH-VacancyMainSearchInfoTip-Navi">
+         <script data-name="HH/Bloko/Toggle" data-params='
+            {
+            "expandClass": "navi_expanded"
+            }
+            '></script><script data-name="HH/Bloko/Toggle" data-params='
+            {
+            "name": "user-notifications",
+            "expandClass": "navi_notifications-shown"
+            }
+            '></script><script data-name="HH/UserNotifications" data-params=""></script><script data-name="HH/Navi/SearchSelector" data-params=""></script><script data-name="HH/Navi/Menu" data-params='
+            {
+            "stickyMenuParams": 
+            {
+            "className": {
+            "fixed": "navi_sticky",
+            "fixedTransition": "navi_sticky",
+            "collapsedReset": "navi_sticky",
+            "collapsed": "navi_sticky navi_sticky-transition",
+            "expandedAbsolute": "",
+            "expandedAbsoluteTransition": "navi_sticky-transition",
+            "mobile": ""
+            }
+            }
+            ,
+            "regionDropdownParams": 
+            null
+            }
+            '></script>
+         <div class="navi__top HH-Navi-StickyMenu-TopBlock">
+            <div class="bloko-columns-wrapper">
+               <div class="bloko-column bloko-column_s-8 bloko-column_m-12 bloko-column_l-16">
+                  <div class="navi-row navi-row_search">
+                     <div class="navi-cell navi-cell_logo"><a href="/" class="navi-logo navi-logo_hh-ru" title="hh.ru"><span class="navi-logo__domain"></span></a></div>
+                     <div class="navi-cell navi-cell_search navi-cell_search-ru">
+                        <form action="/search/vacancy" method="get" data-hh-tab-id="searchVacancy" class="HH-Navi-SearchSelector-Tab HH-Navi-SearchSelector-Form  HH-VacancyMap-Form">
+                           
+                           <div class="bloko-control-group">
+                              <div class="bloko-control-group__main">
+                                 <input type="text" class="bloko-input                               HH-Navi-SearchSelector-Tab-TextInput                               HH-SearchFromSuggest-Suggest                               HH-Navi-StickyMenu-MainSearch                               HH-VacancyMainSearchInfoTip-Input" value="" placeholder="Я ищу…" name="text" data-qa="vacancy-serp__query">
+                              </div>
+                              <div class="bloko-control-group__minor HH-Navi-SearchSelector-SelectWrapper">
+                                 <select class="bloko-select                        bloko-select_flexible                        HH-Navi-SearchSelector-Select" data-qa="navi-search__select">
+                                    <option value="searchVacancy" selected>Вакансии</option>
+                                    <option value="resumeSearch">Резюме</option>
+                                    <option value="employersList">Компании</option>
+                                 </select>
+                              </div>
+                              <div class="navi-search-button"><button class="bloko-button                            bloko-button_primary                            bloko-button_stretched" type="submit" data-qa="navi-search__button"><span class="navi-search-button__text">Найти</span><span class="navi-search-button__icon"></span></button></div>
+                           </div>
+                           <input type="hidden" name="area" value="1">
+                        </form>
+                        <form action="/search/resume" method="get" data-hh-tab-id="resumeSearch" class="HH-Navi-SearchSelector-Tab HH-Navi-SearchSelector-Form  g-hidden">
+                           
+                           <div class="bloko-control-group">
+                              <div class="bloko-control-group__main">
+                                 <input class="bloko-input                               HH-Navi-SearchSelector-Tab-TextInput                               HH-SearchFromSuggest-Suggest                               HH-Navi-StickyMenu-MainSearch                               HH-QueryLength-Observed" type="text" placeholder="Я ищу…" name="text" autocomplete="off" data-qa="resume-serp__query" value="">
+                              </div>
+                              <div class="bloko-control-group__minor HH-Navi-SearchSelector-SelectWrapper"></div>
+                              <div class="navi-search-button"><button class="bloko-button                            bloko-button_primary                            bloko-button_stretched" type="submit" data-qa="navi-search__button"><span class="navi-search-button__text">Найти</span><span class="navi-search-button__icon"></span></button></div>
+                           </div>
+                           <input type="hidden" name="area" value="1"><input type="hidden" name="clusters" value="true"><input type="hidden" name="exp_period" value="all_time"><input type="hidden" name="logic" value="normal"><input type="hidden" name="pos" value="full_text">
+                        </form>
+                        <form action="/employers_list" method="get" data-hh-tab-id="employersList" class="HH-Navi-SearchSelector-Tab HH-Navi-SearchSelector-Form  g-hidden">
+                           
+                           <div class="bloko-control-group">
+                              <div class="bloko-control-group__main">
+                                 <input type="text" class="bloko-input                               HH-Navi-StickyMenu-MainSearch                               HH-Navi-SearchSelector-Tab-TextInput                               HH-SearchFromSuggest-Suggest                               HH-EmployersSearchRedirect-Suggest" placeholder="Я ищу…" name="query" data-qa="employer-serp__query" value="">
+                              </div>
+                              <div class="bloko-control-group__minor HH-Navi-SearchSelector-SelectWrapper"></div>
+                              <div class="navi-search-button"><button class="bloko-button                            bloko-button_primary                            bloko-button_stretched" type="submit" data-qa="navi-search__button"><span class="navi-search-button__text">Найти</span><span class="navi-search-button__icon"></span></button></div>
+                           </div>
+                           <input type="hidden" name="areaId" value="113">
+                        </form>
+                     </div>
+                     <div class="navi-cell navi-cell_break"></div>
+                     <div data-hh-tab-id="searchVacancy" class="navi-cell navi-cell_advanced-search HH-Navi-SearchSelector-Tab"><span class="navi-link"><a href="/search/vacancy/advanced" class="bloko-link bloko-link_secondary HH-Navi-SearchSelector-Link">Расширенный поиск</a></span></div>
+                     <div data-hh-tab-id="resumeSearch" class="navi-cell navi-cell_advanced-search HH-Navi-SearchSelector-Tab g-hidden"><span class="navi-link"><a href="/search/resume/advanced" class="bloko-link bloko-link_secondary HH-Navi-SearchSelector-Link">Расширенный поиск</a></span></div>
+                     <div data-hh-tab-id="employersList" class="navi-cell navi-cell_advanced-search HH-Navi-SearchSelector-Tab g-hidden"><span class="navi-link"><a href="/employers_list?areaId=113" class="bloko-link bloko-link_secondary HH-Navi-SearchSelector-Link">Расширенный поиск</a></span></div>
+                     <div class="navi-cell navi-cell_area">
+                        <div class="navi-link HH-Navi-RegionDropdown-Container">
+                           <!--noindex--><a rel="nofollow" class="bloko-link bloko-link_secondary" data-qa="navi-search__area-switcher" href="/area_switcher?backUrl=/vacancy/27138300">Работа в России</a><!--/noindex-->
+                        </div>
+                     </div>
+                     <div class="navi-cell navi-cell_lang">
+                        <div class="navi-item navi-item_lang HH-Navi-Menu-Item" data-qa="navi-search__lang">
+                           <div class="navi-item__switcher HH-Navi-MenuItem-Switcher"><span class="navi-flag navi-flag_RU" data-qa="navi-search__flag-RU"></span></div>
+                           <div class="g-hidden navi-item__dropdown HH-Navi-MenuItem-Dropdown HH-Navi-MenuItem-StaticDropdown">
+                              <div class="navi-dropdown">
+                                 <ul class="navi-dropdown__list navi-dropdown__list_small">
+                                    <li class="navi-item navi-item_level-2"><span class="navi-dropdown-link                          navi-dropdown-link_long                          navi-dropdown-link_selected">Русский<span class="navi-dropdown-link__icon"><span class="navi-flag navi-flag_RU"></span></span></span></li>
+                                    <li class="navi-item navi-item_level-2">
+                                       <!--noindex-->
+                                       <a rel="nofollow" href="/locale?language=EN" class="navi-dropdown-link navi-dropdown-link_long" data-qa="change-locale-EN">
+                                          <script data-name="HH/SendAnalytics" data-params='
+                                             {
+                                             "onEvent": "click",
+                                             "category": "Change_language",
+                                             "action": "EN",
+                                             "label": "RU",
+                                             "toStorage": true
+                                             }
+                                             '></script>Английский<span class="navi-dropdown-link__icon"><span class="navi-flag navi-flag_EN"></span></span>
+                                       </a>
+                                       <!--/noindex-->
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="HH-Navi-Menu-Menu navi__menu">
+            <div class="bloko-columns-wrapper">
+               <div class="bloko-column bloko-column_l-16 bloko-column_m-12 bloko-column_s-8 bloko-column_xs-4">
+                  <div class="navi-row navi-row_menu HH-Navi-MenuResizer-Menu ">
+                     <div class="navi-cell navi-cell_moving-items">
+                        <ul class="navi-items-wrapper">
+                           <li class="navi-item navi-item_toggle" data-toggle="" data-qa="mainmenu-toogle-xs">
+                           <li class="navi-item                    navi-item_logo                    HH-Navi-MenuResizer-StaticItem                    HH-Navi-MenuResizer-TransitionItem"><a class="navi-item__switcher navi-item__switcher_link" href="/"><img src="images/logo-small.svg" class="navi-logo navi-logo_small" title="hh.ru"></a></li>
+                           <li class="navi-item navi-item_level-1 HH-Navi-Menu-Item HH-Navi-MenuResizer-MovingItem">
+                              <div class="navi-item__switcher HH-Navi-MenuItem-Switcher" data-qa="mainmenu_searchjob">Ищу работу</div>
+                              <div class="g-hidden                         navi-item__dropdown                         HH-Navi-MenuItem-Dropdown">
+                                 <div class="navi-dropdown">
+                                    <ul class="navi-dropdown__list">
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="/applicant/resumes/new?from=menunelogin" class="navi-dropdown-link" data-qa="mainmenu_createResumeAnon"><span class="navi-dropdown-link__text">Создать резюме</span></a></li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf">
+                                          <!--noindex--><a href="/article/proforientation_promo?from=menunelogin" rel="nofollow" class="navi-dropdown-link" data-qa="mainmenu_proforientationAnon"><span class="navi-dropdown-link__text">Пройти профориентацию</span></a><!--/noindex-->
+                                       </li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf">
+                                          <!--noindex--><a href="https://hh.ru/career-vector?from=menunelogin" rel="nofollow" class="navi-dropdown-link" data-qa="mainmenu_careerVectorAnon"><span class="navi-dropdown-link__text">Получить карьерную консультацию</span></a><!--/noindex-->
+                                       </li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf">
+                                          <!--noindex--><a href="/article/expert_resume?from=menunelogin" rel="nofollow" class="navi-dropdown-link" data-qa="mainmenu_expertresumeAnon"><span class="navi-dropdown-link__text">Заказать готовое резюме</span></a><!--/noindex-->
+                                       </li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf">
+                                          <!--noindex--><a href="https://academy.hh.ru/courses?from=menunelogin&amp;utm_source=hh.ru&amp;utm_medium=referral" rel="nofollow" class="navi-dropdown-link navi-dropdown-link_long navi-dropdown-link_external" data-qa="mainmenu_applicantAcademyAnon" target="_blank"><span class="navi-dropdown-link__text">Учиться в Академии</span></a><!--/noindex-->
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="navi-item navi-item_level-1 HH-Navi-Menu-Item HH-Navi-MenuResizer-MovingItem">
+                              <div class="navi-item__switcher HH-Navi-MenuItem-Switcher" data-qa="mainmenu_searchresumes">Ищу сотрудников</div>
+                              <div class="g-hidden                         navi-item__dropdown                         HH-Navi-MenuItem-Dropdown">
+                                 <div class="navi-dropdown">
+                                    <ul class="navi-dropdown__list">
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf">
+                                          <a href="/auth/employer?backurl=%2Femployer%2Fvacancy%2Fcreate&amp;from=menu" class="navi-dropdown-link navi-dropdown-link_emphasis" data-qa="mainmenu_promo">
+                                            <span class="navi-dropdown-link__text">Разместить вакансию</span>
+                                          </a>
+                                       </li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="/price?from=menu" class="navi-dropdown-link" data-qa="mainmenu_anonPrice"><span class="navi-dropdown-link__text">Прайс-лист</span></a></li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="/article/services?from=menu" class="navi-dropdown-link" data-qa="mainmenu_description"><span class="navi-dropdown-link__text">Описание услуг</span></a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="navi-item                    navi-item_level-1                    HH-Navi-Menu-Item                    HH-Navi-MenuResizer-MovingItem">
+                              <div class="navi-item__switcher HH-Navi-MenuItem-Switcher" data-qa="mainmenu_help">Помощь</div>
+                              <div class="g-hidden navi-item__dropdown HH-Navi-MenuItem-Dropdown">
+                                 <div class="navi-dropdown">
+                                    <script data-name="HH/HoverSwitcher" data-params=""></script>
+                                    <ul class="navi-dropdown__list navi-dropdown__list_promo">
+                                       <li class="navi-item navi-item_level-2">
+                                          <a href="http://feedback.hh.ru/?utm_source=hh.ru&amp;utm_medium=copiny&amp;utm_campaign=menu" class="navi-dropdown-link navi-dropdown-link_long navi-dropdown-link_external" data-qa="mainmenu_copiny" target="_blank">
+                                            Сообщество поддержки
+                                          </a>
+                                       </li>
+                                       <li class="g-hidden                    navi-item                    navi-item_level-2                    navi-item_no-mobile                    HH-Navi-MenuItem-Leaf">
+                                          
+                                          <span class="navi-dropdown-link" data-qa="mainmenu_vishnu">
+                                             Виртуальный консультант
+                                          </span>
+                                       </li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf">
+                                          <a href="/feedback" class="navi-dropdown-link" data-qa="mainmenu_writeToUs">
+                                             <span class="navi-dropdown-link__text">Пишите нам</span>
+                                          </a>
+                                       </li>
+                                    </ul>
+                                    <div class="g-hidden navi-panel HH-HoverSwitcher-SwitchingItem">
+                                       <div class="navi-panel__hint">В данный момент все операторы заняты. Попробуйте связаться с нами немного позднее.</div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="navi-item navi-item_level-1 navi-item_no-mobile HH-Navi-Menu-Item HH-Navi-MenuResizer-MovingItem">
+                              <div class="navi-item__switcher HH-Navi-MenuItem-Switcher" data-qa="mainmenu_company">Компании</div>
+                              <div class="g-hidden                         navi-item__dropdown                         HH-Navi-MenuItem-Dropdown">
+                                 <div class="navi-dropdown">
+                                    <ul class="navi-dropdown__list">
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="/employers_company" class="navi-dropdown-link" data-qa="mainmenu_employersSearch"><span class="navi-dropdown-link__text">Каталог компаний</span></a></li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="/catalog" class="navi-dropdown-link" data-qa="mainmenu_catalog"><span class="navi-dropdown-link__text">Работа по профессиям</span></a></li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="/metro" class="navi-dropdown-link" data-qa="mainmenu_metroCatalog"><span class="navi-dropdown-link__text">Работа рядом с метро</span></a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="navi-item navi-item_level-1 navi-item_no-mobile HH-Navi-Menu-Item HH-Navi-MenuResizer-MovingItem">
+                              <div class="navi-item__switcher HH-Navi-MenuItem-Switcher" data-qa="mainmenu_projects">Проекты</div>
+                              <div class="g-hidden                         navi-item__dropdown                         HH-Navi-MenuItem-Dropdown">
+                                 <div class="navi-dropdown">
+                                    <ul class="navi-dropdown__list                    navi-dropdown__list_promo                    HH-Navi-MenuItem-Column">
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="https://career.ru?utm_source=hh.ru&amp;utm_medium=referral&amp;utm_campaign=hh_menu_projects_career" data-qa="mainmenu_career" target="_blank" class="navi-dropdown-link navi-dropdown-link_long navi-dropdown-link_external"><span class="navi-dropdown-link__text">Карьера для молодых специалистов</span></a></li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="/teens?from=menu" data-qa="mainmenu_teens" class="navi-dropdown-link"><span class="navi-dropdown-link__text">Работа для подростков 14-17 лет</span></a></li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="http://hrdigital.ru?utm_source=hh.ru&amp;utm_medium=referral&amp;utm_campaign=hh_menu_projects_hrdigital" data-qa="mainmenu_hrDigital" target="_blank" class="navi-dropdown-link navi-dropdown-link_long navi-dropdown-link_external"><span class="navi-dropdown-link__text">Саммит HR Digital</span></a></li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="/article/creation?from=menu" data-qa="mainmenu_hrBranding" class="navi-dropdown-link"><span class="navi-dropdown-link__text">HR-брендинг</span></a></li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="https://hrbrand.ru?utm_source=hh.ru&amp;utm_medium=referral&amp;utm_campaign=hh_menu_projects_hrbrand" data-qa="mainmenu_hrBrand" target="_blank" class="navi-dropdown-link navi-dropdown-link_long navi-dropdown-link_external"><span class="navi-dropdown-link__text">Премия HR-бренд</span></a></li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="/article/index?from=menu" data-qa="mainmenu_indexHH" class="navi-dropdown-link"><span class="navi-dropdown-link__text">Индекс HeadHunter</span></a></li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="/talentmap?from=menu" data-qa="mainmenu_assessmentsPromo" class="navi-dropdown-link"><span class="navi-dropdown-link__text">Оценка талантов</span></a></li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="/outplacement?from=menu" data-qa="mainmenu_outplacement" class="navi-dropdown-link"><span class="navi-dropdown-link__text">Аутплейсмент</span></a></li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="https://peopledigits.hh.ru?utm_campaign=hh_menu_projects_peopledigits&amp;utm_medium=referral&amp;utm_source=hh.ru" data-qa="mainmenu_peopleDigits" target="_blank" class="navi-dropdown-link navi-dropdown-link_long navi-dropdown-link_external"><span class="navi-dropdown-link__text">Люди в цифрах</span></a></li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="http://reestr.hh.ru?utm_source=hh.ru&amp;utm_medium=referral&amp;utm_campaign=hh_menu_projects_reestr" data-qa="mainmenu_reestr" target="_blank" class="navi-dropdown-link navi-dropdown-link_long navi-dropdown-link_external"><span class="navi-dropdown-link__text">Реестр кадровых агентств</span></a></li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="https://clickme.hh.ru?utm_campaign=hh_menu_projects_clickme&amp;utm_medium=referral&amp;utm_source=hh.ru" data-qa="mainmenu_clickMe" target="_blank" class="navi-dropdown-link navi-dropdown-link_long navi-dropdown-link_external"><span class="navi-dropdown-link__text">Clickme</span></a></li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="https://academy.hh.ru?utm_campaign=hh_menu_projects_academy_b2c&amp;utm_medium=referral&amp;utm_source=hh.ru" data-qa="mainmenu_applicantAcademy" target="_blank" class="navi-dropdown-link navi-dropdown-link_long navi-dropdown-link_external"><span class="navi-dropdown-link__text">Академия</span></a></li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="https://academy-new.hh.ru?utm_campaign=hh_menu_projects_academy_b2b&amp;utm_medium=referral&amp;utm_source=hh.ru" data-qa="mainmenu_employerAcademy" target="_blank" class="navi-dropdown-link navi-dropdown-link_long navi-dropdown-link_external"><span class="navi-dropdown-link__text">Академия для бизнеса</span></a></li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="/mobile?from=menu" data-qa="mainmenu_mobile" class="navi-dropdown-link"><span class="navi-dropdown-link__text">Мобильное приложение</span></a></li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="https://talantix.ru/promo?utm_source=hh.ru&amp;utm_medium=referral&amp;utm_campaign=hh_menu_projects_ats#ats" data-qa="mainmenu_talantix" target="_blank" class="navi-dropdown-link navi-dropdown-link_long navi-dropdown-link_external"><span class="navi-dropdown-link__text">Talantix</span></a></li>
+                                    </ul>
+                                    <ul class="navi-dropdown__list                    navi-dropdown__list_promo                    navi-dropdown__list_employer                    HH-Navi-MenuItem-Column">
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="https://talantix.ru/promo?utm_source=hh.ru&amp;utm_medium=referral&amp;utm_campaign=hh_menu_projects_hhrobot#hhrobot" data-qa="mainmenu_talantixChatBots" target="_blank" class="navi-dropdown-link navi-dropdown-link_long navi-dropdown-link_external"><span class="navi-dropdown-link__text">Чат-боты</span></a></li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="https://talantix.ru/promo?utm_source=hh.ru&amp;utm_medium=referral&amp;utm_campaign=hh_menu_projects_vr#vr" data-qa="mainmenu_talantixVr" target="_blank" class="navi-dropdown-link navi-dropdown-link_long navi-dropdown-link_external"><span class="navi-dropdown-link__text">Виртуальный рекрутер</span></a></li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="http://hrspace.hh.ru?utm_campaign=hh_menu_projects_hrspace&amp;utm_medium=referral&amp;utm_source=hh.ru" data-qa="mainmenu_hrSpace" target="_blank" class="navi-dropdown-link navi-dropdown-link_long navi-dropdown-link_external"><span class="navi-dropdown-link__text">HRspace</span></a></li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="http://feedback.hh.ru/categories/parent/id/7064?utm_campaign=hh_menu_projects_consult&amp;utm_medium=referral&amp;utm_source=hh.ru" data-qa="mainmenu_ka" target="_blank" class="navi-dropdown-link navi-dropdown-link_long navi-dropdown-link_external"><span class="navi-dropdown-link__text">Карьерный консультант</span></a></li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="/article/59?from=menu" data-qa="mainmenu_eduCenter" class="navi-dropdown-link"><span class="navi-dropdown-link__text">Обучающие вебинары</span></a></li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="/articles/insider?from=menu" data-qa="mainmenu_liveInCompany" class="navi-dropdown-link"><span class="navi-dropdown-link__text">Жизнь в компании</span></a></li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="/books?from=menu" data-qa="mainmenu_library" class="navi-dropdown-link"><span class="navi-dropdown-link__text">Библиотека HeadHunter</span></a></li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="http://school.hh.ru?utm_campaign=hh_menu_projects_school&amp;utm_medium=referral&amp;utm_source=hh.ru" data-qa="mainmenu_school" target="_blank" class="navi-dropdown-link navi-dropdown-link_long navi-dropdown-link_external"><span class="navi-dropdown-link__text">Школа программистов</span></a></li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="https://dev.hh.ru/?utm_source=hh.ru&amp;utm_medium=referral&amp;utm_campaign=hh_menu_projects_dev" data-qa="mainmenu_widgets" target="_blank" class="navi-dropdown-link navi-dropdown-link_long navi-dropdown-link_external"><span class="navi-dropdown-link__text">Виджеты и API</span></a></li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="https://salary.hh.ru/promo?utm_campaign=hh_menu_projects_salary&amp;utm_medium=referral&amp;utm_source=hh.ru" data-qa="mainmenu_salarystatService" target="_blank" class="navi-dropdown-link navi-dropdown-link_long navi-dropdown-link_external"><span class="navi-dropdown-link__text">Банк данных заработных плат</span></a></li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="/articles/applicants/it-projects?from=menu" data-qa="mainmenu_itproject" class="navi-dropdown-link"><span class="navi-dropdown-link__text">ИТ-проекты</span></a></li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="https://career.ru/rating?utm_source=hh.ru&amp;utm_medium=referral&amp;utm_campaign=hh_menu_projects_rating" data-qa="mainmenu_rating" target="_blank" class="navi-dropdown-link navi-dropdown-link_long navi-dropdown-link_external"><span class="navi-dropdown-link__text">Рейтинг факультетов и вузов</span></a></li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="/articles?from=menu" data-qa="mainmenu_articles" class="navi-dropdown-link"><span class="navi-dropdown-link__text">Полезная информация</span></a></li>
+                                       <li class="navi-item navi-item_level-2 HH-Navi-MenuItem-Leaf"><a href="https://staffstation.hh.ru?utm_campaign=hh_menu_projects_staffstation&amp;utm_medium=referral&amp;from=menu&amp;utm_source=hh.ru" data-qa="mainmenu_staffStation" target="_blank" class="navi-dropdown-link navi-dropdown-link_long navi-dropdown-link_external"><span class="navi-dropdown-link__text">StaffStation</span></a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="g-hidden                    navi-item                    navi-item_fake-search                    HH-Navi-MenuItem-FakeItem                    HH-Navi-MenuResizer-StaticItem                    HH-Navi-MenuResizer-SearchItem">
+                              <div class="navi-fake-search HH-Navi-StickyMenu-Search">Я ищу…</div>
+                              <a href="/search/vacancy/advanced" data-hh-tab-id="searchVacancy" class="
+                                 navi-link
+                                 navi-link_fake-search
+                                 HH-Navi-SearchSelector-Tab
+                                 HH-Navi-SearchSelector-Link
+                                 ">Расширенный</a><a href="/search/resume/advanced" data-hh-tab-id="resumeSearch" class="
+                                 navi-link
+                                 navi-link_fake-search
+                                 HH-Navi-SearchSelector-Tab
+                                 HH-Navi-SearchSelector-Link
+                                 g-hidden">Расширенный</a><a href="/employers_list?areaId=113" data-hh-tab-id="employersList" class="
+                                 navi-link
+                                 navi-link_fake-search
+                                 HH-Navi-SearchSelector-Tab
+                                 HH-Navi-SearchSelector-Link
+                                 g-hidden">Расширенный</a>
+                           </li>
+                           <li class="navi-item navi-item_filler HH-Navi-MenuItem-FakeItem">
+                           <li class="g-hidden                    navi-item                    navi-item_level-1                    HH-Navi-Menu-Item                    HH-Navi-MenuResizer-ContainerItem">
+                              <div class="navi-item__switcher HH-Navi-MenuItem-Switcher">Ещё…</div>
+                              <div class="g-hidden                         navi-item__dropdown                         HH-Navi-MenuItem-Dropdown">
+                                 <div class="navi-dropdown">
+                                    <ul class="navi-dropdown__list HH-Navi-MenuResizer-ContainerList"></ul>
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                     <ul class="navi-cell navi-cell_line-container">
+                        <li class="navi-item                    navi-item_login                    navi-item_level-1                    HH-Navi-Menu-Item                    HH-Navi-MenuResizer-StaticItem">
+                           <div class="navi-item__switcher HH-Navi-MenuItem-Switcher" data-qa="mainmenu_loginForm">Войти</div>
+                           <div class="g-hidden                         navi-item__dropdown                         navi-item__dropdown_right                         HH-Navi-MenuItem-Dropdown                         HH-Navi-MenuItem-StaticDropdown">
+                              <div class="login login_dropdown" data-qa="account-login">
+                                 <div class="loginform" data-qa="account-login">
+                                    <form xmlns:b="http://hhru.github.com/bloko/" action="/account/login?backurl=%2Fapplicant%2Fvacancy_response%2Fafter_login%3FvacancyId%3D27138300" autocomplete="on" method="post" data-qa="account-login-form" novalidate="novalidate">
+                                       <input type="hidden" value="https://hh.ru/applicant/vacancy_response/after_login?vacancyId=27138300" name="backUrl"><input type="hidden" name="failUrl" value="/account/login?backurl=%2Fapplicant%2Fvacancy_response%2Fafter_login%3FvacancyId%3D27138300">
+                                       <div class="bloko-form-item"><input type="email" class="bloko-input" data-qa="login-input-username" required="required" spellcheck="false" autocorrect="off" autocapitalize="off" placeholder="Email или телефон" name="username" value=""></div>
+                                       <div class="bloko-form-item"><input class="bloko-input" type="password" required="required" data-qa="login-input-password" placeholder="Пароль" name="password"></div>
+                                       <div class="account-form-actions"><input type="submit" data-qa="account-login-submit" value="Войти в личный кабинет" class="bloko-button bloko-button_primary bloko-button_stretched"></div>
+                                       <div class="login-remember login-remember_applicant"><label class="bloko-checkbox"><input type="checkbox" class="bloko-checkbox__input" data-qa="account-login-remember" name="remember" value="yes"><span class="bloko-checkbox__text">Запомнить</span></label><a href="/account/remember_password?backurl=%2Fapplicant%2Fvacancy_response%2Fafter_login%3FvacancyId%3D27138300" data-qa="account-login-remember-password">Получить пароль</a></div>
+                                       <div>
+                                          <div class="bloko-form-item">
+                                             <div class="bloko-gap_top"><span class="account-hint">Вход через соцсети</span></div>
+                                          </div>
+                                          <div class="HH-ApplicantRegistration-SocialIcons social-icons-wrapper social-icons-wrapper_min-width">
+                                             <span class="social-icon-wrap">
+                                                <!--noindex--><a rel="nofollow" href="/account/connect?backurl=%2Fapplicant%2Fvacancy_response%2Fafter_login%3FvacancyId%3D27138300&amp;site=MAIL" data-qa="account-login-social-mail" title="Мой Мир@mail.ru" class="bloko-social-icon bloko-social-icon_button bloko-social-icon_small  HH-ApplicantRegistration-Social HH-VacancyResponsePopup-SocialIcon bloko-social-icon_mail "></a><!--/noindex-->
+                                             </span>
+                                             <span class="social-icon-wrap">
+                                                <!--noindex--><a rel="nofollow" href="/account/connect?backurl=%2Fapplicant%2Fvacancy_response%2Fafter_login%3FvacancyId%3D27138300&amp;site=OK" data-qa="account-login-social-ok" title="Одноклассники" class="bloko-social-icon bloko-social-icon_button bloko-social-icon_small  HH-ApplicantRegistration-Social HH-VacancyResponsePopup-SocialIcon bloko-social-icon_ok "></a><!--/noindex-->
+                                             </span>
+                                             <span class="social-icon-wrap">
+                                                <!--noindex--><a rel="nofollow" href="/account/connect?backurl=%2Fapplicant%2Fvacancy_response%2Fafter_login%3FvacancyId%3D27138300&amp;site=FB" data-qa="account-login-social-fb" title="Facebook" class="bloko-social-icon bloko-social-icon_button bloko-social-icon_small  HH-ApplicantRegistration-Social HH-VacancyResponsePopup-SocialIcon bloko-social-icon_fb "></a><!--/noindex-->
+                                             </span>
+                                             <span class="social-icon-wrap">
+                                                <!--noindex--><a rel="nofollow" href="/account/connect?backurl=%2Fapplicant%2Fvacancy_response%2Fafter_login%3FvacancyId%3D27138300&amp;site=VK" data-qa="account-login-social-vk" title="ВКонтакте" class="bloko-social-icon bloko-social-icon_button bloko-social-icon_small  HH-ApplicantRegistration-Social HH-VacancyResponsePopup-SocialIcon bloko-social-icon_vk "></a><!--/noindex-->
+                                             </span>
+                                             <span class="social-icon-wrap">
+                                                <!--noindex--><a rel="nofollow" href="/account/connect?backurl=%2Fapplicant%2Fvacancy_response%2Fafter_login%3FvacancyId%3D27138300&amp;site=LI" data-qa="account-login-social-li" title="LinkedIn" class="bloko-social-icon bloko-social-icon_button bloko-social-icon_small  HH-ApplicantRegistration-Social HH-VacancyResponsePopup-SocialIcon bloko-social-icon_li "></a><!--/noindex-->
+                                             </span>
+                                             <span class="social-icon-wrap">
+                                                <!--noindex--><a rel="nofollow" href="/account/connect?backurl=%2Fapplicant%2Fvacancy_response%2Fafter_login%3FvacancyId%3D27138300&amp;site=GPLUS" data-qa="account-login-social-gplus" title="Google+" class="bloko-social-icon bloko-social-icon_button bloko-social-icon_small  HH-ApplicantRegistration-Social HH-VacancyResponsePopup-SocialIcon bloko-social-icon_gplus "></a><!--/noindex-->
+                                             </span>
+                                             <span class="social-icon-wrap">
+                                                <!--noindex--><a rel="nofollow" href="/account/connect?backurl=%2Fapplicant%2Fvacancy_response%2Fafter_login%3FvacancyId%3D27138300&amp;site=DNR" data-qa="account-login-social-dnr" title="Доктор на работе" class="bloko-social-icon bloko-social-icon_button bloko-social-icon_small  HH-ApplicantRegistration-Social HH-VacancyResponsePopup-SocialIcon bloko-social-icon_dnr "></a><!--/noindex-->
+                                             </span>
+                                          </div>
+                                       </div>
+                                       <div class="account-register">
+                                          <div class="bloko-gap_top"><span class="account-hint">Регистрация</span></div>
+                                          <div>
+                                             <div class="account-register__button"><a data-qa="account-login-signup" class="bloko-button bloko-button_stretched bloko-button_small " href="/account/signup">Соискателя</a></div>
+                                             <div class="account-register__button"><a href="//hh.ru/auth/employer/?backurl=%2Fapplicant%2Fvacancy_response%2Fafter_login%3FvacancyId%3D27138300" data-qa="account-login-signup-employer" class="bloko-button bloko-button_stretched bloko-button_small ">Работодателя</a></div>
+                                          </div>
+                                       </div>
+                                       <input type="hidden" name="_xsrf" value="9aaf11e0e323dd44bc37e6b38c84705c">
+                                    </form>
+                                 </div>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <!-- header -->
+      <div class="navi-dummy"></div>
+      <div class="Bloko-Notification-Manager notification-manager"></div>
+      <div class="HH-MainContent">
+         <noindex>
+            <noscript>
+               <div class="global-exception">
+                  <div class="g-row">
+                     <p class="global-exception__text">Для работы с нашим сайтом необходимо, чтобы Вы включили JavaScript в вашем браузере.</p>
+                  </div>
+               </div>
+            </noscript>
+         </noindex>
+         <div class="HH-Unsupported-Browser important-info" style="display: none;">
+            <div class="bloko-columns-wrapper">
+               <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-12 bloko-column_l-16">Ваш браузер устарел и больше не поддерживается.
+                  Для корректной работы сайта рекомендуем использовать один из современных браузеров. <a href="/article/176" class="important-info__link">Узнать подробнее</a>
+               </div>
+            </div>
+         </div>
+         
+         <div class="bloko-columns-wrapper">
+            <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-12 bloko-column_l-16">
+               <div>
+                  <script data-name="HH/GAArticlesScrolling" data-params=""></script>
+                  
+                  <div class="promo-page">
+                     <div class="promo-page-banner">
+                        <div class="promo-page-banner__row">
+                           <div class="promo-page-banner__cell promo-page-banner__cell_50 promo-page-banner__cell_64-middle promo-page-banner__cell_100-small">
+                              <a class="promo-page-banner__item promo-page-banner__item_alternate promo-page-banner__bg-1" href="https://hh.ru/article/cvbase">
+                              <span class="promo-page-banner__section">ПОДБОР</span>
+                              <span class="promo-page-banner__title">Доступ к базе резюме</span>
+                              <span class="promo-page-banner__text">35-миллионная база с контактами соискателей</span>
+                              <span class="promo-page-banner__action">
+                              <span class="promo-page-button promo-page-button_transparent">Подробнее</span>
+                              </span>
+                              </a>
+                           </div>
+                           <div class="promo-page-banner__cell promo-page-banner__cell_50 promo-page-banner__cell_36-middle promo-page-banner__cell_100-small">
+                              <div class="promo-page-banner__row">
+                                 <div class="promo-page-banner__cell promo-page-banner__cell_50 promo-page-banner__cell_100-middle">
+                                    <a class="promo-page-banner__item promo-page-banner__bg-2" href="https://hh.ru/article/vacancies">
+                                    <span class="promo-page-banner__section">ПОДБОР</span>
+                                    <span class="promo-page-banner__subtitle">Вакансии</span>
+                                    <span class="promo-page-banner__text">Публикуйте вакансии — получайте отклики</span>
+                                    <span class="promo-page-banner__action promo-middle-hidden promo-small-hidden">
+                                    <span class="promo-page-button promo-page-button_transparent">Подробнее</span>
+                                    </span>
+                                    </a>
+                                 </div>
+                                 <div class="promo-page-banner__cell promo-page-banner__cell_50 promo-page-banner__cell_100-middle">
+                                    <a class="promo-page-banner__item promo-page-banner__bg-3" href="https://hh.ru/article/adv">
+                                    <span class="promo-page-banner__section">ПРОДВИЖЕНИЕ</span>
+                                    <span class="promo-page-banner__subtitle">Рекламные продукты</span>
+                                    <span class="promo-page-banner__text">У нас более 30 рекламных форматов</span>
+                                    <span class="promo-page-banner__action promo-middle-hidden promo-small-hidden">
+                                    <span class="promo-page-button promo-page-button_transparent" href="javascript:;">Подробнее</span>
+                                    </span>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="promo-page-sections">
+                        <div class="promo-page-sections__cell">
+                           <div class="promo-page-sections__title">Подбор</div>
+                           <ul class="promo-page-sections__list">
+                              <li class="promo-page-sections__item">
+                                 <a class="promo-page-sections__link" href="https://hh.ru/article/cvbase">Доступ к базе резюме</a>
+                              </li>
+                              <li class="promo-page-sections__item">
+                                 <a class="promo-page-sections__link" href="https://hh.ru/article/vacancies">Публикация вакансий</a>
+                              </li>
+                              <li class="promo-page-sections__item">
+                                 <a class="promo-page-sections__link" href="https://hh.ru/article/selection">Выборки резюме</a>
+                              </li>
+                              <li class="promo-page-sections__item">
+                                 <a class="promo-page-sections__link" href="https://hh.ru/article/clickme?from=article_services">Clickme</a>
+                                 <span class="promo-page-sections__status promo-page-sections__status_hit">Хит</span>
+                              </li>
+                             
+                              <li class="promo-page-sections__item">
+                                 <a class="promo-page-sections__link" href="https://hh.ru/article/advemail"> Индивидуальные рассылки вакансий</a>
+                              </li>
+                              <li class="promo-page-sections__item">
+                                 <a class="promo-page-sections__link" href="https://hh.ru/article/hr-space">HRspace</a>
+                              </li>
+                              <li class="promo-page-sections__item">
+                                 <a class="promo-page-sections__link" href="https://staffstation.hh.ru/">StaffStation</a>
+                                 <span class="promo-page-sections__status promo-page-sections__status_new">Новое</span>
+                              </li>
+                              <li class="promo-page-sections__item">
+                                 <a class="promo-page-sections__link" href="https://hh.ru/article/network">Сотрудники за рубежом</a>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="promo-page-sections__cell">
+                           <div class="promo-page-sections__title">Аналитика</div>
+                           <ul class="promo-page-sections__list">
+                              <li class="promo-page-sections__item">
+                                 <a class="promo-page-sections__link" href="https://salary.hh.ru/promo?utm_source=hh.ru&amp;utm_medium=services&amp;utm_campaign=services_bank">Банк данных заработных плат</a>
+                                 <span class="promo-page-sections__status promo-page-sections__status_hit">Хит</span>
+                              </li>
+                              <li class="promo-page-sections__item">
+                                 <a class="promo-page-sections__link" href="https://hh.ru/article/peopledigits?utm_source=hh.ru&amp;utm_medium=services&amp;utm_campaign=services_peopledigits">Люди в цифрах</a>
+                              </li>
+                              <li class="promo-page-sections__item">
+                                 <a class="promo-page-sections__link" href="https://hh.ru/article/salaryresearch?utm_source=hh.ru&amp;utm_medium=services&amp;utm_campaign=services_salaryresearch">Зарплатные исследования</a>
+                              </li>
+                              <li class="promo-page-sections__item">
+                                 <a class="promo-page-sections__link" href="https://hh.ru/article/marketresearch?utm_source=hh.ru&amp;utm_medium=services&amp;utm_campaign=services_marketresearch">Исследования рынка труда</a>
+                              </li>
+                              <li class="promo-page-sections__item">
+                                 <a class="promo-page-sections__link" href="https://hh.ru/article/liga?utm_source=hh.ru&amp;utm_medium=services&amp;utm_campaign=services_liga">Лига HR-экспертов</a>
+                              </li>
+                              <li class="promo-page-sections__item">
+                                 <a class="promo-page-sections__link" href="https://hh.ru/article/index?utm_source=hh.ru&amp;utm_medium=services&amp;utm_campaign=services_index">Индекс HeadHunter</a>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="promo-page-sections__cell">
+                           <div class="promo-page-sections__title">Брендинг</div>
+                           <ul class="promo-page-sections__list">
+                              <li class="promo-page-sections__item">
+                                 <a class="promo-page-sections__link" href="https://hh.ru/article/brand">Брендинговые продукты</a>
+                                 <span class="promo-page-sections__status promo-page-sections__status_hit">Хит</span>
+                              </li>
+                              <li class="promo-page-sections__item">
+                                 <a class="promo-page-sections__link" href="https://hh.ru/article/partnerpost#">Продвижение в социальных сетях</a>
+                                 <span class="promo-page-sections__status promo-page-sections__status_new">Новое</span>
+                              </li>
+                              <li class="promo-page-sections__item">
+                                 <a class="promo-page-sections__link" href="https://hh.ru/article/scan">Исследование бренда работодателя</a>
+                              </li>
+                              <li class="promo-page-sections__item">
+                                 <a class="promo-page-sections__link" href="https://hh.ru/article/pr">Управление коммуникациями</a>
+                              </li>
+                              <li class="promo-page-sections__item">
+                                 <a class="promo-page-sections__link" href="https://hh.ru/article/creation">Разработка HR-бренда</a>
+                              </li>
+                              <li class="promo-page-sections__item">
+                                 <a class="promo-page-sections__link" href="https://hh.ru/article/inside">Жизнь в компании</a>
+                              </li>
+                              <li class="promo-page-sections__item">
+                                 <a class="promo-page-sections__link" href="https://hh.ru/article/advit">ИТ-проекты</a>
+                              </li>
+                              
+                              <li class="promo-page-sections__item">
+                                 <a class="promo-page-sections__link" href="https://hh.ru/article/hrbrand">Премия HR-бренд</a>
+                              </li>
+                              <li class="promo-page-sections__item">
+                                 <a class="promo-page-sections__link" href="https://hh.ru/article/outplacement">Аутплейсмент</a>
+                              </li>
+                              
+                           </ul>
+                        </div>
+                        <div class="promo-page-sections__cell">
+                           <div class="promo-page-sections__title">Автоматизация</div>
+                           <ul class="promo-page-sections__list">
+                              <li class="promo-page-sections__item">
+                                 <a class="promo-page-sections__link" href="https://talantix.ru/promo?utm_source=hh.ru&amp;utm_medium=referral&amp;utm_campaign=hh_menu_services_talantix">Talantix</a>
+                                 <span class="promo-page-sections__status promo-page-sections__status_hit">Хит</span>
+                              </li>
+                              <li class="promo-page-sections__item">
+                                 <a class="promo-page-sections__link" href="https://talantix.ru/promo?utm_source=hh.ru&amp;utm_medium=referral&amp;utm_campaign=hh_menu_services_hhrobot#hhrobot">Чат-боты</a>
+                                 <span class="promo-page-sections__status promo-page-sections__status_new">Новое</span>
+                              </li>
+                              <li class="promo-page-sections__item">
+                                 <a class="promo-page-sections__link" href="https://talantix.ru/promo?utm_source=hh.ru&amp;utm_medium=referral&amp;utm_campaign=hh_menu_services_vr#vr">Виртуальный рекрутер</a>
+                                 <span class="promo-page-sections__status promo-page-sections__status_new">Новое</span>
+                              </li>
+                              <li class="promo-page-sections__item">
+                                 <a class="promo-page-sections__link" href="https://hh.ru/article/academy">Академия HeadHunter</a>
+                              </li>
+                              <li class="promo-page-sections__item">
+                                 <a class="promo-page-sections__link" href="https://hh.ru/talentmap">Оценка талантов</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="promo-page-contacts">
+                        <div class="promo-page-background promo-page-contacts_background JS-BannerWrapper"></div>
+                        <div class="promo-page-contacts__cell">
+                           <div class="promo-page-contacts__title">Свяжитесь с нами</div>
+                           <div class="promo-page-contacts__container">
+                              <div class="promo-page-contacts__text">Позвоните нам по телефону или напишите письмо на электронную почту. Наши специалисты помогут с расчётом пакета услуг и подберут оптимальное решение для типовых и нестандартных задач.</div>
+                              <div class="promo-page-contacts__text">
+                                 <b>+7 495 974-64-27 (для Москвы и Подмосковья)</b><br>
+                                 <b> +7 812 458-45-45 (для Санкт-Петербурга)</b><br> 
+                                 <b>+7 800 100-64-27 (для регионов России)</b> <br>
+                                 <a href="mailto:site_sales@hh.ru">Написать письмо</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="promo-page-contacts__cell">
+                           <div class="promo-page-contacts__title">Цены</div>
+                           <div class="promo-page-contacts__container">
+                              <div class="promo-page-contacts__text">Стоимость типовых и разовых услуг можно посмотреть на <a href="https://hh.ru/price">странице прайса</a>.</div>
+                              <div class="promo-page-contacts__text">Для решения нестандартных задач свяжитесь с нами удобным для вас способом.</div>
+                           </div>
+                        </div>
+                     </div>
+                     <ul class="promo-page-social JS-Share" data-share-params="{     'url': '',     'title': 'Доступ к базе резюме',     'description': '35-миллионная база с контактами соискателей',     'image': 'https://hhcdn.ru/icms/10039668.jpeg'     }">
+                        <li class="promo-page-social__item">
+                           <a class="promo-page-social__link promo-page-social__link_tw JS-Share-Link" href="http://twitter.com/share?" title="Twitter" data-social="twitter">
+                           <img class="promo-page-social__image" src="https://hhcdn.ru/icms/10039648.svgz" alt="Twitter">
+                           </a>
+                        </li>
+                        <li class="promo-page-social__item">
+                           <a class="promo-page-social__link promo-page-social__link_fb JS-Share-Link" href="http://www.facebook.com/sharer.php?s=100" title="Facebook" data-social="facebook">
+                           <img class="promo-page-social__image" src="https://hhcdn.ru/icms/10039649.svgz" alt="Facebook">
+                           </a>
+                        </li>
+                        <li class="promo-page-social__item">
+                           <a class="promo-page-social__link promo-page-social__link_vk JS-Share-Link" href="http://vkontakte.ru/share.php?" title="Vkontakte" data-social="vkontakte">
+                           <img class="promo-page-social__image" src="https://hhcdn.ru/icms/10039650.svgz" alt="Vkontakte">
+                           </a>
+                        </li>
+                        <li class="promo-page-social__item">
+                           <a class="promo-page-social__link promo-page-social__link_od JS-Share-Link" href="http://www.odnoklassniki.ru/dk?st.cmd=addShare&amp;st.s=1" title="Odnoklassniki" data-social="odnoklassniki">
+                           <img class="promo-page-social__image" src="https://hhcdn.ru/icms/10039651.svgz" alt="Odnoklassniki">
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+                 
+               </div>
+            </div>
+         </div>
+         <div class="footer-wrapper">
+            <div class="bloko-columns-wrapper">
+               <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-12 bloko-column_l-16">
+                  <div class="footer">
+                     <div class="footer-social">
+                        <!--noindex-->
+                        <a href="https://vk.com/headhunter" target="_blank" class="footer-social__item footer-social__item_vk" rel="noopener noreferrer nofollow">
+                           
+                        </a>
+                        <a href="http://www.facebook.com/headhuntergroup" target="_blank" class="footer-social__item footer-social__item_fb" rel="noopener noreferrer nofollow">
+                           
+                        </a>
+                        <a href="http://www.odnoklassniki.ru/headhunter" target="_blank" class="footer-social__item footer-social__item_ok" rel="noopener noreferrer nofollow">
+                           
+                        </a>
+                        <a href="https://twitter.com/hh_ru" target="_blank" class="footer-social__item footer-social__item_twitter" rel="noopener noreferrer nofollow">
+                           
+                        </a>
+                        <a href="https://instagram.com/hh_ru" target="_blank" class="footer-social__item footer-social__item_instagram" rel="noopener noreferrer nofollow">
+                           
+                        </a>
+                        <!--/noindex-->
+                     </div>
+                     <div class="footer__main">
+                        <div class="footer__employer">
+                           <div class="footer__item "><a href="/article/services?from=footer" class="footer-link">Работодателям</a></div>
+                           <div class="footer__item "><a href="/demo?from=footer" class="footer-link">Прайс-лист</a></div>
+                           <div class="footer__item footer__item_hidden-on-xs "><a href="/calendar" class="footer-link">Производственный календарь</a></div>
+                           <div class="footer__item footer__item_hidden-on-xs ">
+                              <!--noindex--><a rel="nofollow" href="/article/hrdigital?from=footer" class="footer-link">HR-Digital</a><!--/noindex-->
+                           </div>
+                        </div>
+                        <div class="footer__applicant">
+                           <div class="footer__item "><a href="/article/2" class="footer-link">Соискателям</a></div>
+                           <div class="footer__item ">
+                              <!--noindex--><a rel="nofollow" href="/applicant/services?from=footer" class="footer-link">Продвижение резюме</a><!--/noindex-->
+                           </div>
+                           <div class="footer__item "><a href="/article/1150" class="footer-link">Работа в других городах</a></div>
+                        </div>
+                        <div class="footer__about">
+                           <div class="footer__item "><a href="/article/28" class="footer-link">© 2018 Группа компаний HeadHunter</a></div>
+                           <div class="footer__item footer__item_hidden-on-xs "><a href="/employer/1455" class="footer-link">Наши вакансии</a></div>
+                           <div class="footer__item footer__item_hidden-on-xs "><a href="/partners" class="footer-link">Партнерам</a></div>
+                           <div class="footer__item footer__item_hidden-on-xs "><a href="/article/adv" class="footer-link">Реклама на сайте</a></div>
+                           <div class="footer__item footer__item_hidden-on-xs "><a href="https://dev.hh.ru/?utm_source=hh_ru&amp;utm_medium=main&amp;utm_campaign=niz" class="footer-link">API</a></div>
+                           <div class="footer__item ">
+                              <!--noindex--><a rel="nofollow" href="/mobile?from=footer" class="footer-link">Мобильное приложение</a><!--/noindex-->
+                           </div>
+                           <div class="footer__item ">
+                              <!--noindex--><a rel="nofollow" href="/forcemobile?utm_campaign=link&amp;utm_medium=mobile&amp;default_area=1&amp;utm_source=hh.ru" class="footer-link">Мобильный сайт</a><!--/noindex-->
+                           </div>
+                           <div class="footer__item footer__item_hidden-on-xs "><a href="/article/176" class="footer-link">Требования к ПО</a></div>
+                           <div class="footer__item footer__item_hidden-on-xs "><a href="/article/personal_data" class="footer-link">Защита персональных данных</a></div>
+                           <div class="footer__item footer__item_hidden-on-xs "><a href="/safety" class="footer-link">Безопасный HeadHunter</a></div>
+                        </div>
+                     </div>
+                     <div class="footer__additional-text">
+                        <p>Сегодня на сайте 623 258 вакансий, 35 389 103 резюме, 885 829 компаний и за неделю 1 323 994 приглашения</p>
+                     </div>
+                     
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
