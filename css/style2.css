@@ -7603,7 +7603,7 @@ small {
     border-top: 1px solid #ededed
 }
 .area-switcher-welcome__item {
-    width: 25%;
+    width: 23%;
     display: inline-block;
     vertical-align: top;
     padding-left: 25px;
@@ -7622,7 +7622,7 @@ small {
 .area-switcher-title {
     padding-left: 25px;
     background-repeat: no-repeat;
-    background-image: url(../blocks/area-switcher/flags__min_.png?v=22042015);
+    background-image: url(../images/flags__min_.png);
     display: inline-block;
     height: 22px;
     line-height: 22px;
