@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<link rel="stylesheet" href="css/feedback.css" media="all" rel="stylesheet" type="text/css">
+
+		<link href="//static.copiny.com/design/hh/custom.css?v=1461160647" media="all" rel="stylesheet" type="text/css" >
+		<link href="//static.copiny.com/custom/hh/hh.css?v=1445859582" media="all" rel="stylesheet" type="text/css" >
+		
+		<script type="text/javascript" src="//static.copiny.com/js/jquery-1.7.1.min.js?v=1338369250"></script>
+		<script type="text/javascript" src="//static.copiny.com/js/jquery-ui-1.8.17.custom.min.js?v=1338369250"></script>
+		<script type="text/javascript" src="//static.copiny.com/js/jquery.placeholder.min.js?v=1390290254"></script>
+		<script type="text/javascript" src="//static.copiny.com/js/mechanics.js?v=1495628677"></script>
+		<script type="text/javascript" src="//static.copiny.com/js/widget/amplify.min.js?v=1394024981"></script>
+		<script type="text/javascript" src="//static.copiny.com/locale/copiny2015/ru.js?v=1441014496"></script>
+		<script type="text/javascript" src="//static.copiny.com/copiny2015/js/vendor/gettext.js?v=1436269425"></script>
+		
+		
+		
+		<link rel="icon" href="http://i.hh.ru/favicons/hh.ru.ico" type="image/x-icon" />
+		<title>Сообщество поддержки</title>
+	</head>
+	<body class="">
+		<div id ="top-bar-container"></div>
+		<div id="header">
+			
+			<div class="l-container">
+				<a href="http://hh.ru/"><img src="//static.copiny.com/custom/hh/logo.png?v=1516630576" width="40" height="40" alt="hh.ru"/></a>
+				Сообщество поддержки        
+				<form action="/index/search">
+					<input type="text" name="text" placeholder="Поиск по сообществу" />
+				</form>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="l-big">
+                <div class="l-container">
+                   <div class="b-tabs b-tabs-simple">
+                      <div class="tabs-group f-left">
+                         <div class="tab"><span class="left"></span><span class="menu-link"><a href="/">Главная</a></span><span class="right"></span></div>
+                         <div class="tab active"><span class="left"></span><span class="menu-link"><a href="/topics">Темы</a></span><span class="right"></span></div>
+                         <div class="tab"><span class="left"></span><span class="menu-link"><a href="/knowledgebase">База знаний</a></span><span class="right"></span></div>
+                         <div class="f-clear"></div>
+                      </div>
+                      <div class="b-search-n f-right">
+                         <div class="l-search">
+                            <div class="delimeter f-left"></div>
+                            <form action="/index/search" method="get">
+                               <input class="f-left" id="search-input" type="text" name="text" placeholder="Поиск по сообществу">
+                               <div class="button f-left" onclick="$(this).closest('form').submit();"></div>
+                            </form>
+                            <div class="f-clear"></div>
+                         </div>
+                         <div id="authState" style="float:right;">
+                            <div class="l-nic logged-out">
+                               <a href="" >Войдите</a> или  <a href=""  >Зарегистрируйтесь</a>
+                            </div>
+                         </div>
+                         <div class="f-clear"></div>
+                      </div>
+                      <div class="f-clear"></div>
+                   </div>
+                   <div class="b-two-cols f-line list">
+                      <div class="b-breadcrumbs">
+                         <h3>
+                            <a href="/">Сообщество поддержки</a> /
+                            Все темы        
+                         </h3>
+                      </div>
+                      <div class="c-menu-topics">
+                         Фильтр:
+                         <select onchange="" name="mode">
+                            <option value="last_update" selected="selected">Последняя активность</option>
+                            <option value="created">Новые темы</option>
+                            <option value="rating">Популярные</option>
+                            <option value="archive">Архивные</option>
+                         </select>
+                         &nbsp;&nbsp;&nbsp;
+                         Тип:
+                         <select onchange="" name="type">
+                            <option value="0">Все</option>
+                            <option value="question">Вопросы</option>
+                            <option value="idea">Идеи</option>
+                            <option value="problem">Проблемы</option>
+                            <option value="praise">Благодарности</option>
+                         </select>
+                         &nbsp;&nbsp;&nbsp;
+                         Статус:
+                         <select onchange="" name="status">
+                            <option value="0">Все</option>
+                            <option value="solving">Без решения</option>
+                            <option value="solved">С решением</option>
+                         </select>
+                         &nbsp;&nbsp;&nbsp;
+                         Категория:
+                         <select onchange="" name="category">
+                            <option value="" selected="selected">Все</option>
+                            <option value="0">Без категории</option>
+                            <option value="6635">Отзывы о hh.ru</option>
+                            <option value="7061">-- Благодарности и пожелания</option>
+                            <option value="7045">-- Отзывы о работодателях</option>
+                            <option value="7062">-- Предложения по улучшению сервисов сайта</option>
+                            <option value="6479">Вопросы к маркетингу hh.ru</option>
+                            <option value="7064">Карьерный консультант</option>
+                            <option value="7124">-- Вопросы по трудовому праву</option>
+                            <option value="7119">-- Как грамотно составить резюме</option>
+                            <option value="7120">-- Как составить сопроводительное письмо</option>
+                            <option value="7121">-- Как успешно пройти собеседование</option>
+                            <option value="7123">-- Карьерный коучинг</option>
+                            <option value="7122">-- Профориентация</option>
+                            <option value="7126">-- Разные темы</option>
+                            <option value="6473">Соискателям</option>
+                            <option value="6475">-- Всё о поиске вакансий</option>
+                            <option value="7060">-- Остальные вопросы соискателей</option>
+                            <option value="6537">-- Платные сервисы для соискателей</option>
+                            <option value="6474">-- Создание резюме, отклики на вакансии, настройки видимости</option>
+                            <option value="6477">-- Технические вопросы</option>
+                            <option value="8560">Работодателям</option>
+                            <option value="6465">-- Все о поиске резюме</option>
+                            <option value="8563">-- Остальные вопросы работодателей</option>
+                            <option value="6449">-- Платные сервисы для работодателей</option>
+                            <option value="6471">-- Работа с откликами на вакансии</option>
+                            <option value="6472">-- Размещение и редактирование вакансии</option>
+                            <option value="8564">-- Технические вопросы</option>
+                            <option value="6455">Регистрация</option>
+                            <option value="6456">-- Регистрация работодателей</option>
+                            <option value="6457">-- Регистрация соискателей</option>
+                         </select>
+                         &nbsp;&nbsp;&nbsp;
+                         <div class="f-clear"></div>
+                      </div>
+                      <table class="b-items last-list  ">
+                         <thead>
+                            <tr>
+                               <td class="c-icon"></td>
+                               <td class="c-subject">Тема</td>
+                               <td class="c-author">Автор</td>
+                               <td class="c-answers">Ответы</td>
+                               <td class="c-last">Последнее сообщение</td>
+                            </tr>
+                         </thead>
+                         <tbody>
+                            <tr class="c-item question">
+                               <td>
+                                  <div class="d-icon"></div>
+                               </td>
+                               <td class="d-subject">
+                                  <span class="solved" title="Решено!"></span>
+                                  <a class="c-title" href="/question/details/id/671754">Тип занятости как атрибут резюме</a>
+                                  <span class="d-category">
+                                  в <a href="/categories/show/id/6475">Всё о поиске вакансий</a>
+                                  </span>
+                               </td>
+                               <td class="d-author">
+                                  <a href="/user/profile/id/10144827">Анна Калинова</a>
+                               </td>
+                               <td class="d-answers">
+                                  2        
+                               </td>
+                               <td class="d-last-update">
+                                  <a href="/question/details/id/671754/comment/1523045#comm_1523045">час назад</a> от
+                                  <a class="profile-link" href="/user/profile/id/10144827">Анна Калинова</a>
+                               </td>
+                            </tr>
+                            <tr class="c-item question">
+                               <td>
+                                  <div class="d-icon"></div>
+                               </td>
+                               <td class="d-subject">
+                                  <a class="c-title" href="/question/details/id/671784">Просьба дать оценку резюме</a>
+                                  <span class="d-category">
+                                  в <a href="/categories/show/id/7119">Как грамотно составить резюме</a>
+                                  </span>
+                               </td>
+                               <td class="d-author">
+                                  <a href="/user/profile/id/6901051">Андрей Никонов</a>
+                               </td>
+                               <td class="d-answers">
+                                  1        
+                               </td>
+                               <td class="d-last-update">
+                                  <a href="/question/details/id/671784/comment/1523043#comm_1523043">час назад</a> от
+                                  <a class="profile-link" href="/user/profile/id/6933934">Егор Каретников</a>
+                               </td>
+                            </tr>
+                            <tr class="c-item question">
+                               <td>
+                                  <div class="d-icon"></div>
+                               </td>
+                               <td class="d-subject">
+                                  <span class="solved" title="Решено!"></span>
+                                  <a class="c-title" href="/question/details/id/671733">акты по оплате</a>
+                                  <span class="d-category">
+                                  в <a href="/categories/show/id/8564">Технические вопросы</a>
+                                  </span>
+                               </td>
+                               <td class="d-author">
+                                  <a href="/user/profile/id/10158430">Игорь Февронин</a>
+                               </td>
+                               <td class="d-answers">
+                                  1        
+                               </td>
+                               <td class="d-last-update d-official">
+                                  <a href="/question/details/id/671733/comment/1523042#comm_1523042">час назад</a> от
+                                  <a class="profile-link" href="/user/profile/id/6986489">Анна Серова</a>
+                               </td>
+                            </tr>
+                            <tr class="c-item question">
+                               <td>
+                                  <div class="d-icon"></div>
+                               </td>
+                               <td class="d-subject">
+                                  <a class="c-title" href="/question/details/id/671734">Как изменить фамилию менеджера?</a>
+                                  <span class="d-category">
+                                  в <a href="/categories/show/id/6456">Регистрация работодателей</a>
+                                  </span>
+                               </td>
+                               <td class="d-author">
+                                  <a href="/user/profile/id/10421074">Александра Тузавская</a>
+                               </td>
+                               <td class="d-answers">
+                                  1        
+                               </td>
+                               <td class="d-last-update d-official">
+                                  <a href="/question/details/id/671734/comment/1523040#comm_1523040">более часа назад</a> от
+                                  <a class="profile-link" href="/user/profile/id/6986489">Анна Серова</a>
+                               </td>
+                            </tr>
+                            <tr class="c-item question">
+                               <td>
+                                  <div class="d-icon"></div>
+                               </td>
+                               <td class="d-subject">
+                                  <span class="solved" title="Решено!"></span>
+                                  <a class="c-title" href="/question/details/id/671744">как просматривать отклики на архивных вакансиях?</a>
+                                  <span class="d-category">
+                                  в <a href="/categories/show/id/6471">Работа с откликами на вакансии</a>
+                                  </span>
+                               </td>
+                               <td class="d-author">
+                                  <a href="/user/profile/id/10286378">Андрей Никитин</a>
+                               </td>
+                               <td class="d-answers">
+                                  1        
+                               </td>
+                               <td class="d-last-update d-official">
+                                  <a href="/question/details/id/671744/comment/1523038#comm_1523038">более часа назад</a> от
+                                  <a class="profile-link" href="/user/profile/id/6986489">Анна Серова</a>
+                               </td>
+                            </tr>
+                            <tr class="c-item question">
+                               <td>
+                                  <div class="d-icon"></div>
+                               </td>
+                               <td class="d-subject">
+                                  <span class="solved" title="Решено!"></span>
+                                  <a class="c-title" href="/question/details/id/671674">поиск вакансии</a>
+                                  <span class="d-category">
+                                  в <a href="/categories/show/id/7126">Разные темы</a>
+                                  </span>
+                               </td>
+                               <td class="d-author">
+                                  <a href="/user/profile/id/2288361">эльман сидгияев</a>
+                               </td>
+                               <td class="d-answers">
+                                  4        
+                               </td>
+                               <td class="d-last-update d-official">
+                                  <a href="/question/details/id/671674/comment/1523035#comm_1523035">более часа назад</a> от
+                                  <a class="profile-link" href="/user/profile/id/6506267">Сергей Кулагин</a>
+                               </td>
+                            </tr>
+                            <tr class="c-item question">
+                               <td>
+                                  <div class="d-icon"></div>
+                               </td>
+                               <td class="d-subject">
+                                  <a class="c-title" href="/question/details/id/671753">Не корректные статусы на отклики соискателей</a>
+                                  <span class="d-category">
+                                  в <a href="/categories/show/id/6475">Всё о поиске вакансий</a>
+                                  </span>
+                               </td>
+                               <td class="d-author">
+                                  <a href="/user/profile/id/3260179">Вадим Мокеев</a>
+                               </td>
+                               <td class="d-answers">
+                                  2        
+                               </td>
+                               <td class="d-last-update d-official">
+                                  <a href="/question/details/id/671753/comment/1523034#comm_1523034">более часа назад</a> от
+                                  <a class="profile-link" href="/user/profile/id/1862784">Маргарита Криволапова</a>
+                               </td>
+                            </tr>
+                            <tr class="c-item problem">
+                               <td>
+                                  <div class="d-icon"></div>
+                               </td>
+                               <td class="d-subject">
+                                  <a class="c-title" href="/problem/details/id/281528">Г. Зеленогорск находится не в Ленинградской области,А в г. Санкт-Петербурге.  Прошу исправить ошибку на Вашем сайте.</a>
+                                  <span class="d-category">
+                                  в <a href="/categories/show/id/6477">Технические вопросы</a>
+                                  </span>
+                               </td>
+                               <td class="d-author">
+                                  <a href="/user/profile/id/10421547">Андрей Кузнецов</a>
+                               </td>
+                               <td class="d-answers">
+                                  2        
+                               </td>
+                               <td class="d-last-update d-official">
+                                  <a href="/problem/details/id/281528/comment/694225#comm_694225">более часа назад</a> от
+                                  <a class="profile-link" href="/user/profile/id/1862784">Маргарита Криволапова</a>
+                               </td>
+                            </tr>
+                            <tr class="c-item problem">
+                               <td>
+                                  <div class="d-icon"></div>
+                               </td>
+                               <td class="d-subject">
+                                  <a class="c-title" href="/problem/details/id/281490">Неизвестная компания набивает себе цену и обещает золотые горы.</a>
+                                  <span class="d-category">
+                                  в <a href="/categories/show/id/7045">Отзывы о работодателях</a>
+                                  </span>
+                               </td>
+                               <td class="d-author">
+                                  <a href="/user/profile/id/3041354">Екатерина Яковлева</a>
+                               </td>
+                               <td class="d-answers">
+                                  1        
+                               </td>
+                               <td class="d-last-update d-official">
+                                  <a href="/problem/details/id/281490/comment/694220#comm_694220">более 2 часов назад</a> от
+                                  <a class="profile-link" href="/user/profile/id/8323499">Татьяна Смирнова</a>
+                               </td>
+                            </tr>
+                            <tr class="c-item question">
+                               <td>
+                                  <div class="d-icon"></div>
+                               </td>
+                               <td class="d-subject">
+                                  <a class="c-title" href="/question/details/id/671780">Можно ли узнать верно ли составлено резюме?</a>
+                                  <span class="d-category">
+                                  в <a href="/categories/show/id/7119">Как грамотно составить резюме</a>
+                                  </span>
+                               </td>
+                               <td class="d-author">
+                                  <a href="/user/profile/id/10416497">Ольга Остапенко</a>
+                               </td>
+                               <td class="d-answers">
+                                  0        
+                               </td>
+                               <td class="d-last-update">
+                                  <a href="/question/details/id/671780">более 2 часов назад</a> от
+                                  <a class="profile-link" href="/user/profile/id/10416497">Ольга Остапенко</a>
+                               </td>
+                            </tr>
+                            <tr class="c-item problem">
+                               <td>
+                                  <div class="d-icon"></div>
+                               </td>
+                               <td class="d-subject">
+                                  <a class="c-title" href="/problem/details/id/275655">Как написать жалобу о работодатели</a>
+                                  <span class="d-category">
+                                  в <a href="/categories/show/id/7045">Отзывы о работодателях</a>
+                                  </span>
+                               </td>
+                               <td class="d-author">
+                                  <a href="/user/profile/id/8281465">Arsene Anconetti</a>
+                               </td>
+                               <td class="d-answers">
+                                  5        
+                               </td>
+                               <td class="d-last-update">
+                                  <a href="/problem/details/id/275655/comment/694218#comm_694218">более 2 часов назад</a> от
+                                  <a class="profile-link" href="/user/profile/id/10087066">Филипп Старков</a>
+                               </td>
+                            </tr>
+                            <tr class="c-item question">
+                               <td>
+                                  <div class="d-icon"></div>
+                               </td>
+                               <td class="d-subject">
+                                  <a class="c-title" href="/question/details/id/671766">Как восстановить раздел "Мои резюме" в мобильной версии?</a>
+                                  <span class="d-category">
+                                  в <a href="/categories/show/id/8564">Технические вопросы</a>
+                                  </span>
+                               </td>
+                               <td class="d-author">
+                                  <a href="/user/profile/id/10421826">Макарова Ирина</a>
+                               </td>
+                               <td class="d-answers">
+                                  0        
+                               </td>
+                               <td class="d-last-update">
+                                  <a href="/question/details/id/671766">более 3 часов назад</a> от
+                                  <a class="profile-link" href="/user/profile/id/10421826">Макарова Ирина</a>
+                               </td>
+                            </tr>
+                            <tr class="c-item problem">
+                               <td>
+                                  <div class="d-icon"></div>
+                               </td>
+                               <td class="d-subject">
+                                  <a class="c-title" href="/problem/details/id/281534">Ошибка в работе сайта</a>
+                                  <span class="d-category">
+                                  в <a href="/categories/show/id/6477">Технические вопросы</a>
+                                  </span>
+                               </td>
+                               <td class="d-author">
+                                  <a href="/user/profile/id/10421810">Виктор Наставшев</a>
+                               </td>
+                               <td class="d-answers">
+                                  0        
+                               </td>
+                               <td class="d-last-update">
+                                  <a href="/problem/details/id/281534">более 3 часов назад</a> от
+                                  <a class="profile-link" href="/user/profile/id/10421810">Виктор Наставшев</a>
+                               </td>
+                            </tr>
+                            <tr class="c-item question">
+                               <td>
+                                  <div class="d-icon"></div>
+                               </td>
+                               <td class="d-subject">
+                                  <a class="c-title" href="/question/details/id/671510">Выполнение заданий работодателя мошенничество?</a>
+                                  <span class="d-category">
+                                  в <a href="/categories/show/id/7045">Отзывы о работодателях</a>
+                                  </span>
+                               </td>
+                               <td class="d-author">
+                                  <a href="/user/profile/id/10359317">Дени Денc</a>
+                               </td>
+                               <td class="d-answers">
+                                  2        
+                               </td>
+                               <td class="d-last-update">
+                                  <a href="/question/details/id/671510/comment/1522988#comm_1522988">более 3 часов назад</a> от
+                                  <a class="profile-link" href="/user/profile/id/10144827">Анна Калинова</a>
+                               </td>
+                            </tr>
+                            <tr class="c-item problem">
+                               <td>
+                                  <div class="d-icon"></div>
+                               </td>
+                               <td class="d-subject">
+                                  <a class="c-title" href="/problem/details/id/280438">Дискриминация по половому признаку</a>
+                                  <span class="d-category">
+                                  в <a href="/categories/show/id/7045">Отзывы о работодателях</a>
+                                  </span>
+                               </td>
+                               <td class="d-author">
+                                  <a href="/user/profile/id/10349973">Евгений Соснин</a>
+                               </td>
+                               <td class="d-answers">
+                                  20        
+                               </td>
+                               <td class="d-last-update">
+                                  <a href="/problem/details/id/280438/comment/694210#comm_694210">более 3 часов назад</a> от
+                                  <a class="profile-link" href="/user/profile/id/10421720">Марина М</a>
+                               </td>
+                            </tr>
+                            <tr class="c-item question">
+                               <td>
+                                  <div class="d-icon"></div>
+                               </td>
+                               <td class="d-subject">
+                                  <a class="c-title" href="/question/details/id/671762">Очередные Мошенники. Адрес Алексеевская, 13 А,оф. 103</a>
+                                  <span class="d-category">
+                                  в <a href="/categories/show/id/7045">Отзывы о работодателях</a>
+                                  </span>
+                               </td>
+                               <td class="d-author">
+                                  <a href="/user/profile/id/10406616">Ольга Алентьева</a>
+                               </td>
+                               <td class="d-answers">
+                                  0        
+                               </td>
+                               <td class="d-last-update">
+                                  <a href="/question/details/id/671762">4 часа назад</a> от
+                                  <a class="profile-link" href="/user/profile/id/10406616">Ольга Алентьева</a>
+                               </td>
+                            </tr>
+                            <tr class="c-item question">
+                               <td>
+                                  <div class="d-icon"></div>
+                               </td>
+                               <td class="d-subject">
+                                  <a class="c-title" href="/question/details/id/671759">жалоба на работодателя</a>
+                                  <span class="d-category">
+                                  в <a href="/categories/show/id/7045">Отзывы о работодателях</a>
+                                  </span>
+                               </td>
+                               <td class="d-author">
+                                  <a href="/user/profile/id/2665887">Сергей Семенов</a>
+                               </td>
+                               <td class="d-answers">
+                                  0        
+                               </td>
+                               <td class="d-last-update">
+                                  <a href="/question/details/id/671759">4 часа назад</a> от
+                                  <a class="profile-link" href="/user/profile/id/2665887">Сергей Семенов</a>
+                               </td>
+                            </tr>
+                            <tr class="c-item question">
+                               <td>
+                                  <div class="d-icon"></div>
+                               </td>
+                               <td class="d-subject">
+                                  <a class="c-title" href="/question/details/id/671757">Вопрос к статье - Автопоиск вакансий</a>
+                                  <span class="d-category">
+                                  в <a href="/categories/show/id/6477">Технические вопросы</a>
+                                  </span>
+                               </td>
+                               <td class="d-author">
+                                  <a href="/user/profile/id/10119148">Виктория Лепина</a>
+                               </td>
+                               <td class="d-answers">
+                                  0        
+                               </td>
+                               <td class="d-last-update">
+                                  <a href="/question/details/id/671757">более 4 часов назад</a> от
+                                  <a class="profile-link" href="/user/profile/id/10119148">Виктория Лепина</a>
+                               </td>
+                            </tr>
+                            <tr class="c-item question">
+                               <td>
+                                  <div class="d-icon"></div>
+                               </td>
+                               <td class="d-subject">
+                                  <span class="solved" title="Решено!"></span>
+                                  <a class="c-title" href="/question/details/id/614206">Пытаюсь изменить своё имя</a>
+                                  <span class="d-category">
+                                  в <a href="/categories/show/id/8563">Остальные вопросы работодателей</a>
+                                  </span>
+                               </td>
+                               <td class="d-author">
+                                  <a href="/user/profile/id/8782023">Евгений Кошлаков</a>
+                               </td>
+                               <td class="d-answers">
+                                  10        
+                               </td>
+                               <td class="d-last-update">
+                                  <a href="/question/details/id/614206/comment/1522972#comm_1522972">более 4 часов назад</a> от
+                                  <a class="profile-link" href="/user/profile/id/10421554">Нэлли Деревкова</a>
+                               </td>
+                            </tr>
+                            <tr class="c-item question">
+                               <td>
+                                  <div class="d-icon"></div>
+                               </td>
+                               <td class="d-subject">
+                                  <a class="c-title" href="/question/details/id/592443">отписка от рассылок на почту</a>
+                                  <span class="d-category">
+                                  в <a href="/categories/show/id/6477">Технические вопросы</a>
+                                  </span>
+                               </td>
+                               <td class="d-author">
+                                  <a href="/user/profile/id/7096904">Hrachya Gabrielyan</a>
+                               </td>
+                               <td class="d-answers">
+                                  5        
+                               </td>
+                               <td class="d-last-update">
+                                  <a href="/question/details/id/592443/comment/1523023#comm_1523023">более 5 часов назад</a> от
+                                  <a class="profile-link" href="/user/profile/id/10421385">Мария Ольская</a>
+                               </td>
+                            </tr>
+                         </tbody>
+                      </table>
+                      <script type="text/javascript">
+                         $(function(){
+                             $('.b-items.last-list .c-item.pinned').last().css('border-bottom-width', '3px');
+                         });
+                      </script>            
+                      <div class="b-pagination">
+                         <ul class="pages g-line">
+                            <!-- Нумерованные ссылки на страницы -->
+                            <li class="cur">1</li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li>...</li>
+                            <li><a href="">497</a></li>
+                            <li class="goto">
+                               <a class="nextlink" page="2" href="">Следующая »</a>
+                            </li>
+                         </ul>
+                      </div>
+                     
+                      <div class="f-clear"></div>
+                      <form action="/topics" method="get" id="topics-form">
+                         <input type="hidden" name="category" value="">
+                         <input type="hidden" name="type" value="">
+                         <input type="hidden" name="mode" value="last_update">
+                         <input type="hidden" name="status" value="">
+                         <input type="hidden" name="page" value="0">
+                      </form>
+                   </div>
+                </div>
+             </div>
+
+
+
+
+
+
+
+
+
+
+        <div id="footer" class="l-container">
+			<ul class="social-img">
+				<li><a href="https://vk.com/headhunter" class="vk"></a></li>
+				<li><a href="http://www.facebook.com/headhuntergroup" class="fb"></a></li>
+				<li><a href="https://twitter.com/hh_ru" class="tw"></a></li>
+			</ul>
+			<div class="copyright">
+				&copy;&nbsp;Группа компаний HeadHunter, 2000 &dash; 2018    
+			</div>
+			<div class="extlinks">
+				<a href="http://hh.ru/article/28">О HeadHunter</a> <a href="http://hh.ru/article/2067">Работодателям</a> <a href="http://hh.ru/article/2">Соискателям</a><a
+					href="/m/?session=1534445835770863170#!/"
+					onclick="createCookie('cpn-layout', 'mobile', 'feedback.hh.ru', 365);"
+					class="to-mobile f-left" >
+				Мобильная версия</a>
+			</div>
+		</div>
+		
+		
+	</body>
+</html>
