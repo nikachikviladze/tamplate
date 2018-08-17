@@ -1,0 +1,151 @@
+body {-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+                    .b-mainbanner {display:none;}
+                    .m-row_content {padding-top:0;padding-bottom:0;}
+                    .black-footer-wrapper .separator {display:none;}
+                    .promo-page {padding:0;color:#333333;font:16px/24px Arial, sans-serif;}
+                    .promo-page h1 {margin:88px 0 -11px;padding:20px 0;color:#fff;font:53px/54px 'ProximaNovaCond', Arial, sans-serif;}
+                    .promo-page h2 {margin:0 0 20px;padding:0;font:bold 21px/22px Arial, sans-serif;}
+                    .promo-page-text {margin:0 0 15px;padding:0;font:14px/22px Arial, sans-serif;}
+                    .promo-page-light {color:#999999;}
+                    .promo-page-margin {margin:0 0 15px;}
+                    .promo-page-br {display:none;height:0;font-size:0;line-height:0;}
+                    .promo-page-g-hidden {display:none;}
+                    .promo-page-arrow {position:relative;display:block;width:19px;height:89px;background:url(https://hhcdn.ru/icms/10024463.png) -100% -100% no-repeat;}
+                    .promo-page-arrow_left {background-position:0 0;}
+                    .promo-page-arrow_right {background-position:-25px 0;}
+                    .promo-page-arrow_left_grey {background-position:0 -97px;}
+                    .promo-page-arrow_right_grey {background-position:-25px -97px;}
+                    .promo-page-bg {position:absolute;z-index:1;top:0;right:-9999px;left:-9999px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;width:100vw;min-width:680px;height:100%;overflow:hidden;margin:0 auto;background-color:transparent;}
+                    .promo-page-bg_steps {background-color:#bedbc8;border-bottom:1px solid #a5c2ad;}
+                    .promo-page-bg_result {
+                    background: -moz-linear-gradient(to right, #bbbab5 50%, #d6d5ce 50%);
+                    background: -webkit-linear-gradient(to right, #bbbab5 50%, #d6d5ce 50%);
+                    background: -o-linear-gradient(to right, #bbbab5 50%, #d6d5ce 50%);
+                    background: -ms-linear-gradient(to right, #bbbab5 50%, #d6d5ce 50%);
+                    background:linear-gradient(to right, #bbbab5 50%, #d6d5ce 50%);
+                    }
+                    .promo-page-bg_comment {overflow:visible;background:#eeeeee;}
+                    .promo-page-bg_comment:after {content:'';position:absolute;top:100%;left:0;width:100%;height:3px;background:url(https://hhcdn.ru/icms/10024461.png) 0 0 repeat;}
+                    .promo-page-bg__img {position:absolute;top:0;right:0;left:0;min-width:1385px;width:100%;margin:0 auto;}
+                    .promo-page-bg__img_centered {right:-9999px;left:-9999px;}
+                    .promo-page-bg__img_result {right:-9870px;width:auto;min-width:1320px;}
+                    .promo-page-banner {-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;position:relative;height:486px;margin:0;padding:50px 0 0;}
+                    .promo-page-banner__bgr {background: url(../images/rezume/10054702.jpeg) no-repeat center center / cover;}
+                    .promo-page-banner__content {position:relative;z-index:2;}
+                    .promo-page-banner__title {margin:0 0 20px;padding:0;color:#fff;font:53px/54px 'ProximaNovaCond', Arial, sans-serif;}
+                    .promo-page-banner__info {max-width:920px;min-height:125px;margin:0 0 31px;color:#fff;}    
+                    .promo-page-banner__price {margin-bottom:17px;color:#fff;}
+                    .promo-page-banner__hint {margin-top:5px;color:#f4e300;font-weight:bold;font-size:14px;line-height:18px;}
+                    .promo-page-banner__list {margin:0 0 60px;padding:0;list-style:none;color:rgba(0,0,0, .8);font-size:18px;line-height:22px;}
+                    .promo-page-banner__list__item {margin:0 0 8px;}
+                    .promo-page-banner__list__item:before {content:'— ';}
+                    .promo-page-info {padding:50px 0;background:#fff;text-align:center;}
+                    .promo-page-steps {position:relative;padding:45px 0;}
+                    .promo-page-steps__list {position:relative;z-index:2;margin:0;padding:0;list-style:none;text-align:center;font-size:0;line-height:0;}
+                    .promo-page-steps__list:after {content:'';clear:both;display:block;overflow:hidden;visibility:hidden;height:0;font-size:0;line-height:0;}
+                    .promo-page-steps__item {display:inline-block;vertical-align:top;width:31%;text-align:center;font-size:16px;line-height:24px;}
+                    .promo-page-steps__item__wrap {max-width:260px;margin:0 auto;}
+                    .promo-page-steps__item__img {display:inline-block;vertical-align:top;margin:0 0 20px;}
+                    .promo-page-steps__item__info {}
+                    .promo-page-result {position:relative;height:451px;}
+                    .promo-page-result__content {-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;position:relative;z-index:2;width:100%;height:100%;padding:45px 0 0;}
+                    .promo-page-result__list {margin:0;padding:0;list-style:none;}
+                    .promo-page-result__item {position:absolute;top:auto;right:auto;bottom:auto;left:auto;width:310px;}
+                    .promo-page-result__item:after {content:'';position:absolute;background:url(https://hhcdn.ru/icms/10024412.png) -100% -100%;}
+                    .promo-page-result__item_resume {bottom:205px;left:0;}
+                    .promo-page-result__item_resume:after {top:100%;left:100%;width:177px;height:16px;margin:2px 0 0 -110px;background-position:0 0;}
+                    .promo-page-result__item_formatting {top:305px;left:0;}
+                    .promo-page-result__item_formatting:after {top:43px;left:100%;width:187px;height:2px;margin:0 0 0 14px;background-position:0 -20px;}
+                    .promo-page-result__item_saving {top:120px;right:0;}
+                    .promo-page-result__item_support {right:0;bottom:80px;}
+                    .promo-page-result__item_support:after {top:100%;right:100%;width:162px;height:22px;margin:12px -55px 0 0;background-position:0 -26px;}
+                    .promo-page-result__item__title {margin:0 0 2px;color:#d16730;font-size:16px;font-weight:bold;line-height:21px;}
+                    .promo-page-result__item__info {color:#000;font-size:14px;line-height:21px;}
+                    .promo-page-experts {padding:40px 0;}
+                    .promo-page-experts__body {text-align:center;}
+                    .promo-page-experts__carousel {margin:0 0 20px;white-space:nowrap;overflow:hidden;}
+                    .promo-page-experts__arrow {display:inline-block;vertical-align:middle;margin:0;padding:0;background:none;border:0;outline:0;cursor:pointer;}
+                    .promo-page-experts__arrow[disabled] {cursor:default;}
+                    .promo-page-experts__list {position:relative;display:inline-block;vertical-align:middle;width:690px;height:225px;}
+                    .promo-page-experts__item {position:absolute;z-index:1;top:0;left:50%;opacity:0;width:60px;height:66px;visibility:hidden;cursor:pointer;
+                    -moz-transition:width 0.4s ease, height 0.4s ease, opacity 0.4s ease, left 0.4s ease, top 0.4s ease, margin 0.4s ease, visibility 0.4s ease;
+                    -o-transition:width 0.4s ease, height 0.4s ease, opacity 0.4s ease, left 0.4s ease, top 0.4s ease, margin 0.4s ease, visibility 0.4s ease;
+                    -webkit-transition:width 0.4s ease, height 0.4s ease, opacity 0.4s ease, left 0.4s ease, top 0.4s ease, margin 0.4s ease, visibility 0.4s ease;
+                    transition:width 0.4s ease, height 0.4s ease, opacity 0.4s ease, left 0.4s ease, top 0.4s ease, margin 0.4s ease, visibility 0.4s ease;
+                    }
+                    .promo-page-experts__item:hover {opacity:1;}
+                    .promo-page-experts__item_active {z-index:100;left:50%;top:50%;opacity:1;width:151px;height:165px;margin:-82px 0 0 -75px;visibility:visible;cursor:default;}
+                    .promo-page-experts__item_left {z-index:99;left:0;top:50%;opacity:0.6;width:116px;height:127px;margin:-63px 0 0;visibility:visible;}
+                    .promo-page-experts__item_right {z-index:99;left:100%;top:50%;opacity:0.6;width:116px;height:127px;margin:-63px 0 0 -123px;visibility:visible;}
+                    .promo-page-experts__item_delay {
+                    -moz-transition-delay:0.1s;
+                    -o-transition-delay:0.1s;
+                    -webkit-transition-delay:0.1s;
+                    transition-delay:0.1s;
+                    }
+                    .promo-page-experts__item__img {display:block;width:100%;height:100%;}
+                    .promo-page-experts__info {position:relative;width:630px;min-height:150px;margin:0 auto;}
+                    .promo-page-experts__info__item {position:absolute;width:100%;text-align:center;opacity:0;
+                    -moz-transition:opacity 0.4s linear;
+                    -o-transition:opacity 0.4s linear;
+                    -webkit-transition:opacity 0.4s linear;
+                    transition:opacity 0.4s linear;
+                    }
+                    .promo-page-experts__info__item_active {z-index:2;opacity:1;}
+                    .promo-page-experts__info__item__title {margin:0 0 10px;color:#333333;font-size:16px;line-height:21px;}
+                    .promo-page-experts__info__item__text {color:#777777;font-size:13px;line-height:18px;}
+                    .promo-page-comments {position:relative;z-index:2;}
+                    .promo-page-comments__content {position:relative;z-index:2;padding:35px 0 50px;}
+                    .promo-page-comments__tape {padding:20px 0 0;text-align:center;font-size:0;line-height:0;white-space:nowrap;}
+                    .promo-page-comments__arrow {display:inline-block;vertical-align:middle;margin:0;padding:0;background:none;border:0;outline:0;cursor:pointer;}
+                    .promo-page-comments__arrow[disabled] {cursor:default;}
+                    .promo-page-comments__arrow:focus, .promo-page-comments__arrow:active {margin:0;padding:0;border:0;outline:0;}
+                    .promo-page-comments__body {display:inline-block;vertical-align:middle;width:950px;margin:0 48px;overflow:hidden;text-align:left;}
+                    .promo-page-comments__list {display:inline-block;vertical-align:top;padding:0;margin:0;list-style:none;font-size:0;line-height:0;white-space:nowrap;}
+                    .promo-page-comments__item {-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;width:310px;height:260px;display:inline-block;vertical-align:top;margin:0 10px 0 0;padding:20px;background:#fff;color:#777777;font-size:13px;line-height:18px;white-space:normal;}
+                    .promo-page-comments__item:last-child {margin-right:0;}
+                    .promo-page-comments__item__text {margin:0 0 16px;}
+                    .promo-page-comments__item__author {}
+                    .promo-page-comments__item__author:not(:empty):before {content:'— ';}
+                    .promo-page-footing {position:relative;height:413px;;}
+                    .promo-page-footing__content {position:relative;z-index:2;padding:132px 0 0;text-align:center;}
+                    .promo-page-footing__slogan {margin:0 0 25px;color:#fff;font-size:17px;}
+                    .promo-page-footing__price {margin-top:3px;color:#fff;}
+                    .promo-page-footing__note {margin-top:96px;color:rgba(255,255,255,0.6);font-size:12px;}
+                    .promo-page-slogan {margin:0 0 40px;font:50px/50px 'ProximaNovaCond', Arial, sans-serif;}
+                    .promo-page-button {display:inline-block;vertical-align:top;margin:0 0 15px;padding:11px 18px;color:rgb(255,255,255);background-color:rgb(80,157,235);white-space:nowrap;text-decoration:none;font:16px/24px Arial, sans-serif;
+                    -webkit-transition:background-color .1s;
+                    -moz-transition:background-color .1s;
+                    -o-transition:background-color .1s;
+                    transition:background-color .1s;
+                    }
+                    .promo-page-button:hover {color:rgb(255,255,255);background-color:rgb(65,128,191);text-decoration:none;}
+                    .promo-page-button:focus {text-decoration:none;}
+                    @media screen and (min-width: 1340px) {
+                    .promo-page {padding:0 80px;}
+                    .promo-page-banner {margin:0 -80px;}
+                    .promo-page-result__item_saving, .promo-page-result__item_support {right:-65px;}
+                    .promo-page-experts__list {margin-right:176px;margin-left:176px;}
+                    }
+                    @media screen and (max-width: 1339px) {
+                    .promo-page-result__item {width:230px;}
+                    .promo-page-bg__img_result {right:-9830px;}
+                    .promo-page-result__item_support:after {margin-right:-116px;}
+                    .promo-page-result__item_saving, .promo-page-result__item_support {right:-20px;}
+                    .promo-page-comments__tape {margin:0 -35px;}
+                    .promo-page-comments__body {margin:0 3px;}
+                    .promo-page-experts__list {width:620px;margin-right:158px;margin-left:158px;}
+                    .promo-page-experts__carousel {margin-right:-26px;margin-left:-26px;}
+                    }
+                    @media screen and (max-width: 1019px) {
+                    .promo-page-steps__item {box-sizing:border-box;width:33.3333%;padding:0 10px;font-size:14px;line-height:22px;}
+                    .promo-page-br {display:block;}
+                    .promo-page-result {height:500px;}
+                    .promo-page-bg__img_result {right:-10230px;height:100%;width:auto;}
+                    .promo-page-result__item {position:static;width:320px;margin-bottom:20px;}
+                    .promo-page-result__item:after {content:normal;}
+                    .promo-page-result__item__title {font-size:14px;line-height:20px;}
+                    .promo-page-result__item__info {font-size:14px;line-height:20px;}
+                    .promo-page-comments__body {width:615px;}
+                    .promo-page-experts__list {width:540px;margin-right:20px;margin-left:20px;}
+                    }

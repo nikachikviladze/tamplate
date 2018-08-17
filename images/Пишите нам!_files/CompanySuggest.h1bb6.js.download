@@ -1,0 +1,2 @@
+"use strict";define(["HHC/Components","bloko/blocks/suggest/suggest","HH/Navi/companySuggest.mustache"],function(e,t,s){return e.build({defaults:{template:s},create:function(s,u){return e.make(t,s,u)}})});
+//# sourceMappingURL=CompanySuggest.h1bb6.js.map
