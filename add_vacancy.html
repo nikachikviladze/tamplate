@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html class="light-page-root">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta charset="utf-8">
+      <title>Регистрация работодателя</title>
+      <meta name="HandheldFriendly" content="True">
+      <meta name="MobileOptimized" content="320">
+      <meta http-equiv="cleartype" content="on">
+      <meta name="viewport" content="initial-scale=1">
+      
+      <link rel="stylesheet" href="css/add_vacancy.css">
+      <!--google-universal-analytics counter-->
+     
+   </head>
+   <body xmlns:b="http://hhru.github.com/bloko/" class=" light-page-wrapper xs-friendly custom-font-allowed">
+      <div class="light-page light-page_promo">
+         <div class="bloko-columns-wrapper">
+            <div class="bloko-column bloko-column_xs-4 bloko-column_s-3 bloko-column_m-4 bloko-column_l-6">
+               <div class="bloko-gap bloko-gap_s-top bloko-gap_m-top bloko-gap_l-top">
+                  <div class="light-page-header">
+                     <a class="light-page-header__logo" href="/"><span class="light-page-header__img"><span title="hh.ru" class="navi-logo navi-logo_hh-ru-inversed"><span class="navi-logo__domain"></span></span></span></a>
+                     <div class="account-registration-promo">
+                        Зарегистрируйтесь<br> и получите при первой покупке
+                        <div class="account-registration-promo__item"><span class="account-registration-promo__highlight-level-1"><span class="account-registration-promo__highlight-level-2"><span class="account-registration-promo__highlight-level-3">бесплатную вакансию Стандарт+ или день доступа к базе резюме</span></span></span></div>
+                        <div class="helpphone  helpphone_multiline">
+                           <div class="helpphone__line">
+                              <div class="helpphone__title">Москва</div>
+                              <span class="helpphone__number">+7 495 974-64-27</span>
+                           </div>
+                           <div class="helpphone__line">
+                              <div class="helpphone__title">Санкт-Петербург</div>
+                              <span class="helpphone__number">+7 812 458-45-45</span>
+                           </div>
+                           <div class="helpphone__line">
+                              <div class="helpphone__title">Регионы</div>
+                              <span class="helpphone__number">8 800 100-64-27</span>
+                           </div>
+                        </div>
+                        <div class="support-chat support-chat_lightpage g-hidden">
+                           <script data-name="HH/SupportChat" data-params='
+                              {
+                              "activeClass": "support-chat_active",
+                              "disabledClass": "g-hidden",
+                              "iframeClasses": "support-chat-iframe g-hidden"
+                              }
+                              '></script>Онлайн-консультант
+                        </div>
+                        <div class="account-registration-secondary-actions"><a class="bloko-button bloko-button_promo" href="/account/login?backurl=%2Femployer%2Fvacancy%2Fcreate">Вход в личный кабинет</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="bloko-column bloko-column_xs-4 bloko-column_s-4 bloko-column_m-4 bloko-column_l-4">
+               <div class="bloko-gap bloko-gap_s-top bloko-gap_s-bottom          bloko-gap_m-top bloko-gap_m-bottom bloko-gap_l-top bloko-gap_l-bottom">
+                  <div class="light-page-content">
+                     
+                     <div class="form-box">
+                        <span class="light-page-content__title">Регистрация работодателя</span>
+                        <form action="/auth/employer/?backurl=%2Femployer%2Fvacancy%2Fcreate" method="post" class="HH-Form-Form">
+                           
+                              <div class="bloko-form-item">
+                                 <select name="companyForm" class="bloko-select bloko-select_flexible" data-qa="employer-registartion-company-type">
+                                    <option value="0">ООО</option>
+                                    <option value="16">ПАО</option>
+                                    <option value="15">АО</option>
+                                    <option value="3">УП</option>
+                                    <option value="4">ТОО</option>
+                                    <option value="5">Нек. орг.</option>
+                                    <option value="6">Общ. орг.</option>
+                                    <option value="7">Фонд</option>
+                                    <option value="8">Гос. корп.</option>
+                                    <option value="9">ИП</option>
+                                    <option value="1">ОАО</option>
+                                    <option value="2">ЗАО</option>
+                                    <option value="10">Другое</option>
+                                 </select>
+                              </div>
+                              <div class="bloko-form-item">
+                                 <span class="form-textwrap">
+                                    <div class="HH-Form-Element-TooltipElement"><input id="companyName" type="text" name="companyName" data-qa="employer-registartion-company-name" placeholder="Название компании" class="bloko-input HH-Form-Text-Value " value=""></div>
+                                 </span>
+                              </div>
+                           </div>
+                           <div class="bloko-form-item"><label class="bloko-checkbox"><input type="checkbox" name="employerCategory" value="1" data-qa="employer-registartion-employer-сategory" class="bloko-checkbox__input"><span class="bloko-checkbox__text">Кадровое агентство</span></label></div>
+                           <div class="bloko-form-row">
+                             
+                              <div class="HH-Form-Element-TooltipElement">
+                                 <div class="bloko-form-item"><input id="url" type="text" class="bloko-input                                   HH-Form-Text-Value" name="url" data-qa="employer-registartion-company-site" placeholder="Сайт" value=""></div>
+                              </div>
+                           </div>
+                           <div class="HH-Form-NumberOfEmployees bloko-form-item">
+                              <select name="numberOfEmployees" class="bloko-select" data-qa="employer-registartion-employees-number">
+                                 <option value="1">Менее 50 сотрудников</option>
+                                 <option value="2">От 51 до 100 сотрудников</option>
+                                 <option value="3">От 101 до 250 сотрудников</option>
+                                 <option value="4">От 251 до 500 сотрудников</option>
+                                 <option value="5">Более 500 сотрудников</option>
+                              </select>
+                           </div>
+                           <div class="bloko-form-row">
+                              
+                              <div class="HH-Form-Element-TooltipElement">
+                                 <div class="bloko-form-item"><label class="bloko-input-wrapper"><input id="areaId" type="text" value="" data-GAFormStatistic-name="areaId" placeholder="Город" class="bloko-input HH-Form-Suggest-Value HH-Form-Text-Value HH-RegionsTree-Input "><span class="bloko-icon-dynamic"><button type="button" class="bloko-icon-link HH-RegionsTree-Switcher"><span class="bloko-icon                              bloko-icon_list-more                              bloko-icon_initial-impact                              bloko-icon_highlighted-action" title="... или выберите регион из списка"></span></button></span></label></div>
+                              </div>
+                           </div>
+                           <label class="account-registration__title HH-Form-Element-Name">Контактное лицо<span class="account-registration__title-additional"> (конфиденциально)</span></label>
+                           <div class="bloko-form-item">
+                              <div class="account-registration__field-name">
+                                 <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" id="firstName" name="firstName" placeholder="Имя" data-qa="employer-registartion-name-firstName" class="bloko-input HH-Form-Text-Value HH-Form-Element-TooltipElement Bloko-Name-Capitalize-Input " value="">
+                              </div>
+                           </div>
+                           <div class="bloko-form-item">
+                              <div>
+                                 <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" id="lastName" name="lastName" placeholder="Фамилия" data-qa="employer-registartion-name-lastName" class="bloko-input HH-Form-Text-Value HH-Form-Element-TooltipElement Bloko-Name-Capitalize-Input " value="">
+                              </div>
+                           </div>
+                           <div class="bloko-form-item">
+                              
+                              <div class="bloko-form-item HH-Form-Element-TooltipElement"><input type="text" id="email" name="email" data-qa="employer-registration-email" placeholder="Электронная почта" class="bloko-input HH-Form-Text-Value " value=""></div>
+                           </div>
+                           <div class="bloko-form-item">
+                              <label class="bloko-form-legend HH-Form-Element-Name g-hidden" id="idm495590064" name="phoneCode">Телефон</label>
+                              <div class="HH-Form-Element-TooltipElement">
+                                 <div class="bloko-form-item">
+                                    <div class="bloko-control-group">
+                                       <div class="bloko-control-group__minor"><input type="text" name="phonePrefix" data-qa="employer-registartion-phone-phonePrefix" size="3" autocomplete="off" class="bloko-input bloko-input_sized HH-Form-PhonePrefix-Value HH-Form-Name-Prefix " value="+7"></div>
+                                       <div class="bloko-control-group__minor"><input type="text" id="phoneCode" name="phoneCode" placeholder="Код" data-qa="employer-registartion-phone-phoneCode" size="3" autocomplete="off" class="bloko-input bloko-input_sized HH-Form-Field-Focus HH-Bloko-Toggle-FocusOnOpen-Input HH-Form-Name-Code " value=""></div>
+                                       <div class="bloko-control-group__main"><input type="text" name="phoneNumber" placeholder="Номер" data-qa="employer-registartion-phone-phoneNumber" autocomplete="off" class="bloko-input HH-Form-Name-Number HH-Form-Text-Value " value=""></div>
+                                    </div>
+                                 </div>
+                                 <div class="bloko-form-item">
+                                    <div class="bloko-form-item"><input type="text" name="phoneExtension" data-qa="employer-registartion-phone-phoneExtension" placeholder="Добавочный номер" class="bloko-input " value=""></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="bloko-form-row">
+                              <div class="bloko-form-hint">Нажимая «Зарегистрировать компанию», вы подтверждаете, что ознакомлены и полностью согласны с <a href="employer/agreement?backurl=%2Fauth%2Femployer%3Fbackurl%3D%252Femployer%252Fvacancy%252Fcreate" target="_blank" data-qa="account-signup-agreement">условиями использования сайта</a>.</div>
+                           </div>
+                           <input type="hidden" name="promoCampaign" value="">
+                           <div class="bloko-form-row"><button type="submit" class="HH-Form-SubmitButton                                    HH-Form-EmployerForm-SubmitButton                                    bloko-button                                    bloko-button_primary                                    bloko-button_stretched" data-qa="employer-registartion-submit" disabled>Зарегистрировать компанию</button></div>
+                           <input type="hidden" name="_xsrf" value="803539abc7e7b25b809b31f889ede8d5">
+                        </form>
+                        <div class="account-registration__login">
+                           <div class="bloko-gap_top"><a class="bloko-link" href="/account/login?backurl=%2Femployer%2Fvacancy%2Fcreate">Вход в личный кабинет</a></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="bloko-column bloko-column_xs-0 bloko-column_s-1 bloko-column_m-4 bloko-column_l-6"></div>
+            <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-12 bloko-column_l-16">
+               <div class="light-page-footer">
+                  <div class="light-page-footer__copyright" data-qa="copyright">© 2018 Группа компаний HeadHunter</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      </div>
+   </body>
+</html>
