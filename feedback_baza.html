@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<link rel="stylesheet" href="css/feedback.css" media="all" rel="stylesheet" type="text/css">
+
+		<link href="//static.copiny.com/design/hh/custom.css?v=1461160647" media="all" rel="stylesheet" type="text/css" >
+		<link href="//static.copiny.com/custom/hh/hh.css?v=1445859582" media="all" rel="stylesheet" type="text/css" >
+		
+		<script type="text/javascript" src="//static.copiny.com/js/jquery-1.7.1.min.js?v=1338369250"></script>
+		<script type="text/javascript" src="//static.copiny.com/js/jquery-ui-1.8.17.custom.min.js?v=1338369250"></script>
+		<script type="text/javascript" src="//static.copiny.com/js/jquery.placeholder.min.js?v=1390290254"></script>
+		<script type="text/javascript" src="//static.copiny.com/js/mechanics.js?v=1495628677"></script>
+		<script type="text/javascript" src="//static.copiny.com/js/widget/amplify.min.js?v=1394024981"></script>
+		<script type="text/javascript" src="//static.copiny.com/locale/copiny2015/ru.js?v=1441014496"></script>
+		<script type="text/javascript" src="//static.copiny.com/copiny2015/js/vendor/gettext.js?v=1436269425"></script>
+		
+		
+		
+		<link rel="icon" href="http://i.hh.ru/favicons/hh.ru.ico" type="image/x-icon" />
+		<title>Сообщество поддержки</title>
+	</head>
+	<body class="">
+		<div id ="top-bar-container"></div>
+		<div id="header">
+			
+			<div class="l-container">
+				<a href="http://hh.ru/"><img src="//static.copiny.com/custom/hh/logo.png?v=1516630576" width="40" height="40" alt="hh.ru"/></a>
+				Сообщество поддержки        
+				<form action="/index/search">
+					<input type="text" name="text" placeholder="Поиск по сообществу" />
+				</form>
+			</div>
+        </div>
+        
+
+
+
+
+
+
+
+        <div class="l-big">
+                <div class="l-container">
+                   <div class="b-tabs b-tabs-simple">
+                      <div class="tabs-group f-left">
+                         <div class="tab"><span class="left"></span><span class="menu-link"><a href="/">Главная</a></span><span class="right"></span></div>
+                         <div class="tab"><span class="left"></span><span class="menu-link"><a href="/topics?topics_main=1 ">Темы</a></span><span class="right"></span></div>
+                         <div class="tab active"><span class="left"></span><span class="menu-link"><a href="/knowledgebase">База знаний</a></span><span class="right"></span></div>
+                         <div class="f-clear"></div>
+                      </div>
+                      <div class="b-search-n f-right">
+                         <div class="l-search">
+                            <div class="delimeter f-left"></div>
+                            <form action="/index/search" method="get">
+                               <input class="f-left" id="search-input" type="text" name="text" placeholder="Поиск по сообществу">
+                               <div class="button f-left" onclick="$(this).closest('form').submit();"></div>
+                            </form>
+                            <div class="f-clear"></div>
+                         </div>
+                         <div id="authState" style="float:right;">
+                            <div class="l-nic logged-out">
+                               <a href="">Войдите</a> или        <a href="" >Зарегистрируйтесь</a>
+                            </div>
+                         </div>
+                         <div class="f-clear"></div>
+                      </div>
+                      <div class="f-clear"></div>
+                   </div>
+                   <div class="b-tab-content">
+                      <form action="/" method="post" onsubmit="return copinyLiveSearch.submit(this);">
+                         <div class="kb-search">
+                            <div class="c-tabs">
+                               <div class="c-search question">
+                                  <div class="c-search-box f-left">
+                                     <input id="big-search-input" type="text" name="title" placeholder="Есть вопрос? Введите его сюда" autocomplete="off" onkeyup="copinyLiveSearch.input(this.value);">
+                                     <input id="knowledge-search" type="hidden" name="fromkbsearch" value="true">
+                                     <div class="search-icon" ></div>
+                                  </div>
+                                  <div class="f-clear"></div>
+                                  <div id="searchResult" class="c-search-results g-hidden"></div>
+                                  <input type="submit" class="g-hidden">
+                               </div>
+                            </div>
+                         </div>
+                      </form>
+                      <div class="c-special-discussions knowledgebase">
+                         <h1>Важные статьи</h1>
+                         <ul class="c-discussions f-line">
+                            <li class="c-discussion">
+                               <div class="c-discussion-wrap">
+                                  <div class="c-shadow"></div>
+                                  <a href="/article/details/id/1611" class="article">Почему мое резюме заблокировано?</a>
+                               </div>
+                            </li>
+                            <li class="c-discussion">
+                               <div class="c-discussion-wrap">
+                                  <div class="c-shadow"></div>
+                                  <a href="/article/details/id/1897" class="article">Настройки видимости резюме</a>
+                               </div>
+                            </li>
+                            <li class="c-discussion">
+                               <div class="c-discussion-wrap">
+                                  <div class="c-shadow"></div>
+                                  <a href="/article/details/id/1628" class="article">Как создать резюме?</a>
+                               </div>
+                            </li>
+                            <li class="c-discussion">
+                               <div class="c-discussion-wrap">
+                                  <div class="c-shadow"></div>
+                                  <a href="/article/details/id/1936" class="article">Принципы составления сопроводительного письма</a>
+                               </div>
+                            </li>
+                            <li class="c-discussion">
+                               <div class="c-discussion-wrap">
+                                  <div class="c-shadow"></div>
+                                  <a href="/article/details/id/1848" class="article">Требования к ПО</a>
+                               </div>
+                            </li>
+                            <li class="c-discussion">
+                               <div class="c-discussion-wrap">
+                                  <div class="c-shadow"></div>
+                                  <a href="/article/details/id/1284" class="article">Создание новой вакансии</a>
+                               </div>
+                            </li>
+                            <li class="c-discussion">
+                               <div class="c-discussion-wrap">
+                                  <div class="c-shadow"></div>
+                                  <a href="/article/details/id/2636" class="article">Правила поведения в сообществе</a>
+                               </div>
+                            </li>
+                            <li class="c-discussion">
+                               <div class="c-discussion-wrap">
+                                  <div class="c-shadow"></div>
+                                  <a href="/article/details/id/6187" class="article">Какой текст написать, чтобы вакансия набрала много просмотров?</a>
+                               </div>
+                            </li>
+                            <li class="c-discussion">
+                               <div class="c-discussion-wrap">
+                                  <div class="c-shadow"></div>
+                                  <a href="/article/details/id/1292" class="article">Прайс-лист и заказ услуг</a>
+                               </div>
+                            </li>
+                            <li class="c-discussion">
+                               <div class="c-discussion-wrap">
+                                  <div class="c-shadow"></div>
+                                  <a href="/article/details/id/1312" class="article">Удаление временных файлов браузера</a>
+                               </div>
+                            </li>
+                         </ul>
+                      </div>
+                      <div class="f-clear"></div>
+                      <div class="kb-cat kb-cat-main ">
+                         <div class="kb-cat-image f-left"><a href="/knowledgebase/category/id/161"><img src="/images/161.jpg?1374669351"></a></div>
+                         <div class="kb-cat-info">
+                            <div class="c-shadow"></div>
+                            <a href="/knowledgebase/category/id/161" class="title">Работодателям</a>
+                            <span class="kb-cat-count">
+                            Статей: <span>78</span>
+                            </span>
+                         </div>
+                         <div class="kb-cat-childs kb-cat-161">
+                            <div class="kb-child-wrap  kb-child-odd">
+                               <div class="kb-child-cat"><a href="/knowledgebase/category/id/1955">
+                                  <b>Виды поддержки для работодателей</b> (4) »</a>
+                               </div>
+                               <div class="kb-cat-articles">
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/5520">Виды поддержки для работодателей</a>
+                                  </div>
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/6191">Техническая поддержка работодателей в Viber</a>
+                                  </div>
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/5830">Техническая поддержка работодателей в Telegram</a>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="kb-child-wrap  kb-child-even">
+                               <div class="kb-child-cat"><a href="/knowledgebase/category/id/1970">
+                                  <b>Заказ услуг и оплата</b> (11) »</a>
+                               </div>
+                               <div class="kb-cat-articles">
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/6342">Заказ оригиналов закрывающих документов</a>
+                                  </div>
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/1345">Как предоставляются закрывающие документы</a>
+                                  </div>
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/1292">Прайс-лист и заказ услуг</a>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="f-clear"></div>
+                            <div class="kb-child-wrap  kb-child-odd">
+                               <div class="kb-child-cat"><a href="/knowledgebase/category/id/1971">
+                                  <b>Личные настройки и управление профилем компании</b> (10) »</a>
+                               </div>
+                               <div class="kb-cat-articles">
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/1353">Управление рассылками для работодателей</a>
+                                  </div>
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/1325">Менеджеры вакансий (сотрудники компании).</a>
+                                  </div>
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/1340">Как изменить пароль в аккаунте работодателя</a>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="kb-child-wrap  kb-child-even">
+                               <div class="kb-child-cat"><a href="/knowledgebase/category/id/1985">
+                                  <b>Мобильные приложения для работодателей - HR Мобайл</b> (1) »</a>
+                               </div>
+                               <div class="kb-cat-articles">
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/6006">Мобильное приложение для работодателей - HR Мобайл</a>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="f-clear"></div>
+                            <div class="kb-child-wrap  kb-child-odd">
+                               <div class="kb-child-cat"><a href="/knowledgebase/category/id/208">
+                                  <b>Платные сервисы для работодателей</b> (7) »</a>
+                               </div>
+                               <div class="kb-cat-articles">
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/1333">Что такое «доступ к базе резюме»?</a>
+                                  </div>
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/5564">Сервис "Оценка талантов"</a>
+                                  </div>
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/1317">Публикация вакансий «Стандарт»</a>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="kb-child-wrap  kb-child-even">
+                               <div class="kb-child-cat"><a href="/knowledgebase/category/id/211">
+                                  <b>Поиск резюме и работа с откликами</b> (11) »</a>
+                               </div>
+                               <div class="kb-cat-articles">
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/1287">Работа с откликами</a>
+                                  </div>
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/1352">Как искать резюме?</a>
+                                  </div>
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/1344">Что такое «Автопоиск резюме»?</a>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="f-clear"></div>
+                            <div class="kb-child-wrap  kb-child-odd">
+                               <div class="kb-child-cat"><a href="/knowledgebase/category/id/1975">
+                                  <b>Проекты hh.ru для работодателей</b> (13) »</a>
+                               </div>
+                               <div class="kb-cat-articles">
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/6336">Talantix. Автоматизированная система управления персоналом</a>
+                                  </div>
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/5952">Clickme</a>
+                                  </div>
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/6431">Проект HRspace для работодателя</a>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="kb-child-wrap  kb-child-even">
+                               <div class="kb-child-cat"><a href="/knowledgebase/category/id/1967">
+                                  <b>Размещение вакансий и работа с ними</b> (17) »</a>
+                               </div>
+                               <div class="kb-cat-articles">
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/1342">Бесплатное размещение вакансий</a>
+                                  </div>
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/1328">Правила размещения вакансий</a>
+                                  </div>
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/1329">Как составить хорошее описание вакансии</a>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="f-clear"></div>
+                            <div class="kb-child-wrap  kb-child-odd">
+                               <div class="kb-child-cat"><a href="/knowledgebase/category/id/216">
+                                  <b>Регистрация работодателей</b> (4) »</a>
+                               </div>
+                               <div class="kb-cat-articles">
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/5048">Учетная запись заблокирована.</a>
+                                  </div>
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/1282">Регистрация компании (работодателя).</a>
+                                  </div>
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/1300">Звонок нашего менеджера после регистрации</a>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="f-clear"></div>
+                      </div>
+                      <div class="kb-cat kb-cat-main ">
+                         <div class="kb-cat-image f-left"><a href="/knowledgebase/category/id/220"><img src="/images/220.jpg?1375180604"></a></div>
+                         <div class="kb-cat-info">
+                            <div class="c-shadow"></div>
+                            <a href="/knowledgebase/category/id/220" class="title">Соискателям</a>
+                            <span class="kb-cat-count">
+                            Статей: <span>57</span>
+                            </span>
+                         </div>
+                         <div class="kb-cat-childs kb-cat-220">
+                            <div class="kb-child-wrap  kb-child-odd">
+                               <div class="kb-child-cat"><a href="/knowledgebase/category/id/1968">
+                                  <b>Виды поддержки для соискателей</b> (3) »</a>
+                               </div>
+                               <div class="kb-cat-articles">
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/6099">Техническая поддержка соискателей в Telegram</a>
+                                  </div>
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/5562">Виды поддержки для соискателей</a>
+                                  </div>
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/6183">Техническая поддержка соискателей в Viber</a>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="kb-child-wrap  kb-child-even">
+                               <div class="kb-child-cat"><a href="/knowledgebase/category/id/1969">
+                                  <b>Личные настройки соискателя</b> (3) »</a>
+                               </div>
+                               <div class="kb-cat-articles">
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/3711">Управление рассылками для соискателей</a>
+                                  </div>
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/5554">Как изменить пароль в аккаунте соискателя</a>
+                                  </div>
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/6603">Как подтвердить номер телефона?</a>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="f-clear"></div>
+                            <div class="kb-child-wrap  kb-child-odd">
+                               <div class="kb-child-cat"><a href="/knowledgebase/category/id/1984">
+                                  <b>Мобильное приложение для соискателей - HeadHunter!</b> (1) »</a>
+                               </div>
+                               <div class="kb-cat-articles">
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/6005">Мобильное приложение для соискателей - HeadHunter!</a>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="kb-child-wrap  kb-child-even">
+                               <div class="kb-child-cat"><a href="/knowledgebase/category/id/359">
+                                  <b>Платные сервисы для соискателей</b> (6) »</a>
+                               </div>
+                               <div class="kb-cat-articles">
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/1359">Услуга «Хочу у вас работать»</a>
+                                  </div>
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/1358">Услуга "Автообновление резюме"</a>
+                                  </div>
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/1867">Что такое сервис «Профориентация»?</a>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="f-clear"></div>
+                            <div class="kb-child-wrap  kb-child-odd">
+                               <div class="kb-child-cat"><a href="/knowledgebase/category/id/222">
+                                  <b>Поиск вакансий и отклики на них</b> (20) »</a>
+                               </div>
+                               <div class="kb-cat-articles">
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/1617">Автопоиск вакансий</a>
+                                  </div>
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/1846">Сопроводительное письмо</a>
+                                  </div>
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/1619">Как происходит отклик на вакансию?</a>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="kb-child-wrap  kb-child-even">
+                               <div class="kb-child-cat"><a href="/knowledgebase/category/id/1976">
+                                  <b>Проекты hh.ru для соискателей</b> (2) »</a>
+                               </div>
+                               <div class="kb-cat-articles">
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/6026">«Академия» HeadHunter для соискателей</a>
+                                  </div>
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/6027">Часто задаваемые вопросы по «Академии» HeadHunter</a>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="f-clear"></div>
+                            <div class="kb-child-wrap  kb-child-odd">
+                               <div class="kb-child-cat"><a href="/knowledgebase/category/id/217">
+                                  <b>Регистрация соискателей</b> (3) »</a>
+                               </div>
+                               <div class="kb-cat-articles">
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/4094">Регистрация соискателей на сайте HeadHunter</a>
+                                  </div>
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/6330">Подтверждение почты и мобильного телефона</a>
+                                  </div>
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/2223">Взаимодействие с социальными сетями</a>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="kb-child-wrap  kb-child-even">
+                               <div class="kb-child-cat"><a href="/knowledgebase/category/id/221">
+                                  <b>Создание резюме и настройка видимости</b> (19) »</a>
+                               </div>
+                               <div class="kb-cat-articles">
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/1611">Почему мое резюме заблокировано?</a>
+                                  </div>
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/1605">Как отредактировать резюме?</a>
+                                  </div>
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/1897">Настройки видимости резюме</a>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="f-clear"></div>
+                         </div>
+                         <div class="f-clear"></div>
+                      </div>
+                      <div class="kb-cat kb-cat-main ">
+                         <div class="kb-cat-image f-left"><a href="/knowledgebase/category/id/1966"><img src="/images/1966.jpg?1461132205"></a></div>
+                         <div class="kb-cat-info">
+                            <div class="c-shadow"></div>
+                            <a href="/knowledgebase/category/id/1966" class="title">Общие вопросы по работе с сайтом</a>
+                            <span class="kb-cat-count">
+                            Статей: <span>8</span>
+                            </span>
+                         </div>
+                         <div class="kb-cat-childs kb-cat-1966">
+                            <div class="kb-child-wrap  kb-child-odd">
+                               <div class="kb-child-cat"><a href="/knowledgebase/category/id/1486">
+                                  <b>Восстановление пароля</b> (1) »</a>
+                               </div>
+                               <div class="kb-cat-articles">
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/3046">Как восстановить пароль</a>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="kb-child-wrap  kb-child-even">
+                               <div class="kb-child-cat"><a href="/knowledgebase/category/id/346">
+                                  <b>Медленно или некорректно работает сайт</b> (3) »</a>
+                               </div>
+                               <div class="kb-cat-articles">
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/1848">Требования к ПО</a>
+                                  </div>
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/1312">Удаление временных файлов браузера</a>
+                                  </div>
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/4101">Удаление файлов куки в браузере</a>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="f-clear"></div>
+                            <div class="kb-child-wrap  kb-child-odd">
+                               <div class="kb-child-cat"><a href="/knowledgebase/category/id/1989">
+                                  <b>Мобильный HeadHunter</b> (3) »</a>
+                               </div>
+                               <div class="kb-cat-articles">
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/6186">Наш telegram-бот Helper</a>
+                                  </div>
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/6373">Помощник Хэдди теперь в Telegram!</a>
+                                  </div>
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/6009">Мобильные приложения HeadHunter</a>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="kb-child-wrap  kb-child-even">
+                               <div class="kb-child-cat"><a href="/knowledgebase/category/id/1438">
+                                  <b>Правила жизни в нашем общежитии</b> (1) »</a>
+                               </div>
+                               <div class="kb-cat-articles">
+                                  <div class="kb-cat-article-wrap">
+                                     <div class="c-shadow"></div>
+                                     <a href="/article/details/id/2636">Правила поведения в сообществе</a>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="f-clear"></div>
+                         </div>
+                         <div class="f-clear"></div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+
+
+
+
+<div id="footer" class="l-container">
+        <ul class="social-img">
+            <li><a href="https://vk.com/headhunter" class="vk"></a></li>
+            <li><a href="http://www.facebook.com/headhuntergroup" class="fb"></a></li>
+            <li><a href="https://twitter.com/hh_ru" class="tw"></a></li>
+        </ul>
+        <div class="copyright">
+            &copy;&nbsp;Группа компаний HeadHunter, 2000 &dash; 2018    
+        </div>
+        <div class="extlinks">
+            <a href="http://hh.ru/article/28">О HeadHunter</a> <a href="http://hh.ru/article/2067">Работодателям</a> <a href="http://hh.ru/article/2">Соискателям</a><a
+                href="/m/?session=1534445835770863170#!/"
+                onclick="createCookie('cpn-layout', 'mobile', 'feedback.hh.ru', 365);"
+                class="to-mobile f-left" >
+            Мобильная версия</a>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
