@@ -7859,7 +7859,7 @@ small {
         width: 960px
     }
     .bloko-column_l-13 {
-        width: 1040px
+        /*width: 1040px*/
     }
     .bloko-column_l-14 {
         width: 1120px
@@ -17551,4 +17551,11 @@ html > body .formleft:first-letter {
 }
 .bloko-icon_done {
     background-image: url(../images/done-icon__min_.svg);
+}
+.light-page_promo {
+    background: url(../images/back-form__min_.jpg) no-repeat center top fixed;
+    color: #fff;
+    background-size: cover;
+    background-color: #373c55;
+    height: 100vh;
 }
