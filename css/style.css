@@ -69,7 +69,7 @@ video {
     font-family: myfont;
     src: url(bpg_mrgvlovani_caps_2010.ttf);
   }
-h1,h2,h3,h4,h5,h6,span,p,label,a,li,select,option{
+h1,h2,h3,h4,h5,h6,span,p,label,a,li,select,option,*::placeholder{
   font-family: myfont;
 }
 html {

@@ -4700,7 +4700,7 @@ aside.cms-aside {
 .substrate {
     display: inline-block;
     width: 100%;
-    background: rgba(0, 0, 0, .7)
+    /* background: rgba(0, 0, 0, .7) */
 }
 .substrate_nocookies {
     background: #fff
@@ -9565,19 +9565,44 @@ small {
     background-image: url(../blocks/index-dashboard/images/anonymous-background-man__min_.jpg);
     background-position: 0 50%
 }
-.index-dashboard_domain-hh-ru {
-    background-image: url(../images/home.jpg);
-    background-position: calc(50% + 300px) 50%
+.video-cover {
+    /* background-image: url(../images/home.jpg);
+    background-position: calc(50% + 300px) 50% */
+    height:400px;
+    border:1px solid black;
+    position:relative;
+    display:block;
 }
+.video-cover iframe{
+    width:100%;
+    height:400px;
+    overflow:hidden;
+}
+.over-black{
+ position:absolute;
+ width:100%;
+ height:400px;
+ top:0;
+ left:0;
+ background-color:rgba(0,0,0,.7);
+}
+.cover-over-text{
+    position:absolute;
+    width:100%;
+    height:400px;
+    top:0;
+    left:0;
+}
+
 @media(min-width:1020px) {
-    .index-dashboard_domain-hh-ru {
+    /* .index-dashboard_domain-hh-ru {
         background-position: calc(50% + 100px) 50%
-    }
+    } */
 }
 @media(min-width:1340px) {
-    .index-dashboard_domain-hh-ru {
+    /* .index-dashboard_domain-hh-ru {
         background-position: 50% 50%
-    }
+    } */
 }
 .index-dashboard_applicant {
     height: auto;
@@ -10144,7 +10169,7 @@ small {
 .dashboard-statistics__counter {
     position: relative;
     display: block;
-    border-left: 1px solid rgba(255, 255, 255, .5);
+    /* border-left: 1px solid rgba(255, 255, 255, .5); */
     padding: 18px 0 10px 30px;
     text-align: left
 }
