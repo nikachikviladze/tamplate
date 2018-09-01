@@ -13173,7 +13173,7 @@ small {
 }
 .login-with {
     height: 254px;
-    margin: 20px
+    margin: 20px 0;
 }
 .login-with_nocookies {
     color: #333
@@ -17583,4 +17583,7 @@ html > body .formleft:first-letter {
     background-size: cover;
     background-color: #373c55;
     height: 100vh;
+}
+.HH-Form-Element-RemoveText{
+    background-image:url(../images/cancel-icon__min_.svg)
 }

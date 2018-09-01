@@ -497,6 +497,7 @@
       <div class="navi-dummy"></div>
       <div class="Bloko-Notification-Manager notification-manager"></div>
       <!-- header   -->
+      </div>
       <cv-block>
          <div class="bloko-columns-wrapper">
             <div class="row-content">
@@ -645,7 +646,7 @@
             </div>
          </div>
       </cv-block>
-      <step-2>
+
          <div class="bloko-columns-wrapper">
             <div class="row-content">
                <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-12 bloko-column_l-16 bloko-column_container">
@@ -1284,43 +1285,9 @@
                   </div>
                </div>
             </div>
-            <div class="resume-form-row language-box">
-               <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
-                  <div class="bloko-form-item">
-                     <label class="bloko-form-legend" >დამატებითი ენები</label>
-                  </div>
-               </div>
-               <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4">
-                  <div class="HH-Form-Element-TooltipElement " data-qa="resume-section-controls">
-                     <select name="educationLevel.string" class="bloko-select">
-                        <option value="higher">ქართული</option>
-                        <option value="bachelor">რუსული</option>
-                        <option value="master">ინგლისური</option>
-                        <option value="unfinished_higher">სომხური</option>
-                        <option value="special_secondary">თურქული</option>
-                     </select>
-                  </div>
-               </div>
-               <br/><br/>
-               <div class="resume-form-row language-level">
-                  <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
-                     <div class="bloko-form-item">
-                        <label class="bloko-form-legend ">ცოდნის დონე</label>
-                     </div>
-                  </div>
-                  <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4">
-                     <div class="HH-Form-Element-TooltipElement " data-qa="resume-section-controls">
-                        <select name="educationLevel.string" class="bloko-select">
-                           <option value="higher">ძალიან კარგად</option>
-                           <option value="bachelor">კარგად</option>
-                           <option value="master">საშუალოდ</option>
-                           <option value="unfinished_higher">ცუდად</option>
-                        </select>
-                     </div>
-                  </div>
-               </div>
+            <div class="insert-language">
+               
             </div>
-            <div class="insert-language"></div>
             <span class="language-selectbox" style="cursor: pointer; border: 1px solid silver; padding: 10px;display: inline-block;margin-bottom: 20px;">ენის დამატება</span>
          </div>
          <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-12 bloko-column_l-16">
@@ -1328,9 +1295,9 @@
             <br><br>
          </div>
          <div>
-            <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-9 bloko-column_l-9 bloko-column_container">
-            <div id="educationBlock" class="resume-field-toggle HH-Form-Collection-ToggleWrapper">
-            <div class="bloko-section r">
+         <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-9 bloko-column_l-9 bloko-column_container">
+         <div id="educationBlock" class="resume-field-toggle HH-Form-Collection-ToggleWrapper">
+         <div class="bloko-section r">
             <div class="resume-form-row">
                <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
                   <div class="bloko-form-item">
@@ -1401,7 +1368,6 @@
                <div style="border-bottom: 1px dashed silver;"></div>
                <br/>
             </div>
-            
          </div>
          <span id="q" style="cursor: pointer; border: 1px solid silver; padding: 10px;display: inline-block;margin-bottom: 20px;">გამოცდილების დამატება</span>  
          <div class="resume-form-row">
@@ -1414,7 +1380,7 @@
                </button>
             </div>
          </div>
-      </step-2>
+
       <div class="footer-wrapper">
          <div class="bloko-columns-wrapper">
             <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-12 bloko-column_l-16">
@@ -1583,48 +1549,72 @@
          $('.language-selectbox').on('click', function(event) {
             $('.insert-language').append(`
             <br/><br/>
-            <div class="resume-form-row language-box">
-                 <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
-                 <div class="bloko-form-item">
-                     <label class="bloko-form-legend" >დამატებითი ენები</label>
-                 </div>
-                 </div>
-                 <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4">
-                 <div class="HH-Form-Element-TooltipElement " data-qa="resume-section-controls">
-                         <select name="educationLevel.string" class="bloko-select">
-                                 <option value="higher">ქართული</option>
-                                 <option value="bachelor">რუსული</option>
-                                 <option value="master">ინგლისური</option>
-                                 <option value="unfinished_higher">სომხური</option>
-                                 <option value="special_secondary">თურქული</option>
-                             </select>
-                 </div>
-                 </div>
+            <div class="HH-Resume-Languages-Item" data-qa="resume-language"></div>
+          <div class="resume-form-row">
+              <div class="bloko-column bloko-column_xs-4 bloko-column_s-3 bloko-column_m-3 bloko-column_l-4 bloko-column_container">
+                  <div class="HH-Resume-Languages-Label">
+                      <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
+                          <div class="bloko-form-item">
+                              <label class="bloko-form-legend ">დამატებითი ენები</label>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="resume-remove-item-wrapper resume-remove-item-wrapper_language">
+                    <div class="bloko-column bloko-column_xs-4 bloko-column_s-6 bloko-column_m-6 bloko-column_l-5">
+                        <div class="resume-remove-item-gap">
+                            <div class="bloko-control-group">
+                                <div class="bloko-control-group__content-sized">
+                                    <div class="resume-language-select">
+                                        <div class="HH-Resume-LanguageSelect-Select bloko-custom-select" data-selected-language="" data-qa="resume-language-select">
          
-                 <br/><br/>
-                 <div class="resume-form-row language-level">
-                         <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
-                         <div class="bloko-form-item">
-                             <label class="bloko-form-legend ">ცოდნის დონე</label>
-                         </div>
-                         </div>
-                         
-                         <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4">
-                         <div class="HH-Form-Element-TooltipElement " data-qa="resume-section-controls">
-                                 <select name="educationLevel.string" class="bloko-select">
-                                         <option value="higher">ძალიან კარგად</option>
-                                         <option value="bachelor">კარგად</option>
-                                         <option value="master">საშუალოდ</option>
-                                         <option value="unfinished_higher">ცუდად</option>
-                                     </select>
-                         </div>
-                         </div>
-                         
-                 </div>
+                                                    <select class="bloko-select Bloko-CustomSelect-NativeSelect HH-Resume-Languages-Id" name="language.id">
+                                                        <option value="57">ინგლისური</option>
+                                                        <option value="58">გერმანული</option>
+                                                        <option value="59">ფრანგული</option>
+                                                    </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            <div class="resume-language-break">
+                                <div class="bloko-form-item"></div>
+                            </div>
+                            <div class="bloko-control-group__content-sized">
+                                <div class="resume-language-level-select resume-language-level-select_short">
+                                    <input type="hidden" name="language.degree" class="HH-Resume-Languages-Degree" value="basic" data-qa="resume-language-level-input">
+                                    <select class="bloko-select HH-Resume-Languages-Degree-Select HH-AutoSave-WithoutName" data-hh-autosave-without-name="language-degree" data-qa="resume-language-level-select">
+                                        <option value="basic">დამწყები</option>
+                                        <option value="can_read">საშუალო</option>
+                                        <option value="can_pass_interview">კარგად</option>
+                                        <option value="fluent">პროფესიონალი</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-remove-item " style="    position: absolute;
+                right: -64px;">
+                    <div class="resume-remove-item__button HH-Form-Element-Remove">
+                        <span class="bloko-icon-dynamic">
+                            X
+                        </span>
+                    </div>
+                    
+                </div>
+            </div>
+         </div>
          </div>
                   `);
              });
           
+      </script>
+      <script>
+
+         $(document).on('click', '.insert-language .resume-form-row .resume-remove-item ', function() {
+            $(this).parent().parent().remove();
+          });
       </script>
    </body>
 </html>
