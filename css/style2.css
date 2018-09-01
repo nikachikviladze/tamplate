@@ -17587,3 +17587,10 @@ html > body .formleft:first-letter {
 .HH-Form-Element-RemoveText{
     background-image:url(../images/cancel-icon__min_.svg)
 }
+.remove-button-append svg{
+    fill: #96979a;
+    width: 20px;
+    height: 20px;
+    stroke: #96979a;
+    cursor: pointer;
+}
