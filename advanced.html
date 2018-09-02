@@ -585,154 +585,25 @@
                            }
                            '></script>
                         <div class="bloko-form-row">
-                           <div class="bloko-column bloko-column_s-3 bloko-column_m-3 bloko-column_l-4">
-                              <div class="bloko-form-item">
-                                 <div class="bloko-form-legend">Ключевые слова</div>
-                              </div>
-                           </div>
-                           <div class="bloko-column bloko-column_s-5 bloko-column_m-5 bloko-column_l-8">
-                              <div class="bloko-form-item">
-                                 <div class="line">
-                                    <div class="line__filler">
-                                       <div class="line__wrapper">
-                                          <input class="bloko-input HH-SearchFromSuggest-Suggest" type="text" name="text" autocomplete="off" id="advancedsearchmainfield" data-qa="vacancysearch__keywords-input" value=""><script data-name="bloko/blocks/suggest/suggest" data-for="prev" data-params='
-                                             {
-                                             "autoselectfirstsuggest": false,
-                                             "selectonblur": false,
-                                             "remote": "/autosuggest/v2?d=vacancy&amp;q=%QUERY%"
-                                             }
-                                             '></script>
-                                          <div class="bloko-form-hint">например, <span class="bloko-link-switch bloko-link-switch_inherited" onclick="document.getElementById('advancedsearchmainfield').value =                                        this.childNodes[0].data; return false;" data-qa="vacancysearch__example">ассистент HR</span></div>
-                                       </div>
-                                    </div>
-                                    <div class="line__element"><input id="submit-top" class="bloko-button" type="submit" value="Найти" data-qa="vacancysearch__submit"></div>
-                                 </div>
-                              </div>
-                              <div class="bloko-form-item">Искать только</div>
-                              <div class="bloko-form-item"><label class="bloko-checkbox" data-qa="control-vacancysearch__search_field-item control-vacancysearch__search_field-item_name"><input data-qa="vacancysearch__search_field-item vacancysearch__search_field-item_name" type="checkbox" value="name" name="search_field" class="bloko-checkbox__input "><span class="bloko-checkbox__text">в названии вакансии</span></label></div>
-                              <div class="bloko-form-item"><label class="bloko-checkbox" data-qa="control-vacancysearch__search_field-item control-vacancysearch__search_field-item_company_name"><input data-qa="vacancysearch__search_field-item vacancysearch__search_field-item_company_name" type="checkbox" value="company_name" name="search_field" class="bloko-checkbox__input "><span class="bloko-checkbox__text">в названии компании</span></label></div>
-                              <div class="bloko-form-item"><label class="bloko-checkbox" data-qa="control-vacancysearch__search_field-item control-vacancysearch__search_field-item_description"><input data-qa="vacancysearch__search_field-item vacancysearch__search_field-item_description" type="checkbox" value="description" name="search_field" class="bloko-checkbox__input "><span class="bloko-checkbox__text">в описании вакансии</span></label></div>
-                              <div class="bloko-form-item"><a href="/article/1175">Описание языка поисковых запросов</a></div>
-                           </div>
-                        </div>
+                           
+                           
                         <div class="bloko-form-row">
-                           <div class="bloko-column bloko-column_s-3 bloko-column_m-3 bloko-column_l-4">
-                              <div class="bloko-form-item">
-                                 <div class="bloko-form-legend bloko-form-legend_for-baseline">Профессиональная область</div>
-                              </div>
-                           </div>
+                           
                            <div class="bloko-column bloko-column_s-5 bloko-column_m-5 bloko-column_l-8">
                               <div class="bloko-form-item">
-                                 <script data-name="HH/IndustrySwitcher/IndustrySwitcher" data-params='
-                                    {
-                                    "trl": {
-                                    "empty": "Указать профобласти",
-                                    "full": "Изменить профобласти",
-                                    "youChose": "Вы выбрали",
-                                    "profareas": [
-                                    "профобласть",
-                                    "профобласти",
-                                    "профобластей"
-                                    ],
-                                    "and": "и",
-                                    "specializations": [
-                                    "специализацию",
-                                    "специализации",
-                                    "специализаций"
-                                    ]
-                                    },
-                                    "maxSelectedItems": 9
-                                    }
-                                    '></script><script data-name="HH/TreeSelectorPopup/Profarea" data-params='
-                                    {
-                                    "trl": {
-                                    "submit": "Выбрать",
-                                    "cancel": "Отменить",
-                                    "searchPlaceholder": "Быстрый поиск",
-                                    "notFound": "Совпадений не найдено",
-                                    "errorMessage": "Не удалось сохранить. Попробуйте еще раз."
-                                    }
-                                    ,
-                                    "tagList": {
-                                    "removable": true,
-                                    "hiddenFieldName": "specialization",
-                                    "renderHiddenParentField": false
-                                    },
-                                    "treeSelector": {
-                                    "leavesOnly": false
-                                    },
-                                    "compositeId": true,
-                                    "bindings": {
-                                    "list": ".HH-TreeSelectorPopup-Profarea-List",
-                                    "removeAllButtonClass": ".HH-TreeSelectorPopup-Profarea-RemoveAllButton",
-                                    "select": ".HH-TreeSelectorPopup-Profarea-Select",
-                                    "showIfZero": ".HH-TreeSelectorPopup-Profarea-ShowIfZero",
-                                    "tags": ".HH-TreeSelectorPopup-Tags"
-                                    }
-                                    }
-                                    '></script>
-                                 <div class="bloko-toggle HH-TreeSelectorPopup-Profarea-List HH-IndustrySwitcher-List bloko-toggle_expand">
-                                    <script data-name="HH/Bloko/Toggle" data-params=""></script>
-                                    <div class="profareatree profareatree_nopadding">
-                                       <div class="profareatree__description HH-IndustrySwitcher-Counter  g-hidden">Вы выбрали <span class="bloko-link-switch bloko-link-switch_inherited" data-toggle=""></span><span class="profareatree__closeblock HH-TreeSelectorPopup-Profarea-RemoveAllButton"></span></div>
-                                       <div class="HH-TreeSelectorPopup-Tags bloko-toggle__expandable" data-qa="searchform__selected-profareas"></div>
-                                    </div>
-                                 </div>
+                                 
+                                 
                                  <div>
-                                    <div class="bloko-form-legend bloko-form-legend_for-small"><span class="HH-TreeSelectorPopup-Profarea-ShowIfZero form-choose__value ">Любая</span><button type="button" data-qa="profarea-changeFromList" class="bloko-link-switch                                HH-TreeSelectorPopup-Profarea-Select                                HH-IndustrySwitcher-Switcher                                HH-Form-Element-TooltipElement" name="specialization">Указать профобласти</button></div>
+                                    
                                  </div>
                               </div>
                            </div>
                         </div>
                         <div class="bloko-form-row">
-                           <div class="bloko-column bloko-column_s-3 bloko-column_m-3 bloko-column_l-4">
-                              <div class="bloko-form-item">
-                                 <div class="bloko-form-legend bloko-form-legend_for-baseline">Отрасль компании</div>
-                              </div>
-                           </div>
-                           <div class="bloko-column bloko-column_s-5 bloko-column_m-5 bloko-column_l-8">
-                              <div class="form-box">
-                                 <script data-name="HH/IndustrySwitcher/IndustrySwitcher" data-params='
-                                    {
-                                    "trl": {
-                                    "empty": "Указать отрасль компании",
-                                    "full": "Изменить отрасли компании"
-                                    }
-                                    }
-                                    '></script><script data-name="HH/TreeSelectorPopup/Industry" data-params='
-                                    {
-                                    "trl": {
-                                    "submit": "Выбрать",
-                                    "cancel": "Отменить",
-                                    "searchPlaceholder": "Быстрый поиск",
-                                    "notFound": "Совпадений не найдено",
-                                    "errorMessage": "Не удалось сохранить. Попробуйте еще раз."
-                                    }
-                                    ,
-                                    "tagList": {
-                                    "removable": true,
-                                    "hiddenFieldName": "industry",
-                                    "hiddenChildFieldName": "industry",
-                                    "renderHiddenParentField": false
-                                    },
-                                    "treeSelector": {
-                                    "leavesOnly": false
-                                    },
-                                    "compositeId": true,
-                                    "bindings": {
-                                    "list": ".HH-Employer-Industries-List",
-                                    "select": ".HH-Employer-Industries-Select",
-                                    "hideIfZero": ".HH-Employer-Industries-HideIfZeroFields",
-                                    "showIfZero": ".HH-Employer-Industries-ShowIfZeroFields",
-                                    "tags": ".HH-TreeSelectorPopup-Tags"
-                                    }
-                                    }
-                                    '></script>
-                                 <div class="HH-Employer-Industries-List HH-TreeSelectorPopup-Tags"></div>
-                                 <div class="form-choose"><span class="form-choose__value HH-Employer-Industries-ShowIfZeroFields ">Любая</span><span class="HH-Employer-Industries-Select                          bloko-link-switch                          HH-IndustrySwitcher-Switcher" data-qa="industry-addFromList">Указать отрасль компании</span></div>
-                              </div>
-                           </div>
+                         
                         </div>
+
+
                         <div class="bloko-form-row">
                            <div class="bloko-column bloko-column_s-3 bloko-column_m-3 bloko-column_l-4">
                               <div class="bloko-form-item">
@@ -774,14 +645,13 @@
                               </div>
                            </div>
                         </div>
+
+
+
                         <div class="bloko-column bloko-column_l-12 bloko-column_m-8 bloko-column_s-8 bloko-column_container">
                            <div class="HH-ToggleMetroSelector-MetroElement">
                               <div class="bloko-form-row">
-                                 <div class="bloko-column bloko-column_s-3 bloko-column_m-3 bloko-column_l-4">
-                                    <div class="bloko-form-item">
-                                       <div class="bloko-form-legend">Метро</div>
-                                    </div>
-                                 </div>
+                                 
                                  <div class="bloko-column bloko-column_s-5 bloko-column_m-5 bloko-column_l-8">
                                     <div class="bloko-form-item">
                                        <div class="region-select                         region-select_list"><input type="text" value="" autocomplete="off" class="bloko-input HH-Metro-Input HH-MetroSelection-Input" data-qa="searchform__subway-input"></div>

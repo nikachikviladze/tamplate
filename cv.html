@@ -536,6 +536,13 @@
       <div class="Bloko-Notification-Manager notification-manager"></div>
       <!-- header   -->
       </div>
+
+
+
+
+
+
+
       <cv-block>
          <div class="bloko-columns-wrapper">
             <div class="row-content">
@@ -934,6 +941,156 @@
                                  </div>
                               </div>
                            </div>
+
+
+
+                           <div class="bloko-gap bloko-gap_top">
+            <div class="bloko-columns-wrapper">
+               <div class="bloko-column bloko-column_s-8 bloko-column_m-8 bloko-column_l-12 bloko-column_container">
+                  <div data-qa="vacancysearch__form">
+                    
+                     <form action="/search/vacancy">
+                        
+
+                           <script data-name="HH/ToggleMetroSelector/ToggleMetroSelector" data-params='
+                           {
+                           "compositeSelectionParams": {
+                           "data": {"items": [
+
+                           {"text": "საქართველო", "id": "1", "items": [{"text": "თბილისი", "id": "2820" },{"text": "ბათუმი", "id": "2820"}]},
+
+                           {"text": "გერმანია", "id": "2", "items": [{"text": "ბერლინი", "id": "23" },{"text": "ჰამბურგი", "id": "99"}]}
+
+
+                           ]},
+                           "suggestParams": {
+                           "autoselect": true,
+                           "selectonblur": true,
+                           "remote": "/autosuggest/multiprefix/v2?q=%QUERY%&amp;d=areas_RU"
+                           },
+                           "tagListParams": {
+                           "removable": true,
+                           "hiddenFieldName": "area"
+                           },
+                           "treeSelectorPopupParams": {
+                           "treeSelector": {
+                           "type": "checkbox"
+                           },
+                           "trl": {
+                           "submit": "Выбрать",
+                           "cancel": "Отменить",
+                           "searchPlaceholder": "დასახლებული პუნქტი",
+                           "notFound": "შედეგი არ მოიძებნა",
+                           "errorMessage": "Не удалось сохранить. Попробуйте еще раз."
+                           }
+                           }
+                           },
+                           "metroParams": {
+                           "regions": [1,2,1002,88,3,66,115,160,4,135,78,117],
+                           "metroSelectionParams": {
+                           "ajaxError": "Произошла ошибка, метро не выбрано",
+                           "rendererUrl": "/shards/metro/selected?lang=RU",
+                           "tagListParams": {
+                           "removable": true,
+                           "hiddenFieldName": "metro"
+                           },
+                           "suggestParams": {
+                           "delimiter": true,
+                           "remote": "/autosuggest/multiprefix/v2?q=%QUERY%&amp;d=metro_RU_{cityId}"
+                           },
+                           "suggestTemplate": "metro",
+                           "metroMapParams": {
+                           "url": "/shards/metro/metromap?lang=RU"
+                           }
+                           }
+                           }
+                           }
+                           '></script>
+                        <div class="bloko-form-row">
+                           
+                           
+                        <div class="bloko-form-row">
+                           
+                           <div class="bloko-column bloko-column_s-5 bloko-column_m-5 bloko-column_l-8">
+                              <div class="bloko-form-item">
+                                 
+                                 
+                                 <div>
+                                    
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="bloko-form-row">
+                         
+                        </div>
+
+
+                        <div class="bloko-form-row">
+                           <div class="bloko-column bloko-column_s-3 bloko-column_m-3 bloko-column_l-4">
+                              <div class="bloko-form-item">
+                                 <div class="bloko-form-legend">
+                                    <h5>რეგიონი</h5></div>
+                              </div>
+                           </div>
+                           <div class="bloko-column bloko-column_s-5 bloko-column_m-5 bloko-column_l-8">
+                              <div class="HH-ToggleMetroSelector-CompositeSelectionElement">
+                                 <script data-name="jsxComponents/Hint" data-params=""></script><script data-name="HH/RelocationSelector" data-params='
+                                    {
+                                    "managedClass": "HH-RelocationSelector",
+                                    "trl": {
+                                    "singular": {
+                                    "living_or_relocation": "Живут в указанном регионе или готовы переехать в него",
+                                    "living": "Живут в указанном регионе",
+                                    "living_but_relocation": "Живут в указанном регионе и готовы к переезду куда-либо",
+                                    "relocation": "Не живут в указанном регионе, но готовы переехать в него"
+                                    },
+                                    "plural": {
+                                    "living_or_relocation": "Живут в указанных регионах или готовы переехать в них",
+                                    "living": "Живут в указанных регионах",
+                                    "living_but_relocation": "Живут в указанных регионах и готовы к переезду куда-либо",
+                                    "relocation": "Не живут в указанных регионах, но готовы переехать в них"
+                                    }
+                                    }
+                                    }
+                                    '></script>
+                                 <div data-qa="searchform__selected-regions">
+                                    <div class="form-box">
+                                       <div class="region-list"><span class="HH-CompositeSelection-Tags"><span data-qa="bloko-tag bloko-tag_inline" data-tag-id="1" class="bloko-tag bloko-tag_inline Bloko-TagList-Tag"><span class="bloko-tag__section bloko-tag__section_text" title="Москва"><span class="Bloko-TagList-Text" data-qa="bloko-tag__text">საქართველო</span></span><span class="bloko-icon-dynamic"><span class="bloko-tag-button                              Bloko-TagList-Remove" data-qa="bloko-tag__cross"><span class="bloko-icon                                  bloko-icon_remove                                  bloko-icon_initial-impact                                  bloko-icon_highlighted-action"></span></span></span><input type="hidden" name="area" value="1"></span></span></div>
+                                    </div>
+                                 </div>
+                                 <div class="bloko-form-item">
+                                    <div class="region-select region-select_list">
+                                       <div class="bloko-input-wrapper"><input type="text" autocomplete="off" data-qa="resumes-search-region-add" class="bloko-input                                       HH-CompositeSelection-Suggest                                       jsxComponents-Hint-Input"><span class="bloko-icon-dynamic"><button type="button" class="bloko-icon-link                                            HH-CompositeSelection-TreeSelector" data-qa="resumes-search-region-selectFromList"><span class="bloko-icon                                              bloko-icon_list-more                                              bloko-icon_initial-impact                                              bloko-icon_highlighted-action" title="Выбрать из списка"></span></button></span></div>
+                                       <div class="bloko-form-hint">აირჩიეთ რეგიონი</div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+
+
+                        <div class="bloko-column bloko-column_l-12 bloko-column_m-8 bloko-column_s-8 bloko-column_container">
+                           <div class="HH-ToggleMetroSelector-MetroElement">
+                              <div class="bloko-form-row">
+                                 
+                                 <div class="bloko-column bloko-column_s-5 bloko-column_m-5 bloko-column_l-8">
+                                    <div class="bloko-form-item">
+                                       <div class="region-select                         region-select_list">
+                                          <input type="text" value="" autocomplete="off" class="bloko-input HH-Metro-Input HH-MetroSelection-Input" data-qa="searchform__subway-input" style="display: none;"></div>
+                                    </div>
+                                    
+                                    
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+
+
+
+
                            <div class="HH-Resume-Autosave-Block" data-hh-autosave-block="additional">
                               <div class="resume-form-row">
                                  <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
@@ -1347,10 +1504,13 @@
 
 
 
-            <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-12 bloko-column_l-16">
-               <h2 class="header header_level-2">Владение языками</h2>
+
+
+
+            <div class="bloko-column bloko-column_xs-4 bloko-column_s-6 bloko-column_m-4 bloko-column_l-3">
+              <label class="bloko-form-legend ">დამატებითი ენები</label>
             </div>
-            <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-9 bloko-column_l-9 bloko-column_container">
+           <div class="bloko-column bloko-column_xs-4 bloko-column_s-6 bloko-column_m-4 bloko-column_l-3">
                <script data-name="HH/Resume/LanguageSelect/LanguageSelect" data-params='
                   {
                   "customSelectParams": {
@@ -1358,16 +1518,13 @@
                   {"text": "ქართული", "addSeparator": true, "value": "1"}, 
                   {"text": "ინგლისური", "addSeparator": false, "value": "2"}, 
                   {"text": "რუსული", "addSeparator": false, "value": "3"}
-                  ]
-                  }
-                  }
-                  '></script>
+                  ]}}'></script>
                <div class="bloko-section">
                   
                   <div class="HH-Resume-Languages-Item" data-qa="resume-language">
 
                         <div class="resume-remove-item-wrapper resume-remove-item-wrapper_language">
-                           <div class="bloko-column bloko-column_xs-4 bloko-column_s-6 bloko-column_m-6 bloko-column_l-6">
+                           <div class="bloko-column bloko-column_xs-4 bloko-column_s-6 bloko-column_m-6 bloko-column_l-6" style="padding: 0 0;">
                               <div class="resume-remove-item-gap">
                                  <div class="bloko-control-group">
                                     <div class="bloko-control-group__content-sized">
@@ -1380,31 +1537,45 @@
                                        </div>
                                     </div>
                                     <div class="resume-language-break">
-                                       <div class="bloko-form-item"></div>
-                                    </div>
-                                    <div class="bloko-control-group__content-sized">
-                                       <div class="resume-language-level-select resume-language-level-select_short">
-                                          <input type="hidden" name="language.degree" class="HH-Resume-Languages-Degree" value="basic" data-qa="resume-language-level-input">
-                                          <select class="bloko-select HH-Resume-Languages-Degree-Select HH-AutoSave-WithoutName" data-hh-autosave-without-name="language-degree" data-qa="resume-language-level-select">
-                                             <option value="basic" selected>Базовые знания</option>
-                                             <option value="can_read">Читаю профессиональную литературу</option>
-                                             <option value="can_pass_interview">Могу проходить интервью</option>
-                                             <option value="fluent">Cвободно владею </option>
-                                          </select>
-                                       </div>
-                                    </div>
+                                <div class="bloko-form-item"></div>
+                            </div>
+                            <div class="bloko-control-group__content-sized">
+                                <div class="resume-language-level-select resume-language-level-select_short">
+                                    <input type="hidden" name="language.degree" class="HH-Resume-Languages-Degree" value="basic" data-qa="resume-language-level-input">
+                                    <select class="bloko-select HH-Resume-Languages-Degree-Select HH-AutoSave-WithoutName" data-hh-autosave-without-name="language-degree" data-qa="resume-language-level-select">
+                                        <option value="basic">დამწყები</option>
+                                        <option value="can_read">საშუალო</option>
+                                        <option value="can_pass_interview">კარგად</option>
+                                        <option value="fluent">პროფესიონალი</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="resume-remove-item " style="position: absolute;
+                right: 0px;">
+                    <div class="resume-remove-item__button HH-Form-Element-Remove">
+                        <span class="bloko-icon-dynamic remove-button-append">
+                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg id="Layer_1" style="enable-background:new 0 0 64 64;" version="1.1" viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g id="Icon-Trash" transform="translate(232.000000, 228.000000)"><polygon class="st0" id="Fill-6" points="-207.5,-205.1 -204.5,-205.1 -204.5,-181.1 -207.5,-181.1    "/><polygon class="st0" id="Fill-7" points="-201.5,-205.1 -198.5,-205.1 -198.5,-181.1 -201.5,-181.1    "/><polygon class="st0" id="Fill-8" points="-195.5,-205.1 -192.5,-205.1 -192.5,-181.1 -195.5,-181.1    "/><polygon class="st0" id="Fill-9" points="-219.5,-214.1 -180.5,-214.1 -180.5,-211.1 -219.5,-211.1    "/><path class="st0" d="M-192.6-212.6h-2.8v-3c0-0.9-0.7-1.6-1.6-1.6h-6c-0.9,0-1.6,0.7-1.6,1.6v3h-2.8v-3     c0-2.4,2-4.4,4.4-4.4h6c2.4,0,4.4,2,4.4,4.4V-212.6" id="Fill-10"/><path class="st0" d="M-191-172.1h-18c-2.4,0-4.5-2-4.7-4.4l-2.8-36l3-0.2l2.8,36c0.1,0.9,0.9,1.6,1.7,1.6h18     c0.9,0,1.7-0.8,1.7-1.6l2.8-36l3,0.2l-2.8,36C-186.5-174-188.6-172.1-191-172.1" id="Fill-11"/></g></g></svg>
+                        </span>
+                    </div>
+                    
+                </div>
                                  </div>
                               </div>
                            </div>                                         
                      </div>
                   </div>                                
 
-                  <div class="bloko-form-group">
-                     <div class="bloko-column bloko-column_xs-0 bloko-column_s-0 bloko-column_m-3 bloko-column_l-3"><span class="g-hidden HH-Resume-Languages-Label">Дополнительные языки</span></div>
-                     <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6"><span class="bloko-link-switch HH-Form-Collection-Add HH-Resume-Autosave-AddItem">Указать еще один язык</span></div>
-                  </div>
+                  
                </div>
             </div>
+
+
+
+
+            
+
+            
             
 
 
@@ -1414,6 +1585,11 @@
             </div>
             <span class="language-selectbox" style="cursor: pointer; border: 1px solid silver; padding: 10px;display: inline-block;margin-bottom: 20px;">ენის დამატება</span>
          </div>
+
+         
+
+
+
          <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-12 bloko-column_l-16">
             <h2 class="header header_level-2">სამუშაო გამოცდილება</h2>
             <br><br>
@@ -1678,38 +1854,46 @@
                <br/>`);
          });
       </script>
-      <script>
+      <script> 
+
+       
+        
+
          $('.language-selectbox').on('click', function(event) {
             $('.insert-language').append(`
-            <div class="HH-Resume-Languages-Item" data-qa="resume-language" style="margin-top:20px;"></div>
-          <div class="resume-form-row">
-              <div class="bloko-column bloko-column_xs-4 bloko-column_s-3 bloko-column_m-3 bloko-column_l-4 bloko-column_container">
-                  <div class="HH-Resume-Languages-Label">
-                      <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
-                          <div class="bloko-form-item">
-                              <label class="bloko-form-legend ">დამატებითი ენები</label>
-                            </div>
-                        </div>
-                       
-                    </div>
-                </div>
-                <div class="resume-remove-item-wrapper resume-remove-item-wrapper_language">
-                    <div class="bloko-column bloko-column_xs-4 bloko-column_s-6 bloko-column_m-6 bloko-column_l-5">
-                        <div class="resume-remove-item-gap">
-                            <div class="bloko-control-group">
-                                <div class="bloko-control-group__content-sized">
-                                    <div class="resume-language-select">
-                                        <div class="HH-Resume-LanguageSelect-Select bloko-custom-select" data-selected-language="" data-qa="resume-language-select">
-         
-                                                    <select class="bloko-select Bloko-CustomSelect-NativeSelect HH-Resume-Languages-Id" name="language.id">
-                                                        <option value="57">ინგლისური</option>
-                                                        <option value="58">გერმანული</option>
-                                                        <option value="59">ფრანგული</option>
-                                                    </select>
-                                        </div>
+               
+                  <div class="test12 bloko-column bloko-column_xs-4 bloko-column_s-6 bloko-column_m-4 bloko-column_l-3">
+                     <label class="bloko-form-legend ">დამატებითი ენები</label>
+                  </div>
+            <div class="bloko-column bloko-column_xs-4 bloko-column_s-6 bloko-column_m-4 bloko-column_l-3">
+               <script data-name="HH/Resume/LanguageSelect/LanguageSelect" data-params='
+                  {
+                  "customSelectParams": {
+                  "templateJSON": [
+                  {"text": "ქართული", "addSeparator": true, "value": "1"}, 
+                  {"text": "ინგლისური", "addSeparator": false, "value": "2"}, 
+                  {"text": "რუსული", "addSeparator": false, "value": "3"}
+                  ]}}'></script>
+
+                  <div class="resume-form-row">
+               <div class="bloko-section">
+                  
+                  <div class="HH-Resume-Languages-Item" data-qa="resume-language">
+
+                        <div class="resume-remove-item-wrapper resume-remove-item-wrapper_language">
+                           <div class="bloko-column bloko-column_xs-4 bloko-column_s-6 bloko-column_m-6 bloko-column_l-6" style="padding: 0 0;">
+                              <div class="resume-remove-item-gap">
+                                 <div class="bloko-control-group">
+                                    <div class="bloko-control-group__content-sized">
+                                       <div class="resume-language-select">
+                                          <div class="HH-Resume-LanguageSelect-Select bloko-custom-select" data-selected-language="57" data-qa="resume-language-select">
+                                             <select class="bloko-select Bloko-CustomSelect-NativeSelect HH-Resume-Languages-Id" name="language.id" disabled>
+                                                <option value="1"></option>
+                                             </select>
+                                          </div>
+                                       </div>
                                     </div>
-                                </div>
-                            <div class="resume-language-break">
+                                    <div class="resume-language-break">
                                 <div class="bloko-form-item"></div>
                             </div>
                             <div class="bloko-control-group__content-sized">
@@ -1723,11 +1907,9 @@
                                     </select>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="resume-remove-item " style="position: absolute;
-                right: -70px;">
+
+                            <div class="resume-remove-item " style="position: absolute;
+                right: 0px;">
                     <div class="resume-remove-item__button HH-Form-Element-Remove">
                         <span class="bloko-icon-dynamic remove-button-append">
                             <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg id="Layer_1" style="enable-background:new 0 0 64 64;" version="1.1" viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g id="Icon-Trash" transform="translate(232.000000, 228.000000)"><polygon class="st0" id="Fill-6" points="-207.5,-205.1 -204.5,-205.1 -204.5,-181.1 -207.5,-181.1    "/><polygon class="st0" id="Fill-7" points="-201.5,-205.1 -198.5,-205.1 -198.5,-181.1 -201.5,-181.1    "/><polygon class="st0" id="Fill-8" points="-195.5,-205.1 -192.5,-205.1 -192.5,-181.1 -195.5,-181.1    "/><polygon class="st0" id="Fill-9" points="-219.5,-214.1 -180.5,-214.1 -180.5,-211.1 -219.5,-211.1    "/><path class="st0" d="M-192.6-212.6h-2.8v-3c0-0.9-0.7-1.6-1.6-1.6h-6c-0.9,0-1.6,0.7-1.6,1.6v3h-2.8v-3     c0-2.4,2-4.4,4.4-4.4h6c2.4,0,4.4,2,4.4,4.4V-212.6" id="Fill-10"/><path class="st0" d="M-191-172.1h-18c-2.4,0-4.5-2-4.7-4.4l-2.8-36l3-0.2l2.8,36c0.1,0.9,0.9,1.6,1.7,1.6h18     c0.9,0,1.7-0.8,1.7-1.6l2.8-36l3,0.2l-2.8,36C-186.5-174-188.6-172.1-191-172.1" id="Fill-11"/></g></g></svg>
@@ -1735,9 +1917,17 @@
                     </div>
                     
                 </div>
+                                 </div>
+                              </div>
+                           </div>                                         
+                     </div>
+                  </div>                                
+
+                  
+               </div>
             </div>
-         </div>
-         </div>
+            </div>
+
                   `);
              });
           
