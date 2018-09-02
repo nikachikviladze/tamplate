@@ -40,9 +40,47 @@
       </script>
       <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="css/style2.css">
+      <script  src="js/mapping.js"></script>
       <script  src="js/libs.js"></script>
-      <script async="true" src="js/combined.js"></script>
+      <script src="js/combined.js"></script>
       <meta name="viewport" content="width=device-width">
+
+       <script data-name="HH/Form" data-params="
+                  {
+                  &quot;conditions&quot;: {
+                  &quot;accessType&quot;:{&quot;mincount&quot;:1,&quot;maxcount&quot;:1,&quot;string&quot;:{&quot;required&quot;:true,&quot;type&quot;:&quot;string&quot;,&quot;enumeration&quot;:[&quot;no_one&quot;,&quot;whitelist&quot;,&quot;blacklist&quot;,&quot;clients&quot;,&quot;everyone&quot;,&quot;direct&quot;]}},
+
+
+                  
+
+                  &quot;fname&quot;:{&quot;mincount&quot;:1,&quot;maxcount&quot;:1,&quot;string&quot;:{&quot;required&quot;:true}},
+                  &quot;firstName&quot;:{&quot;mincount&quot;:1,&quot;maxcount&quot;:1,&quot;string&quot;:{&quot;required&quot;:true}},
+                  &quot;lastName&quot;:{&quot;mincount&quot;:1,&quot;maxcount&quot;:1,&quot;string&quot;:{&quot;required&quot;:true}},
+
+
+                 
+
+                  &quot;workSchedule&quot;:{&quot;mincount&quot;:1,&quot;string&quot;:{&quot;required&quot;:true,&quot;type&quot;:&quot;string&quot;,&quot;enumeration&quot;:[&quot;full_day&quot;,&quot;shift&quot;,&quot;flexible&quot;,&quot;remote&quot;,&quot;fly_in_fly_out&quot;]}
+
+              }
+                  , &quot;experienceSelector&quot;: {
+                  &quot;mincount&quot;: 1,
+                  &quot;maxcount&quot;: 1,
+                  &quot;string&quot;: {
+                  &quot;required&quot;: true,
+                  &quot;type&quot;: &quot;string&quot;
+                  }
+                  }
+                  },
+                  &quot;messages&quot;: {
+                  &quot;_default&quot;:{&quot;empty&quot;:&quot;შევსება სავალდებულოა&quot;,&quot;tooShort&quot;:&quot;Too short&quot;,&quot;tooLong&quot;:&quot;Length exceeded by %s&quot;,&quot;tooShortSize&quot;:&quot;Too few fields&quot;,&quot;tooLongSize&quot;:&quot;Too many fields&quot;,&quot;incorrectValues&quot;:&quot;Please specify your field of work&quot;,&quot;lengthWarn&quot;:&quot;%s more, not over&quot;,&quot;variants&quot;:[&quot;character&quot;,&quot;characters&quot;,&quot;characters&quot;,&quot;characters&quot;],&quot;notDate&quot;:&quot;Incorrect date&quot;,&quot;tooEarly&quot;:&quot;Too early&quot;,&quot;tooLate&quot;:&quot;Too late&quot;},&quot;title&quot;:{&quot;isIn&quot;:&quot;You already have a resume with this name&quot;},&quot;salary&quot;:{&quot;zeroWarn&quot;:&quot;Will be empty desirable compensation&quot;,&quot;tooSmall&quot;:&quot;In this specialist field, salary cannot be lower than %s %s&quot;},&quot;lastName&quot;:{&quot;regexpFail&quot;:&quot;Only letters and hyphen&quot;},&quot;firstName&quot;:{&quot;regexpFail&quot;:&quot;Only letters and hyphen&quot;},&quot;middleName&quot;:{&quot;regexpFail&quot;:&quot;Only letters and hyphen&quot;},&quot;birthday&quot;:{&quot;variants&quot;:[&quot;year&quot;,&quot;years&quot;,&quot;year&quot;,&quot;years&quot;],&quot;tooLate&quot;:&quot;Too young&quot;,&quot;regexpFail&quot;:&quot;Incorrect date&quot;},&quot;email&quot;:{&quot;regexpFail&quot;:&quot;Not email&quot;,&quot;error.emailExist&quot;:&quot;The given e-mail address is taken by another user. Please enter another e-mail address or&quot;},&quot;phone&quot;:{&quot;emptyNumber&quot;:&quot;Number not specified&quot;,&quot;emptyCountryAndNumber&quot;:&quot;Country code and number not specified&quot;,&quot;emptyCity&quot;:&quot;City code not specified&quot;,&quot;emptyCountryAndCity&quot;:&quot;City and country code not specified&quot;,&quot;emptyCountry&quot;:&quot;Country code not specified&quot;,&quot;invalid&quot;:&quot;Number entered incorrectly&quot;,&quot;invalidCountry&quot;:&quot;Wrong country code&quot;},&quot;experience&quot;:{&quot;endDateEarlierThanStartDate&quot;:&quot;End date before start date&quot;},&quot;employment&quot;:{&quot;mincount&quot;:&quot;Required field&quot;},&quot;workSchedule&quot;:{&quot;mincount&quot;:&quot;Required field&quot;},&quot;citizenship&quot;:{&quot;mincount&quot;:&quot;Required field&quot;,&quot;maxcount&quot;:&quot;[EN:11:rb.message.citizenship.maxcount]&quot;},&quot;workTicket&quot;:{&quot;mincount&quot;:&quot;Required field&quot;,&quot;maxcount&quot;:&quot;[EN:11:rb.message.workTicket.maxcount]&quot;},&quot;primaryEducation&quot;:{&quot;tooSmall&quot;:&quot;The graduation year is too low&quot;,&quot;tooLate&quot;:&quot;The graduation year is too high&quot;},&quot;elementaryEducation&quot;:{&quot;tooSmall&quot;:&quot;The graduation year is too low&quot;,&quot;tooLate&quot;:&quot;The graduation year is too high&quot;},&quot;attestationEducation&quot;:{&quot;tooSmall&quot;:&quot;The year of completion is too low&quot;,&quot;tooLate&quot;:&quot;The year of completion is too high&quot;},&quot;additionalEducation&quot;:{&quot;tooSmall&quot;:&quot;The graduation year is too low&quot;,&quot;tooLate&quot;:&quot;The graduation year is too high&quot;},&quot;personalSite&quot;:{&quot;invalid&quot;:&quot;Некорректный адрес&quot;}
+                  },
+                  &quot;dependantFields&quot;: {
+                  &quot;main&quot;: &quot;keySkills&quot;,
+                  &quot;secondary&quot;: &quot;skills&quot;
+                  }
+                  }
+                  "></script>
    </head>
    <body class="l-ambient s-friendly custom-font-allowed">
       <div class="navi HH-VacancyMainSearchInfoTip-Navi navi_index">
@@ -519,7 +557,7 @@
                                  </div>
                                  <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-7">
                                     <div class="bloko-form-item">
-                                       <input type="text" name="firstName" required="required" autocorrect="off" autocapitalize="off" spellcheck="false" maxlength="256" placeholder="Имя" data-qa="account-signup-firstname" value="" class="bloko-input_xs-only-placeholder bloko-input HH-ApplicantRegistration-FormSignupFirstName Bloko-Name-Capitalize-Input bloko-input_name">
+                                       <input type="text" name="name" required="required" autocorrect="off" autocapitalize="off" spellcheck="false" maxlength="256" placeholder="Имя" data-qa="account-signup-firstname" value="" class="bloko-input_xs-only-placeholder bloko-input HH-ApplicantRegistration-FormSignupFirstName Bloko-Name-Capitalize-Input bloko-input_name">
                                     </div>
                                  </div>
                               </div>
@@ -531,7 +569,13 @@
                                  </div>
                                  <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-7">
                                     <div class="bloko-form-item">
-                                       <input type="text" name="lastName" required="required" autocorrect="off" autocapitalize="off" spellcheck="false" maxlength="512" placeholder="Фамилия" value="" data-qa="account-signup-lastname" class="bloko-input_xs-only-placeholder bloko-input HH-ApplicantRegistration-FormSignupLastName Bloko-Name-Capitalize-Input bloko-input_name">
+                                       <script data-name="HH/Form/Text" data-params='
+                                                {
+                                                "field": "fname",
+                                                "uid": "uid022"
+                                                }
+                                                '></script>
+                                       <input type="text" name="fname.string" required="required" autocorrect="off" autocapitalize="off" spellcheck="false" maxlength="512" placeholder="Фамилия" value="" data-qa="account-signup-lastname" class="bloko-input_xs-only-placeholder bloko-input HH-ApplicantRegistration-FormSignupLastName Bloko-Name-Capitalize-Input bloko-input_name">
                                     </div>
                                  </div>
                               </div>
@@ -720,6 +764,7 @@
                            <p class="resume-hint">Контакты будут использовать работодатели для связи с вами</p>
                         </div>
                      </div>
+                     
                      <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-9 bloko-column_l-9 bloko-column_container">
                         <div class="bloko-section">
                            <div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0">
@@ -735,9 +780,16 @@
                                           </div>
                                           <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4">
                                              <div class="HH-Form-Element-TooltipElement" data-qa="resume-section-controls">
-                                                <input type="text" name="firstName.string" placeholder="Имя" class="bloko-input Bloko-Name-Capitalize-Input HH-Form-Text-Value bloko-input_name" value="Dexter">
+                                                <script data-name="HH/Form/Text" data-params='
+                                                {
+                                                "field": "firstName",
+                                                "uid": "uid02"
+                                                }
+                                                '></script>
+                                                <input type="text" name="firstName" placeholder="Имя" class="bloko-input Bloko-Name-Capitalize-Input HH-Form-Text-Value bloko-input_name">
                                              </div>
                                           </div>
+                                        
                                           <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-8 bloko-column_l-8">
                                              <div class="resume-form-row"></div>
                                           </div>
@@ -748,7 +800,13 @@
                                           </div>
                                           <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4">
                                              <div class="HH-Form-Element-TooltipElement" data-qa="resume-section-controls">
-                                                <input type="text" name="lastName.string" placeholder="Фамилия" class="bloko-input Bloko-Name-Capitalize-Input HH-Form-Text-Value bloko-input_name" value="Sajaia">
+                                                <script data-name="HH/Form/Text" data-params='
+                                                {
+                                                "field": "lastName",
+                                                "uid": "uid02"
+                                                }
+                                                '></script>
+                                                <input type="text" name="lastName.string" placeholder="Фамилия" class="bloko-input Bloko-Name-Capitalize-Input HH-Form-Text-Value bloko-input_name">
                                              </div>
                                           </div>
                                        </div>
