@@ -17604,3 +17604,18 @@ html > body .formleft:first-letter {
     stroke: #96979a;
     cursor: pointer;
 }*/
+.leftblue{
+    position:absolute;
+    width:300px;
+    height:100%;
+    background:#008acb;
+    top:0;
+}
+.rightblue{
+    position:absolute;
+    width:300px;
+    height:100%;
+    background:#008acb;
+    top:0;
+    right:0;
+}
