@@ -17574,6 +17574,9 @@ html > body .formleft:first-letter {
 .b-article-breadcrumbs {
     font-size: small
 }
+.bloko-icon_print{
+    background-image: url(../images/print-icon__min_.svg?01022017);
+}
 .bloko-icon_done {
     background-image: url(../images/done-icon__min_.svg);
 }
