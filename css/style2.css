@@ -9541,9 +9541,16 @@ small {
 .applications-item_loading .applications-item__loader {
     display: block
 }
+.login-box{
+    position:absolute;
+    right:60px;
+    background: rgba(0,0,0,.7);
+    padding:15px;
+    top:120px;
+}
 .index-dashboard {
     max-width: 1600px;
-    margin: 0 auto;
+    margin: 118px auto 0;
     padding-top: 20px;
     height: 314px;
     color: #fff;
@@ -9593,7 +9600,9 @@ small {
     top:0;
     left:0;
 }
-
+.index-dashboard_domain-hh-ru{
+    background-image: url(https://i.hh.ru/css/globals/blocks/index-dashboard/images/anonymous-background-builders-new__min_.jpg);
+}
 @media(min-width:1020px) {
     /* .index-dashboard_domain-hh-ru {
         background-position: calc(50% + 100px) 50%
@@ -17618,4 +17627,25 @@ html > body .formleft:first-letter {
     background:#008acb;
     top:0;
     right:0;
+}
+.live-button{
+    position:fixed;
+    width:auto;
+    background:darkred;
+    color:#fff;
+    bottom:20px;
+    right:20px;
+    border:none;
+    padding:10px 20px;
+    border-radius:10px;
+    
+}
+.live-popup{
+    width:500px;
+    height:300px;
+    position:fixed;
+    bottom:58px;
+    right:50px;
+    z-index: 9999999;
+    display:none;
 }
