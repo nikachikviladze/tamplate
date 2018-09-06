@@ -17649,3 +17649,20 @@ html > body .formleft:first-letter {
     z-index: 9999999;
     display:none;
 }
+.airchie{
+    width: 100%;
+    padding: 20px;
+    text-align:right;
+}
+.chooseprof{
+    padding:10px 20px;
+    margin-right:35px;
+    background: #0f8fee;
+    color:#fff;
+    border:none;
+    font-family: myFont;
+    
+}
+.babysister-box,.cardriver-box{
+    display:none;
+}

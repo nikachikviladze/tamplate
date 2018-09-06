@@ -2202,11 +2202,11 @@ section {
     text-align: center;
     padding-left: 20px;
     padding-right: 50px;
-    background-color: #f1c846;
+    background-color: #0f8fee;
     position: relative;
     margin: auto;
     display: table;
-    color: #333;
+    color: #fff;
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .2);
@@ -2228,17 +2228,17 @@ section {
     background-color: #ab0016
 }
 .bloko-notification_ok {
-    background-color: #8cb900;
+    background-color: #0f8fee;
     color: #fff
 }
 .bloko-notification_ok .bloko-notification__link {
     color: #fff
 }
 .bloko-notification_ok .bloko-notification__close:hover {
-    background-color: #7ea700
+    background-color: #0f8fee
 }
 .bloko-notification_ok .bloko-notification__close:active {
-    background-color: #709400
+    background-color: #0f8fee
 }
 .bloko-notification_full-size {
     width: 100%
@@ -2258,10 +2258,10 @@ section {
     top: 0
 }
 .bloko-notification__close:hover {
-    background-color: #efbf29
+    background-color: #0f8fee
 }
 .bloko-notification__close:active {
-    background-color: #e7b412
+    background-color: #0f8fee
 }
 .bloko-notification__close:after {
     display: block;
@@ -5113,4 +5113,7 @@ padding: 10px;
 }
 .language-box{
     border-bottom:1px dashed silver;
+}
+.HH-Resume-Education-Collection-Template{
+    background: blue!important;
 }

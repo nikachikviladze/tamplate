@@ -573,10 +573,17 @@
                               }
                               '></script><iframe class="g-hidden HH-Resume-ResumagicUpload-Iframe" name="HH-Resume-ResumagicUpload-Iframe"></iframe>
                            <form action="/applicant/resumes/import" target="HH-Resume-ResumagicUpload-Iframe" class="g-hidden HH-Resume-ResumagicUpload-Form" method="post" enctype="multipart/form-data"><input type="hidden" name="_xsrf" value="9aaf11e0e323dd44bc37e6b38c84705c"></form>
+                           
                            <div class="bloko-button bloko-button_primary HH-Resume-ResumagicUpload-Trigger" data-tooltip-message="doc, pdf, txt,
                               не более 5Мб">
                               <span class="resumagic-fileinput__text-mobile">Из файла</span><span class="resumagic-fileinput__text-default">Загрузить из файла</span><span class="HH-Resume-ResumagicUpload-Input"><input name="file" type="file" class="resumagic-fileinput"><input type="hidden" name="_xsrf" value="9aaf11e0e323dd44bc37e6b38c84705c"></span><script data-name="HH/ResumeButton" data-params=""></script>
                            </div>
+
+                           <div class="bloko-button bloko-button_primary HH-Resume-ResumagicUpload-Trigger" data-tooltip-message="JPG, jpg, png, PNG,
+                              მაქსიმალური ზომა 2მბ">
+                              <span class="resumagic-fileinput__text-mobile">Из файла</span><span class="resumagic-fileinput__text-default">ფოტოს ატვირთვა</span><span class="HH-Resume-ResumagicUpload-Input"><input name="file" type="file" class="resumagic-fileinput"><input type="hidden" name="_xsrf" value="9aaf11e0e323dd44bc37e6b38c84705c"></span><script data-name="HH/ResumeButton" data-params=""></script>
+                           </div>
+
                            <span class="bloko-loading HH-Resume-Resumagic-Loader"><span class="bloko-icon bloko-icon_loading bloko-icon_initial-primary"></span><span class="bloko-form-spacer">Загрузка данных</span></span>
                            <div class="resume-header-actions-wrapper resume-header-actions-wrapper_screen-s">
                               <div class="resume-header-actions">
@@ -1834,7 +1841,12 @@
                                              '></script>
                                           <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
                                              <div class="HH-Resume-Title-Container">
-                                                <input type="text" class="bloko-input                                       HH-Tags-Input                                       HH-Resume-Title-Value                                       HH-KeySkills-PositionName                                       HH-Form-Element-TooltipElement" placeholder="პოზიცია" name="title.string" value=""><script data-name="HH/Bloko/Suggest" data-for="prev" data-params='
+                                                <select class="bloko-input                                       HH-Tags-Input                                       HH-Resume-Title-Value                                       HH-KeySkills-PositionName                                       HH-Form-Element-TooltipElement" placeholder="პოზიცია" name="title.string" value="">
+                                                            
+                                                            <option value="babysister" class="babysister">ძიძა</option>
+                                                            <option value="driver" class="cardriver">მძღოლი</option>
+                                                </select>
+                                                <script data-name="HH/Bloko/Suggest" data-for="prev" data-params='
                                                    {
                                                    "limit": 10,
                                                    "selectonblur": false,
@@ -1843,14 +1855,14 @@
                                                    '></script>
                                              </div>
                                           </div>
-                                          <div class="g-hidden HH-Resume-Short-YoungHelper">
-                                             <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
-                                                <div class="bloko-form-hint"><span class="jsxComponents-Hint-List"><span class="jsxComponents-Hint-List-Title">მაგალითად: <span class="resume-switcher-wrapper"><span class="jsxComponents-Hint-List-Item bloko-link-switch bloko-link-switch_tertiary">სტაჟიორი კომპანიაში</span></span><span class="resume-switcher-wrapper"><span class="jsxComponents-Hint-List-Item bloko-link-switch bloko-link-switch_tertiary">Младший специалист технического отдела</span></span><span class="resume-switcher-wrapper"><span class="jsxComponents-Hint-List-Item bloko-link-switch bloko-link-switch_tertiary">კურიერი</span></span></span></span></div>
-                                             </div>
-                                             <div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><span class="jsxComponents-Hint-List"><span class="jsxComponents-Hint-List-Title">მაგალითად: <span class="resume-switcher-wrapper"><span class="jsxComponents-Hint-List-Item bloko-link-switch">სტაჟიორი კომპანიაში</span></span><span class="resume-switcher-wrapper"><span class="jsxComponents-Hint-List-Item bloko-link-switch">Младший специалист технического отдела</span></span><span class="resume-switcher-wrapper"><span class="jsxComponents-Hint-List-Item bloko-link-switch">კურიერი</span></span></span></span></div>
-                                          </div>
+                                          
                                        </div>
                                     </div>
+
+                                    <div class="airchie">
+                                                <span class="chooseprof">აირჩიე</span>
+                                            </div>
+                                    
                                     <div class="resume-form-row">
                                        <script data-name="HH/Resume/Salary" data-params='
                                           {
@@ -2049,6 +2061,62 @@
                            </div>
                         </div>
                      </div>
+
+
+                     <div class="babysister-box">
+
+                              <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
+                                          <div class="bloko-form-item">
+                                                <label class="bloko-form-legend">
+                                                      სამუშაო გამოცდილება
+                                                </label>
+                                          </div>
+                                 </div>
+                                       
+                                       <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
+                                                <div class="resume-section-controls HH-Form-Element-TooltipElement">
+                                                            <div class="resume-checkbox-wrapper">
+                                                                  <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                        <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full_day" name="workSchedule.string" data-qa="createresume__workschedule-FULL_DAY" checked><span class="bloko-checkbox__text">ოჯახში</span></label></div>
+                                                            <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="shift" name="workSchedule.string" data-qa="createresume__workschedule-SHIFT"><span class="bloko-checkbox__text">კომპანიაში</span></label></div>
+                                                            <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="flexible" name="workSchedule.string" data-qa="createresume__workschedule-FLEXIBLE"><span class="bloko-checkbox__text">სადღაც</span></label></div>
+                                                            <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="remote" name="workSchedule.string" data-qa="createresume__workschedule-REMOTE"><span class="bloko-checkbox__text">სადმე</span></label></div>
+                                                            <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="fly_in_fly_out" name="workSchedule.string" data-qa="createresume__workschedule-FLY_IN_FLY_OUT"><span class="bloko-checkbox__text">უბანში</span></label></div>
+                                                         </div>
+                                       </div>
+                                       
+                     </div>
+
+
+
+
+
+
+                     <div class="cardriver-box">
+                           
+                              <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
+                                          <div class="bloko-form-item">
+                                                <label class="bloko-form-legend">
+                                                      საყვარელი მანქანა
+                                                </label>
+                                          </div>
+                                 </div>
+                                       
+                                       <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
+                                                <div class="resume-section-controls HH-Form-Element-TooltipElement">
+                                                            <div class="resume-checkbox-wrapper">
+                                                                  <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                        <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full_day" name="workSchedule.string" data-qa="createresume__workschedule-FULL_DAY" checked><span class="bloko-checkbox__text">მერსედესი</span></label></div>
+                                                            <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="shift" name="workSchedule.string" data-qa="createresume__workschedule-SHIFT"><span class="bloko-checkbox__text">ოპელი</span></label></div>
+                                                            <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="flexible" name="workSchedule.string" data-qa="createresume__workschedule-FLEXIBLE"><span class="bloko-checkbox__text">ლადა</span></label></div>
+                                                            <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="remote" name="workSchedule.string" data-qa="createresume__workschedule-REMOTE"><span class="bloko-checkbox__text">ოპელი</span></label></div>
+                                                            <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="fly_in_fly_out" name="workSchedule.string" data-qa="createresume__workschedule-FLY_IN_FLY_OUT"><span class="bloko-checkbox__text">აუდი</span></label></div>
+                                                         </div>
+                                       </div>
+                                       
+                     </div>
+                     
+                     
                      <div class="HH-Resume-Short-AllFields g-hidden">
                         <div class="HH-Resume-Short-Experience g-hidden HH-Resume-Autosave-Block" data-hh-autosave-block="experience">
                            <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-12 bloko-column_l-16">
@@ -2081,6 +2149,8 @@
                                  </div>
                                  <a name="experience" href="#experience" class="resume__hashtag"> </a>
                                  <div>
+
+                                    
                                     <div class="g-hidden HH-Form-Collection-FieldTitle">
                                        <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-9 bloko-column_l-12">
                                           <div class="bloko-gap bloko-gap_bottom"><strong>Опыт работы</strong></div>
@@ -2090,6 +2160,7 @@
                                     <div class="HH-Resume-Experiences-Item">
                                        <div class="resume-remove-item-wrapper">
                                           <div class="resume-form-row">
+                                                
                                              <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
                                                 <div class="bloko-form-item"><label class="bloko-form-legend ">Начало работы</label></div>
                                              </div>
@@ -3386,7 +3457,98 @@
          "uid": "uid24",
          "default": "full_day"
          }
-         '></script><div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3"><div class="bloko-form-item"><label class="bloko-form-legend bloko-form-legend_for-baseline">График работы</label></div></div><div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="resume-short-label">График работы</label></div><div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6"><div class="resume-section-controls HH-Form-Element-TooltipElement"><div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full_day" name="workSchedule.string" data-qa="createresume__workschedule-FULL_DAY" checked><span class="bloko-checkbox__text">Полный день</span></label></div><div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="shift" name="workSchedule.string" data-qa="createresume__workschedule-SHIFT"><span class="bloko-checkbox__text">Сменный график</span></label></div><div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="flexible" name="workSchedule.string" data-qa="createresume__workschedule-FLEXIBLE"><span class="bloko-checkbox__text">Гибкий график</span></label></div><div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="remote" name="workSchedule.string" data-qa="createresume__workschedule-REMOTE"><span class="bloko-checkbox__text">Удаленная работа</span></label></div><div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="fly_in_fly_out" name="workSchedule.string" data-qa="createresume__workschedule-FLY_IN_FLY_OUT"><span class="bloko-checkbox__text">Вахтовый метод</span></label></div></div></div></div><div class="resume-remove-item resume-remove-item_for-baseline"><div class="resume-remove-item__button "><span class="bloko-icon-dynamic"><span class="bloko-icon-link HH-Resume-Constructor-RemoveButton" data-qa="resume-remove-item"><span class="bloko-icon                                      bloko-icon_cancel                                      bloko-icon_initial-impact                                      bloko-icon_highlighted-tertiary"></span></span></span></div><span class="g-hidden "></span></div></div><div data-hh-autosave-block="metro" data-hh-autosave-validation-block="personal" data-constructor-key="metro" class="resume-remove-item-wrapper HH-Resume-Constructor-Block HH-Resume-Autosave-Block HH-Resume-Constructor-MetroBlock HH-Resume-Constructor-Hidden g-hidden"><div class="HH-ToggleMetroSelector-MetroElement HH-Resume-Constructor-Metro"><div class="resume-form-row"><div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3"><div class="bloko-form-item"><label class="bloko-form-legend ">Ближайшая станция метро</label></div></div><div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="resume-short-label">Ближайшая станция метро</label></div><div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4"><div class="HH-Form-Element-TooltipElement " data-qa="resume-section-controls"><div class="bloko-gap bloko-gap_right"><input type="text" autocomplete="off" class="bloko-input HH-Metro-Input HH-MetroSelection-Input" data-qa="suggestMetro resume-metro" value=""></div></div></div></div></div><div class="resume-remove-item resume-remove-item_with-label"><div class="resume-remove-item__button "><span class="bloko-icon-dynamic"><span class="bloko-icon-link HH-Resume-Constructor-RemoveButton" data-qa="resume-remove-item"><span class="bloko-icon                                      bloko-icon_cancel                                      bloko-icon_initial-impact                                      bloko-icon_highlighted-tertiary"></span></span></span></div><span class="g-hidden "></span></div></div><div data-hh-autosave-block="hasVehicle" data-hh-autosave-validation-block="experience" data-constructor-key="hasVehicle" class="resume-remove-item-wrapper HH-Resume-Constructor-Block HH-Resume-Autosave-Block HH-Resume-Constructor-Hidden g-hidden"><div class="resume-form-row"><script data-name="HH/CheckboxNormalizer" data-params=""></script><div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3"><div class="bloko-form-item"><label class="bloko-form-legend bloko-form-legend_for-baseline">Автомобиль</label></div></div><div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="resume-short-label">Автомобиль</label></div><div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6"><div class="HH-Form-Element-TooltipElement " data-qa="resume-section-controls"><div class="bloko-gap bloko-gap_right"><input type="hidden" value="false" name="hasVehicle.string" disabled class="HH-CheckboxNormalizer-Hidden"><label class="bloko-checkbox"><input class="bloko-checkbox__input HH-CheckboxNormalizer-Visible" type="checkbox" name="hasVehicle.string" value="true"><span class="bloko-checkbox__text">Есть личный автомобиль</span></label></div></div></div></div><div class="resume-remove-item resume-remove-item_with-label resume-remove-item_for-baseline "><div class="resume-remove-item__button "><span class="bloko-icon-dynamic"><span class="bloko-icon-link HH-Resume-Constructor-RemoveButton" data-qa="resume-remove-item"><span class="bloko-icon                                      bloko-icon_cancel                                      bloko-icon_initial-impact                                      bloko-icon_highlighted-tertiary"></span></span></span></div><span class="g-hidden "></span></div></div><div data-hh-autosave-block="driverLicenseTypes" data-hh-autosave-validation-block="experience" data-constructor-key="driverLicenseTypes" class="resume-remove-item-wrapper HH-Resume-Constructor-Block HH-Resume-Autosave-Block HH-Resume-Constructor-Hidden g-hidden"><div class="resume-form-row"><script data-name="HH/CheckboxNormalizer" data-params=""></script><div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3"><div class="bloko-form-item"><label class="bloko-form-legend bloko-form-legend_for-small">Категория прав</label></div></div><div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="resume-short-label">Категория прав</label></div><div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6"><div class="HH-Form-Element-TooltipElement " data-qa="resume-section-controls"><div class="bloko-gap bloko-gap_right"><div class="bloko-form-item"><div class="bloko-button-group"><input type="checkbox" value="A" id="A" name="driverLicenseTypes.string" class="bloko-button-check-helper HH-CheckboxNormalizer-Visible"><label class="bloko-button bloko-button_small" for="A">A</label><input type="checkbox" value="B" id="B" name="driverLicenseTypes.string" class="bloko-button-check-helper HH-CheckboxNormalizer-Visible"><label class="bloko-button bloko-button_small" for="B">B</label><input type="checkbox" value="C" id="C" name="driverLicenseTypes.string" class="bloko-button-check-helper HH-CheckboxNormalizer-Visible"><label class="bloko-button bloko-button_small" for="C">C</label><input type="checkbox" value="D" id="D" name="driverLicenseTypes.string" class="bloko-button-check-helper HH-CheckboxNormalizer-Visible"><label class="bloko-button bloko-button_small" for="D">D</label><input type="checkbox" value="E" id="E" name="driverLicenseTypes.string" class="bloko-button-check-helper HH-CheckboxNormalizer-Visible"><label class="bloko-button bloko-button_small" for="E">E</label><input type="checkbox" value="BE" id="BE" name="driverLicenseTypes.string" class="bloko-button-check-helper HH-CheckboxNormalizer-Visible"><label class="bloko-button bloko-button_small" for="BE">BE</label><input type="checkbox" value="CE" id="CE" name="driverLicenseTypes.string" class="bloko-button-check-helper HH-CheckboxNormalizer-Visible"><label class="bloko-button bloko-button_small" for="CE">CE</label><input type="checkbox" value="DE" id="DE" name="driverLicenseTypes.string" class="bloko-button-check-helper HH-CheckboxNormalizer-Visible"><label class="bloko-button bloko-button_small" for="DE">DE</label><input type="checkbox" value="TM" id="TM" name="driverLicenseTypes.string" class="bloko-button-check-helper HH-CheckboxNormalizer-Visible"><label class="bloko-button bloko-button_small" for="TM">Tm</label><input type="checkbox" value="TB" id="TB" name="driverLicenseTypes.string" class="bloko-button-check-helper HH-CheckboxNormalizer-Visible"><label class="bloko-button bloko-button_small" for="TB">Tb</label></div></div><input type="hidden" name="driverLicenseTypes.string" value="" class="HH-CheckboxNormalizer-Hidden" disabled></div></div></div></div><div class="resume-remove-item resume-remove-item_with-label resume-remove-item_for-small-control "><div class="resume-remove-item__button "><span class="bloko-icon-dynamic"><span class="bloko-icon-link HH-Resume-Constructor-RemoveButton" data-qa="resume-remove-item"><span class="bloko-icon                                      bloko-icon_cancel                                      bloko-icon_initial-impact                                      bloko-icon_highlighted-tertiary"></span></span></span></div><span class="g-hidden "></span></div></div><div class="HH-Resume-Constructor-PlaceToAdd"></div></div></div><div class="HH-Resume-Constructor-AddButtonsWrapper bloko-section"><div class="bloko-column bloko-column_xs-0 bloko-column_s-0 bloko-column_m-3 bloko-column_l-3"></div><div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6"><span data-constructor-key="relocationArea" class="resume-switcher-wrapper HH-Resume-Constructor-AddButton HH-Resume-Constructor-Hidden g-hidden"><span class="bloko-link-switch">Переезд</span></span><span data-constructor-key="workTicket" class="resume-switcher-wrapper HH-Resume-Constructor-AddButton HH-Resume-Constructor-Hidden g-hidden"><span class="bloko-link-switch">Разрешение на работу</span></span><span data-constructor-key="employment" class="resume-switcher-wrapper HH-Resume-Constructor-AddButton HH-Resume-Constructor-Hidden g-hidden"><span class="bloko-link-switch">Занятость</span></span><span data-constructor-key="workSchedule" class="resume-switcher-wrapper HH-Resume-Constructor-AddButton HH-Resume-Constructor-Hidden g-hidden"><span class="bloko-link-switch">График работы</span></span><span data-constructor-key="metro" class="resume-switcher-wrapper HH-Resume-Constructor-AddButton HH-Resume-Constructor-AddMetroButton "><span class="bloko-link-switch">Ближайшая станция метро</span></span><span data-constructor-key="hasVehicle" class="resume-switcher-wrapper HH-Resume-Constructor-AddButton "><span class="bloko-link-switch">Автомобиль</span></span><span data-constructor-key="driverLicenseTypes" class="resume-switcher-wrapper HH-Resume-Constructor-AddButton "><span class="bloko-link-switch">Категория прав</span></span></div></div></div></div><div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-9 bloko-column_l-9 bloko-column_container"><div class="bloko-column bloko-column_xs-0 bloko-column_s-0 bloko-column_m-3 bloko-column_l-3"></div><div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6"><button class="bloko-button                        bloko-button_primary                        bloko-button_large                        HH-Resume-Short-Submit                        HH-Form-SubmitButton" data-qa="resume-submit" disabled>Сохранить и опубликовать</button></div></div><input type="hidden" name="_xsrf" value="9aaf11e0e323dd44bc37e6b38c84705c"></form></div></div></div>
+         '></script>
+         <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
+                  <div class="bloko-form-item"><label class="bloko-form-legend bloko-form-legend_for-baseline">График работы</label></div>
+         </div>
+               <div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="resume-short-label">График работы</label></div>
+               <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
+                  <div class="resume-section-controls HH-Form-Element-TooltipElement">
+                     <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full_day" name="workSchedule.string" data-qa="createresume__workschedule-FULL_DAY" checked><span class="bloko-checkbox__text">Полный день</span></label></div>
+                     <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="shift" name="workSchedule.string" data-qa="createresume__workschedule-SHIFT"><span class="bloko-checkbox__text">Сменный график</span></label></div>
+                     <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="flexible" name="workSchedule.string" data-qa="createresume__workschedule-FLEXIBLE"><span class="bloko-checkbox__text">Гибкий график</span></label></div>
+                     <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="remote" name="workSchedule.string" data-qa="createresume__workschedule-REMOTE"><span class="bloko-checkbox__text">Удаленная работа</span></label></div>
+                     <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="fly_in_fly_out" name="workSchedule.string" data-qa="createresume__workschedule-FLY_IN_FLY_OUT"><span class="bloko-checkbox__text">Вахтовый метод</span></label></div>
+                  </div>
+               </div>
+               </div>
+               <div class="resume-remove-item resume-remove-item_for-baseline">
+                  <div class="resume-remove-item__button "><span class="bloko-icon-dynamic"><span class="bloko-icon-link HH-Resume-Constructor-RemoveButton" data-qa="resume-remove-item"><span class="bloko-icon                                      bloko-icon_cancel                                      bloko-icon_initial-impact                                      bloko-icon_highlighted-tertiary"></span></span></span></div>
+                  <span class="g-hidden "></span>
+               </div>
+               </div>
+               <div data-hh-autosave-block="metro" data-hh-autosave-validation-block="personal" data-constructor-key="metro" class="resume-remove-item-wrapper HH-Resume-Constructor-Block HH-Resume-Autosave-Block HH-Resume-Constructor-MetroBlock HH-Resume-Constructor-Hidden g-hidden">
+                  <div class="HH-ToggleMetroSelector-MetroElement HH-Resume-Constructor-Metro">
+                     <div class="resume-form-row">
+                        <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
+                           <div class="bloko-form-item"><label class="bloko-form-legend ">Ближайшая станция метро</label></div>
+                        </div>
+                        <div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="resume-short-label">Ближайшая станция метро</label></div>
+                        <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4">
+                           <div class="HH-Form-Element-TooltipElement " data-qa="resume-section-controls">
+                              <div class="bloko-gap bloko-gap_right"><input type="text" autocomplete="off" class="bloko-input HH-Metro-Input HH-MetroSelection-Input" data-qa="suggestMetro resume-metro" value=""></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="resume-remove-item resume-remove-item_with-label">
+                     <div class="resume-remove-item__button "><span class="bloko-icon-dynamic"><span class="bloko-icon-link HH-Resume-Constructor-RemoveButton" data-qa="resume-remove-item"><span class="bloko-icon                                      bloko-icon_cancel                                      bloko-icon_initial-impact                                      bloko-icon_highlighted-tertiary"></span></span></span></div>
+                     <span class="g-hidden "></span>
+                  </div>
+               </div>
+               <div data-hh-autosave-block="hasVehicle" data-hh-autosave-validation-block="experience" data-constructor-key="hasVehicle" class="resume-remove-item-wrapper HH-Resume-Constructor-Block HH-Resume-Autosave-Block HH-Resume-Constructor-Hidden g-hidden">
+                  <div class="resume-form-row">
+                     <script data-name="HH/CheckboxNormalizer" data-params=""></script>
+                     <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
+                        <div class="bloko-form-item"><label class="bloko-form-legend bloko-form-legend_for-baseline">Автомобиль</label></div>
+                     </div>
+                     <div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="resume-short-label">Автомобиль</label></div>
+                     <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
+                        <div class="HH-Form-Element-TooltipElement " data-qa="resume-section-controls">
+                           <div class="bloko-gap bloko-gap_right"><input type="hidden" value="false" name="hasVehicle.string" disabled class="HH-CheckboxNormalizer-Hidden"><label class="bloko-checkbox"><input class="bloko-checkbox__input HH-CheckboxNormalizer-Visible" type="checkbox" name="hasVehicle.string" value="true"><span class="bloko-checkbox__text">Есть личный автомобиль</span></label></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="resume-remove-item resume-remove-item_with-label resume-remove-item_for-baseline ">
+                     <div class="resume-remove-item__button "><span class="bloko-icon-dynamic"><span class="bloko-icon-link HH-Resume-Constructor-RemoveButton" data-qa="resume-remove-item"><span class="bloko-icon                                      bloko-icon_cancel                                      bloko-icon_initial-impact                                      bloko-icon_highlighted-tertiary"></span></span></span></div>
+                     <span class="g-hidden "></span>
+                  </div>
+               </div>
+               <div data-hh-autosave-block="driverLicenseTypes" data-hh-autosave-validation-block="experience" data-constructor-key="driverLicenseTypes" class="resume-remove-item-wrapper HH-Resume-Constructor-Block HH-Resume-Autosave-Block HH-Resume-Constructor-Hidden g-hidden">
+                  <div class="resume-form-row">
+                     <script data-name="HH/CheckboxNormalizer" data-params=""></script>
+                     <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
+                        <div class="bloko-form-item"><label class="bloko-form-legend bloko-form-legend_for-small">Категория прав</label></div>
+                     </div>
+                     <div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="resume-short-label">Категория прав</label></div>
+                     <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
+                        <div class="HH-Form-Element-TooltipElement " data-qa="resume-section-controls">
+                           <div class="bloko-gap bloko-gap_right">
+                              <div class="bloko-form-item">
+                                 <div class="bloko-button-group"><input type="checkbox" value="A" id="A" name="driverLicenseTypes.string" class="bloko-button-check-helper HH-CheckboxNormalizer-Visible"><label class="bloko-button bloko-button_small" for="A">A</label><input type="checkbox" value="B" id="B" name="driverLicenseTypes.string" class="bloko-button-check-helper HH-CheckboxNormalizer-Visible"><label class="bloko-button bloko-button_small" for="B">B</label><input type="checkbox" value="C" id="C" name="driverLicenseTypes.string" class="bloko-button-check-helper HH-CheckboxNormalizer-Visible"><label class="bloko-button bloko-button_small" for="C">C</label><input type="checkbox" value="D" id="D" name="driverLicenseTypes.string" class="bloko-button-check-helper HH-CheckboxNormalizer-Visible"><label class="bloko-button bloko-button_small" for="D">D</label><input type="checkbox" value="E" id="E" name="driverLicenseTypes.string" class="bloko-button-check-helper HH-CheckboxNormalizer-Visible"><label class="bloko-button bloko-button_small" for="E">E</label><input type="checkbox" value="BE" id="BE" name="driverLicenseTypes.string" class="bloko-button-check-helper HH-CheckboxNormalizer-Visible"><label class="bloko-button bloko-button_small" for="BE">BE</label><input type="checkbox" value="CE" id="CE" name="driverLicenseTypes.string" class="bloko-button-check-helper HH-CheckboxNormalizer-Visible"><label class="bloko-button bloko-button_small" for="CE">CE</label><input type="checkbox" value="DE" id="DE" name="driverLicenseTypes.string" class="bloko-button-check-helper HH-CheckboxNormalizer-Visible"><label class="bloko-button bloko-button_small" for="DE">DE</label><input type="checkbox" value="TM" id="TM" name="driverLicenseTypes.string" class="bloko-button-check-helper HH-CheckboxNormalizer-Visible"><label class="bloko-button bloko-button_small" for="TM">Tm</label><input type="checkbox" value="TB" id="TB" name="driverLicenseTypes.string" class="bloko-button-check-helper HH-CheckboxNormalizer-Visible"><label class="bloko-button bloko-button_small" for="TB">Tb</label></div>
+                              </div>
+                              <input type="hidden" name="driverLicenseTypes.string" value="" class="HH-CheckboxNormalizer-Hidden" disabled>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="resume-remove-item resume-remove-item_with-label resume-remove-item_for-small-control ">
+                     <div class="resume-remove-item__button "><span class="bloko-icon-dynamic"><span class="bloko-icon-link HH-Resume-Constructor-RemoveButton" data-qa="resume-remove-item"><span class="bloko-icon                                      bloko-icon_cancel                                      bloko-icon_initial-impact                                      bloko-icon_highlighted-tertiary"></span></span></span></div>
+                     <span class="g-hidden "></span>
+                  </div>
+               </div>
+               <div class="HH-Resume-Constructor-PlaceToAdd"></div>
+               </div></div>
+               <div class="HH-Resume-Constructor-AddButtonsWrapper bloko-section">
+                  <div class="bloko-column bloko-column_xs-0 bloko-column_s-0 bloko-column_m-3 bloko-column_l-3"></div>
+                  <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6"><span data-constructor-key="relocationArea" class="resume-switcher-wrapper HH-Resume-Constructor-AddButton HH-Resume-Constructor-Hidden g-hidden"><span class="bloko-link-switch">Переезд</span></span><span data-constructor-key="workTicket" class="resume-switcher-wrapper HH-Resume-Constructor-AddButton HH-Resume-Constructor-Hidden g-hidden"><span class="bloko-link-switch">Разрешение на работу</span></span><span data-constructor-key="employment" class="resume-switcher-wrapper HH-Resume-Constructor-AddButton HH-Resume-Constructor-Hidden g-hidden"><span class="bloko-link-switch">Занятость</span></span><span data-constructor-key="workSchedule" class="resume-switcher-wrapper HH-Resume-Constructor-AddButton HH-Resume-Constructor-Hidden g-hidden"><span class="bloko-link-switch">График работы</span></span><span data-constructor-key="metro" class="resume-switcher-wrapper HH-Resume-Constructor-AddButton HH-Resume-Constructor-AddMetroButton "><span class="bloko-link-switch">Ближайшая станция метро</span></span><span data-constructor-key="hasVehicle" class="resume-switcher-wrapper HH-Resume-Constructor-AddButton "><span class="bloko-link-switch">Автомобиль</span></span><span data-constructor-key="driverLicenseTypes" class="resume-switcher-wrapper HH-Resume-Constructor-AddButton "><span class="bloko-link-switch">Категория прав</span></span></div>
+               </div>
+               </div></div>
+               <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-9 bloko-column_l-9 bloko-column_container">
+                  <div class="bloko-column bloko-column_xs-0 bloko-column_s-0 bloko-column_m-3 bloko-column_l-3"></div>
+                  <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6"><button class="bloko-button                        bloko-button_primary                        bloko-button_large                        HH-Resume-Short-Submit                        HH-Form-SubmitButton" data-qa="resume-submit" disabled>Сохранить и опубликовать</button></div>
+               </div>
+               <input type="hidden" name="_xsrf" value="9aaf11e0e323dd44bc37e6b38c84705c"></form></div></div></div>
       
 
       <div class="footer-wrapper">
@@ -3454,5 +3616,24 @@
          </div>
       </div>
       </div>
+
+      <script>
+                  $(document).ready(function(){
+                        
+            
+                 
+            
+            
+            $('.chooseprof').click(function() {
+               if($('.cardriver').is(':checked')) { {$(".cardriver-box").toggle(); }{$(".babysister-box").css("display","none"); } }
+               if($('.babysister').is(':checked')) { {$(".babysister-box").toggle(); }{$(".cardriver-box").css("display","none"); } }
+            });
+            });
+            
+            
+            
+            </script>
+
+
    </body>
 </html>
