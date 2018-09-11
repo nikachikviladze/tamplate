@@ -40,47 +40,11 @@
       </script>
       <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="css/style2.css">
-      <script  src="js/mapping.js"></script>
       <script  src="js/libs.js"></script>
       <script src="js/combined.js"></script>
       <meta name="viewport" content="width=device-width">
 
-       <script data-name="HH/Form" data-params="
-                  {
-                  &quot;conditions&quot;: {
-                  &quot;accessType&quot;:{&quot;mincount&quot;:1,&quot;maxcount&quot;:1,&quot;string&quot;:{&quot;required&quot;:true,&quot;type&quot;:&quot;string&quot;,&quot;enumeration&quot;:[&quot;no_one&quot;,&quot;whitelist&quot;,&quot;blacklist&quot;,&quot;clients&quot;,&quot;everyone&quot;,&quot;direct&quot;]}},
 
-
-                  
-
-                  &quot;fname&quot;:{&quot;mincount&quot;:1,&quot;maxcount&quot;:1,&quot;string&quot;:{&quot;required&quot;:true}},
-                  &quot;firstName&quot;:{&quot;mincount&quot;:1,&quot;maxcount&quot;:1,&quot;string&quot;:{&quot;required&quot;:true}},
-                  &quot;lastName&quot;:{&quot;mincount&quot;:1,&quot;maxcount&quot;:1,&quot;string&quot;:{&quot;required&quot;:true}},
-
-
-                 
-
-                  &quot;workSchedule&quot;:{&quot;mincount&quot;:1,&quot;string&quot;:{&quot;required&quot;:true,&quot;type&quot;:&quot;string&quot;,&quot;enumeration&quot;:[&quot;full_day&quot;,&quot;shift&quot;,&quot;flexible&quot;,&quot;remote&quot;,&quot;fly_in_fly_out&quot;]}
-
-              }
-                  , &quot;experienceSelector&quot;: {
-                  &quot;mincount&quot;: 1,
-                  &quot;maxcount&quot;: 1,
-                  &quot;string&quot;: {
-                  &quot;required&quot;: true,
-                  &quot;type&quot;: &quot;string&quot;
-                  }
-                  }
-                  },
-                  &quot;messages&quot;: {
-                  &quot;_default&quot;:{&quot;empty&quot;:&quot;შევსება სავალდებულოა&quot;,&quot;tooShort&quot;:&quot;Too short&quot;,&quot;tooLong&quot;:&quot;Length exceeded by %s&quot;,&quot;tooShortSize&quot;:&quot;Too few fields&quot;,&quot;tooLongSize&quot;:&quot;Too many fields&quot;,&quot;incorrectValues&quot;:&quot;Please specify your field of work&quot;,&quot;lengthWarn&quot;:&quot;%s more, not over&quot;,&quot;variants&quot;:[&quot;character&quot;,&quot;characters&quot;,&quot;characters&quot;,&quot;characters&quot;],&quot;notDate&quot;:&quot;Incorrect date&quot;,&quot;tooEarly&quot;:&quot;Too early&quot;,&quot;tooLate&quot;:&quot;Too late&quot;},&quot;title&quot;:{&quot;isIn&quot;:&quot;You already have a resume with this name&quot;},&quot;salary&quot;:{&quot;zeroWarn&quot;:&quot;Will be empty desirable compensation&quot;,&quot;tooSmall&quot;:&quot;In this specialist field, salary cannot be lower than %s %s&quot;},&quot;lastName&quot;:{&quot;regexpFail&quot;:&quot;Only letters and hyphen&quot;},&quot;firstName&quot;:{&quot;regexpFail&quot;:&quot;Only letters and hyphen&quot;},&quot;middleName&quot;:{&quot;regexpFail&quot;:&quot;Only letters and hyphen&quot;},&quot;birthday&quot;:{&quot;variants&quot;:[&quot;year&quot;,&quot;years&quot;,&quot;year&quot;,&quot;years&quot;],&quot;tooLate&quot;:&quot;Too young&quot;,&quot;regexpFail&quot;:&quot;Incorrect date&quot;},&quot;email&quot;:{&quot;regexpFail&quot;:&quot;Not email&quot;,&quot;error.emailExist&quot;:&quot;The given e-mail address is taken by another user. Please enter another e-mail address or&quot;},&quot;phone&quot;:{&quot;emptyNumber&quot;:&quot;Number not specified&quot;,&quot;emptyCountryAndNumber&quot;:&quot;Country code and number not specified&quot;,&quot;emptyCity&quot;:&quot;City code not specified&quot;,&quot;emptyCountryAndCity&quot;:&quot;City and country code not specified&quot;,&quot;emptyCountry&quot;:&quot;Country code not specified&quot;,&quot;invalid&quot;:&quot;Number entered incorrectly&quot;,&quot;invalidCountry&quot;:&quot;Wrong country code&quot;},&quot;experience&quot;:{&quot;endDateEarlierThanStartDate&quot;:&quot;End date before start date&quot;},&quot;employment&quot;:{&quot;mincount&quot;:&quot;Required field&quot;},&quot;workSchedule&quot;:{&quot;mincount&quot;:&quot;Required field&quot;},&quot;citizenship&quot;:{&quot;mincount&quot;:&quot;Required field&quot;,&quot;maxcount&quot;:&quot;[EN:11:rb.message.citizenship.maxcount]&quot;},&quot;workTicket&quot;:{&quot;mincount&quot;:&quot;Required field&quot;,&quot;maxcount&quot;:&quot;[EN:11:rb.message.workTicket.maxcount]&quot;},&quot;primaryEducation&quot;:{&quot;tooSmall&quot;:&quot;The graduation year is too low&quot;,&quot;tooLate&quot;:&quot;The graduation year is too high&quot;},&quot;elementaryEducation&quot;:{&quot;tooSmall&quot;:&quot;The graduation year is too low&quot;,&quot;tooLate&quot;:&quot;The graduation year is too high&quot;},&quot;attestationEducation&quot;:{&quot;tooSmall&quot;:&quot;The year of completion is too low&quot;,&quot;tooLate&quot;:&quot;The year of completion is too high&quot;},&quot;additionalEducation&quot;:{&quot;tooSmall&quot;:&quot;The graduation year is too low&quot;,&quot;tooLate&quot;:&quot;The graduation year is too high&quot;},&quot;personalSite&quot;:{&quot;invalid&quot;:&quot;Некорректный адрес&quot;}
-                  },
-                  &quot;dependantFields&quot;: {
-                  &quot;main&quot;: &quot;keySkills&quot;,
-                  &quot;secondary&quot;: &quot;skills&quot;
-                  }
-                  }
-                  "></script>
    </head>
    <body class="l-ambient s-friendly custom-font-allowed">
       <div class="navi HH-VacancyMainSearchInfoTip-Navi navi_index">
@@ -576,12 +540,7 @@
                                  </div>
                                  <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-7">
                                     <div class="bloko-form-item">
-                                       <script data-name="HH/Form/Text" data-params='
-                                                {
-                                                "field": "fname",
-                                                "uid": "uid022"
-                                                }
-                                                '></script>
+                                      
                                        <input type="text" name="fname.string" required="required" autocorrect="off" autocapitalize="off" spellcheck="false" maxlength="512" placeholder="Фамилия" value="" data-qa="account-signup-lastname" class="bloko-input_xs-only-placeholder bloko-input HH-ApplicantRegistration-FormSignupLastName Bloko-Name-Capitalize-Input bloko-input_name">
                                     </div>
                                  </div>
@@ -713,13 +672,7 @@
 
 
 
-                <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-12 bloko-column_l-16 bloko-column_container"><div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-9 bloko-column_l-9"><div class="bloko-section"><script data-name="HH/Resume/ResumagicUpload" data-params="
-                    {
-                        &quot;trl&quot;: {
-                            &quot;error&quot;: &quot;Произошла ошибка. Попробуйте еще раз.&quot;
-                        }
-                    }
-                "></script><iframe class="g-hidden HH-Resume-ResumagicUpload-Iframe" name="HH-Resume-ResumagicUpload-Iframe"></iframe><form action="/applicant/resumes/import" target="HH-Resume-ResumagicUpload-Iframe" class="g-hidden HH-Resume-ResumagicUpload-Form" method="post" enctype="multipart/form-data"><input type="hidden" name="_xsrf" value="90ea5b60a46ee64a3934c516404da8db"></form><div class="bloko-button bloko-button_primary HH-Resume-ResumagicUpload-Trigger" data-tooltip-message="doc, pdf, txt,
+                <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-12 bloko-column_l-16 bloko-column_container"><div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-9 bloko-column_l-9"><div class="bloko-section"><form action="/applicant/resumes/import" target="HH-Resume-ResumagicUpload-Iframe" class="g-hidden HH-Resume-ResumagicUpload-Form" method="post" enctype="multipart/form-data"><input type="hidden" name="_xsrf" value="90ea5b60a46ee64a3934c516404da8db"></form><div class="bloko-button bloko-button_primary HH-Resume-ResumagicUpload-Trigger" data-tooltip-message="doc, pdf, txt,
             не более 5Мб"><span class="resumagic-fileinput__text-mobile">Из файла</span><span class="resumagic-fileinput__text-default">ფაილის ატვირთვა</span><span class="HH-Resume-ResumagicUpload-Input"><input name="file" type="file" class="resumagic-fileinput"><input type="hidden" name="_xsrf" value="90ea5b60a46ee64a3934c516404da8db"></span><script data-name="HH/ResumeButton" data-params=""></script></div><span class="bloko-loading HH-Resume-Resumagic-Loader"><span class="bloko-icon bloko-icon_loading bloko-icon_initial-primary"></span><span class="bloko-form-spacer">Загрузка данных</span></span><div class="resume-header-actions-wrapper resume-header-actions-wrapper_screen-s"><div class="resume-header-actions"><form class="resume-header-actions__lang" action="/applicant/resumes/short" method="POST"><script data-name="HH/SubmitOnSelect" data-params=""></script><input type="hidden" name="_xsrf" value="90ea5b60a46ee64a3934c516404da8db"><input type="hidden" name="resume" value="973ed3f9ff0576bf6f0039ed1f396f6e64436f"><select name="lang" class="bloko-select bloko-select_flexible HH-SubmitOnSelect-Value"><option value="RU">По-русски</option><option value="EN" selected="">In English</option></select></form><div class="resume-header-actions__buttons-wrapper"><div class="bloko-form-spacer"><div class="g-hidden HH-Resume-DownloadDropdown"></div><script data-name="HH/Resume/Delete" data-params=""></script><div class="g-hidden HH-Resume-Delete-Modal"><div class="resume-delete-modal"><h2 class="header header_level-2">Удаление резюме</h2><div class="bloko-form-row">Отменить удаление будет невозможно.</div><div class="bloko-form-row">Вместо удаления, резюме можно скрыть. Оно не будет доступно никому, кроме вас, до тех пор, пока вы не решите открыть его.</div><div class="resume-delete-modal-buttons"><form action="/applicant/resumes/edit/visibility?from=resume-delete" method="POST"><input class="bloko-button bloko-button_primary" type="submit" value="Скрыть резюме" data-qa="resume-delete-hide"><input type="hidden" name="resume" value="973ed3f9ff0576bf6f0039ed1f396f6e64436f"><input type="hidden" name="accessType.string" value="no_one"><input type="hidden" name="backUrl" value="/applicant/resumes/short?resume=973ed3f9ff0576bf6f0039ed1f396f6e64436f"><input type="hidden" name="_xsrf" value="90ea5b60a46ee64a3934c516404da8db"></form><form class="bloko-form-spacer" action="/applicant/deleteresume?from=resume-delete" method="POST"><input class="bloko-button" type="submit" value="Удалить" data-qa="resume-delete-confirm"><input type="hidden" name="resumeId" value="91668335"><input type="hidden" name="_xsrf" value="90ea5b60a46ee64a3934c516404da8db"></form><div class="resume-delete-modal-cancel"><input class="bloko-button HH-Resume-Delete-Cancel" type="button" value="Отменить"></div></div></div></div><div class="bloko-button-group bloko-button-group_stretched"><a href="/applicant/resumes/short?resume=973ed3f9ff0576bf6f0039ed1f396f6e64436f&amp;print=true" target="_blank" data-qa="resume-print-view" data-tooltip-message="Распечатать резюме" class="bloko-button bloko-button_icon-only HH-Resume-PrintButton"><span class="bloko-button__icon"><span class="bloko-icon bloko-icon_print bloko-icon_initial-impact"></span></span><script data-name="HH/ResumeButton" data-params=""></script></a><button class="bloko-button bloko-button_icon-only HH-Resume-Delete-Button" data-tooltip-message="Удалить резюме" data-qa="resume-delete"><span class="bloko-button__icon"><span class="bloko-icon bloko-icon_remove bloko-icon_initial-impact"></span></span><script data-name="HH/ResumeButton" data-params=""></script><script data-name="HH/SetConversionGoal" data-params="
                         {
                             &quot;toStorage&quot;: &quot;hh&quot;,
@@ -776,12 +729,7 @@
                                           </div>
                                           <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4">
                                              <div class="HH-Form-Element-TooltipElement" data-qa="resume-section-controls">
-                                                <script data-name="HH/Form/Text" data-params='
-                                                {
-                                                "field": "firstName",
-                                                "uid": "uid02"
-                                                }
-                                                '></script>
+                                                
                                                 <input type="text" name="firstName" placeholder="Имя" class="bloko-input Bloko-Name-Capitalize-Input HH-Form-Text-Value bloko-input_name">
                                              </div>
                                           </div>
@@ -796,12 +744,7 @@
                                           </div>
                                           <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4">
                                              <div class="HH-Form-Element-TooltipElement" data-qa="resume-section-controls">
-                                                <script data-name="HH/Form/Text" data-params='
-                                                {
-                                                "field": "lastName",
-                                                "uid": "uid02"
-                                                }
-                                                '></script>
+                                                
                                                 <input type="text" name="lastName.string" placeholder="Фамилия" class="bloko-input Bloko-Name-Capitalize-Input HH-Form-Text-Value bloko-input_name">
                                              </div>
                                           </div>
@@ -1024,25 +967,7 @@
                            </div>
                            <div class="bloko-column bloko-column_s-5 bloko-column_m-5 bloko-column_l-8" style="padding-left: 0;">
                               <div class="HH-ToggleMetroSelector-CompositeSelectionElement">
-                                 <script data-name="jsxComponents/Hint" data-params=""></script><script data-name="HH/RelocationSelector" data-params='
-                                    {
-                                    "managedClass": "HH-RelocationSelector",
-                                    "trl": {
-                                    "singular": {
-                                    "living_or_relocation": "Живут в указанном регионе или готовы переехать в него",
-                                    "living": "Живут в указанном регионе",
-                                    "living_but_relocation": "Живут в указанном регионе и готовы к переезду куда-либо",
-                                    "relocation": "Не живут в указанном регионе, но готовы переехать в него"
-                                    },
-                                    "plural": {
-                                    "living_or_relocation": "Живут в указанных регионах или готовы переехать в них",
-                                    "living": "Живут в указанных регионах",
-                                    "living_but_relocation": "Живут в указанных регионах и готовы к переезду куда-либо",
-                                    "relocation": "Не живут в указанных регионах, но готовы переехать в них"
-                                    }
-                                    }
-                                    }
-                                    '></script>
+                                 
                                  <div data-qa="searchform__selected-regions">
                                     <div class="form-box">
                                        <div class="region-list"><span class="HH-CompositeSelection-Tags"><span data-qa="bloko-tag bloko-tag_inline" data-tag-id="1" class="bloko-tag bloko-tag_inline Bloko-TagList-Tag"><span class="bloko-tag__section bloko-tag__section_text" title="Москва"><span class="Bloko-TagList-Text" data-qa="bloko-tag__text">საქართველო</span></span><span class="bloko-icon-dynamic"><span class="bloko-tag-button                              Bloko-TagList-Remove" data-qa="bloko-tag__cross"><span class="bloko-icon                                  bloko-icon_remove                                  bloko-icon_initial-impact                                  bloko-icon_highlighted-action"></span></span></span><input type="hidden" name="area" value="1"></span></span></div>
@@ -1582,69 +1507,63 @@
 
 
 
-            <div class="bloko-column bloko-column_xs-4 bloko-column_s-6 bloko-column_m-4 bloko-column_l-3" style="padding-left: 0;">
-              <label class="bloko-form-legend ">დამატებითი ენები</label>
-            </div>
-           <div class="bloko-column bloko-column_xs-4 bloko-column_s-6 bloko-column_m-4 bloko-column_l-3">
-               <script data-name="HH/Resume/LanguageSelect/LanguageSelect" data-params='
-                  {
-                  "customSelectParams": {
-                  "templateJSON": [
-                  {"text": "ქართული", "addSeparator": true, "value": "1"}, 
-                  {"text": "ინგლისური", "addSeparator": false, "value": "2"}, 
-                  {"text": "რუსული", "addSeparator": false, "value": "3"}
-                  ]}}'></script>
-               <div class="bloko-section">
-                  
-                  <div class="HH-Resume-Languages-Item" data-qa="resume-language">
-
-                        <div class="resume-remove-item-wrapper resume-remove-item-wrapper_language">
-                           <div class="bloko-column bloko-column_xs-4 bloko-column_s-6 bloko-column_m-6 bloko-column_l-6" style="padding: 0 0;">
-                              <div class="resume-remove-item-gap">
-                                 <div class="bloko-control-group">
-                                    <div class="bloko-control-group__content-sized">
+               <div class="HH-Resume-Languages-Item" data-qa="resume-language" style="margin-top:20px;"></div>
+             <div class="resume-form-row">
+                 <div class="bloko-column bloko-column_xs-4 bloko-column_s-3 bloko-column_m-3 bloko-column_l-4 bloko-column_container">
+                     <div class="HH-Resume-Languages-Label">
+                         <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
+                             <div class="bloko-form-item">
+                                 <label class="bloko-form-legend ">დამატებითი ენები</label>
+                               </div>
+                           </div>
+                          
+                       </div>
+                   </div>
+                   <div class="resume-remove-item-wrapper resume-remove-item-wrapper_language">
+                       <div class="bloko-column bloko-column_xs-4 bloko-column_s-6 bloko-column_m-6 bloko-column_l-5">
+                           <div class="resume-remove-item-gap">
+                               <div class="bloko-control-group">
+                                   <div class="bloko-control-group__content-sized">
                                        <div class="resume-language-select">
-                                          <div class="HH-Resume-LanguageSelect-Select bloko-custom-select" data-selected-language="57" data-qa="resume-language-select">
-                                             <select class="bloko-select Bloko-CustomSelect-NativeSelect HH-Resume-Languages-Id" name="language.id" disabled>
-                                                <option value="1"></option>
-                                             </select>
-                                          </div>
+                                           <div class="HH-Resume-LanguageSelect-Select bloko-custom-select" data-selected-language="" data-qa="resume-language-select">
+            
+                                                       <select class="bloko-select Bloko-CustomSelect-NativeSelect HH-Resume-Languages-Id" name="language.id">
+                                                           <option value="57">ინგლისური</option>
+                                                           <option value="58">გერმანული</option>
+                                                           <option value="59">ფრანგული</option>
+                                                       </select>
+                                           </div>
                                        </div>
-                                    </div>
-                                    <div class="resume-language-break">
-                                <div class="bloko-form-item"></div>
-                            </div>
-                            <div class="bloko-control-group__content-sized">
-                                <div class="resume-language-level-select resume-language-level-select_short">
-                                    <input type="hidden" name="language.degree" class="HH-Resume-Languages-Degree" value="basic" data-qa="resume-language-level-input">
-                                    <select class="bloko-select HH-Resume-Languages-Degree-Select HH-AutoSave-WithoutName" data-hh-autosave-without-name="language-degree" data-qa="resume-language-level-select">
-                                        <option value="basic">დამწყები</option>
-                                        <option value="can_read">საშუალო</option>
-                                        <option value="can_pass_interview">კარგად</option>
-                                        <option value="fluent">პროფესიონალი</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="resume-remove-item " style="position: absolute;
-                right: 0px;">
-                    <div class="resume-remove-item__button HH-Form-Element-Remove">
-                        <span class="bloko-icon-dynamic remove-button-append">
-                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg id="Layer_1" style="enable-background:new 0 0 64 64;" version="1.1" viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g id="Icon-Trash" transform="translate(232.000000, 228.000000)"><polygon class="st0" id="Fill-6" points="-207.5,-205.1 -204.5,-205.1 -204.5,-181.1 -207.5,-181.1    "/><polygon class="st0" id="Fill-7" points="-201.5,-205.1 -198.5,-205.1 -198.5,-181.1 -201.5,-181.1    "/><polygon class="st0" id="Fill-8" points="-195.5,-205.1 -192.5,-205.1 -192.5,-181.1 -195.5,-181.1    "/><polygon class="st0" id="Fill-9" points="-219.5,-214.1 -180.5,-214.1 -180.5,-211.1 -219.5,-211.1    "/><path class="st0" d="M-192.6-212.6h-2.8v-3c0-0.9-0.7-1.6-1.6-1.6h-6c-0.9,0-1.6,0.7-1.6,1.6v3h-2.8v-3     c0-2.4,2-4.4,4.4-4.4h6c2.4,0,4.4,2,4.4,4.4V-212.6" id="Fill-10"/><path class="st0" d="M-191-172.1h-18c-2.4,0-4.5-2-4.7-4.4l-2.8-36l3-0.2l2.8,36c0.1,0.9,0.9,1.6,1.7,1.6h18     c0.9,0,1.7-0.8,1.7-1.6l2.8-36l3,0.2l-2.8,36C-186.5-174-188.6-172.1-191-172.1" id="Fill-11"/></g></g></svg>
-                        </span>
-                    </div>
-                    
-                </div>
-                                 </div>
-                              </div>
-                           </div>                                         
-                     </div>
-                  </div>                                
-
-                  
+                                   </div>
+                               <div class="resume-language-break">
+                                   <div class="bloko-form-item"></div>
+                               </div>
+                               <div class="bloko-control-group__content-sized">
+                                   <div class="resume-language-level-select resume-language-level-select_short">
+                                       <input type="hidden" name="language.degree" class="HH-Resume-Languages-Degree" value="basic" data-qa="resume-language-level-input">
+                                       <select class="bloko-select HH-Resume-Languages-Degree-Select HH-AutoSave-WithoutName" data-hh-autosave-without-name="language-degree" data-qa="resume-language-level-select">
+                                           <option value="basic">დამწყები</option>
+                                           <option value="can_read">საშუალო</option>
+                                           <option value="can_pass_interview">კარგად</option>
+                                           <option value="fluent">პროფესიონალი</option>
+                                       </select>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="resume-remove-item " style="position: absolute;
+                   right: -70px;">
+                       <div class="resume-remove-item__button HH-Form-Element-Remove">
+                           <span class="bloko-icon-dynamic remove-button-append">
+                               <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg id="Layer_1" style="enable-background:new 0 0 64 64;" version="1.1" viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g id="Icon-Trash" transform="translate(232.000000, 228.000000)"><polygon class="st0" id="Fill-6" points="-207.5,-205.1 -204.5,-205.1 -204.5,-181.1 -207.5,-181.1    "/><polygon class="st0" id="Fill-7" points="-201.5,-205.1 -198.5,-205.1 -198.5,-181.1 -201.5,-181.1    "/><polygon class="st0" id="Fill-8" points="-195.5,-205.1 -192.5,-205.1 -192.5,-181.1 -195.5,-181.1    "/><polygon class="st0" id="Fill-9" points="-219.5,-214.1 -180.5,-214.1 -180.5,-211.1 -219.5,-211.1    "/><path class="st0" d="M-192.6-212.6h-2.8v-3c0-0.9-0.7-1.6-1.6-1.6h-6c-0.9,0-1.6,0.7-1.6,1.6v3h-2.8v-3     c0-2.4,2-4.4,4.4-4.4h6c2.4,0,4.4,2,4.4,4.4V-212.6" id="Fill-10"/><path class="st0" d="M-191-172.1h-18c-2.4,0-4.5-2-4.7-4.4l-2.8-36l3-0.2l2.8,36c0.1,0.9,0.9,1.6,1.7,1.6h18     c0.9,0,1.7-0.8,1.7-1.6l2.8-36l3,0.2l-2.8,36C-186.5-174-188.6-172.1-191-172.1" id="Fill-11"/></g></g></svg>
+                           </span>
+                       </div>
+                       
+                   </div>
                </div>
             </div>
-
+            </div>
 
 
 
@@ -1674,24 +1593,10 @@
          <div id="educationBlock" class="resume-field-toggle HH-Form-Collection-ToggleWrapper">
          <div class="bloko-section r">
 
-                <div class="resume-form-row"><div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3" style="padding-left:0px;"><div class="bloko-form-item"><label class="bloko-form-legend ">სამუშაოს დაწყება</label></div></div><div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="resume-short-label">Start of work</label></div><div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6"><div class="resume-remove-item-gap"><input type="hidden" name="experience.startDate" class="HH-Resume-Experiences-StartDate" value=""><div class="resume-experience-start-input-group"><div class="bloko-control-group                     bloko-control-group_auto-size                     HH-Resume-Experiences-StartDate-TooltipElement"><div class="bloko-control-group__content-sized"><select data-hh-autosave-without-name="experience-start-month" data-gaformstatistic-name="experience.startDate" class="bloko-select bloko-select_flexible HH-Resume-Experiences-StartDate-Month HH-AutoSave-WithoutName "><option value="01">January</option><option value="02">February</option><option value="03">March</option><option value="04">April</option><option value="05">May</option><option value="06">June</option><option value="07">July</option><option value="08">August</option><option value="09">September</option><option value="10">October</option><option value="11">November</option><option value="12">December</option></select></div><div class="bloko-control-group__content-sized"><input value="" placeholder="Year" data-hh-autosave-without-name="experience-start-date" maxlength="4" size="4" data-gaformstatistic-name="experience.startDate" class="bloko-input bloko-input_sized HH-YearAutocomplete-Control HH-Resume-Experiences-StartDate-Year HH-AutoSave-WithoutName "><script data-name="HH/Bloko/NumericInput" data-for="prev" data-params="
-                    {
-                        &quot;trls&quot;: {
-                            &quot;notNumber&quot;: &quot;Вводить можно только цифры&quot;
-                        },
-                        &quot;decimalLength&quot;: 0
-                    }
-                "></script><script data-name="HH/YearAutocomplete" data-params=""></script></div></div></div><div class="resume-experience-start-native-input"><label class="bloko-input-wrapper HH-Resume-Experiences-StartDate-TooltipElement"><input type="month" class="bloko-input HH-Resume-Experiences-StartDate-Date bloko-input_invalid" value=""><span class="bloko-icon bloko-icon_calendar"></span></label></div><div class="resume-experience-start-checkbox"><label class="bloko-checkbox"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Experiences-TillNow" data-gaformstatistic-name="experience.startDate"><span class="bloko-checkbox__text"> დღემდე</span></label></div></div></div></div>
+                <div class="resume-form-row"><div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3" style="padding-left:0px;"><div class="bloko-form-item"><label class="bloko-form-legend ">სამუშაოს დაწყება</label></div></div><div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="resume-short-label">Start of work</label></div><div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6"><div class="resume-remove-item-gap"><input type="hidden" name="experience.startDate" class="HH-Resume-Experiences-StartDate" value=""><div class="resume-experience-start-input-group"><div class="bloko-control-group                     bloko-control-group_auto-size                     HH-Resume-Experiences-StartDate-TooltipElement"><div class="bloko-control-group__content-sized"><select data-hh-autosave-without-name="experience-start-month" data-gaformstatistic-name="experience.startDate" class="bloko-select bloko-select_flexible HH-Resume-Experiences-StartDate-Month HH-AutoSave-WithoutName "><option value="01">January</option><option value="02">February</option><option value="03">March</option><option value="04">April</option><option value="05">May</option><option value="06">June</option><option value="07">July</option><option value="08">August</option><option value="09">September</option><option value="10">October</option><option value="11">November</option><option value="12">December</option></select></div><div class="bloko-control-group__content-sized"><input value="" placeholder="Year" data-hh-autosave-without-name="experience-start-date" maxlength="4" size="4" data-gaformstatistic-name="experience.startDate" class="bloko-input bloko-input_sized HH-YearAutocomplete-Control HH-Resume-Experiences-StartDate-Year HH-AutoSave-WithoutName "></div></div></div><div class="resume-experience-start-native-input"><label class="bloko-input-wrapper HH-Resume-Experiences-StartDate-TooltipElement"><input type="month" class="bloko-input HH-Resume-Experiences-StartDate-Date bloko-input_invalid" value=""><span class="bloko-icon bloko-icon_calendar"></span></label></div><div class="resume-experience-start-checkbox"><label class="bloko-checkbox"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Experiences-TillNow" data-gaformstatistic-name="experience.startDate"><span class="bloko-checkbox__text"> დღემდე</span></label></div></div></div></div>
 
 
-                <div class="resume-form-row"><div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3" style="padding-left: 0px;"><div class="bloko-form-item"><label class="bloko-form-legend ">სამუშაოს დასრულება</label></div></div><div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="resume-short-label">Start of work</label></div><div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6"><div class="resume-remove-item-gap"><input type="hidden" name="experience.startDate" class="HH-Resume-Experiences-StartDate" value=""><div class="resume-experience-start-input-group"><div class="bloko-control-group                     bloko-control-group_auto-size                     HH-Resume-Experiences-StartDate-TooltipElement"><div class="bloko-control-group__content-sized"><select data-hh-autosave-without-name="experience-start-month" data-gaformstatistic-name="experience.startDate" class="bloko-select bloko-select_flexible HH-Resume-Experiences-StartDate-Month HH-AutoSave-WithoutName "><option value="01">January</option><option value="02">February</option><option value="03">March</option><option value="04">April</option><option value="05">May</option><option value="06">June</option><option value="07">July</option><option value="08">August</option><option value="09">September</option><option value="10">October</option><option value="11">November</option><option value="12">December</option></select></div><div class="bloko-control-group__content-sized"><input value="" placeholder="Year" data-hh-autosave-without-name="experience-start-date" maxlength="4" size="4" data-gaformstatistic-name="experience.startDate" class="bloko-input bloko-input_sized HH-YearAutocomplete-Control HH-Resume-Experiences-StartDate-Year HH-AutoSave-WithoutName "><script data-name="HH/Bloko/NumericInput" data-for="prev" data-params="
-                    {
-                        &quot;trls&quot;: {
-                            &quot;notNumber&quot;: &quot;Вводить можно только цифры&quot;
-                        },
-                        &quot;decimalLength&quot;: 0
-                    }
-                "></script><script data-name="HH/YearAutocomplete" data-params=""></script></div></div></div><div class="resume-experience-start-native-input"><label class="bloko-input-wrapper HH-Resume-Experiences-StartDate-TooltipElement"><input type="month" class="bloko-input HH-Resume-Experiences-StartDate-Date bloko-input_invalid" value=""><span class="bloko-icon bloko-icon_calendar"></span></label></div></div></div></div>
+                <div class="resume-form-row"><div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3" style="padding-left: 0px;"><div class="bloko-form-item"><label class="bloko-form-legend ">სამუშაოს დასრულება</label></div></div><div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="resume-short-label">Start of work</label></div><div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6"><div class="resume-remove-item-gap"><input type="hidden" name="experience.startDate" class="HH-Resume-Experiences-StartDate" value=""><div class="resume-experience-start-input-group"><div class="bloko-control-group                     bloko-control-group_auto-size                     HH-Resume-Experiences-StartDate-TooltipElement"><div class="bloko-control-group__content-sized"><select data-hh-autosave-without-name="experience-start-month" data-gaformstatistic-name="experience.startDate" class="bloko-select bloko-select_flexible HH-Resume-Experiences-StartDate-Month HH-AutoSave-WithoutName "><option value="01">January</option><option value="02">February</option><option value="03">March</option><option value="04">April</option><option value="05">May</option><option value="06">June</option><option value="07">July</option><option value="08">August</option><option value="09">September</option><option value="10">October</option><option value="11">November</option><option value="12">December</option></select></div><div class="bloko-control-group__content-sized"><input value="" placeholder="Year" data-hh-autosave-without-name="experience-start-date" maxlength="4" size="4" data-gaformstatistic-name="experience.startDate" class="bloko-input bloko-input_sized HH-YearAutocomplete-Control HH-Resume-Experiences-StartDate-Year HH-AutoSave-WithoutName "></div></div></div><div class="resume-experience-start-native-input"><label class="bloko-input-wrapper HH-Resume-Experiences-StartDate-TooltipElement"><input type="month" class="bloko-input HH-Resume-Experiences-StartDate-Date bloko-input_invalid" value=""><span class="bloko-icon bloko-icon_calendar"></span></label></div></div></div></div>
 
 
 
@@ -1951,82 +1856,70 @@
                <br/>`);
          });
       </script>
-      <script> 
-
-       
-        
-
-         $('.language-selectbox').on('click', function(event) {
-            $('.insert-language').append(`
-               
-                  <div class="bloko-column bloko-column_xs-4 bloko-column_s-6 bloko-column_m-4 bloko-column_l-3" style="padding-left: 0;">
-              <label class="bloko-form-legend ">დამატებითი ენები</label>
-            </div>
-           <div class="bloko-column bloko-column_xs-4 bloko-column_s-6 bloko-column_m-4 bloko-column_l-3">
-               <script data-name="HH/Resume/LanguageSelect/LanguageSelect" data-params='
-                  {
-                  "customSelectParams": {
-                  "templateJSON": [
-                  {"text": "ქართული", "addSeparator": true, "value": "1"}, 
-                  {"text": "ინგლისური", "addSeparator": false, "value": "2"}, 
-                  {"text": "რუსული", "addSeparator": false, "value": "3"}
-                  ]}}'></script>
-               <div class="bloko-section">
-                  
-                  <div class="HH-Resume-Languages-Item" data-qa="resume-language">
-
-                        <div class="resume-remove-item-wrapper resume-remove-item-wrapper_language">
-                           <div class="bloko-column bloko-column_xs-4 bloko-column_s-6 bloko-column_m-6 bloko-column_l-6" style="padding: 0 0;">
-                              <div class="resume-remove-item-gap">
-                                 <div class="bloko-control-group">
-                                    <div class="bloko-control-group__content-sized">
-                                       <div class="resume-language-select">
-                                          <div class="HH-Resume-LanguageSelect-Select bloko-custom-select" data-selected-language="57" data-qa="resume-language-select">
-                                             <select class="bloko-select Bloko-CustomSelect-NativeSelect HH-Resume-Languages-Id" name="language.id" disabled>
-                                                <option value="1"></option>
-                                             </select>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="resume-language-break">
-                                <div class="bloko-form-item"></div>
-                            </div>
-                            <div class="bloko-control-group__content-sized">
-                                <div class="resume-language-level-select resume-language-level-select_short">
-                                    <input type="hidden" name="language.degree" class="HH-Resume-Languages-Degree" value="basic" data-qa="resume-language-level-input">
-                                    <select class="bloko-select HH-Resume-Languages-Degree-Select HH-AutoSave-WithoutName" data-hh-autosave-without-name="language-degree" data-qa="resume-language-level-select">
-                                        <option value="basic">დამწყები</option>
-                                        <option value="can_read">საშუალო</option>
-                                        <option value="can_pass_interview">კარგად</option>
-                                        <option value="fluent">პროფესიონალი</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="resume-remove-item " style="position: absolute;
-                right: 0px;">
-                    <div class="resume-remove-item__button HH-Form-Element-Remove">
-                        <span class="bloko-icon-dynamic remove-button-append">
-                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg id="Layer_1" style="enable-background:new 0 0 64 64;" version="1.1" viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g id="Icon-Trash" transform="translate(232.000000, 228.000000)"><polygon class="st0" id="Fill-6" points="-207.5,-205.1 -204.5,-205.1 -204.5,-181.1 -207.5,-181.1    "/><polygon class="st0" id="Fill-7" points="-201.5,-205.1 -198.5,-205.1 -198.5,-181.1 -201.5,-181.1    "/><polygon class="st0" id="Fill-8" points="-195.5,-205.1 -192.5,-205.1 -192.5,-181.1 -195.5,-181.1    "/><polygon class="st0" id="Fill-9" points="-219.5,-214.1 -180.5,-214.1 -180.5,-211.1 -219.5,-211.1    "/><path class="st0" d="M-192.6-212.6h-2.8v-3c0-0.9-0.7-1.6-1.6-1.6h-6c-0.9,0-1.6,0.7-1.6,1.6v3h-2.8v-3     c0-2.4,2-4.4,4.4-4.4h6c2.4,0,4.4,2,4.4,4.4V-212.6" id="Fill-10"/><path class="st0" d="M-191-172.1h-18c-2.4,0-4.5-2-4.7-4.4l-2.8-36l3-0.2l2.8,36c0.1,0.9,0.9,1.6,1.7,1.6h18     c0.9,0,1.7-0.8,1.7-1.6l2.8-36l3,0.2l-2.8,36C-186.5-174-188.6-172.1-191-172.1" id="Fill-11"/></g></g></svg>
-                        </span>
-                    </div>
-                    
-                </div>
-                                 </div>
+      <script>
+               $('.language-selectbox').on('click', function(event) {
+                  $('.insert-language').append(`
+                  <div class="HH-Resume-Languages-Item" data-qa="resume-language" style="margin-top:20px;"></div>
+                <div class="resume-form-row">
+                    <div class="bloko-column bloko-column_xs-4 bloko-column_s-3 bloko-column_m-3 bloko-column_l-4 bloko-column_container">
+                        <div class="HH-Resume-Languages-Label">
+                            <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
+                                <div class="bloko-form-item">
+                                    <label class="bloko-form-legend ">დამატებითი ენები</label>
+                                  </div>
                               </div>
-                           </div>                                         
-                     </div>
-                  </div>                                
-
-                  
+                             
+                          </div>
+                      </div>
+                      <div class="resume-remove-item-wrapper resume-remove-item-wrapper_language">
+                          <div class="bloko-column bloko-column_xs-4 bloko-column_s-6 bloko-column_m-6 bloko-column_l-5">
+                              <div class="resume-remove-item-gap">
+                                  <div class="bloko-control-group">
+                                      <div class="bloko-control-group__content-sized">
+                                          <div class="resume-language-select">
+                                              <div class="HH-Resume-LanguageSelect-Select bloko-custom-select" data-selected-language="" data-qa="resume-language-select">
+               
+                                                          <select class="bloko-select Bloko-CustomSelect-NativeSelect HH-Resume-Languages-Id" name="language.id">
+                                                              <option value="57">ინგლისური</option>
+                                                              <option value="58">გერმანული</option>
+                                                              <option value="59">ფრანგული</option>
+                                                          </select>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  <div class="resume-language-break">
+                                      <div class="bloko-form-item"></div>
+                                  </div>
+                                  <div class="bloko-control-group__content-sized">
+                                      <div class="resume-language-level-select resume-language-level-select_short">
+                                          <input type="hidden" name="language.degree" class="HH-Resume-Languages-Degree" value="basic" data-qa="resume-language-level-input">
+                                          <select class="bloko-select HH-Resume-Languages-Degree-Select HH-AutoSave-WithoutName" data-hh-autosave-without-name="language-degree" data-qa="resume-language-level-select">
+                                              <option value="basic">დამწყები</option>
+                                              <option value="can_read">საშუალო</option>
+                                              <option value="can_pass_interview">კარგად</option>
+                                              <option value="fluent">პროფესიონალი</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="resume-remove-item " style="position: absolute;
+                      right: -70px;">
+                          <div class="resume-remove-item__button HH-Form-Element-Remove">
+                              <span class="bloko-icon-dynamic remove-button-append">
+                                  <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg id="Layer_1" style="enable-background:new 0 0 64 64;" version="1.1" viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g id="Icon-Trash" transform="translate(232.000000, 228.000000)"><polygon class="st0" id="Fill-6" points="-207.5,-205.1 -204.5,-205.1 -204.5,-181.1 -207.5,-181.1    "/><polygon class="st0" id="Fill-7" points="-201.5,-205.1 -198.5,-205.1 -198.5,-181.1 -201.5,-181.1    "/><polygon class="st0" id="Fill-8" points="-195.5,-205.1 -192.5,-205.1 -192.5,-181.1 -195.5,-181.1    "/><polygon class="st0" id="Fill-9" points="-219.5,-214.1 -180.5,-214.1 -180.5,-211.1 -219.5,-211.1    "/><path class="st0" d="M-192.6-212.6h-2.8v-3c0-0.9-0.7-1.6-1.6-1.6h-6c-0.9,0-1.6,0.7-1.6,1.6v3h-2.8v-3     c0-2.4,2-4.4,4.4-4.4h6c2.4,0,4.4,2,4.4,4.4V-212.6" id="Fill-10"/><path class="st0" d="M-191-172.1h-18c-2.4,0-4.5-2-4.7-4.4l-2.8-36l3-0.2l2.8,36c0.1,0.9,0.9,1.6,1.7,1.6h18     c0.9,0,1.7-0.8,1.7-1.6l2.8-36l3,0.2l-2.8,36C-186.5-174-188.6-172.1-191-172.1" id="Fill-11"/></g></g></svg>
+                              </span>
+                          </div>
+                          
+                      </div>
+                  </div>
                </div>
-            </div>
-
-
-                  `);
-             });
-          
-      </script>
+               </div>
+                        `);
+                   });
+                
+            </script>
       <script>
 
          $(document).on('click', '.insert-language .resume-form-row .resume-remove-item ', function() {
