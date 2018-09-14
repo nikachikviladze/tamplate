@@ -2007,9 +2007,9 @@
       <script>
          $(document).on('click', '.item .pozicia ', function() {
            if ($(this).val()==1) {
-               $(this).parent().parent().parent().parent().siblings('.dzidzis-kitxvebi').toggleClass('active');
+               $(this).parent().parent().parent().parent().siblings('.dzidzis-kitxvebi').addClass('active').siblings().removeClass('active');
            }else if($(this).val()==2){
-              $(this).parent().parent().parent().parent().siblings('.office').toggleClass('active');
+              $(this).parent().parent().parent().parent().siblings('.office').addClass('active').siblings().removeClass('active');
            }
          });
          
