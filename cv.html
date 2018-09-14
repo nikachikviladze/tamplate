@@ -50,6 +50,12 @@
          .bloko-column_l-3{
          width: 230px !important;
          }
+         .active{
+            display: block !important;
+         }
+         .disable{
+            display: none;
+         }
       </style>
 
 
@@ -1557,14 +1563,14 @@
                            <select class="bloko-select pozicia">
                               <option value="0">აირჩიეთ პოზიცია</option>
                               <option value="1">ძიძა</option>
-                              <option value="2">პროგრამისტი</option>
+                              <option value="2">გამოცდილება დაწესებულებაში</option>
                            </select>
                         </div>
                      </div>
                   </div>
                </div>
 
-               <div class="dzidzis-kitxvebi" style="display: none;">
+               <div class="dzidzis-kitxvebi disable">
                      <div class="resume-form-row">
                         <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
                            <div class="bloko-form-item">
@@ -1768,7 +1774,125 @@
                         </div>
                      </div>
                      <br>
-               </div>               
+               </div> 
+               <div class="office disable">
+                  <div class="resume-form-row">
+                     <div class="resume-form-row">
+                        <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3" style="padding-left:0px;">
+                           <div class="bloko-form-item"><label class="bloko-form-legend ">სამუშაოს დაწყება</label></div>
+                        </div>
+                        <div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="resume-short-label">Start of work</label></div>
+                        <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
+                           <div class="resume-remove-item-gap">
+                              <input type="hidden" name="experience.startDate" class="HH-Resume-Experiences-StartDate" value="">
+                              <div class="resume-experience-start-input-group">
+                                 <div class="bloko-control-group                     bloko-control-group_auto-size                     HH-Resume-Experiences-StartDate-TooltipElement">
+                                    <div class="bloko-control-group__content-sized">
+                                       <select data-hh-autosave-without-name="experience-start-month" data-gaformstatistic-name="experience.startDate" class="bloko-select bloko-select_flexible HH-Resume-Experiences-StartDate-Month HH-AutoSave-WithoutName ">
+                                          <option value="01">January</option>
+                                          <option value="02">February</option>
+                                          <option value="03">March</option>
+                                          <option value="04">April</option>
+                                          <option value="05">May</option>
+                                          <option value="06">June</option>
+                                          <option value="07">July</option>
+                                          <option value="08">August</option>
+                                          <option value="09">September</option>
+                                          <option value="10">October</option>
+                                          <option value="11">November</option>
+                                          <option value="12">December</option>
+                                       </select>
+                                    </div>
+                                    <div class="bloko-control-group__content-sized"><input value="" placeholder="Year" data-hh-autosave-without-name="experience-start-date" maxlength="4" size="4" data-gaformstatistic-name="experience.startDate" class="bloko-input bloko-input_sized HH-YearAutocomplete-Control HH-Resume-Experiences-StartDate-Year HH-AutoSave-WithoutName "></div>
+                                 </div>
+                              </div>
+                              <div class="resume-experience-start-native-input"><label class="bloko-input-wrapper HH-Resume-Experiences-StartDate-TooltipElement"><input type="month" class="bloko-input HH-Resume-Experiences-StartDate-Date bloko-input_invalid" value=""><span class="bloko-icon bloko-icon_calendar"></span></label></div>
+                              <div class="resume-experience-start-checkbox"><label class="bloko-checkbox"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Experiences-TillNow" data-gaformstatistic-name="experience.startDate"><span class="bloko-checkbox__text"> დღემდე</span></label></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="resume-form-row">
+                        <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3" style="padding-left: 0px;">
+                           <div class="bloko-form-item"><label class="bloko-form-legend ">სამუშაოს დასრულება</label></div>
+                        </div>
+                        <div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="resume-short-label">Start of work</label></div>
+                        <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
+                           <div class="resume-remove-item-gap">
+                              <input type="hidden" name="experience.startDate" class="HH-Resume-Experiences-StartDate" value="">
+                              <div class="resume-experience-start-input-group">
+                                 <div class="bloko-control-group                     bloko-control-group_auto-size                     HH-Resume-Experiences-StartDate-TooltipElement">
+                                    <div class="bloko-control-group__content-sized">
+                                       <select data-hh-autosave-without-name="experience-start-month" data-gaformstatistic-name="experience.startDate" class="bloko-select bloko-select_flexible HH-Resume-Experiences-StartDate-Month HH-AutoSave-WithoutName ">
+                                          <option value="01">January</option>
+                                          <option value="02">February</option>
+                                          <option value="03">March</option>
+                                          <option value="04">April</option>
+                                          <option value="05">May</option>
+                                          <option value="06">June</option>
+                                          <option value="07">July</option>
+                                          <option value="08">August</option>
+                                          <option value="09">September</option>
+                                          <option value="10">October</option>
+                                          <option value="11">November</option>
+                                          <option value="12">December</option>
+                                       </select>
+                                    </div>
+                                    <div class="bloko-control-group__content-sized"><input value="" placeholder="Year" data-hh-autosave-without-name="experience-start-date" maxlength="4" size="4" data-gaformstatistic-name="experience.startDate" class="bloko-input bloko-input_sized HH-YearAutocomplete-Control HH-Resume-Experiences-StartDate-Year HH-AutoSave-WithoutName "></div>
+                                 </div>
+                              </div>
+                              <div class="resume-experience-start-native-input"><label class="bloko-input-wrapper HH-Resume-Experiences-StartDate-TooltipElement"><input type="month" class="bloko-input HH-Resume-Experiences-StartDate-Date bloko-input_invalid" value=""><span class="bloko-icon bloko-icon_calendar"></span></label></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3" style="padding-left: 0;">
+                        <div class="bloko-form-item">
+                           <label class="bloko-form-legend ">დაწესებულება</label>
+                        </div>
+                     </div>
+                     <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4">
+                        <div class="HH-Form-Element-TooltipElement " data-qa="resume-section-controls">
+                           <input type="text" class="bloko-input  bloko-input_sized  HH-AutoSave-WithoutName Bloko-FormattedNumericInput-Visible   HH-Resume-Salary-Input" placeholder="დაწესებულება">
+                        </div>
+                     </div>
+                     <br/><br/>
+                     <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3" style="padding-left: 0;">
+                        <div class="bloko-form-item">
+                           <label class="bloko-form-legend ">პოზიცია</label>
+                        </div>
+                     </div>
+                     <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4">
+                        <div class="HH-Form-Element-TooltipElement " data-qa="resume-section-controls">
+                           <input type="text" class="bloko-input  bloko-input_sized  HH-AutoSave-WithoutName Bloko-FormattedNumericInput-Visible   HH-Resume-Salary-Input" placeholder="პოზიცია">
+                        </div>
+                     </div>
+                     <br/><br/>
+                     <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3" style="padding-left: 0;">
+                        <div class="bloko-form-item">
+                           <label class="bloko-form-legend ">ხელფასი</label>
+                        </div>
+                     </div>
+                     <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4">
+                        <div class="HH-Form-Element-TooltipElement " data-qa="resume-section-controls">
+                           <input type="text" class="bloko-input  bloko-input_sized  HH-AutoSave-WithoutName Bloko-FormattedNumericInput-Visible   HH-Resume-Salary-Input" placeholder="ხელფასი">
+                        </div>
+                     </div>
+                     <br/><br/>
+                     <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3" style="padding-left: 0;">
+                        <div class="bloko-form-item">
+                           <label class="bloko-form-legend ">სამუშაოს აღწერილობა</label>
+                        </div>
+                     </div>
+                     <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4">
+                        <div class="HH-Form-Element-TooltipElement " data-qa="resume-section-controls">
+                           <textarea  class="work-textarea" placeholder="სამუშაოს აღწერილობა"></textarea>
+                        </div>
+                     </div>
+                     <br/><br/>
+                     <div style="border-bottom: 1px dashed silver;"></div>
+                     <br/>
+                  </div>
+               </div>
+
             </div>
 
             
@@ -1777,90 +1901,6 @@
 
 
 
-
-         <!-- <div>
-         <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-9 bloko-column_l-9 bloko-column_container">
-         <div id="educationBlock" class="resume-field-toggle HH-Form-Collection-ToggleWrapper">
-         <div class="bloko-section r">
-
-                <div class="resume-form-row"><div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3" style="padding-left:0px;"><div class="bloko-form-item"><label class="bloko-form-legend ">სამუშაოს დაწყება</label></div></div><div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="resume-short-label">Start of work</label></div><div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6"><div class="resume-remove-item-gap"><input type="hidden" name="experience.startDate" class="HH-Resume-Experiences-StartDate" value=""><div class="resume-experience-start-input-group"><div class="bloko-control-group                     bloko-control-group_auto-size                     HH-Resume-Experiences-StartDate-TooltipElement"><div class="bloko-control-group__content-sized"><select data-hh-autosave-without-name="experience-start-month" data-gaformstatistic-name="experience.startDate" class="bloko-select bloko-select_flexible HH-Resume-Experiences-StartDate-Month HH-AutoSave-WithoutName "><option value="01">January</option><option value="02">February</option><option value="03">March</option><option value="04">April</option><option value="05">May</option><option value="06">June</option><option value="07">July</option><option value="08">August</option><option value="09">September</option><option value="10">October</option><option value="11">November</option><option value="12">December</option></select></div><div class="bloko-control-group__content-sized"><input value="" placeholder="Year" data-hh-autosave-without-name="experience-start-date" maxlength="4" size="4" data-gaformstatistic-name="experience.startDate" class="bloko-input bloko-input_sized HH-YearAutocomplete-Control HH-Resume-Experiences-StartDate-Year HH-AutoSave-WithoutName "></div></div></div><div class="resume-experience-start-native-input"><label class="bloko-input-wrapper HH-Resume-Experiences-StartDate-TooltipElement"><input type="month" class="bloko-input HH-Resume-Experiences-StartDate-Date bloko-input_invalid" value=""><span class="bloko-icon bloko-icon_calendar"></span></label></div><div class="resume-experience-start-checkbox"><label class="bloko-checkbox"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Experiences-TillNow" data-gaformstatistic-name="experience.startDate"><span class="bloko-checkbox__text"> დღემდე</span></label></div></div></div></div>
-
-
-                <div class="resume-form-row"><div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3" style="padding-left: 0px;"><div class="bloko-form-item"><label class="bloko-form-legend ">სამუშაოს დასრულება</label></div></div><div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="resume-short-label">Start of work</label></div><div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6"><div class="resume-remove-item-gap"><input type="hidden" name="experience.startDate" class="HH-Resume-Experiences-StartDate" value=""><div class="resume-experience-start-input-group"><div class="bloko-control-group                     bloko-control-group_auto-size                     HH-Resume-Experiences-StartDate-TooltipElement"><div class="bloko-control-group__content-sized"><select data-hh-autosave-without-name="experience-start-month" data-gaformstatistic-name="experience.startDate" class="bloko-select bloko-select_flexible HH-Resume-Experiences-StartDate-Month HH-AutoSave-WithoutName "><option value="01">January</option><option value="02">February</option><option value="03">March</option><option value="04">April</option><option value="05">May</option><option value="06">June</option><option value="07">July</option><option value="08">August</option><option value="09">September</option><option value="10">October</option><option value="11">November</option><option value="12">December</option></select></div><div class="bloko-control-group__content-sized"><input value="" placeholder="Year" data-hh-autosave-without-name="experience-start-date" maxlength="4" size="4" data-gaformstatistic-name="experience.startDate" class="bloko-input bloko-input_sized HH-YearAutocomplete-Control HH-Resume-Experiences-StartDate-Year HH-AutoSave-WithoutName "></div></div></div><div class="resume-experience-start-native-input"><label class="bloko-input-wrapper HH-Resume-Experiences-StartDate-TooltipElement"><input type="month" class="bloko-input HH-Resume-Experiences-StartDate-Date bloko-input_invalid" value=""><span class="bloko-icon bloko-icon_calendar"></span></label></div></div></div></div>
-
-
-
-            <div class="resume-form-row">
-               <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3" style="padding-left: 0;">
-                  <div class="bloko-form-item">
-                     <label class="bloko-form-legend ">დაწესებულება</label>
-                  </div>
-               </div>
-               <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4">
-                  <div class="HH-Form-Element-TooltipElement " data-qa="resume-section-controls">
-                     <input type="text" class="bloko-input  bloko-input_sized  HH-AutoSave-WithoutName Bloko-FormattedNumericInput-Visible   HH-Resume-Salary-Input" placeholder="დაწესებულება">
-                  </div>
-               </div>
-               <br/><br/>
-               <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3" style="padding-left: 0;">
-                  <div class="bloko-form-item">
-                     <label class="bloko-form-legend ">პოზიცია</label>
-                  </div>
-               </div>
-               <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4">
-                  <div class="HH-Form-Element-TooltipElement " data-qa="resume-section-controls">
-                     <input type="text" class="bloko-input  bloko-input_sized  HH-AutoSave-WithoutName Bloko-FormattedNumericInput-Visible   HH-Resume-Salary-Input" placeholder="პოზიცია">
-                  </div>
-               </div>
-               <br/><br/>
-               <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3" style="padding-left: 0;">
-                  <div class="bloko-form-item">
-                     <label class="bloko-form-legend ">ხელფასი</label>
-                  </div>
-               </div>
-               <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4">
-                  <div class="HH-Form-Element-TooltipElement " data-qa="resume-section-controls">
-                     <input type="text" class="bloko-input  bloko-input_sized  HH-AutoSave-WithoutName Bloko-FormattedNumericInput-Visible   HH-Resume-Salary-Input" placeholder="ხელფასი">
-                  </div>
-               </div>
-               <br/><br/>
-               <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3" style="padding-left: 0;">
-                  <div class="bloko-form-item">
-                     <label class="bloko-form-legend ">მუშაობის დაწყების დრო</label>
-                  </div>
-               </div>
-               <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4">
-                  <div class="HH-Form-Element-TooltipElement " data-qa="resume-section-controls">
-                     <input type="date" class="work-input" placeholder="დაწყების დრო">
-                  </div>
-               </div>
-               <br/><br/>
-               <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3" style="padding-left: 0;">
-                  <div class="bloko-form-item">
-                     <label class="bloko-form-legend ">მუშაობის დასრულების დრო</label>
-                  </div>
-               </div>
-               <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4">
-                  <div class="HH-Form-Element-TooltipElement " data-qa="resume-section-controls">
-                     <input type="date" class="work-input" placeholder="დასრულების დრო">
-                  </div>
-               </div>
-               <br/><br/>
-               <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3" style="padding-left: 0;">
-                  <div class="bloko-form-item">
-                     <label class="bloko-form-legend ">სამუშაოს აღწერილობა</label>
-                  </div>
-               </div>
-               <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4">
-                  <div class="HH-Form-Element-TooltipElement " data-qa="resume-section-controls">
-                     <textarea  class="work-textarea" placeholder="სამუშაოს აღწერილობა"></textarea>
-                  </div>
-               </div>
-               <br/><br/>
-               <div style="border-bottom: 1px dashed silver;"></div>
-               <br/>
-            </div>
-         </div> -->
 
 
          <span id="q" style="cursor: pointer; border: 1px solid silver; padding: 10px;display: inline-block;margin-bottom: 20px;">გამოცდილების დამატება</span>  
@@ -1981,14 +2021,14 @@
                            <select class="bloko-select pozicia">
                               <option value="0">აირჩიეთ პოზიცია</option>
                               <option value="1">ძიძა</option>
-                              <option value="2">პროგრამისტი</option>
+                              <option value="2">გამოცდილება დაწესებულებაში</option>
                            </select>
                         </div>
                      </div>
                   </div>
                </div>
 
-               <div class="dzidzis-kitxvebi" style="display: none;">
+               <div class="dzidzis-kitxvebi disable">
                      <div class="resume-form-row">
                         <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
                            <div class="bloko-form-item">
@@ -2192,6 +2232,123 @@
                         </div>
                      </div>
                      <br>
+               </div>
+               <div class="office disable">
+                  <div class="resume-form-row">
+                     <div class="resume-form-row">
+                        <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3" style="padding-left:0px;">
+                           <div class="bloko-form-item"><label class="bloko-form-legend ">სამუშაოს დაწყება</label></div>
+                        </div>
+                        <div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="resume-short-label">Start of work</label></div>
+                        <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
+                           <div class="resume-remove-item-gap">
+                              <input type="hidden" name="experience.startDate" class="HH-Resume-Experiences-StartDate" value="">
+                              <div class="resume-experience-start-input-group">
+                                 <div class="bloko-control-group                     bloko-control-group_auto-size                     HH-Resume-Experiences-StartDate-TooltipElement">
+                                    <div class="bloko-control-group__content-sized">
+                                       <select data-hh-autosave-without-name="experience-start-month" data-gaformstatistic-name="experience.startDate" class="bloko-select bloko-select_flexible HH-Resume-Experiences-StartDate-Month HH-AutoSave-WithoutName ">
+                                          <option value="01">January</option>
+                                          <option value="02">February</option>
+                                          <option value="03">March</option>
+                                          <option value="04">April</option>
+                                          <option value="05">May</option>
+                                          <option value="06">June</option>
+                                          <option value="07">July</option>
+                                          <option value="08">August</option>
+                                          <option value="09">September</option>
+                                          <option value="10">October</option>
+                                          <option value="11">November</option>
+                                          <option value="12">December</option>
+                                       </select>
+                                    </div>
+                                    <div class="bloko-control-group__content-sized"><input value="" placeholder="Year" data-hh-autosave-without-name="experience-start-date" maxlength="4" size="4" data-gaformstatistic-name="experience.startDate" class="bloko-input bloko-input_sized HH-YearAutocomplete-Control HH-Resume-Experiences-StartDate-Year HH-AutoSave-WithoutName "></div>
+                                 </div>
+                              </div>
+                              <div class="resume-experience-start-native-input"><label class="bloko-input-wrapper HH-Resume-Experiences-StartDate-TooltipElement"><input type="month" class="bloko-input HH-Resume-Experiences-StartDate-Date bloko-input_invalid" value=""><span class="bloko-icon bloko-icon_calendar"></span></label></div>
+                              <div class="resume-experience-start-checkbox"><label class="bloko-checkbox"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Experiences-TillNow" data-gaformstatistic-name="experience.startDate"><span class="bloko-checkbox__text"> დღემდე</span></label></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="resume-form-row">
+                        <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3" style="padding-left: 0px;">
+                           <div class="bloko-form-item"><label class="bloko-form-legend ">სამუშაოს დასრულება</label></div>
+                        </div>
+                        <div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="resume-short-label">Start of work</label></div>
+                        <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
+                           <div class="resume-remove-item-gap">
+                              <input type="hidden" name="experience.startDate" class="HH-Resume-Experiences-StartDate" value="">
+                              <div class="resume-experience-start-input-group">
+                                 <div class="bloko-control-group                     bloko-control-group_auto-size                     HH-Resume-Experiences-StartDate-TooltipElement">
+                                    <div class="bloko-control-group__content-sized">
+                                       <select data-hh-autosave-without-name="experience-start-month" data-gaformstatistic-name="experience.startDate" class="bloko-select bloko-select_flexible HH-Resume-Experiences-StartDate-Month HH-AutoSave-WithoutName ">
+                                          <option value="01">January</option>
+                                          <option value="02">February</option>
+                                          <option value="03">March</option>
+                                          <option value="04">April</option>
+                                          <option value="05">May</option>
+                                          <option value="06">June</option>
+                                          <option value="07">July</option>
+                                          <option value="08">August</option>
+                                          <option value="09">September</option>
+                                          <option value="10">October</option>
+                                          <option value="11">November</option>
+                                          <option value="12">December</option>
+                                       </select>
+                                    </div>
+                                    <div class="bloko-control-group__content-sized"><input value="" placeholder="Year" data-hh-autosave-without-name="experience-start-date" maxlength="4" size="4" data-gaformstatistic-name="experience.startDate" class="bloko-input bloko-input_sized HH-YearAutocomplete-Control HH-Resume-Experiences-StartDate-Year HH-AutoSave-WithoutName "></div>
+                                 </div>
+                              </div>
+                              <div class="resume-experience-start-native-input"><label class="bloko-input-wrapper HH-Resume-Experiences-StartDate-TooltipElement"><input type="month" class="bloko-input HH-Resume-Experiences-StartDate-Date bloko-input_invalid" value=""><span class="bloko-icon bloko-icon_calendar"></span></label></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3" style="padding-left: 0;">
+                        <div class="bloko-form-item">
+                           <label class="bloko-form-legend ">დაწესებულება</label>
+                        </div>
+                     </div>
+                     <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4">
+                        <div class="HH-Form-Element-TooltipElement " data-qa="resume-section-controls">
+                           <input type="text" class="bloko-input  bloko-input_sized  HH-AutoSave-WithoutName Bloko-FormattedNumericInput-Visible   HH-Resume-Salary-Input" placeholder="დაწესებულება">
+                        </div>
+                     </div>
+                     <br/><br/>
+                     <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3" style="padding-left: 0;">
+                        <div class="bloko-form-item">
+                           <label class="bloko-form-legend ">პოზიცია</label>
+                        </div>
+                     </div>
+                     <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4">
+                        <div class="HH-Form-Element-TooltipElement " data-qa="resume-section-controls">
+                           <input type="text" class="bloko-input  bloko-input_sized  HH-AutoSave-WithoutName Bloko-FormattedNumericInput-Visible   HH-Resume-Salary-Input" placeholder="პოზიცია">
+                        </div>
+                     </div>
+                     <br/><br/>
+                     <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3" style="padding-left: 0;">
+                        <div class="bloko-form-item">
+                           <label class="bloko-form-legend ">ხელფასი</label>
+                        </div>
+                     </div>
+                     <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4">
+                        <div class="HH-Form-Element-TooltipElement " data-qa="resume-section-controls">
+                           <input type="text" class="bloko-input  bloko-input_sized  HH-AutoSave-WithoutName Bloko-FormattedNumericInput-Visible   HH-Resume-Salary-Input" placeholder="ხელფასი">
+                        </div>
+                     </div>
+                     <br/><br/>
+                     <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3" style="padding-left: 0;">
+                        <div class="bloko-form-item">
+                           <label class="bloko-form-legend ">სამუშაოს აღწერილობა</label>
+                        </div>
+                     </div>
+                     <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4">
+                        <div class="HH-Form-Element-TooltipElement " data-qa="resume-section-controls">
+                           <textarea  class="work-textarea" placeholder="სამუშაოს აღწერილობა"></textarea>
+                        </div>
+                     </div>
+                     <br/><br/>
+                     <div style="border-bottom: 1px dashed silver;"></div>
+                     <br/>
+                  </div>
                </div>               
             </div>`);
          });
@@ -2199,7 +2356,9 @@
       <script>
           $(document).on('click', '.item .pozicia ', function() {
             if ($(this).val()==1) {
-                $(this).parent().parent().parent().parent().siblings('.dzidzis-kitxvebi').css('display', 'block');
+                $(this).parent().parent().parent().parent().siblings('.dzidzis-kitxvebi').toggleClass('active');
+            }else if($(this).val()==2){
+               $(this).parent().parent().parent().parent().siblings('.office').toggleClass('active');
             }
           });
       </script>
