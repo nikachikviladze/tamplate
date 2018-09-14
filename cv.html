@@ -1700,7 +1700,7 @@
                         <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6 bloko-column_container">
                            <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
                               <div class="HH-Resume-Title-Container">
-                                 <select class="bloko-select" id="inkluziuri">
+                                 <select class="bloko-select inkluziuri-select">
                                     <option value="0">არჩევა</option>
                                     <option value="1">მიმუშავია</option>
                                     <option value="2">არ მიმუშავია</option>
@@ -1710,7 +1710,7 @@
                         </div>
                      </div>
                      <br><br>
-                     <div class="resume-form-row HH-Resume-Constructor-Employment" id="inkluziuri-box" style="display:none;">
+                     <div class="resume-form-row HH-Resume-Constructor-Employment inkluziuri-box disable">
                         <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
                            <div class="bloko-form-item"><label class="bloko-form-legend bloko-form-legend_for-baseline">ინკლუზიურის ტიპი</label></div>
                         </div>
@@ -1760,7 +1760,7 @@
                         </div>
                      </div>
                      <br><br>
-                     <div class="resume-form-row HH-Resume-Constructor-Employment" id="inkluziuri-box">
+                     <div class="resume-form-row HH-Resume-Constructor-Employment">
                         <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
                            <div class="bloko-form-item"><label class="bloko-form-legend bloko-form-legend_for-baseline">რა გევალებოდათ ბავშვის გარდა </label></div>
                         </div>
@@ -2161,7 +2161,7 @@
                         <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6 bloko-column_container">
                            <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
                               <div class="HH-Resume-Title-Container">
-                                 <select class="bloko-select" id="inkluziuri">
+                                 <select class="bloko-select inkluziuri-select">
                                     <option value="0">არჩევა</option>
                                     <option value="1">მიმუშავია</option>
                                     <option value="2">არ მიმუშავია</option>
@@ -2171,7 +2171,7 @@
                         </div>
                      </div>
                      <br><br>
-                     <div class="resume-form-row HH-Resume-Constructor-Employment" id="inkluziuri-box" style="display:none;">
+                     <div class="resume-form-row HH-Resume-Constructor-Employment inkluziuri-box" style="display:none;">
                         <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
                            <div class="bloko-form-item"><label class="bloko-form-legend bloko-form-legend_for-baseline">ინკლუზიურის ტიპი</label></div>
                         </div>
@@ -2221,7 +2221,7 @@
                         </div>
                      </div>
                      <br><br>
-                     <div class="resume-form-row HH-Resume-Constructor-Employment" id="inkluziuri-box">
+                     <div class="resume-form-row HH-Resume-Constructor-Employment">
                         <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
                            <div class="bloko-form-item"><label class="bloko-form-legend bloko-form-legend_for-baseline">რა გევალებოდათ ბავშვის გარდა </label></div>
                         </div>
@@ -2379,7 +2379,15 @@
           $(document).on('click', '.remove-item', function() {
              $(this).parent().remove();
            });
+
+          $(document).on('click', '.item .inkluziuri-select', function() {
+            if ($(this).val()==1) {
+                $(this).parent().parent().parent().parent().siblings('.inkluziuri-box').toggleClass('active');
+            }
+          });
+
           
+        
       </script>
       <script>
                $('.language-selectbox').on('click', function(event) {
