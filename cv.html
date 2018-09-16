@@ -1895,8 +1895,8 @@
                გამორთვა
                </button>
                </span><span class="bloko-form-spacer">
-               <button type="button" class="bloko-button bloko-button_primary Bloko-TreeSelectorPopup-Submit" data-qa="bloko-tree-selector-popup-submit">
-               <span class="bloko-button__content" id="save">შენახვა</span>
+               <button  type="button" class="bloko-button bloko-button_primary Bloko-TreeSelectorPopup-Submit" id="save">
+               <span class="bloko-button__content" >შენახვა</span>
                <span class="bloko-button__loading">
                <span class="bloko-icon bloko-icon_loading bloko-icon_initial-inverted"></span>
                </span>
@@ -2320,8 +2320,7 @@
                       
          });
 
-         $('#save').on('click', function(event) {
-            
+         $('#save').on('click', function() {            
             $('#cont').empty();
 
             for (var j = 0; j < arr.length; ++j) {
@@ -2329,6 +2328,7 @@
                   
             }
             $('#jj').hide();
+
          });
          $(document).on('click', '.Bloko-TagList-ParentTag .bloko-icon-dynamic', function() {
 
@@ -2373,6 +2373,7 @@
       <script>
          $('#vacancy-serp__query').on('keyup', function(event) {
             var value = $(this).val().toLowerCase();
+            console.log(event.which );
 
             var items = {
                0 : ['დამხმარე ძიძა', 'ძიძა საბავშო ბაღში', 'ძიძა გუვერნანტი', 'შშმპ პირის ძიძა'],
@@ -2380,13 +2381,15 @@
             };
 
             $('.s').show();
-            if (value=='ძი'||value=='ძიძა') {
+            if (value=='ძი'||value=='ძიძა' &&event.which!=38  &&event.which!=40) {
+
+   
                for (var i = 0; i < items[0].length; ++i) {
                   $('.suggest-result').append('<li class="suggest__item Bloko-Suggest-Item ">'+items[0][i]+'</li>');
                      
                }
               
-            }else if(value=='მუ'||value=='მუშა'){
+            }else if(value=='მუ'||value=='მუშა' &&event.which!=38  &&event.which!=40){
                for (var i = 0; i < items[1].length; ++i) {
                   $('.suggest-result').append('<li class="suggest__item Bloko-Suggest-Item ">'+items[1][i]+'</li>');
                      
