@@ -1205,7 +1205,7 @@
 
       <div class="HH-Form-Collection-DisableWrapper">
          <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
-            <div class="bloko-form-legend bloko-form-legend_for-small">Профессиональная область</div>
+            <div class="bloko-form-legend bloko-form-legend_for-small">სამუშაოს არჩევა</div>
          </div>
          <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
             <div class="HH-Resume-Specializations-Popup HH-Resume-AutoSave-TreeSelectorElement">
@@ -1220,7 +1220,7 @@
                <div>
                   <div id="cont"></div>
 
-                  <div  id="m" class="bloko-form-legend bloko-form-legend_for-small"><button type="button" class="bloko-link-switch                                HH-TreeSelectorPopup-Profarea-Select                                HH-IndustrySwitcher-Switcher                                HH-Form-Element-TooltipElement" name="specialization.string">Указать профобласти</button></div>
+                  <div  id="m" class="bloko-form-legend bloko-form-legend_for-small"><button type="button" class="bloko-link-switch                                HH-TreeSelectorPopup-Profarea-Select                                HH-IndustrySwitcher-Switcher   HH-Form-Element-TooltipElement" name="specialization.string">აირჩიეთ სამუშაო</button></div>
                </div>
             </div>
          </div>
@@ -1693,9 +1693,9 @@
       <div class="bloko-modal-container bloko-modal-container_visible disable" id="jj" >
          <div class="bloko-modal">
             <div class="bloko-modal-header">
-               <h2 class="bloko-modal-title">Выбор профобластей</h2>
+               <h2 class="bloko-modal-title">სასურველი სამუშაოს შერჩევა</h2>
                <div class="bloko-tree-selector-popup-search">
-                  <input type="search" class="bloko-input Bloko-TreeSelectorPopup-Search" placeholder="Быстрый поиск" data-qa="bloko-tree-selector-popup-search">
+                  <input type="search" class="bloko-input Bloko-TreeSelectorPopup-Search" placeholder="ჩაწერეთ პროფესია" id="search">
                </div>
                <div class="bloko-tree-selector-popup-hint Bloko-TreeSelectorPopup-Hint"></div>
             </div>
@@ -1715,7 +1715,7 @@
                                  bloko-icon_initial-action
                                  bloko-icon_highlighted-impact"></span>
                               </span></span></span>
-                              <div class="bloko-tree-selector-item__text Bloko-TreeSelector-Expanded" data-qa="bloko-tree-selector-item-text">Автомобильный бизнес
+                              <div class="bloko-tree-selector-item__text Bloko-TreeSelector-Expanded" data-qa="bloko-tree-selector-item-text">ავტომობილების ბიზნესი
                               </div>
                            </div>
                         </div>
@@ -1724,8 +1724,8 @@
                               <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
                                  <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
                                     <label class="bloko-checkbox">
-                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="Автожестянщик" data-qa="bloko-tree-selector-input" autocomplete="off" type="checkbox">
-                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">Автожестянщик
+                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="მძღოლი" data-qa="bloko-tree-selector-input" autocomplete="off" type="checkbox">
+                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">მძღოლი
                                     </span>
                                     </label>
                                  </div>
@@ -1735,8 +1735,8 @@
                               <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
                                  <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
                                     <label class="bloko-checkbox">
-                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="Продажа" autocomplete="off" type="checkbox">
-                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">   Продажа
+                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="ხელოსანი" autocomplete="off" type="checkbox">
+                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">   ხელოსანი
                                     </span>
                                     </label>
                                  </div>
@@ -1746,8 +1746,8 @@
                               <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
                                  <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
                                     <label class="bloko-checkbox">
-                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="Шины, Диски" autocomplete="off" type="checkbox">
-                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">   Шины, Диски
+                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="დილერი" autocomplete="off" type="checkbox">
+                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">   დილერი
                                     </span>
                                     </label>
                                  </div>
@@ -1766,7 +1766,7 @@
                                  bloko-icon_initial-action
                                  bloko-icon_highlighted-impact"></span>
                               </span></span></span>
-                              <div class="bloko-tree-selector-item__text Bloko-TreeSelector-Expanded" data-qa="bloko-tree-selector-item-text">Безопасность
+                              <div class="bloko-tree-selector-item__text Bloko-TreeSelector-Expanded" data-qa="bloko-tree-selector-item-text">ძიძა
                               </div>
                            </div>
                         </div>
@@ -1775,8 +1775,8 @@
                               <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
                                  <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
                                     <label class="bloko-checkbox">
-                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="Взыскание задолженности, Коллекторская деятельность"  autocomplete="off" type="checkbox">
-                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">Взыскание задолженности, Коллекторская деятельность
+                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="ძიძა"  autocomplete="off" type="checkbox">
+                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">ძიძა
                                     </span>
                                     </label>
                                  </div>
@@ -1786,8 +1786,8 @@
                               <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
                                  <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
                                     <label class="bloko-checkbox">
-                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="Системы видеонаблюдения" data-qa="bloko-tree-selector-input" autocomplete="off" type="checkbox">
-                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">Системы видеонаблюдения
+                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="დამხმარე" data-qa="bloko-tree-selector-input" autocomplete="off" type="checkbox">
+                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">დამხმარე
                                     </span>
                                     </label>
                                  </div>
@@ -1797,8 +1797,8 @@
                               <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
                                  <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
                                     <label class="bloko-checkbox">
-                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="Имущественная безопасность" data-qa="bloko-tree-selector-input" autocomplete="off" type="checkbox">
-                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">Имущественная безопасность
+                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="მზარეული" data-qa="bloko-tree-selector-input" autocomplete="off" type="checkbox">
+                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">მზარეული
 
                                     </span>
                                     </label>
@@ -1809,8 +1809,8 @@
                               <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
                                  <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
                                     <label class="bloko-checkbox">
-                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="Вечерний секретарь" data-qa="bloko-tree-selector-input" autocomplete="off" type="checkbox">
-                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">Вечерний секретарь
+                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="მომვლელი" data-qa="bloko-tree-selector-input" autocomplete="off" type="checkbox">
+                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">მომვლელი
                                     </span>
                                     </label>
                                  </div>
@@ -1829,7 +1829,7 @@
                                  bloko-icon_initial-action
                                  bloko-icon_highlighted-impact"></span>
                               </span></span></span>
-                              <div class="bloko-tree-selector-item__text Bloko-TreeSelector-Expanded" data-qa="bloko-tree-selector-item-text">Административный персонал
+                              <div class="bloko-tree-selector-item__text Bloko-TreeSelector-Expanded" data-qa="bloko-tree-selector-item-text">მასწავლებელი
                               </div>
                            </div>
                         </div>
@@ -1838,8 +1838,8 @@
                               <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
                                  <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
                                     <label class="bloko-checkbox">
-                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="4.374" data-qa="bloko-tree-selector-input" autocomplete="off" type="checkbox">
-                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">АХО
+                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="მასწავლებელი" data-qa="bloko-tree-selector-input" autocomplete="off" type="checkbox">
+                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">მასწავლებელი
                                     </span>
                                     </label>
                                  </div>
@@ -1849,8 +1849,8 @@
                               <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
                                  <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
                                     <label class="bloko-checkbox">
-                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="Архивист" autocomplete="off" type="checkbox">
-                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">Архивист
+                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="ლექტორი" autocomplete="off" type="checkbox">
+                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">ლექტორი
                                     </span>
                                     </label>
                                  </div>
@@ -1860,8 +1860,8 @@
                               <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
                                  <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
                                     <label class="bloko-checkbox">
-                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="Ввод данных" autocomplete="off" type="checkbox">
-                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">Ввод данных
+                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="დირექტორი" autocomplete="off" type="checkbox">
+                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">დირექტორი
                                     </span>
                                     </label>
                                  </div>
@@ -1871,8 +1871,8 @@
                               <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
                                  <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
                                     <label class="bloko-checkbox">
-                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="Вечерний секретарь"  autocomplete="off" type="checkbox">
-                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">Вечерний секретарь
+                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="პედაგოგი"  autocomplete="off" type="checkbox">
+                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">პედაგოგი
                                     </span>
                                     </label>
                                  </div>
@@ -1889,7 +1889,7 @@
             <div class="bloko-modal-footer">
                <span class="bloko-form-spacer">
                <button type="button" class="bloko-button Bloko-TreeSelectorPopup-Cancel exit">
-               Отменить
+               გამორთვა
                </button>
                </span><span class="bloko-form-spacer">
                <button type="button" class="bloko-button bloko-button_primary Bloko-TreeSelectorPopup-Submit" data-qa="bloko-tree-selector-popup-submit">
@@ -2298,7 +2298,6 @@
                arr.push(item);
             }else{
                var removeItem = $(this).val();
-               // arr.splice( $.inArray(removeItem,arr) ,1 );
 
                for(var i in arr){
                   
@@ -2316,7 +2315,6 @@
             
             $('#cont').empty();
 
-
             for (var j = 0; j < arr.length; ++j) {
                   $('#cont').prepend('<div class="bloko-toggle HH-TreeSelectorPopup-Profarea-List HH-IndustrySwitcher-List bloko-toggle_expand"><div class="profareatree profareatree_nopadding"><div class="profareatree__description HH-IndustrySwitcher-Counter g-hidden"></div><div class="HH-TreeSelectorPopup-Tags bloko-toggle__expandable"><div class="bloko-nested-tag Bloko-TagList-Tag  Bloko-TagList-ParentTag"><span class="bloko-tag bloko-tag_parent "><button class="bloko-tag__section  bloko-tag__section_text bloko-tag__section_active Bloko-TagList-Expand  Bloko-TagList-SectionText" type="button"><span class="Bloko-TagList-Text" data-qa="bloko-tag__text">'+ arr[j]+'</span></button><span class="bloko-icon-dynamic"><button class="bloko-tag-button Bloko-TagList-Remove" type="button"><span class="bloko-icon bloko-icon_remove bloko-icon_initial-impact       bloko-icon_highlighted-action"></span></button></span></span></div></div></div></div>');
                   
@@ -2328,8 +2326,6 @@
             $(this).parent().parent().parent().parent().parent().remove();
            
          });
-
-
 
 
          $('body').click(function(evt){    
@@ -2348,13 +2344,18 @@
             $('#jj').hide();
          });
 
+         $('#search').on('keyup', function(event) {
+            var value = $(this).val().toLowerCase();
+
+            $(".job-section .job-items .job-desc .job-item").filter(function() {
+
+               $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+               $('.job-section .job-header').siblings('.job-desc').toggleClass('active').css('visibility', 'visible');
+
+            });
 
 
-
-
-
-
-         
+         });
 
          
          
