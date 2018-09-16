@@ -66,6 +66,9 @@
          cursor: pointer;
          top: 9px;
          }
+         .s{
+            display: none;
+         }
       </style>
    </head>
    <body class="l-ambient s-friendly custom-font-allowed">
@@ -115,7 +118,7 @@
                         <form action="/search/vacancy" method="get" data-hh-tab-id="searchVacancy" class="HH-Navi-SearchSelector-Tab HH-Navi-SearchSelector-Form  HH-VacancyMap-Form">
                            <div class="bloko-control-group">
                               <div class="bloko-control-group__main">
-                                 <input type="text" class="bloko-input HH-Navi-SearchSelector-Tab-TextInput                   HH-SearchFromSuggest-Suggest                               HH-Navi-StickyMenu-MainSearch                               HH-VacancyMainSearchInfoTip-Input" value="" placeholder="Я ищу…" name="text" data-qa="vacancy-serp__query">
+                                 <input type="text" class="bloko-input HH-Navi-SearchSelector-Tab-TextInput                   HH-SearchFromSuggest-Suggest                               HH-Navi-StickyMenu-MainSearch                               HH-VacancyMainSearchInfoTip-Input" value="" placeholder="მე ვეძებ..." name="text" id="vacancy-serp__query">
                               </div>
                               <div class="bloko-control-group__minor HH-Navi-SearchSelector-SelectWrapper">
                                  <select class="bloko-select                        bloko-select_flexible                        HH-Navi-SearchSelector-Select" data-qa="navi-search__select">
@@ -1904,6 +1907,12 @@
          <div class="bloko-modal-close-button Bloko-Modal-CloseButton exit"></div>
       </div>
 
+      <div class="s suggest g-anim-fade g-anim-fade_in suggest_layer-above-overlay-content search-content" style="left: 119.5px; top: 58px; width: 682px;"><ul class="suggest__items Bloko-Suggest-List suggest__items_hover_enabled suggest-result">         
+          
+          
+      </ul>
+      </div>
+
 
       <script>
          $('#q').on('click', function(event) {
@@ -2360,6 +2369,35 @@
          
          
          
+      </script>
+      <script>
+         $('#vacancy-serp__query').on('keyup', function(event) {
+            var value = $(this).val().toLowerCase();
+
+            var items = {
+               0 : ['დამხმარე ძიძა', 'ძიძა საბავშო ბაღში', 'ძიძა გუვერნანტი', 'შშმპ პირის ძიძა'],
+               1 : ['მუშა გამოძახებით', 'ავტომობილის მუშა', 'მუშა']
+            };
+
+            $('.s').show();
+            if (value=='ძი'||value=='ძიძა') {
+               for (var i = 0; i < items[0].length; ++i) {
+                  $('.suggest-result').append('<li class="suggest__item Bloko-Suggest-Item ">'+items[0][i]+'</li>');
+                     
+               }
+              
+            }else if(value=='მუ'||value=='მუშა'){
+               for (var i = 0; i < items[1].length; ++i) {
+                  $('.suggest-result').append('<li class="suggest__item Bloko-Suggest-Item ">'+items[1][i]+'</li>');
+                     
+               }
+            }else{
+               $('.s').hide();
+               $('.suggest-result').empty();
+            }
+
+
+         });
       </script>
       <script>
          $('.language-selectbox').on('click', function(event) {
