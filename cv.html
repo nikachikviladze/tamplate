@@ -1202,6 +1202,33 @@
       <div  class="language-selectbox bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6"><span class="bloko-link-switch HH-Form-Collection-Add HH-Resume-Autosave-AddItem">ენის დამატება</span>
          <br><br>
       </div>
+
+      <div class="HH-Form-Collection-DisableWrapper">
+         <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
+            <div class="bloko-form-legend bloko-form-legend_for-small">Профессиональная область</div>
+         </div>
+         <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
+            <div class="HH-Resume-Specializations-Popup HH-Resume-AutoSave-TreeSelectorElement">
+               <div class="bloko-toggle HH-TreeSelectorPopup-Profarea-List HH-IndustrySwitcher-List bloko-toggle_expand">
+                  <script data-name="HH/Bloko/Toggle" data-params=""></script>
+                  <div class="profareatree profareatree_nopadding">
+                     <div class="profareatree__description HH-IndustrySwitcher-Counter g-hidden"></div>
+                     <div class="HH-TreeSelectorPopup-Tags bloko-toggle__expandable" data-qa="searchform__selected-profareas">
+                     </div>
+                  </div>
+               </div>
+               <div>
+                  <div id="cont"></div>
+
+                  <div  id="m" class="bloko-form-legend bloko-form-legend_for-small"><button type="button" class="bloko-link-switch                                HH-TreeSelectorPopup-Profarea-Select                                HH-IndustrySwitcher-Switcher                                HH-Form-Element-TooltipElement" name="specialization.string">Указать профобласти</button></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <br><br>
+
+
+
       <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-12 bloko-column_l-16" style="padding-left: 0;">
          <h2 class="header header_level-2">სამუშაო გამოცდილება</h2>
          <br><br>
@@ -1563,6 +1590,8 @@
             </button>
          </div>
       </div>
+      </div>
+      </div>
       <div class="footer-wrapper">
          <div class="bloko-columns-wrapper">
             <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-12 bloko-column_l-16">
@@ -1654,6 +1683,228 @@
             </div>
          </div>
       </div>
+
+
+
+
+
+
+
+      <div class="bloko-modal-container bloko-modal-container_visible disable" id="jj" >
+         <div class="bloko-modal">
+            <div class="bloko-modal-header">
+               <h2 class="bloko-modal-title">Выбор профобластей</h2>
+               <div class="bloko-tree-selector-popup-search">
+                  <input type="search" class="bloko-input Bloko-TreeSelectorPopup-Search" placeholder="Быстрый поиск" data-qa="bloko-tree-selector-popup-search">
+               </div>
+               <div class="bloko-tree-selector-popup-hint Bloko-TreeSelectorPopup-Hint"></div>
+            </div>
+
+
+            <div class="bloko-tree-selector-popup">
+               <div class="Bloko-TreeSelectorPopup-NotFoundHint g-hidden">Совпадений не найдено</div>
+               <div class="bloko-tree-selector-popup-content Bloko-TreeSelectorPopup job-section">
+                  <div>
+                     <div class="Bloko-TreeSelector-Element bloko-tree-selector-item bloko-tree-selector-item_without-action job-items">
+                        <div class="bloko-form-item Bloko-TreeSelector-SearchContent Bloko-TreeSelector-Action job-header">
+                           <div class="bloko-tree-selector-content">
+                              <span class="bloko-tree-selector-item-spacer">
+                              <span class="bloko-icon-dynamic Bloko-TreeSelector-Chevron" data-qa="bloko-tree-selector-toogle-node">
+                              <span class="bloko-icon-link Bloko-TreeSelector-Icon" tabindex="0"><span class="bloko-icon
+                                 bloko-icon_chevron-right
+                                 bloko-icon_initial-action
+                                 bloko-icon_highlighted-impact"></span>
+                              </span></span></span>
+                              <div class="bloko-tree-selector-item__text Bloko-TreeSelector-Expanded" data-qa="bloko-tree-selector-item-text">Автомобильный бизнес
+                              </div>
+                           </div>
+                        </div>
+                        <div class="Bloko-TreeSelector-List g-hidden bloko-tree-selector__items job-desc">
+                           <div class="Bloko-TreeSelector-Element bloko-tree-selector-item job-item" >
+                              <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
+                                 <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
+                                    <label class="bloko-checkbox">
+                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="Автожестянщик" data-qa="bloko-tree-selector-input" autocomplete="off" type="checkbox">
+                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">Автожестянщик
+                                    </span>
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="Bloko-TreeSelector-Element bloko-tree-selector-item job-item" >
+                              <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
+                                 <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
+                                    <label class="bloko-checkbox">
+                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="Продажа" autocomplete="off" type="checkbox">
+                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">   Продажа
+                                    </span>
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="Bloko-TreeSelector-Element bloko-tree-selector-item job-item" >
+                              <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
+                                 <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
+                                    <label class="bloko-checkbox">
+                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="Шины, Диски" autocomplete="off" type="checkbox">
+                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">   Шины, Диски
+                                    </span>
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="Bloko-TreeSelector-Element bloko-tree-selector-item bloko-tree-selector-item_without-action job-items">
+                        <div class="bloko-form-item Bloko-TreeSelector-SearchContent Bloko-TreeSelector-Action job-header">
+                           <div class="bloko-tree-selector-content">
+                              <span class="bloko-tree-selector-item-spacer">
+                              <span class="bloko-icon-dynamic Bloko-TreeSelector-Chevron" data-qa="bloko-tree-selector-toogle-node">
+                              <span class="bloko-icon-link Bloko-TreeSelector-Icon" tabindex="0"><span class="bloko-icon
+                                 bloko-icon_chevron-right
+                                 bloko-icon_initial-action
+                                 bloko-icon_highlighted-impact"></span>
+                              </span></span></span>
+                              <div class="bloko-tree-selector-item__text Bloko-TreeSelector-Expanded" data-qa="bloko-tree-selector-item-text">Безопасность
+                              </div>
+                           </div>
+                        </div>
+                        <div class="Bloko-TreeSelector-List g-hidden bloko-tree-selector__items job-desc">
+                           <div class="Bloko-TreeSelector-Element bloko-tree-selector-item job-item">
+                              <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
+                                 <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
+                                    <label class="bloko-checkbox">
+                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="Взыскание задолженности, Коллекторская деятельность"  autocomplete="off" type="checkbox">
+                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">Взыскание задолженности, Коллекторская деятельность
+                                    </span>
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="Bloko-TreeSelector-Element bloko-tree-selector-item job-item" >
+                              <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
+                                 <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
+                                    <label class="bloko-checkbox">
+                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="Системы видеонаблюдения" data-qa="bloko-tree-selector-input" autocomplete="off" type="checkbox">
+                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">Системы видеонаблюдения
+                                    </span>
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="Bloko-TreeSelector-Element bloko-tree-selector-item job-item"  >
+                              <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
+                                 <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
+                                    <label class="bloko-checkbox">
+                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="Имущественная безопасность" data-qa="bloko-tree-selector-input" autocomplete="off" type="checkbox">
+                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">Имущественная безопасность
+
+                                    </span>
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="Bloko-TreeSelector-Element bloko-tree-selector-item job-item" >
+                              <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
+                                 <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
+                                    <label class="bloko-checkbox">
+                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="Вечерний секретарь" data-qa="bloko-tree-selector-input" autocomplete="off" type="checkbox">
+                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">Вечерний секретарь
+                                    </span>
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="Bloko-TreeSelector-Element bloko-tree-selector-item bloko-tree-selector-item_without-action job-items">
+                        <div class="bloko-form-item Bloko-TreeSelector-SearchContent Bloko-TreeSelector-Action job-header">
+                           <div class="bloko-tree-selector-content">
+                              <span class="bloko-tree-selector-item-spacer">
+                              <span class="bloko-icon-dynamic Bloko-TreeSelector-Chevron" data-qa="bloko-tree-selector-toogle-node">
+                              <span class="bloko-icon-link Bloko-TreeSelector-Icon" tabindex="0"><span class="bloko-icon
+                                 bloko-icon_chevron-right
+                                 bloko-icon_initial-action
+                                 bloko-icon_highlighted-impact"></span>
+                              </span></span></span>
+                              <div class="bloko-tree-selector-item__text Bloko-TreeSelector-Expanded" data-qa="bloko-tree-selector-item-text">Административный персонал
+                              </div>
+                           </div>
+                        </div>
+                        <div class="Bloko-TreeSelector-List g-hidden bloko-tree-selector__items job-desc">
+                           <div class="Bloko-TreeSelector-Element bloko-tree-selector-item job-item" >
+                              <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
+                                 <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
+                                    <label class="bloko-checkbox">
+                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="4.374" data-qa="bloko-tree-selector-input" autocomplete="off" type="checkbox">
+                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">АХО
+                                    </span>
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="Bloko-TreeSelector-Element bloko-tree-selector-item job-item" >
+                              <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
+                                 <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
+                                    <label class="bloko-checkbox">
+                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="Архивист" autocomplete="off" type="checkbox">
+                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">Архивист
+                                    </span>
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="Bloko-TreeSelector-Element bloko-tree-selector-item job-item" >
+                              <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
+                                 <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
+                                    <label class="bloko-checkbox">
+                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="Ввод данных" autocomplete="off" type="checkbox">
+                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">Ввод данных
+                                    </span>
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="Bloko-TreeSelector-Element bloko-tree-selector-item job-item" >
+                              <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
+                                 <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
+                                    <label class="bloko-checkbox">
+                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="Вечерний секретарь"  autocomplete="off" type="checkbox">
+                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">Вечерний секретарь
+                                    </span>
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+
+            
+            <div class="bloko-modal-footer">
+               <span class="bloko-form-spacer">
+               <button type="button" class="bloko-button Bloko-TreeSelectorPopup-Cancel exit">
+               Отменить
+               </button>
+               </span><span class="bloko-form-spacer">
+               <button type="button" class="bloko-button bloko-button_primary Bloko-TreeSelectorPopup-Submit" data-qa="bloko-tree-selector-popup-submit">
+               <span class="bloko-button__content" id="save">შენახვა</span>
+               <span class="bloko-button__loading">
+               <span class="bloko-icon bloko-icon_loading bloko-icon_initial-inverted"></span>
+               </span>
+               </button>
+               </span>
+            </div>
+         </div>
+         <div class="bloko-modal-close-button Bloko-Modal-CloseButton exit"></div>
+      </div>
+
+
       <script>
          $('#q').on('click', function(event) {
             $('.r').append(`<div class="item">
@@ -2012,16 +2263,99 @@
               $(this).parent().parent().parent().parent().siblings('.office').addClass('active').siblings().removeClass('active');
            }
          });
-         
+        
          $(document).on('click', '.remove-item', function() {
             $(this).parent().remove();
           });
+
          
          $(document).on('click', '.item .inkluziuri-select', function() {
            if ($(this).val()==1) {
                $(this).parent().parent().parent().parent().siblings('.inkluziuri-box').toggleClass('active');
            }
          });
+
+
+         
+         $(document).on('click', '#m', function() {
+           $('#jj').css('display', 'flex');
+
+         });
+
+         $(document).on('click', '.job-section .job-header ', function() {
+           
+            $(this).siblings('.job-desc').toggleClass('active').css('visibility', 'visible');
+           
+         });
+
+         var arr =[];
+
+         $(document).on('click', '.job-section .job-items .job-desc .job-item .Bloko-TreeSelector-Input', function() {
+
+
+            if ($(this).is(':checked')) {
+               var item = $(this).val();
+               arr.push(item);
+            }else{
+               var removeItem = $(this).val();
+               // arr.splice( $.inArray(removeItem,arr) ,1 );
+
+               for(var i in arr){
+                  
+                   if(arr[i]==removeItem){
+                       arr.splice( $.inArray(removeItem,arr) ,1 );
+                        break;
+
+                   }
+               }
+            }
+                      
+         });
+
+         $('#save').on('click', function(event) {
+            
+            $('#cont').empty();
+
+
+            for (var j = 0; j < arr.length; ++j) {
+                  $('#cont').prepend('<div class="bloko-toggle HH-TreeSelectorPopup-Profarea-List HH-IndustrySwitcher-List bloko-toggle_expand"><div class="profareatree profareatree_nopadding"><div class="profareatree__description HH-IndustrySwitcher-Counter g-hidden"></div><div class="HH-TreeSelectorPopup-Tags bloko-toggle__expandable"><div class="bloko-nested-tag Bloko-TagList-Tag  Bloko-TagList-ParentTag"><span class="bloko-tag bloko-tag_parent "><button class="bloko-tag__section  bloko-tag__section_text bloko-tag__section_active Bloko-TagList-Expand  Bloko-TagList-SectionText" type="button"><span class="Bloko-TagList-Text" data-qa="bloko-tag__text">'+ arr[j]+'</span></button><span class="bloko-icon-dynamic"><button class="bloko-tag-button Bloko-TagList-Remove" type="button"><span class="bloko-icon bloko-icon_remove bloko-icon_initial-impact       bloko-icon_highlighted-action"></span></button></span></span></div></div></div></div>');
+                  
+            }
+            $('#jj').hide();
+         });
+         $(document).on('click', '.Bloko-TagList-ParentTag .bloko-icon-dynamic', function() {
+
+            $(this).parent().parent().parent().parent().parent().remove();
+           
+         });
+
+
+
+
+         $('body').click(function(evt){    
+             if(!$(evt.target).is('#jj')) {
+                $(document).on('click', '#m', function() {
+                    $('#jj').css('display', 'flex');
+
+                  });
+             }else{
+
+               $('#jj').hide();
+             }
+         });
+
+         $('.exit').on('click', function(event) {
+            $('#jj').hide();
+         });
+
+
+
+
+
+
+
+         
+
          
          
          
