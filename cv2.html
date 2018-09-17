@@ -66,9 +66,6 @@
          cursor: pointer;
          top: 9px;
          }
-         .s{
-            display: none;
-         }
       </style>
    </head>
    <body class="l-ambient s-friendly custom-font-allowed">
@@ -118,7 +115,7 @@
                         <form action="/search/vacancy" method="get" data-hh-tab-id="searchVacancy" class="HH-Navi-SearchSelector-Tab HH-Navi-SearchSelector-Form  HH-VacancyMap-Form">
                            <div class="bloko-control-group">
                               <div class="bloko-control-group__main">
-                                 <input type="text" class="bloko-input HH-Navi-SearchSelector-Tab-TextInput                   HH-SearchFromSuggest-Suggest                               HH-Navi-StickyMenu-MainSearch                               HH-VacancyMainSearchInfoTip-Input" value="" placeholder="მე ვეძებ..." name="text" id="vacancy-serp__query">
+                                 <input type="text" class="bloko-input HH-Navi-SearchSelector-Tab-TextInput                   HH-SearchFromSuggest-Suggest                               HH-Navi-StickyMenu-MainSearch                               HH-VacancyMainSearchInfoTip-Input" value="" placeholder="Я ищу…" name="text" data-qa="vacancy-serp__query">
                               </div>
                               <div class="bloko-control-group__minor HH-Navi-SearchSelector-SelectWrapper">
                                  <select class="bloko-select                        bloko-select_flexible                        HH-Navi-SearchSelector-Select" data-qa="navi-search__select">
@@ -801,13 +798,13 @@
             </div>
          </div>
       </div>
-      <div class="bloko-gap bloko-gap_top">
-         <div class="bloko-columns-wrapper">
-            
-               
-                                         
-                   
-                  <div class="bloko-column bloko-column_l-12 bloko-column_m-8 bloko-column_s-8 bloko-column_container">
+     
+             <div class="bloko-form-item">
+                              <div>
+                     
+                        
+                     
+                     <div class="bloko-column bloko-column_l-12 bloko-column_m-8 bloko-column_s-8 bloko-column_container">
                         <div class="HH-ToggleMetroSelector-MetroElement">
                            <div class="bloko-form-row">
                               <div class="bloko-column bloko-column_s-5 bloko-column_m-5 bloko-column_l-8">
@@ -1061,7 +1058,7 @@
       <div class="resume-form-row">
          <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3" style="padding-left: 0;">
             <div class="bloko-form-item">
-               <label class="bloko-form-legend ">მიმართულება</label>
+               <label class="bloko-form-legend ">ფაკულტეტი</label>
             </div>
          </div>
          <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4">
@@ -1175,33 +1172,10 @@
       <div  class="language-selectbox bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6"><span class="bloko-link-switch HH-Form-Collection-Add HH-Resume-Autosave-AddItem">ენის დამატება</span>
          <br><br>
       </div>
-
-      <div class="HH-Form-Collection-DisableWrapper">
-         <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
-            <label class="bloko-form-legend bloko-form-legend_for-baseline">სამუშაოს არჩევა</label>
-         </div>
-         <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
-            <div class="HH-Resume-Specializations-Popup HH-Resume-AutoSave-TreeSelectorElement">
-               <div class="bloko-toggle HH-TreeSelectorPopup-Profarea-List HH-IndustrySwitcher-List bloko-toggle_expand">
-                  <script data-name="HH/Bloko/Toggle" data-params=""></script>
-                  <div class="profareatree profareatree_nopadding">
-                     <div class="profareatree__description HH-IndustrySwitcher-Counter g-hidden"></div>
-                     <div class="HH-TreeSelectorPopup-Tags bloko-toggle__expandable" data-qa="searchform__selected-profareas">
-                     </div>
-                  </div>
-               </div>
-               <div>
-                  <div id="cont"></div>
-
-                  <div  id="m" class="bloko-form-legend bloko-form-legend_for-small"><button type="button" class="bloko-link-switch                                HH-TreeSelectorPopup-Profarea-Select                                HH-IndustrySwitcher-Switcher   HH-Form-Element-TooltipElement" name="specialization.string">აირჩიეთ სამუშაო</button></div>
-               </div>
-            </div>
-         </div>
+      <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-12 bloko-column_l-16" style="padding-left: 0;">
+         
+         <br><br>
       </div>
-      <br><br>
-
-
-
       <div class="r">
          <div class="item">
             <div class="resume-form-row">
@@ -1217,6 +1191,7 @@
                         <select class="bloko-select pozicia">
                            <option value="0">აირჩიეთ პოზიცია</option>
                            <option value="1">ძიძა</option>
+                           <option value="2">გამოცდილება დაწესებულებაში</option>
                         </select>
                      </div>
                   </div>
@@ -1687,231 +1662,6 @@
             </div>
          </div>
       </div>
-
-
-
-
-      <div class="bloko-modal-container bloko-modal-container_visible disable" id="jj" >
-         <div class="bloko-modal">
-            <div class="bloko-modal-header">
-               <h2 class="bloko-modal-title">სასურველი სამუშაოს შერჩევა</h2>
-               <div class="bloko-tree-selector-popup-search">
-                  <input type="search" class="bloko-input Bloko-TreeSelectorPopup-Search" placeholder="ჩაწერეთ პროფესია" id="search">
-               </div>
-               <div class="bloko-tree-selector-popup-hint Bloko-TreeSelectorPopup-Hint"></div>
-            </div>
-
-
-            <div class="bloko-tree-selector-popup">
-               <div class="Bloko-TreeSelectorPopup-NotFoundHint g-hidden">Совпадений не найдено</div>
-               <div class="bloko-tree-selector-popup-content Bloko-TreeSelectorPopup job-section">
-                  <div>
-                     <div class="Bloko-TreeSelector-Element bloko-tree-selector-item bloko-tree-selector-item_without-action job-items">
-                        <div class="bloko-form-item Bloko-TreeSelector-SearchContent Bloko-TreeSelector-Action job-header">
-                           <div class="bloko-tree-selector-content">
-                              <span class="bloko-tree-selector-item-spacer">
-                              <span class="bloko-icon-dynamic Bloko-TreeSelector-Chevron" data-qa="bloko-tree-selector-toogle-node">
-                              <span class="bloko-icon-link Bloko-TreeSelector-Icon" tabindex="0"><span class="bloko-icon
-                                 bloko-icon_chevron-right
-                                 bloko-icon_initial-action
-                                 bloko-icon_highlighted-impact"></span>
-                              </span></span></span>
-                              <div class="bloko-tree-selector-item__text Bloko-TreeSelector-Expanded" data-qa="bloko-tree-selector-item-text">ავტომობილების ბიზნესი
-                              </div>
-                           </div>
-                        </div>
-                        <div class="Bloko-TreeSelector-List g-hidden bloko-tree-selector__items job-desc">
-                           <div class="Bloko-TreeSelector-Element bloko-tree-selector-item job-item" >
-                              <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
-                                 <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
-                                    <label class="bloko-checkbox">
-                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="მძღოლი" data-qa="bloko-tree-selector-input" autocomplete="off" type="checkbox">
-                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">მძღოლი
-                                    </span>
-                                    </label>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="Bloko-TreeSelector-Element bloko-tree-selector-item job-item" >
-                              <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
-                                 <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
-                                    <label class="bloko-checkbox">
-                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="ხელოსანი" autocomplete="off" type="checkbox">
-                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">   ხელოსანი
-                                    </span>
-                                    </label>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="Bloko-TreeSelector-Element bloko-tree-selector-item job-item" >
-                              <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
-                                 <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
-                                    <label class="bloko-checkbox">
-                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="დილერი" autocomplete="off" type="checkbox">
-                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">   დილერი
-                                    </span>
-                                    </label>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-
-                     <div class="Bloko-TreeSelector-Element bloko-tree-selector-item bloko-tree-selector-item_without-action job-items">
-                        <div class="bloko-form-item Bloko-TreeSelector-SearchContent Bloko-TreeSelector-Action job-header">
-                           <div class="bloko-tree-selector-content">
-                              <span class="bloko-tree-selector-item-spacer">
-                              <span class="bloko-icon-dynamic Bloko-TreeSelector-Chevron" data-qa="bloko-tree-selector-toogle-node">
-                              <span class="bloko-icon-link Bloko-TreeSelector-Icon" tabindex="0"><span class="bloko-icon
-                                 bloko-icon_chevron-right
-                                 bloko-icon_initial-action
-                                 bloko-icon_highlighted-impact"></span>
-                              </span></span></span>
-                              <div class="bloko-tree-selector-item__text Bloko-TreeSelector-Expanded" data-qa="bloko-tree-selector-item-text">ძიძა
-                              </div>
-                           </div>
-                        </div>
-                        <div class="Bloko-TreeSelector-List g-hidden bloko-tree-selector__items job-desc">
-                           <div class="Bloko-TreeSelector-Element bloko-tree-selector-item job-item">
-                              <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
-                                 <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
-                                    <label class="bloko-checkbox">
-                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="ძიძა"  autocomplete="off" type="checkbox">
-                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">ძიძა
-                                    </span>
-                                    </label>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="Bloko-TreeSelector-Element bloko-tree-selector-item job-item" >
-                              <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
-                                 <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
-                                    <label class="bloko-checkbox">
-                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="დამხმარე" data-qa="bloko-tree-selector-input" autocomplete="off" type="checkbox">
-                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">დამხმარე
-                                    </span>
-                                    </label>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="Bloko-TreeSelector-Element bloko-tree-selector-item job-item"  >
-                              <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
-                                 <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
-                                    <label class="bloko-checkbox">
-                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="მზარეული" data-qa="bloko-tree-selector-input" autocomplete="off" type="checkbox">
-                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">მზარეული
-
-                                    </span>
-                                    </label>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="Bloko-TreeSelector-Element bloko-tree-selector-item job-item" >
-                              <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
-                                 <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
-                                    <label class="bloko-checkbox">
-                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="მომვლელი" data-qa="bloko-tree-selector-input" autocomplete="off" type="checkbox">
-                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">მომვლელი
-                                    </span>
-                                    </label>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-
-                     <div class="Bloko-TreeSelector-Element bloko-tree-selector-item bloko-tree-selector-item_without-action job-items">
-                        <div class="bloko-form-item Bloko-TreeSelector-SearchContent Bloko-TreeSelector-Action job-header">
-                           <div class="bloko-tree-selector-content">
-                              <span class="bloko-tree-selector-item-spacer">
-                              <span class="bloko-icon-dynamic Bloko-TreeSelector-Chevron" data-qa="bloko-tree-selector-toogle-node">
-                              <span class="bloko-icon-link Bloko-TreeSelector-Icon" tabindex="0"><span class="bloko-icon
-                                 bloko-icon_chevron-right
-                                 bloko-icon_initial-action
-                                 bloko-icon_highlighted-impact"></span>
-                              </span></span></span>
-                              <div class="bloko-tree-selector-item__text Bloko-TreeSelector-Expanded" data-qa="bloko-tree-selector-item-text">მასწავლებელი
-                              </div>
-                           </div>
-                        </div>
-                        <div class="Bloko-TreeSelector-List g-hidden bloko-tree-selector__items job-desc">
-                           <div class="Bloko-TreeSelector-Element bloko-tree-selector-item job-item" >
-                              <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
-                                 <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
-                                    <label class="bloko-checkbox">
-                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="მასწავლებელი" data-qa="bloko-tree-selector-input" autocomplete="off" type="checkbox">
-                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">მასწავლებელი
-                                    </span>
-                                    </label>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="Bloko-TreeSelector-Element bloko-tree-selector-item job-item" >
-                              <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
-                                 <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
-                                    <label class="bloko-checkbox">
-                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="ლექტორი" autocomplete="off" type="checkbox">
-                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">ლექტორი
-                                    </span>
-                                    </label>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="Bloko-TreeSelector-Element bloko-tree-selector-item job-item" >
-                              <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
-                                 <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
-                                    <label class="bloko-checkbox">
-                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="დირექტორი" autocomplete="off" type="checkbox">
-                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">დირექტორი
-                                    </span>
-                                    </label>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="Bloko-TreeSelector-Element bloko-tree-selector-item job-item" >
-                              <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
-                                 <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
-                                    <label class="bloko-checkbox">
-                                    <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.043734011200249556" value="პედაგოგი"  autocomplete="off" type="checkbox">
-                                    <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">პედაგოგი
-                                    </span>
-                                    </label>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-
-                  </div>
-               </div>
-            </div>
-
-            
-            <div class="bloko-modal-footer">
-               <span class="bloko-form-spacer">
-               <button type="button" class="bloko-button Bloko-TreeSelectorPopup-Cancel exit">
-               გამორთვა
-               </button>
-               </span><span class="bloko-form-spacer">
-               <button  type="button" class="bloko-button bloko-button_primary Bloko-TreeSelectorPopup-Submit" id="save">
-               <span class="bloko-button__content" >შენახვა</span>
-               <span class="bloko-button__loading">
-               <span class="bloko-icon bloko-icon_loading bloko-icon_initial-inverted"></span>
-               </span>
-               </button>
-               </span>
-            </div>
-         </div>
-         <div class="bloko-modal-close-button Bloko-Modal-CloseButton exit"></div>
-      </div>
-
-      <div class="s suggest g-anim-fade g-anim-fade_in suggest_layer-above-overlay-content search-content" style="left: 119.5px; top: 58px; width: 682px;"><ul class="suggest__items Bloko-Suggest-List suggest__items_hover_enabled suggest-result">         
-          
-          
-      </ul>
-      </div>
-
-
       <script>
          $('#q').on('click', function(event) {
             $('.r').append(`<div class="office-gamocdileba">
@@ -2030,9 +1780,7 @@
                   <div style="border-bottom: 1px dashed silver;"></div>
                   <br/>
                </div>
-            </div>
-         </div>
-      </div>`);
+            </div>`);
          });
       </script>
       <script>
@@ -2043,135 +1791,19 @@
               $(this).parent().parent().parent().parent().siblings('.office').addClass('active').siblings().removeClass('active');
            }
          });
-        
+         
          $(document).on('click', '.remove-item', function() {
             $(this).parent().remove();
           });
-
          
-         $(document).on('click', '.item .inkluziuri-select', function() {
-           if ($(this).val()==1) {
-               $(this).parent().parent().parent().parent().siblings('.inkluziuri-box').toggleClass('active');
-           }
-         });
-
-
-         
-         $(document).on('click', '#m', function() {
-           $('#jj').css('display', 'flex');
-
-         });
-
-         $(document).on('click', '.job-section .job-header ', function() {
-           
-            $(this).siblings('.job-desc').toggleClass('active').css('visibility', 'visible');
-           
-         });
-
-         var arr =[];
-
-         $(document).on('click', '.job-section .job-items .job-desc .job-item .Bloko-TreeSelector-Input', function() {
-
-
-            if ($(this).is(':checked')) {
-               var item = $(this).val();
-               arr.push(item);
-            }else{
-               var removeItem = $(this).val();
-
-               for(var i in arr){
-                  
-                   if(arr[i]==removeItem){
-                       arr.splice( $.inArray(removeItem,arr) ,1 );
-                        break;
-
-                   }
-               }
-            }
-                      
-         });
-
-         $('#save').on('click', function() {            
-            $('#cont').empty();
-
-            for (var j = 0; j < arr.length; ++j) {
-                  $('#cont').prepend('<div class="bloko-toggle HH-TreeSelectorPopup-Profarea-List HH-IndustrySwitcher-List bloko-toggle_expand"><div class="profareatree profareatree_nopadding"><div class="profareatree__description HH-IndustrySwitcher-Counter g-hidden"></div><div class="HH-TreeSelectorPopup-Tags bloko-toggle__expandable"><div class="bloko-nested-tag Bloko-TagList-Tag  Bloko-TagList-ParentTag"><span class="bloko-tag bloko-tag_parent "><button class="bloko-tag__section  bloko-tag__section_text bloko-tag__section_active Bloko-TagList-Expand  Bloko-TagList-SectionText" type="button"><span class="Bloko-TagList-Text" data-qa="bloko-tag__text">'+ arr[j]+'</span></button><span class="bloko-icon-dynamic"><button class="bloko-tag-button Bloko-TagList-Remove" type="button"><span class="bloko-icon bloko-icon_remove bloko-icon_initial-impact       bloko-icon_highlighted-action"></span></button></span></span></div></div></div></div>');
-                  
-            }
-            $('#jj').hide();
-
-         });
-         $(document).on('click', '.Bloko-TagList-ParentTag .bloko-icon-dynamic', function() {
-
-            $(this).parent().parent().parent().parent().parent().remove();
-           
-         });
-
-
-         $('body').click(function(evt){    
-             if(!$(evt.target).is('#jj')) {
-                $(document).on('click', '#m', function() {
-                    $('#jj').css('display', 'flex');
-
-                  });
-             }else{
-
-               $('#jj').hide();
-             }
-         });
-
-         $('.exit').on('click', function(event) {
-            $('#jj').hide();
-         });
-
-         $('#search').on('keyup', function(event) {
-            var value = $(this).val().toLowerCase();
-
-            $(".job-section .job-items .job-desc .job-item").filter(function() {
-
-               $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
-               $('.job-section .job-header').siblings('.job-desc').toggleClass('active').css('visibility', 'visible');
-
-            });
-
-
-         });
-
+         // $(document).on('click', '.item .inkluziuri-select', function() {
+         //   if ($(this).val()==1) {
+         //       $(this).parent().parent().parent().parent().siblings('.inkluziuri-box').toggleClass('active');
+         //   }
+         // });
          
          
          
-      </script>
-      <script>
-         $('#vacancy-serp__query').on('keyup', function(event) {
-            var value = $(this).val().toLowerCase();
-            console.log(event.which );
-
-            var items = {
-               0 : ['დამხმარე ძიძა', 'ძიძა საბავშო ბაღში', 'ძიძა გუვერნანტი', 'შშმპ პირის ძიძა'],
-               1 : ['მუშა გამოძახებით', 'ავტომობილის მუშა', 'მუშა']
-            };
-
-            $('.s').show();
-            if (value=='ძი'||value=='ძიძა' &&event.which!=38  &&event.which!=40) {
-
-   
-               for (var i = 0; i < items[0].length; ++i) {
-                  $('.suggest-result').append('<li class="suggest__item Bloko-Suggest-Item ">'+items[0][i]+'</li>');
-                     
-               }
-              
-            }else if(value=='მუ'||value=='მუშა' &&event.which!=38  &&event.which!=40){
-               for (var i = 0; i < items[1].length; ++i) {
-                  $('.suggest-result').append('<li class="suggest__item Bloko-Suggest-Item ">'+items[1][i]+'</li>');
-                     
-               }
-            }else{
-               $('.s').hide();
-               $('.suggest-result').empty();
-            }
-
-
-         });
       </script>
       <script>
          $('.language-selectbox').on('click', function(event) {
@@ -2244,8 +1876,7 @@
          
          
       </script>
-
-            <script>
+      <script>
          jQuery(document).ready(function(){
 
 $('input:radio[name="inkluz"]').change(function(){
@@ -2281,5 +1912,6 @@ $('input:radio[name="gamocdileba"]').change(function(){
 
 });
       </script>
+      
    </body>
 </html>
