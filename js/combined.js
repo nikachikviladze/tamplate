@@ -10144,9 +10144,6 @@ define("bloko/blocks/treeSelector/treeSelectorModelsHandler", ["jquery", "backbo
             i = function() {
                 window.setTimeout(function() {
                     var i;
-                    (new Image).src = "/stat?" + e.param(e.extend(n, (i = {}, window.performance ? (t.forEach(function(e) {
-                        e in window.performance.timing && (i[e] = window.performance.timing[e])
-                    }), i) : i)))
                 }, 0)
             };
         return {

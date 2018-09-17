@@ -53,7 +53,7 @@
          .active{
          display: block !important;
          }
-         .disable{
+         .disable, #country{
          display: none;
          }
          .item{
@@ -786,27 +786,117 @@
             <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
                <div class="bloko-form-item"><label class="bloko-form-legend ">აირჩიეთ ქვეყანა</label></div>
             </div>
-            <div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0">
-               <label class="resume-short-label">საცხოვრებელი ადგილი</label>
-            </div>
-            <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4">
-               <div class="bloko-input-wrapper">
-                  <select class="bloko-select">
-                     <option value="57">საქართველო</option>
-                     <option value="58">ბათუმი</option>
-                     <option value="59">გორი</option>
-                     <option value="74">ქუთაისი</option>
-                  </select>
+
+
+            <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4 bloko-column_container">
+               <div data-qa="resume-section-controls">
+                  <div class="bloko-form-item" >
+                     <div id="__country"></div>
+
+                     <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4">
+                        <div class="bloko-input-wrapper HH-Resume-Countries-InputGroup HH-Resume-AutoSave-Countries ">
+                           <input type="text" class="bloko-input HH-CompositeSelection-Suggest HH-Resume-Countries-Input HH-Resume-Countries-TooltipElement" data-qa="resume-citizenship-control" placeholder="" autocomplete="off">
+                           <div class="bloko-icon-dynamic">
+                              <button type="button" class="bloko-icon-link HH-CompositeSelection-TreeSelector" id="burger"><span class="bloko-icon                                          bloko-icon_list-more                                          bloko-icon_initial-impact                                          bloko-icon_highlighted-action" title="Выбрать из списка"></span></button></div>
+                        </div>
+                     </div>
+                     <div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><span class="bloko-link-switch HH-CompositeSelection-TreeSelector HH-Resume-Countries-TooltipElement">Добавить гражданство</span></div>
+                  </div>
                </div>
             </div>
          </div>
       </div>
+
+
+
+      <div class="bloko-modal-container bloko-modal-container_visible " id="country">
+         <div class="bloko-modal" data-attach="modal">
+            <div class="bloko-modal-header">
+               <h2 class="bloko-modal-title">ქვეყნები</h2>
+               <div class="bloko-tree-selector-popup-search">
+                  <input type="search" class="bloko-input Bloko-TreeSelectorPopup-Search" placeholder="ჩაწერეთ ქვეყანა" data-qa="bloko-tree-selector-popup-search" id="search-country">
+               </div>
+               <div class="bloko-tree-selector-popup-hint Bloko-TreeSelectorPopup-Hint"></div>
+            </div>
+            <div class="bloko-tree-selector-popup" id="country-tree">
+               <div class="Bloko-TreeSelectorPopup-NotFoundHint g-hidden">ქვეყნების სია</div>
+               <div class="bloko-tree-selector-popup-content Bloko-TreeSelectorPopup">
+                  <div>
+                     <div class="Bloko-TreeSelector-Element bloko-tree-selector-item" >
+                        <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
+                           <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
+                              <label class="bloko-checkbox">
+                              <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.5540990185199282" value="საქართველო" data-qa="bloko-tree-selector-input" autocomplete="off" type="checkbox">
+                              <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">საქართველო
+                              </span>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                     
+                     <div class="Bloko-TreeSelector-Element bloko-tree-selector-item">
+                        <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
+                           <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
+                              <label class="bloko-checkbox">
+                              <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.5540990185199282" value="საფრანგეთი" data-qa="bloko-tree-selector-input" autocomplete="off" type="checkbox">
+                              <span class="bloko-checkbox__text" > საფრანგეთი
+                              </span>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="Bloko-TreeSelector-Element bloko-tree-selector-item">
+                        <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
+                           <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
+                              <label class="bloko-checkbox">
+                              <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.5540990185199282" value="ბრიტანეთი" data-qa="bloko-tree-selector-input" autocomplete="off" type="checkbox">
+                              <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">ბრიტანეთი
+                              </span>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="Bloko-TreeSelector-Element bloko-tree-selector-item">
+                        <div class="Bloko-TreeSelector-SearchContent bloko-form-item">
+                           <div class="bloko-tree-selector-content Bloko-TreeSelector-Action">
+                              <label class="bloko-checkbox">
+                              <input class="bloko-checkbox__input Bloko-TreeSelector-Input" name="bloko-tree-selector-default-name-0.5540990185199282" value="იტალია" data-qa="bloko-tree-selector-input" autocomplete="off" type="checkbox">
+                              <span class="bloko-checkbox__text" data-qa="bloko-tree-selector-item-text">იტალია
+                              </span>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+            <div class="Bloko-TreeSelector-Error">
+               <div class="bloko-modal-error Bloko-ModalError-Error bloko-modal-error_hidden">Не удалось сохранить. Попробуйте еще раз.</div>
+            </div>
+            <div class="bloko-modal-footer">
+               <span class="bloko-form-spacer">
+               <button type="button" class="bloko-button Bloko-TreeSelectorPopup-Cancel exit">
+               გასვლა
+               </button>
+               </span><span class="bloko-form-spacer">
+               <button type="button" class="save bloko-button bloko-button_primary Bloko-TreeSelectorPopup-Submit" data-qa="bloko-tree-selector-popup-submit">
+               <span class="bloko-button__content">შენახვა</span>
+               <span class="bloko-button__loading">
+               <span class="bloko-icon bloko-icon_loading bloko-icon_initial-inverted"></span>
+               </span>
+               </button>
+               </span>
+            </div>
+         </div>
+         <div class="bloko-modal-close-button Bloko-Modal-CloseButton exit" ></div>
+      </div>
+
+
+
+
       <div class="bloko-gap bloko-gap_top">
          <div class="bloko-columns-wrapper">
-            
-               
-                                         
-                   
                   <div class="bloko-column bloko-column_l-12 bloko-column_m-8 bloko-column_s-8 bloko-column_container">
                         <div class="HH-ToggleMetroSelector-MetroElement">
                            <div class="bloko-form-row">
@@ -1222,6 +1312,7 @@
                   </div>
                </div>
             </div>
+            
             <div class="dzidzis-kitxvebi disable">
                <div class="resume-form-row">
                   <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
@@ -1583,8 +1674,8 @@
             </div>
          </div>
       </div>
-      <div  id="q" class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
-      <span class="bloko-link-switch HH-Form-Collection-Add HH-Resume-Autosave-AddItem">გამოცდილების დამატება</span>
+      <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
+      <span id="q" class="bloko-link-switch HH-Form-Collection-Add HH-Resume-Autosave-AddItem">გამოცდილების დამატება</span>
       <br><br><br>
       <div class="resume-form-row">
          <div class="signup-submit">
@@ -1595,6 +1686,8 @@
             </span>
             </button>
          </div>
+      </div>
+      </div>
       </div>
       <div class="footer-wrapper">
          <div class="bloko-columns-wrapper">
@@ -2062,6 +2155,7 @@
 
          });
 
+
          $(document).on('click', '.job-section .job-header ', function() {
            
             $(this).siblings('.job-desc').toggleClass('active').css('visibility', 'visible');
@@ -2137,9 +2231,76 @@
 
          });
 
+
+
+      </script>
+      <script>
+         $(document).on('click', '#burger', function() {
+           $('#country').css('display', 'flex');
+
+         });
+         var country =[];
+
+         $('#country-tree input').on('click', function() {
+            var t = $(this).val();
+            country.push(t);
+
+           
+
+            // $(document).on('click', '#country-tree .Bloko-TreeSelectorPopup .bloko-tree-selector-item', function() {      
+            //    $( "#country-tree .Bloko-TreeSelectorPopup .bloko-tree-selector-item" ).not(this).each(function() {
+
+            //       if ($( this ).find('input').attr('disabled')) {
+            //          $( this ).find('input').prop('disabled', false);
+            //          $('#country-tree input').off('click');
+            //        } else{
+            //          $( this ).find('input').prop('disabled', true);
+            //          $('#country-tree input').off('click');
+            //        }
+                  
+            //    });
+
+
+            // });
+
+         });
+
+         $('#search-country').on('keyup', function(event) {
+            var value = $(this).val().toLowerCase();
+
+            $("#country-tree .Bloko-TreeSelectorPopup .bloko-tree-selector-item").filter(function() {
+
+               $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+
+            });
+
+
+         });
          
-         
-         
+         $('.save').on('click', function(event) {
+            $('#__country').empty();
+
+
+             $('#__country').prepend('<div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4"><div class="HH-CompositeSelection-Tags"><span data-qa="bloko-tag bloko-tag_inline" data-tag-id="28" class="bloko-tag bloko-tag_inline Bloko-TagList-Tag"><span class="bloko-tag__section bloko-tag__section_text"><span class="Bloko-TagList-Text" data-qa="bloko-tag__text">'+country.slice(-1)[0]+'</span></span><span class="bloko-icon-dynamic"><span class="bloko-tag-button     Bloko-TagList-Remove" data-qa="bloko-tag__cross"><span class="bloko-icon        bloko-icon_remove    bloko-icon_initial-impact                                  bloko-icon_highlighted-action"></span></span></span><input type="hidden" name="citizenship.string" value="28"></span></div></div>');
+
+             $('#country').hide();
+         });
+
+         $('body').click(function(evt){    
+             if(!$(evt.target).is('#country')) {
+                $(document).on('click', '#m', function() {
+                    $('#country').css('display', 'flex');
+
+                  });
+             }else{
+
+               $('#country').hide();
+             }
+         });
+
+         $('.exit').on('click', function(event) {
+            $('#country').hide();
+         });
       </script>
       <script>
          $('#vacancy-serp__query').on('keyup', function(event) {
