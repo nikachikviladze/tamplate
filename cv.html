@@ -2245,23 +2245,7 @@
             var t = $(this).val();
             country.push(t);
 
-           
-
-            // $(document).on('click', '#country-tree .Bloko-TreeSelectorPopup .bloko-tree-selector-item', function() {      
-            //    $( "#country-tree .Bloko-TreeSelectorPopup .bloko-tree-selector-item" ).not(this).each(function() {
-
-            //       if ($( this ).find('input').attr('disabled')) {
-            //          $( this ).find('input').prop('disabled', false);
-            //          $('#country-tree input').off('click');
-            //        } else{
-            //          $( this ).find('input').prop('disabled', true);
-            //          $('#country-tree input').off('click');
-            //        }
-                  
-            //    });
-
-
-            // });
+         
 
          });
 
@@ -2288,10 +2272,10 @@
 
          $('body').click(function(evt){    
              if(!$(evt.target).is('#country')) {
-                $(document).on('click', '#m', function() {
-                    $('#country').css('display', 'flex');
+                // $(document).on('click', '#m', function() {
+                //     $('#country').css('display', 'flex');
 
-                  });
+                //   });
              }else{
 
                $('#country').hide();
