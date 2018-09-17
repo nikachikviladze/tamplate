@@ -1283,7 +1283,9 @@
                <div>
                   <div id="cont"></div>
 
-                  <div  id="m" class="bloko-form-legend bloko-form-legend_for-small"><button type="button" class="bloko-link-switch                                HH-TreeSelectorPopup-Profarea-Select                                HH-IndustrySwitcher-Switcher   HH-Form-Element-TooltipElement" name="specialization.string">აირჩიეთ სამუშაო</button></div>
+                  <div  id="m" class="bloko-form-legend bloko-form-legend_for-small"><button type="button" class="bloko-link-switch HH-TreeSelectorPopup-Profarea-Select HH-IndustrySwitcher-Switcher   HH-Form-Element-TooltipElement" name="specialization.string">
+                     <label class="bloko-form-legend bloko-form-legend_for-baseline">თქვენი პროფესია</label>
+                  </button></div>
                </div>
             </div>
          </div>
@@ -1675,7 +1677,7 @@
          </div>
       </div>
       <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
-      <span id="q" class="bloko-link-switch HH-Form-Collection-Add HH-Resume-Autosave-AddItem">გამოცდილების დამატება</span>
+      <span id="q" class="bloko-link-switch HH-Form-Collection-Add HH-Resume-Autosave-AddItem" style="display: none;">გამოცდილების დამატება</span>
       <br><br><br>
       <div class="resume-form-row">
          <div class="signup-submit">
@@ -2417,9 +2419,12 @@ $('input:radio[name="mxolod_dzidza"]').change(function(){
 $('input:radio[name="gamocdileba"]').change(function(){
     if($(this).val() == 'yes'){
       $('.office-gamocdileba').css('display','block');
+      $('#q').css('display','block');
+
     }
     if($(this).val() == 'no'){
       $('.office-gamocdileba').css('display','none');
+      $('#q').css('display','none');
     }
 });
 
