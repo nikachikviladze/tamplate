@@ -1205,87 +1205,71 @@
                <div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0">
                   <label class="resume-short-label">მშობლიური ენა</label>
                </div>
-               <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4">
-                  <div class="HH-Form-Element-TooltipElement " data-qa="resume-section-controls">
-                     <select name="educationLevel.string" class="bloko-select">
-                        <option value="higher">ქართული</option>
-                        <option value="bachelor">რუსული</option>
-                        <option value="master">ინგლისური</option>
-                        <option value="unfinished_higher">სომხური</option>
-                        <option value="special_secondary">თურქული</option>
-                     </select>
-                  </div>
-               </div>
-            </div>
-            <div class="HH-Resume-Languages-Item" data-qa="resume-language" style="margin-top:20px;"></div>
-            <div class="resume-form-row">
-               <div class="bloko-column bloko-column_xs-4 bloko-column_s-3 bloko-column_m-3 bloko-column_l-4 bloko-column_container">
-                  <div class="HH-Resume-Languages-Label">
-                     <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3" style="padding-left: 0;">
-                        <div class="bloko-form-item">
-                           <label class="bloko-form-legend ">დამატებითი ენები</label>
-                        </div>
-                     </div>
-                  </div>
-               </div>
                <div class="resume-remove-item-wrapper resume-remove-item-wrapper_language">
-                  <div class="bloko-column bloko-column_xs-4 bloko-column_s-6 bloko-column_m-6 bloko-column_l-5" style="padding-left: 5px;">
+                  <div class="bloko-column bloko-column_xs-4 bloko-column_s-6 bloko-column_m-6 bloko-column_l-6">
                      <div class="resume-remove-item-gap">
                         <div class="bloko-control-group">
                            <div class="bloko-control-group__content-sized">
                               <div class="resume-language-select">
-                                 <div class="HH-Resume-LanguageSelect-Select bloko-custom-select" data-selected-language="" data-qa="resume-language-select">
-                                    <select class="bloko-select Bloko-CustomSelect-NativeSelect HH-Resume-Languages-Id" name="language.id">
-                                       <option value="57">ინგლისური</option>
-                                       <option value="58">გერმანული</option>
-                                       <option value="59">ფრანგული</option>
+                                 <div class="HH-Resume-LanguageSelect-Select bloko-custom-select">
+                                    <select class="bloko-select Bloko-CustomSelect-NativeSelect HH-Resume-Languages-Id g-hidden" name="language.id">
+                                       <option value="1">ქართული</option>
+                                       <option value="2">ინგლისური</option>
+                                       <option value="3">რუსული</option>
+                                       <option value="4">გერმანული</option>
                                     </select>
+                                    <div class="bloko-custom-select__select Bloko-CustomSelect main-language" >
+                                       <span class="bloko-custom-select__placeholder Bloko-CustomSelect-Selected">
+                                       ქართული
+                                       </span>
+                                    </div>
+                                    <div class="bloko-custom-select__content Bloko-CustomSelect-OptionsContainer bloko-custom-select__content_layer-above-content language-section" style="display: none;">
+                                       <div class="bloko-custom-select__search Bloko-CustomSelect-SearchContainer">
+                                          <label class="bloko-input-wrapper">
+                                          <input class="bloko-input Bloko-CustomSelect-Search" placeholder="" type="text">
+                                          <span class="bloko-icon bloko-icon_search"></span>
+                                          </label>
+                                       </div>
+                                       <div class="bloko-custom-select__option-list Bloko-CustomSelect-Options">
+                                          <div class="bloko-select-dropdown-option Bloko-CustomSelect-OptionItem bloko-select-dropdown-option_selected bloko-select-dropdown-option_focused">
+                                             <span >
+                                             ქართული
+                                             </span>
+                                          </div>
+                                          <div class="bloko-select-dropdown-option Bloko-CustomSelect-OptionItem ">
+                                             <span >
+                                             ინგლისური
+                                             </span>
+                                          </div>
+                                          <div class="bloko-select-dropdown-option Bloko-CustomSelect-OptionItem">
+                                             <span >
+                                             რუსული
+                                             </span>
+                                             <div class="resume-language-select-separator"></div>
+                                          </div>
+                                          <div class="bloko-select-dropdown-option Bloko-CustomSelect-OptionItem">
+                                             <span >
+                                             გერმანული
+                                             </span>
+                                          </div>
+                                       </div>
+                                    </div>
                                  </div>
                               </div>
                            </div>
                            <div class="resume-language-break">
                               <div class="bloko-form-item"></div>
                            </div>
-                           <div class="bloko-control-group__content-sized">
-                              <div class="resume-language-level-select resume-language-level-select_short">
-                                 <input type="hidden" name="language.degree" class="HH-Resume-Languages-Degree" value="basic" data-qa="resume-language-level-input">
-                                 <select class="bloko-select HH-Resume-Languages-Degree-Select HH-AutoSave-WithoutName" data-hh-autosave-without-name="language-degree" data-qa="resume-language-level-select">
-                                    <option value="basic">დამწყები</option>
-                                    <option value="can_read">საშუალო</option>
-                                    <option value="can_pass_interview">კარგად</option>
-                                    <option value="fluent">პროფესიონალი</option>
-                                 </select>
-                              </div>
-                           </div>
                         </div>
-                     </div>
-                  </div>
-                  <div class="resume-remove-item " style="position: absolute;
-                     right: -70px;">
-                     <div class="resume-remove-item__button HH-Form-Element-Remove">
-                        <span class="bloko-icon-dynamic remove-button-append">
-                           <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-                           <svg id="Layer_1" style="enable-background:new 0 0 64 64;" version="1.1" viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                              <g>
-                                 <g id="Icon-Trash" transform="translate(232.000000, 228.000000)">
-                                    <polygon class="st0" id="Fill-6" points="-207.5,-205.1 -204.5,-205.1 -204.5,-181.1 -207.5,-181.1    "/>
-                                    <polygon class="st0" id="Fill-7" points="-201.5,-205.1 -198.5,-205.1 -198.5,-181.1 -201.5,-181.1    "/>
-                                    <polygon class="st0" id="Fill-8" points="-195.5,-205.1 -192.5,-205.1 -192.5,-181.1 -195.5,-181.1    "/>
-                                    <polygon class="st0" id="Fill-9" points="-219.5,-214.1 -180.5,-214.1 -180.5,-211.1 -219.5,-211.1    "/>
-                                    <path class="st0" d="M-192.6-212.6h-2.8v-3c0-0.9-0.7-1.6-1.6-1.6h-6c-0.9,0-1.6,0.7-1.6,1.6v3h-2.8v-3     c0-2.4,2-4.4,4.4-4.4h6c2.4,0,4.4,2,4.4,4.4V-212.6" id="Fill-10"/>
-                                    <path class="st0" d="M-191-172.1h-18c-2.4,0-4.5-2-4.7-4.4l-2.8-36l3-0.2l2.8,36c0.1,0.9,0.9,1.6,1.7,1.6h18     c0.9,0,1.7-0.8,1.7-1.6l2.8-36l3,0.2l-2.8,36C-186.5-174-188.6-172.1-191-172.1" id="Fill-11"/>
-                                 </g>
-                              </g>
-                           </svg>
-                        </span>
                      </div>
                   </div>
                </div>
             </div>
+            <div class="HH-Resume-Languages-Item" data-qa="resume-language" style="margin-top:20px;"></div>
          </div>
          <div class="insert-language">
          </div>
-         <div  class="language-selectbox bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6"><span class="bloko-link-switch HH-Form-Collection-Add HH-Resume-Autosave-AddItem">ენის დამატება</span>
+         <div  class=" bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6"><span class="language-selectbox bloko-link-switch HH-Form-Collection-Add HH-Resume-Autosave-AddItem">ენის დამატება</span>
             <br><br>
          </div>
          <div class="HH-Form-Collection-DisableWrapper">
@@ -2293,7 +2277,6 @@
       <script>
          $('#vacancy-serp__query').on('keyup', function(event) {
             var value = $(this).val().toLowerCase();
-            console.log(event.which );
          
             var items = {
                0 : ['დამხმარე ძიძა', 'ძიძა საბავშო ბაღში', 'ძიძა გუვერნანტი', 'შშმპ პირის ძიძა'],
@@ -2325,65 +2308,138 @@
       <script>
          $('.language-selectbox').on('click', function(event) {
             $('.insert-language').append(`
-            <div class="HH-Resume-Languages-Item" data-qa="resume-language" style="margin-top:20px;"></div>
-          <div class="resume-form-row">
-              <div class="bloko-column bloko-column_xs-4 bloko-column_s-3 bloko-column_m-3 bloko-column_l-4 bloko-column_container">
+            <div class="resume-form-row">
+               <div class="bloko-column bloko-column_xs-4 bloko-column_s-3 bloko-column_m-3 bloko-column_l-3 bloko-column_container">
                   <div class="HH-Resume-Languages-Label">
-                      <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3" style="padding-left: 0;">
-                          <div class="bloko-form-item">
-                              <label class="bloko-form-legend ">დამატებითი ენები</label>
-                            </div>
-                        </div>
-                       
-                    </div>
-                </div>
-                <div class="resume-remove-item-wrapper resume-remove-item-wrapper_language">
-                    <div class="bloko-column bloko-column_xs-4 bloko-column_s-6 bloko-column_m-6 bloko-column_l-5" style="padding-left:5px;">
-                        <div class="resume-remove-item-gap">
-                            <div class="bloko-control-group">
-                                <div class="bloko-control-group__content-sized">
-                                    <div class="resume-language-select">
-                                        <div class="HH-Resume-LanguageSelect-Select bloko-custom-select" data-selected-language="" data-qa="resume-language-select">
+                     <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
+                        <div class="bloko-form-item"><label class="bloko-form-legend ">დამატებითი ენები</label></div>
+                     </div>
+                     <div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="resume-short-label">დამატებითი ენები</label></div>
+                  </div>
+               </div>
          
-                                                    <select class="bloko-select Bloko-CustomSelect-NativeSelect HH-Resume-Languages-Id" name="language.id">
-                                                        <option value="57">ინგლისური</option>
-                                                        <option value="58">გერმანული</option>
-                                                        <option value="59">ფრანგული</option>
-                                                    </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            <div class="resume-language-break">
-                                <div class="bloko-form-item"></div>
-                            </div>
-                            <div class="bloko-control-group__content-sized">
-                                <div class="resume-language-level-select resume-language-level-select_short">
-                                    <input type="hidden" name="language.degree" class="HH-Resume-Languages-Degree" value="basic" data-qa="resume-language-level-input">
-                                    <select class="bloko-select HH-Resume-Languages-Degree-Select HH-AutoSave-WithoutName" data-hh-autosave-without-name="language-degree" data-qa="resume-language-level-select">
-                                        <option value="basic">დამწყები</option>
-                                        <option value="can_read">საშუალო</option>
-                                        <option value="can_pass_interview">კარგად</option>
-                                        <option value="fluent">პროფესიონალი</option>
+               <div class="resume-remove-item-wrapper resume-remove-item-wrapper_language">
+                  <div class="bloko-column bloko-column_xs-4 bloko-column_s-6 bloko-column_m-6 bloko-column_l-6">
+                     <div class="resume-remove-item-gap">
+                        <div class="bloko-control-group">
+                           <div class="bloko-control-group__content-sized">
+                              <div class="resume-language-select">
+                                 <div class="HH-Resume-LanguageSelect-Select bloko-custom-select">
+                                    <select class="bloko-select Bloko-CustomSelect-NativeSelect HH-Resume-Languages-Id g-hidden" name="language.id">
+                                       <option value="1">ქართული</option>
+                                       <option value="2">ინგლისური</option>
+                                       <option value="3">რუსული</option>
+                                       <option value="4">გერმანული</option>
                                     </select>
-                                </div>
-                            </div>
+                                    <div class="bloko-custom-select__select Bloko-CustomSelect main-language" >
+                                       <span class="bloko-custom-select__placeholder Bloko-CustomSelect-Selected">
+                                       ინგლისური
+                                       </span>
+                                    </div>
+         
+                                    <div class="bloko-custom-select__content Bloko-CustomSelect-OptionsContainer bloko-custom-select__content_layer-above-content language-section" style="display: none;">
+                                       <div class="bloko-custom-select__search Bloko-CustomSelect-SearchContainer">
+                                          <label class="bloko-input-wrapper">
+                                          <input class="bloko-input Bloko-CustomSelect-Search" placeholder="" type="text">
+                                          <span class="bloko-icon bloko-icon_search"></span>
+                                          </label>
+                                       </div>
+                                       <div class="bloko-custom-select__option-list Bloko-CustomSelect-Options">
+                                          <div class="bloko-select-dropdown-option Bloko-CustomSelect-OptionItem bloko-select-dropdown-option_selected">
+                                             <span >
+                                             ქართული
+                                             </span>
+                                          </div>
+                                          <div class="bloko-select-dropdown-option Bloko-CustomSelect-OptionItem bloko-select-dropdown-option_focused">
+                                             <span >
+                                             ინგლისური
+                                             </span>
+                                          </div>
+                                          <div class="bloko-select-dropdown-option Bloko-CustomSelect-OptionItem">
+                                             <span >
+                                             რუსული
+                                             </span>
+                                             <div class="resume-language-select-separator"></div>
+                                          </div>
+                                          <div class="bloko-select-dropdown-option Bloko-CustomSelect-OptionItem">
+                                             <span >
+                                             გერმანული
+                                             </span>
+                                          </div>
+         
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="resume-language-break">
+                              <div class="bloko-form-item"></div>
+                           </div>
+         
+                           <div class="bloko-control-group__content-sized">
+                              <div class="resume-language-level-select resume-language-level-select_short">
+                                 <input type="hidden" name="language.degree" class="HH-Resume-Languages-Degree" value="basic" data-qa="resume-language-level-input">
+                                 <select class="bloko-select HH-Resume-Languages-Degree-Select HH-AutoSave-WithoutName" data-hh-autosave-without-name="language-degree" data-qa="resume-language-level-select">
+                                    <option value="basic" selected="">დამწყები</option>
+                                    <option value="can_read">საშუალო</option>
+                                    <option value="can_pass_interview">კარგად</option>
+                                    <option value="fluent">პროფესიონალი </option>
+                                 </select>
+                              </div>
+                           </div>
                         </div>
-                    </div>
-                </div>
-                <div class="resume-remove-item " style="position: absolute;
-                right: -70px;">
-                    <div class="resume-remove-item__button HH-Form-Element-Remove">
-                        <span class="bloko-icon-dynamic remove-button-append">
-                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg id="Layer_1" style="enable-background:new 0 0 64 64;" version="1.1" viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g id="Icon-Trash" transform="translate(232.000000, 228.000000)"><polygon class="st0" id="Fill-6" points="-207.5,-205.1 -204.5,-205.1 -204.5,-181.1 -207.5,-181.1    "/><polygon class="st0" id="Fill-7" points="-201.5,-205.1 -198.5,-205.1 -198.5,-181.1 -201.5,-181.1    "/><polygon class="st0" id="Fill-8" points="-195.5,-205.1 -192.5,-205.1 -192.5,-181.1 -195.5,-181.1    "/><polygon class="st0" id="Fill-9" points="-219.5,-214.1 -180.5,-214.1 -180.5,-211.1 -219.5,-211.1    "/><path class="st0" d="M-192.6-212.6h-2.8v-3c0-0.9-0.7-1.6-1.6-1.6h-6c-0.9,0-1.6,0.7-1.6,1.6v3h-2.8v-3     c0-2.4,2-4.4,4.4-4.4h6c2.4,0,4.4,2,4.4,4.4V-212.6" id="Fill-10"/><path class="st0" d="M-191-172.1h-18c-2.4,0-4.5-2-4.7-4.4l-2.8-36l3-0.2l2.8,36c0.1,0.9,0.9,1.6,1.7,1.6h18     c0.9,0,1.7-0.8,1.7-1.6l2.8-36l3,0.2l-2.8,36C-186.5-174-188.6-172.1-191-172.1" id="Fill-11"/></g></g></svg>
-                        </span>
-                    </div>
-                    
-                </div>
+                     </div>
+                  </div>
+                  <div class="resume-remove-item ">
+                     <div class="resume-remove-item__button HH-Form-Element-Remove"><span class="bloko-icon-dynamic"><span class="bloko-icon-link HH-Form-Element-RemoveLink" data-qa="resume-remove-item"><span class="bloko-icon                                      bloko-icon_cancel                                      bloko-icon_initial-impact                                      bloko-icon_highlighted-tertiary"></span></span></span></div>
+                     <span class="g-hidden HH-Form-Element-RemoveText"></span>
+                  </div>
+               </div>
+         
             </div>
-         </div>
-         </div>
                   `);
              });
+         
+         $(document).on('click', '.main-language ', function() {
+         
+         $(this).siblings('.language-section').toggleClass('active');
+         $('.Bloko-CustomSelect-Search').val('');
+         
+         });
+         $(document).on('click', '.language-section .bloko-select-dropdown-option', function() {
+         
+         $(this).addClass('bloko-select-dropdown-option_focused').siblings().removeClass('bloko-select-dropdown-option_focused');
+         var lang = $(this).text();
+         $(this).parent().parent().siblings('.main-language').html('<span class="bloko-custom-select__placeholder Bloko-CustomSelect-Selected">'+lang+'</span>');
+         
+         });
+         $(document).on('click', function (event) {
+         if ($(event.target).closest('.main-language').length) {
+         $(document).on('click', '.language-section ', function() {               
+         return false;
+         });
+         
+         }else {
+         $('.language-section').removeClass('active');
+         }
+         });
+         
+         $(document).on('keyup', '.Bloko-CustomSelect-Search', function() {
+         
+         var value = $(this).val().toLowerCase();
+         
+         
+         $(".Bloko-CustomSelect-Options .bloko-select-dropdown-option").filter(function() {
+         
+         
+         
+         $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+         
+         });
+         
+         });
+         
+         
           
       </script>
       <script>

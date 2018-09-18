@@ -3752,7 +3752,7 @@ section {
     outline: none;
     background: transparent
 }
-.bloko-select-dropdown-option_selected:before {
+/*.bloko-select-dropdown-option_selected:before {
     display: inline-block;
     position: absolute;
     content: "";
@@ -3760,10 +3760,10 @@ section {
     left: 13px;
     width: 11px;
     height: 10px;
-    background-image: url(../../../bloko/blocks/selectDropdown/selectDropdownCheck__min_.svg);
+    background-image: url(../images/selectDropdownCheck__min_.svg);
     background-repeat: no-repeat;
     background-position: 0 0
-}
+}*/
 .bloko-select-dropdown-option_focusable-by-hover:hover,
 .bloko-select-dropdown-option:active,
 .bloko-select-dropdown-option_focused {
@@ -5116,4 +5116,7 @@ padding: 10px;
 }
 .HH-Resume-Education-Collection-Template{
     background: blue!important;
+}
+.bloko-icon_search {
+    background-image: url(../images/search-icon__min_.svg);
 }
