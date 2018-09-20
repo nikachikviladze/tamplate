@@ -3766,6 +3766,7 @@ section {
 }*/
 .bloko-select-dropdown-option_focusable-by-hover:hover,
 .bloko-select-dropdown-option:active,
+.bloko-select-dropdown-option:hover,
 .bloko-select-dropdown-option_focused {
     background: #0f8fee;
     color: #fff;
