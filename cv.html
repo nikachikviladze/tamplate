@@ -2777,6 +2777,7 @@
          
          $(this).addClass('bloko-select-dropdown-option_focused').siblings().removeClass('bloko-select-dropdown-option_focused');
          var lang = $(this).text();
+         $(this).parent().parent().removeClass('active');
          $(this).parent().parent().siblings('.main-language').html('<span class="bloko-custom-select__placeholder Bloko-CustomSelect-Selected">'+lang+'</span>');
          
          });
