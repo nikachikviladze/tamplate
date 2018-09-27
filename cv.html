@@ -1713,16 +1713,15 @@
                 <div class="resume-checkbox-wrapper">
                     <div class="resume-checkbox-wrapper">
                         <label class="bloko-checkbox HH-Resume-Employment-Label">
-                        <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" id="" >
+                        <input name="work_schedule_only_day" type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" id="dd" >
                         <span class="bloko-checkbox__text">მხოლოდ დღე</span>
                         </label>
-                        <i class="fas fa-caret-down" id="mxoloddge" style="font-size: 22px; padding-left:15px;cursor:pointer;" title="ჩამოშალეთ გრაფიკი"></i>
                      </div>
               
                  </div>
 
 
-                 <div class="resume-form-row grafiki1" style="display:none">
+                 <div class="resume-form-row grafiki1 " style="display:none">
                     <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3" style="padding-left: 0;">
                        <div class="bloko-form-item">
                           <label class="bloko-form-legend ">დღეები</label>
@@ -1791,10 +1790,9 @@
 
                 <div class="resume-checkbox-wrapper">
                     <label class="bloko-checkbox HH-Resume-Employment-Label">
-                    <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" id="" >
+                    <input name="work_schedule_only_night" type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" id="" >
                     <span class="bloko-checkbox__text">მხოლოდ ღამე</span>
                     </label>
-                    <i class="fas fa-caret-down" id="mxolodgame" style="font-size: 22px; padding-left:10px;cursor:pointer;" title="ჩამოშალეთ გრაფიკი"></i>
                  </div>
 
 
@@ -1865,10 +1863,9 @@
                     </div>
                 <div class="resume-checkbox-wrapper">
                     <label class="bloko-checkbox HH-Resume-Employment-Label">
-                    <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" id="" >
+                    <input name="work_schedule_day_night" type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" id="" >
                     <span class="bloko-checkbox__text">სადღეღამისო</span>
                     </label>
-                    <i class="fas fa-caret-down" id="sadgegamiso" style="font-size: 22px; padding-left:15px;cursor:pointer;" title="ჩამოშალეთ გრაფიკი"></i>
                  </div>
 
 
@@ -2928,24 +2925,36 @@
 });
 
  $(document).ready(function(){
-    $("#mxoloddge").click(function(){
-        $(".grafiki1").toggle();
-        $(".grafiki2").hide();
-        $(".grafiki3").hide();
+    $("[name='work_schedule_only_day']").click(function(){
+        if( $(this).is(':checked') ) {
+            $(".grafiki1").show();
+            $(".grafiki2").hide();
+            $(".grafiki3").hide();
+        } else {
+            $(".grafiki1").hide();
+        }
 
     });
 
-    $("#mxolodgame").click(function(){
-        $(".grafiki2").toggle();
-        $(".grafiki1").hide();
-        $(".grafiki3").hide();
+    $("[name='work_schedule_only_night']").click(function(){
+        if( $(this).is(':checked') ) {
+            $(".grafiki2").show();
+            $(".grafiki1").hide();
+            $(".grafiki3").hide();
+        } else {
+            $(".grafiki2").hide();
+        }
 
     });
 
-    $("#sadgegamiso").click(function(){
-        $(".grafiki3").toggle();
-        $(".grafiki2").hide();
-        $(".grafiki1").hide();
+    $("[name='work_schedule_day_night']").click(function(){
+        if( $(this).is(':checked') ) {
+            $(".grafiki3").show();
+            $(".grafiki2").hide();
+            $(".grafiki1").hide();
+        } else {
+            $(".grafiki3").hide();
+        }
 
     });
 });

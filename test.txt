@@ -19,3 +19,7 @@ experience_company ''
 experience_position ''
 experience_salary ''
 experience_duties
+
+work_schedule_only_day
+work_schedule_only_night
+work_schedule_day_night
