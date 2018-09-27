@@ -1,0 +1,21 @@
+count_of_families ''
+min_age_of_baby ''
+min_age_of_baby_select 01
+work_with_twins ''
+
+work_with_3_or_more 0
+inkluz uncheck
+inkluz_type unckeck
+mxolod_dzidza unckeck
+nurse_duties unckeck
+
+gamocdileba
+experience_start_month
+experience_start_year ''
+experience_end_month
+experience_end_year
+to_present unckeck
+experience_company ''
+experience_position ''
+experience_salary ''
+experience_duties
