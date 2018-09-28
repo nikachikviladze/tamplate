@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="ChangeListManager">
     <list default="true" id="c3a12a27-5776-435a-bec7-7530feb776ce" name="Default" comment="" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -75,5 +76,10 @@
         </settings>
       </state>
     </states>
+=======
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+>>>>>>> eba62884bdad900f8252b0a53172b203b0974ad5
   </component>
 </project>
