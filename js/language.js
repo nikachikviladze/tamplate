@@ -17,10 +17,6 @@ new Vue({
                 text: 'ინგლისური',
             },
             {
-                value: 'enგ',
-                text: 'ინგლისური ფ',
-            },
-            {
                 value: 'ru',
                 text: 'რუსული',
                 separated: true
