@@ -1,31 +1,33 @@
-new Vue({
-    el: '#language-form',
-    data: {
-        dropDownHidden: true,
-        chosenItem: {
-            value: 'ka',
-            text: 'ქართული'
-        },
-        filterText: '',
-        dropDownItems: [
-            {
+Vue.component('language-select', {
+    template: '#language-select',
+    data () {
+        return {
+            dropDownHidden: true,
+            chosenItem: {
                 value: 'ka',
                 text: 'ქართული'
             },
-            {
-                value: 'en',
-                text: 'ინგლისური',
-            },
-            {
-                value: 'ru',
-                text: 'რუსული',
-                separated: true
-            },
-            {
-                value: 'de',
-                text: 'გერმანული'
-            }
-        ]
+            filterText: '',
+            dropDownItems: [
+                {
+                    value: 'ka',
+                    text: 'ქართული'
+                },
+                {
+                    value: 'en',
+                    text: 'ინგლისური',
+                },
+                {
+                    value: 'ru',
+                    text: 'რუსული',
+                    separated: true
+                },
+                {
+                    value: 'de',
+                    text: 'გერმანული'
+                }
+            ]
+        }
     },
     computed: {
         filteredItems () {
@@ -64,5 +66,30 @@ new Vue({
             this.dropDownItems[index].focused = true
             this.$set(this.dropDownItems, index, this.dropDownItems[index])
         },
+    },
+    mounted () {
+        window.addEventListener('click', (e) => {
+            if (!this.$el.contains(e.target)){
+                this.dropDownHidden = true
+            }
+        });
+    }
+});
+
+new Vue({
+    el: '#language-form',
+    data: {
+        foreign_languages: [],
+        idCounter: 0,
+    },
+    methods: {
+        addLanguage () {
+            this.foreign_languages.push({
+                id: ++this.idCounter,
+            })
+        },
+        deleteLanguage (index) {
+            this.foreign_languages.splice(index, 1)
+        }
     }
 })

@@ -1627,35 +1627,7 @@
                            <div class="bloko-control-group">
                               <div class="bloko-control-group__content-sized">
                                  <div class="resume-language-select">
-                                    <div class="HH-Resume-LanguageSelect-Select bloko-custom-select">
-                                       <select class="bloko-select Bloko-CustomSelect-NativeSelect HH-Resume-Languages-Id g-hidden" name="language.id">
-                                          <option value="1">ქართული</option>
-                                          <option value="2">ინგლისური</option>
-                                          <option value="3">რუსული</option>
-                                          <option value="4">გერმანული</option>
-                                       </select>
-                                       <div @click="toggleDropDownVisibility" class="bloko-custom-select__select Bloko-CustomSelect main-language" >
-                                          <span class="bloko-custom-select__placeholder Bloko-CustomSelect-Selected">
-                                          {{ chosenItem.text }}
-                                          </span>
-                                       </div>
-                                       <div class="bloko-custom-select__content Bloko-CustomSelect-OptionsContainer bloko-custom-select__content_layer-above-content language-section" :class="{ 'g-hidden': dropDownHidden }">
-                                          <div class="bloko-custom-select__search Bloko-CustomSelect-SearchContainer">
-                                             <label class="bloko-input-wrapper">
-                                             <input @input="typeFilterText" v-model="filterText" class="bloko-input Bloko-CustomSelect-Search" placeholder="" type="text">
-                                             <span class="bloko-icon bloko-icon_search"></span>
-                                             </label>
-                                          </div>
-                                          <div class="bloko-custom-select__option-list Bloko-CustomSelect-Options">
-                                             <div @click="chooseItem(item)" @mouseover="focusDropDownItem(item.value)" v-for="item in filteredItems" :key="item.value" class="bloko-select-dropdown-option Bloko-CustomSelect-OptionItem bloko-select-dropdown-option_selected" :class="{'bloko-select-dropdown-option_focused': isFocused(item.value)}">
-                                                <span >
-                                                {{ item.text }}
-                                                </span>
-                                                <div v-if="item.separated" class="resume-language-select-separator"></div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
+                                     <language-select></language-select>
                                  </div>
                               </div>
                               <div class="resume-language-break">
@@ -1669,9 +1641,56 @@
                <div class="HH-Resume-Languages-Item" data-qa="resume-language" style="margin-top:20px;"></div>
             </div>
             <div class="insert-language">
+                <div class="resume-form-row" v-for="(item, index) in foreign_languages" :key="item.id">
+                    <div class="bloko-column bloko-column_xs-4 bloko-column_s-3 bloko-column_m-3 bloko-column_l-3 bloko-column_container">
+                        <div class="HH-Resume-Languages-Label" v-show="index === 0">
+                            <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3" style="padding-left: 0;">
+                                <div class="bloko-form-item"><label class="bloko-form-legend ">დამატებითი ენები</label></div>
+                            </div>
+                            <div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="resume-short-label">დამატებითი ენები</label></div>
+                        </div>
+                    </div>
+                    <div class="resume-remove-item-wrapper resume-remove-item-wrapper_language">
+                        <div class="bloko-column bloko-column_xs-4 bloko-column_s-6 bloko-column_m-6 bloko-column_l-6">
+                            <div class="resume-remove-item-gap">
+                                <div class="bloko-control-group">
+                                    <div class="bloko-control-group__content-sized">
+                                        <div class="resume-language-select">
+                                            <language-select></language-select>
+                                        </div>
+                                    </div>
+                                    <div class="resume-language-break">
+                                        <div class="bloko-form-item"></div>
+                                    </div>
+
+                                    <div class="bloko-control-group__content-sized">
+                                        <div class="resume-language-level-select resume-language-level-select_short">
+                                            <input type="hidden" name="language.degree" class="HH-Resume-Languages-Degree" value="basic" data-qa="resume-language-level-input">
+                                            <select class="bloko-select HH-Resume-Languages-Degree-Select HH-AutoSave-WithoutName" data-hh-autosave-without-name="language-degree" data-qa="resume-language-level-select">
+                                                <option value="basic" selected="">დამწყები</option>
+                                                <option value="can_read">საშუალო</option>
+                                                <option value="can_pass_interview">კარგად</option>
+                                                <option value="fluent">პროფესიონალი </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div @click="deleteLanguage(index)" class="resume-remove-item">
+                            <div class="resume-remove-item__button HH-Form-Element-Remove"><span class="bloko-icon-dynamic"><span class="bloko-icon-link HH-Form-Element-RemoveLink" data-qa="resume-remove-item"><span class="bloko-icon                                      bloko-icon_cancel                                      bloko-icon_initial-impact                                      bloko-icon_highlighted-tertiary"></span></span></span></div>
+                            <span class="g-hidden HH-Form-Element-RemoveText"></span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div  class=" bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6" style="    padding-left: 0;"><span class="language-selectbox bloko-link-switch HH-Form-Collection-Add HH-Resume-Autosave-AddItem">ენის დამატება</span>
-               <br><br>
+            <div class="bloko-form-group">
+                <div class="bloko-column bloko-column_xs-0 bloko-column_s-0 bloko-column_m-3 bloko-column_l-3">
+                    <span v-show="foreign_languages.length === 0" class="HH-Resume-Languages-Label">დამატებითი ენები</span>
+                </div>
+                <div @click="addLanguage" class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
+                    <span class="bloko-link-switch HH-Form-Collection-Add HH-Resume-Autosave-AddItem">ენის დამატება</span>
+                </div>
             </div>
 
             <div class="bloko-column bloko-column_xs-0 bloko-column_s-0 bloko-column_m-3 bloko-column_l-7" style="    position: absolute;width: 50%;right: 0;top: 0;">
@@ -1682,7 +1701,6 @@
             </div>
          </div>
       </section>
-
       
       <br><br>
 
@@ -2663,42 +2681,66 @@
       <script>
          $('#vacancy-serp__query').on('keyup', function(event) {
             var value = $(this).val().toLowerCase();
-         
+
             var items = {
                0 : ['დამხმარე ძიძა', 'ძიძა საბავშო ბაღში', 'ძიძა გუვერნანტი', 'შშმპ პირის ძიძა'],
                1 : ['მუშა გამოძახებით', 'ავტომობილის მუშა', 'მუშა']
             };
-         
+
             $('.s').show();
             if (value=='ძი'||value=='ძიძა' &&event.which!=38  &&event.which!=40) {
-         
-         
+
+
                for (var i = 0; i < items[0].length; ++i) {
                   $('.suggest-result').append('<li class="suggest__item Bloko-Suggest-Item ">'+items[0][i]+'</li>');
-                     
+
                }
-              
+
             }else if(value=='მუ'||value=='მუშა' &&event.which!=38  &&event.which!=40){
                for (var i = 0; i < items[1].length; ++i) {
                   $('.suggest-result').append('<li class="suggest__item Bloko-Suggest-Item ">'+items[1][i]+'</li>');
-                     
+
                }
             }else{
                $('.s').hide();
                $('.suggest-result').empty();
             }
-         
-         
+
+
          });
       </script>
-      <script src="js/language.js"></script>
-      <script>
-         $(document).on('click', '.insert-language .resume-form-row .resume-remove-item ', function() {
-            $(this).parent().parent().remove();
-          });
-         
-         
+      <script type="text/x-template" id="language-select">
+          <div class="HH-Resume-LanguageSelect-Select bloko-custom-select">
+              <select class="bloko-select Bloko-CustomSelect-NativeSelect HH-Resume-Languages-Id g-hidden" name="language.id">
+                  <option value="1">ქართული</option>
+                  <option value="2">ინგლისური</option>
+                  <option value="3">რუსული</option>
+                  <option value="4">გერმანული</option>
+              </select>
+              <div @click="toggleDropDownVisibility" class="bloko-custom-select__select Bloko-CustomSelect main-language" >
+                                          <span class="bloko-custom-select__placeholder Bloko-CustomSelect-Selected">
+                                          {{ chosenItem.text }}
+                                          </span>
+              </div>
+              <div class="bloko-custom-select__content Bloko-CustomSelect-OptionsContainer bloko-custom-select__content_layer-above-content language-section" :class="{ 'g-hidden': dropDownHidden }">
+                  <div class="bloko-custom-select__search Bloko-CustomSelect-SearchContainer">
+                      <label class="bloko-input-wrapper">
+                          <input @input="typeFilterText" v-model="filterText" class="bloko-input Bloko-CustomSelect-Search" placeholder="" type="text">
+                          <span class="bloko-icon bloko-icon_search"></span>
+                      </label>
+                  </div>
+                  <div class="bloko-custom-select__option-list Bloko-CustomSelect-Options">
+                      <div @click="chooseItem(item)" @mouseover="focusDropDownItem(item.value)" v-for="item in filteredItems" :key="item.value" class="bloko-select-dropdown-option Bloko-CustomSelect-OptionItem" :class="{'bloko-select-dropdown-option_focused': isFocused(item.value) }">
+                                                <span >
+                                                {{ item.text }}
+                                                </span>
+                          <div v-if="item.separated" class="resume-language-select-separator"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </script>
+      <script src="js/language.js"></script>
       <script>
          jQuery(document).ready(function(){
            
