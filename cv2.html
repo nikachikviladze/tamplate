@@ -538,7 +538,7 @@
                </div>
             </div>
          </div>
-         <div class="reminders-wrapper">
+         <!-- <div class="reminders-wrapper">
             <div class="bloko-columns-wrapper">
                <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-12 bloko-column_l-16">
                   <div class="reminders">
@@ -547,7 +547,7 @@
                   </div>
                </div>
             </div>
-         </div>
+         </div> -->
          <div class="bloko-columns-wrapper">
             <div class="row-content">
                <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-12 bloko-column_l-16 bloko-column_container">
@@ -556,12 +556,12 @@
                         <form action="" id="form" class="b-create-vacancy                      HH-SubmitDisabler-Form                      HH-VacancyPreview-Form                      HH-CreateVacancyContacts-Capabilities                      HH-Specialization-Capabilities" method="POST">
                            <input type="hidden" name="newPreview" value="true"><input type="hidden" name="id" value=""><input type="hidden" name="employerId" value="3672597"><input type="hidden" name="ignoreDuplicates" value="">
                            <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-12 bloko-column_l-16">
-                              <h1 class="header">Новая вакансия</h1>
+                              <h1 class="header">ახალი ვაკანსია</h1>
                            </div>
                            <div class="bloko-toggle">
                               <div class="bloko-form-row">
                                  <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-3 bloko-column_l-4">
-                                    <div class="bloko-form-item"><label class="bloko-form-legend" for="name"><span class="vacancy-form-label vacancy-form-label_required ">Название вакансии</span></label></div>
+                                    <div class="bloko-form-item"><label class="bloko-form-legend" for="name"><span class="vacancy-form-label vacancy-form-label_required ">ვაკანსიის დასახელება</span></label></div>
                                  </div>
                                  <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-8">
                                     <div class="bloko-form-item">
@@ -573,28 +573,42 @@
                                           HH-VacancyTemplateEdit-VacancyName
                                           ">
                                        <div class="vacancy-form-name-additional"></div>
-                                       <div class="vacancy-form-name-additional">
+                                       <!-- <div class="vacancy-form-name-additional">
                                           <div class="bloko-toggle__expandable-reverse"><span class="bloko-link-switch" data-toggle="">Указать код вакансии</span></div>
                                           <div class="bloko-toggle__expandable"><span class="bloko-link-switch" data-toggle="">Не указывать код вакансии</span></div>
-                                       </div>
+                                       </div> -->
                                     </div>
                                  </div>
                               </div>
-                              <div class="bloko-toggle__expandable">
-                                 <div class="bloko-form-row">
-                                    <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-3 bloko-column_l-4">
-                                       <div class="bloko-form-item"><label class="bloko-form-legend" for="vacancyCode"><span class="vacancy-form-label">Код вакансии</span></label></div>
-                                    </div>
-                                    <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-8">
-                                       <div class="bloko-form-item"><input type="text" name="vacancyCode" class="bloko-input                                   HH-VacancyDisableVacancyNumber-Input" maxlength="50" value=""></div>
-                                       <div class="bloko-form-hint">Если у вашей компании используется код вакансии, введите его в этом поле</div>
-                                    </div>
-                                 </div>
-                              </div>
+
+
+                              <div class="bloko-toggle">
+                                <div class="bloko-form-row">
+                                   <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-3 bloko-column_l-4">
+                                      <div class="bloko-form-item"><label class="bloko-form-legend" for="name"><span class="vacancy-form-label vacancy-form-label_required ">საკონტაქტო ნომერი</span></label></div>
+                                   </div>
+                                   <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-8">
+                                      <div class="bloko-form-item">
+                                         <input type="number" name="name" data-qa="createvacancy__vacancy-name" autocomplete="off" value="" class="
+                                            bloko-input
+                                            HH-CreateVacancy-Name
+                                            HH-KeySkills-PositionName
+                                            HH-KeySkills-Text-Source
+                                            HH-VacancyTemplateEdit-VacancyName
+                                            ">
+                                         <div class="vacancy-form-name-additional"></div>
+                                         <!-- <div class="vacancy-form-name-additional">
+                                            <div class="bloko-toggle__expandable-reverse"><span class="bloko-link-switch" data-toggle="">Указать код вакансии</span></div>
+                                            <div class="bloko-toggle__expandable"><span class="bloko-link-switch" data-toggle="">Не указывать код вакансии</span></div>
+                                         </div> -->
+                                      </div>
+                                   </div>
+                                </div>
+                              
                            </div>
                            <div class="bloko-form-row" data-qa="create-vacancy__city-block">
                               <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-3 bloko-column_l-4">
-                                 <div class="bloko-form-item"><label class="bloko-form-legend"><span class="vacancy-form-label vacancy-form-label_required ">Вакансия в городе</span></label></div>
+                                 <div class="bloko-form-item"><label class="bloko-form-legend"><span class="vacancy-form-label vacancy-form-label_required ">აირჩიეთ კატეგორია</span></label></div>
                               </div>
                               <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-8">
                                  <div class="vacancy-create-cities">
@@ -651,13 +665,14 @@
                                  </div>
                               </div>
                            </div>
-                           <div class="HH-CreateVacancy-DiscountPromo bloko-form-row">
+
+                           <!-- <div class="HH-CreateVacancy-DiscountPromo bloko-form-row">
                               <div class="bloko-section">
                                  <input type="hidden" name="tempMetallic" class="HH-CreateVacancy-Result"><input type="hidden" name="metallic" class="HH-CreateVacancy-Metallic"><input type="hidden" name="type" class="HH-CreateVacancy-TypeID">
                                  <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-12 bloko-column_l-16 bloko-column_container">
                                     <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-3 bloko-column_l-4">
                                        <div class="bloko-form-item">
-                                          <div class="vacancy-form-label vacancy-form-label_required"><label class="bloko-form-legend"><span class="vacancy-form-label">Тип вакансии</span></label></div>
+                                          <div class="vacancy-form-label vacancy-form-label_required"><label class="bloko-form-legend"><span class="vacancy-form-label">ვაკანსიის ტიპი</span></label></div>
                                        </div>
                                     </div>
                                     <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-8">
@@ -798,7 +813,361 @@
                                     </div>
                                  </div>
                               </div>
-                           </div>
+                           </div> -->
+                           
+                           <!-- ანაზღაურება -->
+                           <div class="bloko-toggle">
+                            <div class="bloko-form-row">
+                               <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-3 bloko-column_l-4">
+                                  <div class="bloko-form-item"><label class="bloko-form-legend" for="name"><span class="vacancy-form-label vacancy-form-label_required ">სავარაუდო ანაზღაურება</span></label></div>
+                               </div>
+                               <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-8">
+                                <div class="bloko-control-group">
+                                    <div class="bloko-control-group__content-sized"><input type="text" inputmode="numeric" data-hh-autosave-without-name="salary-visible" size="" class="bloko-input                       bloko-input_sized                       HH-AutoSave-WithoutName                       Bloko-FormattedNumericInput-Visible                       HH-Resume-Salary-Input" value="" placeholder="ანაზღაურება" data-qa="resume-salary-amount" maxlength="11"></div>
+                                    <div class="bloko-control-group__content-sized">
+                                       <div class="resume-salary-currency">
+                                          <select class="bloko-select                        bloko-select_flexible                        HH-Resume-Salary-Currency                        HH-Search-MoneyInput-Currency" name="salary.currency">
+                                             <option value="RUR" data-hh-template="%d руб." class="HH-Search-MoneyInput-Currency-Rate-1.000000" data-qa="currency-code-RUR">GEL.</option>
+                                             <option value="EUR" data-hh-template="€%d" class="HH-Search-MoneyInput-Currency-Rate-0.012761" data-qa="currency-code-EUR">EUR</option>
+                                             <option value="USD" data-hh-template="$%d" class="HH-Search-MoneyInput-Currency-Rate-0.014923" data-qa="currency-code-USD">USD</option>
+                                          </select>
+                                       </div>
+                                    </div>
+                                    <div class="bloko-control-group__content-sized">
+                                       <div class="resume-salary-hint">ხელზე</div>
+                                    </div>
+                                 </div>
+                               </div>
+                            </div>
+
+                             <!-- ანაზღაურება -->
+
+                             <!-- განათლება -->
+
+
+                             <div class="bloko-toggle">
+                                <div class="bloko-form-row">
+                                   <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-3 bloko-column_l-4">
+                                      <div class="bloko-form-item"><label class="bloko-form-legend" for="name"><span class="vacancy-form-label vacancy-form-label_required ">განათლება</span></label></div>
+                                   </div>
+                                   <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-8">
+                                    <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
+                                        <div class="resume-section-controls HH-Form-Element-TooltipElement">
+                                           <div class="resume-checkbox-wrapper">
+                                              <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                              <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                              <span class="bloko-checkbox__text">ბაკალავრი</span>
+                                              </label>
+                                           </div>
+                                           <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="part" name="nurse_duties" data-qa="createresume__employment-PART"><span class="bloko-checkbox__text">მაგისტრატურა</span></label></div>
+                                           <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="project" name="nurse_duties" data-qa="createresume__employment-PROJECT"><span class="bloko-checkbox__text">არასრული</span></label></div>
+                                           <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="volunteer" name="nurse_duties" data-qa="createresume__employment-VOLUNTEER"><span class="bloko-checkbox__text">საშუალო</span></label></div>
+                                           
+                                        </div>
+                                     </div>
+                                   </div>
+                                </div>
+
+                                <!-- განათლება -->
+
+
+                                 <!-- უცხო ენა -->
+
+
+                             <div class="bloko-toggle">
+                                <div class="bloko-form-row">
+                                   <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-3 bloko-column_l-4">
+                                      <div class="bloko-form-item"><label class="bloko-form-legend" for="name"><span class="vacancy-form-label vacancy-form-label_required ">უცხო ენა</span></label></div>
+                                   </div>
+                                   <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-8">
+                                    <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
+                                        <div class="resume-section-controls HH-Form-Element-TooltipElement">
+                                           <div class="resume-checkbox-wrapper">
+                                              <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                              <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                              <span class="bloko-checkbox__text">რუსული</span>
+                                              </label>
+                                           </div>
+                                           <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="part" name="nurse_duties" data-qa="createresume__employment-PART"><span class="bloko-checkbox__text">ინგლისური</span></label></div>
+                                           <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="project" name="nurse_duties" data-qa="createresume__employment-PROJECT"><span class="bloko-checkbox__text">გერმანული</span></label></div>
+                                           <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="volunteer" name="nurse_duties" data-qa="createresume__employment-VOLUNTEER"><span class="bloko-checkbox__text">სხვა</span></label></div>
+                                           
+                                        </div>
+                                     </div>
+                                   </div>
+                                </div>
+
+                                <!-- უცხო ენა -->
+
+
+
+                                <!-- გრაფიკი -->
+
+
+                             <div class="bloko-toggle">
+                                <div class="bloko-form-row">
+                                   <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-3 bloko-column_l-4">
+                                      <div class="bloko-form-item"><label class="bloko-form-legend" for="name"><span class="vacancy-form-label vacancy-form-label_required ">უცხო ენა</span></label></div>
+                                   </div>
+                                   <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-8">
+                                    <div class="bloko-gap bloko-gap_right">
+                                        <div class="resume-checkbox-wrapper">
+                                            <div class="resume-checkbox-wrapper" style="display:inline-block;width:27%;">
+                                                <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                <input name="work_schedule_only_day" type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" id="dd">
+                                                <span class="bloko-checkbox__text">დღის გრაფიკი</span>
+                                                </label>    
+                                             </div>
+                                             <div class="resume-checkbox-wrapper" style="display:inline-block;width:27%;">
+                                                <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                <input name="work_schedule_only_night" type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" id="">
+                                                <span class="bloko-checkbox__text">მხოლოდ ღამე</span>
+                                                </label>
+                                             </div>
+                                             <div class="resume-checkbox-wrapper" style="display:inline-block;width:30%;border-right:1px dashed lightgrey;">
+                                                <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                <input name="work_schedule_day_night" type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" id="">
+                                                <span class="bloko-checkbox__text">სადღეღამისო</span>
+                                                </label>
+                                             </div>
+                                             
+                        
+                                             <div class="resume-form-row" style="display:inline-block;width:27%;">
+                                                <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3" style="padding-left: 0;">
+                                                   <div class="bloko-form-item">
+                                                      <label class="bloko-form-legend ">დღეები</label>
+                                                   </div>
+                                                </div>
+                                                <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4" style="padding-left:0px">
+                                                   <div class="HH-Form-Element-TooltipElement " data-qa="resume-section-controls">
+                                                      <div class="bloko-gap bloko-gap_right">
+                                                            <div class="resume-checkbox-wrapper">
+                                                                    <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                    <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" id="">
+                                                                    <span class="bloko-checkbox__text">ორშაბათი</span>
+                                                                    </label><br>
+                            
+                                                                    <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                            <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" id="">
+                                                                            <span class="bloko-checkbox__text">სამშაბათი</span>
+                                                                            </label><br>
+                            
+                                                                    <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                            <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" id="">
+                                                                            <span class="bloko-checkbox__text">ოთხშაბათი</span>
+                                                                            </label><br>
+                                                                    <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                            <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" id="">
+                                                                            <span class="bloko-checkbox__text">ხუთშაბათი</span>
+                                                                    </label><br>
+                                                                    <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                            <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" id="">
+                                                                            <span class="bloko-checkbox__text">პარასკევი</span>
+                                                                    </label><br>
+                                                                    <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                            <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" id="">
+                                                                            <span class="bloko-checkbox__text">შაბათი</span>
+                                                                    </label><br>
+                                                                    <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                            <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" id="">
+                                                                            <span class="bloko-checkbox__text">კვირა</span>
+                                                                    </label><br>
+                                                                 </div>
+                            
+                                                                 <div class="bloko-form-item">
+                                                                        <label class="bloko-form-legend ">საათები</label>
+                                                                     </div>
+                                                         
+                                                            <select class="bloko-select Bloko-CustomSelect-NativeSelect HH-Resume-Languages-Id" style="width: 27%;display:inline-block;" name="language.id">
+                                                                   
+                                                                    <option value="1">08:00</option>
+                                                                    <option value="2">10:00</option>
+                                                                    <option value="3">11:00</option>
+                                                                    <option value="3">12:00</option>
+                                                                    <option value="3">13:00</option>
+                                                                    <option value="3">14:00</option>
+                                                                    <option value="3">15:00</option>
+                                                                    <option value="3">16:00</option>
+                                                                    <option value="3">17:00</option>
+                                                                    <option value="3">18:00</option>
+                                                                    <option value="3">19:00</option>
+                                                                    <option value="3">20:00</option>
+                                                                    <option value="3">21:00</option>
+                                                                    <option value="3">22:00</option>
+                                                                    <option value="3">23:00</option>
+                                                                    <option value="3">24:00</option>          
+                                                                 </select>
+                                                                 
+                                                                 <select class="bloko-select Bloko-CustomSelect-NativeSelect HH-Resume-Languages-Id" style="width: 27%;display:inline-block;" name="language.id">
+                                                             
+                                                                     
+                                                                        <option value="3">19:00</option>
+                                                                        <option value="3">20:00</option>
+                                                                        <option value="3">21:00</option>
+                                                                        <option value="3">22:00</option>
+                                                                        <option value="3">23:00</option>
+                                                                        <option value="3">24:00</option> 
+                                                                 </select>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                        
+                        
+                                            <div class="resume-form-row" style="display:inline-block;width:27%;">
+                                                <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3" style="padding-left: 0;">
+                                                   <div class="bloko-form-item">
+                                                      <label class="bloko-form-legend ">დღეები</label>
+                                                   </div>
+                                                </div>
+                                                
+                                                <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4" style="padding-left:0px">
+                                                   <div class="HH-Form-Element-TooltipElement " data-qa="resume-section-controls">
+                                                      <div class="bloko-gap bloko-gap_right">
+                                                            <div class="resume-checkbox-wrapper">
+                                                                    <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                    <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" id="">
+                                                                    <span class="bloko-checkbox__text">ორშაბათი</span>
+                                                                    </label><br>
+                            
+                                                                    <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                            <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" id="">
+                                                                            <span class="bloko-checkbox__text">სამშაბათი</span>
+                                                                            </label><br>
+                            
+                                                                    <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                            <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" id="">
+                                                                            <span class="bloko-checkbox__text">ოთხშაბათი</span>
+                                                                            </label><br>
+                                                                    <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                            <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" id="">
+                                                                            <span class="bloko-checkbox__text">ხუთშაბათი</span>
+                                                                    </label><br>
+                                                                    <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                            <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" id="">
+                                                                            <span class="bloko-checkbox__text">პარასკევი</span>
+                                                                    </label><br>
+                                                                    <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                            <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" id="">
+                                                                            <span class="bloko-checkbox__text">შაბათი</span>
+                                                                    </label><br>
+                                                                    <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                            <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" id="">
+                                                                            <span class="bloko-checkbox__text">კვირა</span>
+                                                                    </label><br>
+                                                                 </div>
+                            
+                                                                 <div class="bloko-form-item">
+                                                                        <label class="bloko-form-legend ">საათები</label>
+                                                                     </div>
+                                                         
+                                                            <select class="bloko-select Bloko-CustomSelect-NativeSelect HH-Resume-Languages-Id" style="width:27%;display:inline-block;" name="language.id">
+                                                                 
+                                                                    <option value="1">17:00</option>
+                                                                    <option value="3">18:00</option>
+                                                                    <option value="3">19:00</option>
+                                                                    <option value="3">20:00</option>
+                                                                    <option value="3">21:00</option>
+                                                                    <option value="3">22:00</option>
+                                                                    <option value="3">23:00</option>
+                                                                    <option value="3">24:00</option>
+                                                                    <option value="1">01:00</option>
+                                                                    <option value="2">02:00</option>
+                                                                    <option value="3">03:00</option>
+                                                                    <option value="3">04:00</option>
+                                                                    <option value="3">05:00</option>
+                                                                    <option value="3">06:00</option>
+                                                                    <option value="3">07:00</option>
+                                                                    <option value="3">08:00</option>
+                                                                    <option value="3">09:00</option>
+                                                                    <option value="3">10:00</option>
+                                                            
+                                                                 </select>
+                                                                 
+                                                                 <select class="bloko-select Bloko-CustomSelect-NativeSelect HH-Resume-Languages-Id" style="width:27%;display:inline-block;" name="language.id">
+                                                                    <option value="3">10:00</option>
+                                                                    <option value="3">09:00</option>  
+                                                                    <option value="3">08:00</option>
+                                                                    <option value="3">07:00</option>
+                                                                    <option value="3">06:00</option>
+                                                                    <option value="3">05:00</option>
+                                                                    <option value="3">04:00</option>
+                                                                    <option value="3">03:00</option>
+                                                                    <option value="2">02:00</option>
+                                                                    <option value="1">01:00</option>
+                                                                    <option value="3">24:00</option>
+                                                                    <option value="3">23:00</option>
+                                                                    <option value="3">22:00</option>
+                                                                    <option value="3">21:00</option>
+                                                                    <option value="3">20:00</option>
+                                                                    <option value="3">19:00</option>
+                                                                    <option value="3">18:00</option>
+                        
+                                                                    <option value="1">17:00</option>
+                                                                      
+                                                                 </select>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                        
+                                        
+                        
+                        
+                                         <div class="resume-form-row" style="display:inline-block;width:30%;">
+                                                <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3" style="padding-left: 0;">
+                                                   <div class="bloko-form-item">
+                                                      <label class="bloko-form-legend ">დღეები</label>
+                                                   </div>
+                                                </div>
+                                                <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4" style="padding-left:0px">
+                                                   <div class="HH-Form-Element-TooltipElement " data-qa="resume-section-controls">
+                                                      <div class="bloko-gap bloko-gap_right">
+                                                            <div class="resume-checkbox-wrapper">
+                                                                    <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                    <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" id="">
+                                                                    <span class="bloko-checkbox__text">ორშაბათი</span>
+                                                                    </label><br>
+                            
+                                                                    <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                            <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" id="">
+                                                                            <span class="bloko-checkbox__text">სამშაბათი</span>
+                                                                            </label><br>
+                            
+                                                                    <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                            <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" id="">
+                                                                            <span class="bloko-checkbox__text">ოთხშაბათი</span>
+                                                                            </label><br>
+                                                                    <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                            <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" id="">
+                                                                            <span class="bloko-checkbox__text">ხუთშაბათი</span>
+                                                                    </label><br>
+                                                                    <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                            <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" id="">
+                                                                            <span class="bloko-checkbox__text">პარასკევი</span>
+                                                                    </label><br>
+                                                                    <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                            <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" id="">
+                                                                            <span class="bloko-checkbox__text">შაბათი</span>
+                                                                    </label><br>
+                                                                    <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                            <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" id="">
+                                                                            <span class="bloko-checkbox__text">კვირა</span>
+                                                                    </label><br>
+                                                                 </div>   
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                            </div>   
+                                         </div>
+                                        </div>
+                                        </div>
+
+                                <!-- გრაფიკი -->
+
+
+                           
                            <div class="
                               b-createvacancy-body HH-CreateVacancy-PartToHide HH-CreatePromoVacancy-PartToHide
                               g-hidden">
