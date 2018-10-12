@@ -52,7 +52,7 @@
                   </div>
                </div>
             </div>
-            <div class="bloko-column bloko-column_xs-4 bloko-column_s-4 bloko-column_m-4 bloko-column_l-4">
+            <div class="bloko-column bloko-column_xs-4 bloko-column_s-6 bloko-column_m-6 bloko-column_l-6">
                <div class="bloko-gap bloko-gap_s-top bloko-gap_s-bottom          bloko-gap_m-top bloko-gap_m-bottom bloko-gap_l-top bloko-gap_l-bottom">
                   <div class="light-page-content">
                      
@@ -61,12 +61,15 @@
                         <form action="/auth/employer/?backurl=%2Femployer%2Fvacancy%2Fcreate" method="post" class="HH-Form-Form">
                            
                               <div class="bloko-form-item">
-                                 <select name="companyForm" class="bloko-select bloko-select_flexible" data-qa="employer-registartion-company-type">
-                                    <option value="0">დამსაქმებლის ტიპი</option>
-                                    <option value="1">ფიზიკური პირი</option>
-                                    <option value="2">ინდ.მეწარმე</option>
-                                    <option value="3">სს</option>
-                                    <option value="4">შპს</option>
+                                 <select name="companyForm" class="bloko-select bloko-select_flexible" data-qa="employer-registartion-company-type" style="width: 100%;">
+                                    <option value="0">ფ/პ ფიზიკური პირი</option>
+                                    <option value="1">ი/მ ინდივიდუალური მეწარმე</option>
+                                    <option value="2">შპს შეზღუდული პასუხისმგებლობის საზოგადოება</option>
+                                    <option value="3">სპს სოლიდარული პასუხისმგებლობის საზოგადოება</option>
+                                    <option value="4">კ/ს კომანდიტური საზოგადოება</option>
+                                    <option value="5">ს/ს სააქციო საზოგადოება</option>
+                                    <option value="6">კორპორაცია</option>
+                                    <option value="7">სხვა </option>
                                  </select>
                               </div>
                               <div class="bloko-form-item">
