@@ -54,14 +54,14 @@
             </div>
             <div class="bloko-column bloko-column_xs-4 bloko-column_s-6 bloko-column_m-6 bloko-column_l-6">
                <div class="bloko-gap bloko-gap_s-top bloko-gap_s-bottom          bloko-gap_m-top bloko-gap_m-bottom bloko-gap_l-top bloko-gap_l-bottom">
-                  <div class="light-page-content">
+                  <div class="light-page-content" style="width: 370px;">
                      
                      <div class="form-box">
                         <span class="light-page-content__title">შეუკვეთე პერსონალი</span>
                         <form action="/auth/employer/?backurl=%2Femployer%2Fvacancy%2Fcreate" method="post" class="HH-Form-Form">
                            
                               <div class="bloko-form-item">
-                                 <select name="companyForm" class="bloko-select bloko-select_flexible" data-qa="employer-registartion-company-type" style="width: 100%;">
+                                 <select name="companyForm" class="bloko-select bloko-select_flexible shekveta"  style="width: 100%;">
                                     <option value="0">ფ/პ ფიზიკური პირი</option>
                                     <option value="1">ი/მ ინდივიდუალური მეწარმე</option>
                                     <option value="2">შპს შეზღუდული პასუხისმგებლობის საზოგადოება</option>
@@ -72,19 +72,19 @@
                                     <option value="7">სხვა </option>
                                  </select>
                               </div>
+
+                              <div class="fizikuri-piri" style="display: none;">
+                              <!-- დასახელება -->
                               <div class="bloko-form-item">
                                  <span class="form-textwrap">
                                     <div class="HH-Form-Element-TooltipElement"><input id="companyName" type="text" name="companyName" data-qa="employer-registartion-company-name" placeholder="Название компании" class="bloko-input HH-Form-Text-Value " value=""></div>
                                  </span>
                               </div>
-                           </div>
-                           <div class="bloko-form-item"><label class="bloko-checkbox"><input type="checkbox" name="employerCategory" value="1" data-qa="employer-registartion-employer-сategory" class="bloko-checkbox__input"><span class="bloko-checkbox__text">Кадровое агентство</span></label></div>
-                           <div class="bloko-form-row">
-                             
-                              <div class="HH-Form-Element-TooltipElement">
-                                 <div class="bloko-form-item"><input id="url" type="text" class="bloko-input                                   HH-Form-Text-Value" name="url" data-qa="employer-registartion-company-site" placeholder="Сайт" value=""></div>
-                              </div>
-                           </div>
+                      
+                           <!-- დასახელება -->
+
+                           <!-- რაოდენობა -->
+                           
                            <div class="HH-Form-NumberOfEmployees bloko-form-item">
                               <select name="numberOfEmployees" class="bloko-select" data-qa="employer-registartion-employees-number">
                                  <option value="1">Менее 50 сотрудников</option>
@@ -94,12 +94,19 @@
                                  <option value="5">Более 500 сотрудников</option>
                               </select>
                            </div>
+                            <!-- რაოდენობა -->
+
+                            <!-- ქალაქი -->
                            <div class="bloko-form-row">
                               
                               <div class="HH-Form-Element-TooltipElement">
                                  <div class="bloko-form-item"><label class="bloko-input-wrapper"><input id="areaId" type="text" value="" data-GAFormStatistic-name="areaId" placeholder="Город" class="bloko-input HH-Form-Suggest-Value HH-Form-Text-Value HH-RegionsTree-Input "><span class="bloko-icon-dynamic"><button type="button" class="bloko-icon-link HH-RegionsTree-Switcher"><span class="bloko-icon                              bloko-icon_list-more                              bloko-icon_initial-impact                              bloko-icon_highlighted-action" title="... или выберите регион из списка"></span></button></span></label></div>
                               </div>
                            </div>
+
+                           <!-- ქალაქი -->
+                              </div>
+
                            <label class="account-registration__title HH-Form-Element-Name">Контактное лицо<span class="account-registration__title-additional"> (конфиденциально)</span></label>
                            <div class="bloko-form-item">
                               <div class="account-registration__field-name">
@@ -115,6 +122,11 @@
                               
                               <div class="bloko-form-item HH-Form-Element-TooltipElement"><input type="text" id="email" name="email" data-qa="employer-registration-email" placeholder="Электронная почта" class="bloko-input HH-Form-Text-Value " value=""></div>
                            </div>
+                           <div class="bloko-form-item">
+                                <div class="account-registration__field-name">
+                                   <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" id="firstName" name="firstName" placeholder="საცხოვრებელი ადგილი" data-qa="employer-registartion-name-firstName" class="bloko-input HH-Form-Text-Value HH-Form-Element-TooltipElement Bloko-Name-Capitalize-Input " value="">
+                                </div>
+                             </div>
                            <div class="bloko-form-item">
                               <label class="bloko-form-legend HH-Form-Element-Name g-hidden" id="idm495590064" name="phoneCode">Телефон</label>
                               <div class="HH-Form-Element-TooltipElement">
@@ -155,4 +167,14 @@
       
       </div>
    </body>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script>
+    $(document).on('click', '.shekveta ', function() {
+           if ($(this).val()!=0) {
+               $('.fizikuri-piri').css('display','block');
+           }else if($(this).val()==0) {
+               $('.fizikuri-piri').css('display','none');
+           }
+    });
+           </script>
 </html>

@@ -1123,10 +1123,8 @@
                                  <p class="resume-hint">აირჩიეთ პროფესია</p>
                               </div>
                            </div>
-                        </div>
-                       
-                                              
-                </div>
+                        </div>                   
+                  </div>
                   <div class="dzidzis-kitxvebi disable">
 
                         <div class="resume-form-row" style="position:relative;">
@@ -1211,16 +1209,17 @@
                               <div class="HH-Resume-Title-Container">
                                  <select class="bloko-select width" name="count_of_families">
                                     <option value="0">აირჩიეთ ოჯახების რაოდენობა</option>
-                                    <option value="2">1</option>
-                                    <option value="3">2</option>
-                                    <option value="4">3</option>
-                                    <option value="5">4</option>
-                                    <option value="6">5</option>
-                                    <option value="7">6</option>
-                                    <option value="8">7</option>
-                                    <option value="9">8</option>
-                                    <option value="10">9</option>
-                                    <option value="11">10</option>
+                                    <option value="2">1 ოჯახში</option>
+                                    <option value="3">2 ოჯახში</option>
+                                    <option value="4">3 ოჯახში</option>
+                                    <option value="5">4 ოჯახში</option>
+                                    <option value="6">5 ოჯახში</option>
+                                    <option value="7">6 ოჯახში</option>
+                                    <option value="8">7 ოჯახში</option>
+                                    <option value="9">8 ოჯახში</option>
+                                    <option value="10">9 ოჯახში</option>
+                                    <option value="11">10 ოჯახში</option>
+                                    <option value="11">10 და მეტი</option>
                                  </select>
                               </div>
                            </div>
@@ -1238,7 +1237,19 @@
                               <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
                                  <div class="bloko-control-group                     bloko-control-group_auto-size                     HH-Resume-Experiences-EndDate-TooltipElement">
                                     <div class="bloko-control-group__content-sized">
-                                       <input name="min_age_of_baby" placeholder="ასაკი" value="" data-hh-autosave-without-name="experience-end-date" maxlength="4" size="4" data-GAFormStatistic-name="experience.endDate" class="bloko-input bloko-input_sized HH-YearAutocomplete-Control HH-Resume-Experiences-EndDate-Year  HH-AutoSave-WithoutName ">
+                                        <select name="min_age_of_baby_select" data-hh-autosave-without-name="experience-end-month" data-GAFormStatistic-name="experience.endDate"  class="bloko-select bloko-select_flexible HH-Resume-Experiences-EndDate-Month  HH-AutoSave-WithoutName " style="    width: 60px;
+                                        margin-left: 5px;">
+                                                <option value="01">1</option>
+                                                <option value="02">2</option>
+                                                <option value="03">3</option>
+                                                <option value="04">4</option>
+                                                <option value="05">5</option>
+                                                <option value="05">6</option>
+                                                <option value="05">7</option>
+                                                <option value="05">8</option>
+                                                <option value="05">9</option>
+                                                <option value="05">10</option>
+                                             </select>
                                     </div>
                                     <div class="bloko-control-group__content-sized">
                                        <select name="min_age_of_baby_select" data-hh-autosave-without-name="experience-end-month" data-GAFormStatistic-name="experience.endDate"  class="bloko-select bloko-select_flexible HH-Resume-Experiences-EndDate-Month  HH-AutoSave-WithoutName " style="width:235px;">
@@ -1291,15 +1302,11 @@
                               <div class="HH-Resume-Title-Container">
                                  <select name="work_with_3_or_more" class="bloko-select width" >
                                     <option value="0">არ მიმუშავია</option>
-                                    <option value="2">2</option>
-                                    <option value="2">3</option>
-                                    <option value="2">4</option>
-                                    <option value="2">5</option>
-                                    <option value="2">6</option>
-                                    <option value="2">7</option>
-                                    <option value="2">8</option>
-                                    <option value="2">9</option>
-                                    <option value="2">10</option>
+                                    <option value="2">2 ბავშვთან ერთდროულად</option>
+                                    <option value="2">3 ბავშვთან ერთდროულად</option>
+                                    <option value="2">4 ბავშვთან ერთდროულად</option>
+                                    <option value="2">5 ბავშვთან ერთდროულად</option>
+                                    <option value="2">5-იდან ზევით ბავშვთან</option>
                                  </select>
                               </div>
                            </div>
@@ -1470,7 +1477,7 @@
                          <div class="bloko-column bloko-column_xs-0 bloko-column_s-0 bloko-column_m-3 bloko-column_l-7" style="    position: absolute;width: 50%;right: 0;top: 0; border-left: 1px dashed lightgrey;">
                             <div class="bloko-form-item">
                                <div class="bloko-form-legend">
-                                  <p class="resume-hint">ძიძის არჩევის შემთხვევაში გამოსაჩენი ტექსტი</p>
+                                  <p class="resume-hint">გუვერნანტის არჩევის შემთხვევაში გამოსაჩენი ტექსტი</p>
                                </div>
                             </div>
                          </div>
@@ -1508,7 +1515,7 @@
                     <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
                        <div class="bloko-form-item">
                           <label class="bloko-form-legend bloko-form-legend_for-baseline">
-                          რამდენ ოჯახში გიმუშავიათ ძიძად?</label>
+                          რამდენ ოჯახში გიმუშავიათ გუვერნანტად</label>
                        </div>
                     </div>
                     <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6 bloko-column_container">
@@ -1517,16 +1524,16 @@
                           <div class="HH-Resume-Title-Container">
                              <select class="bloko-select width" name="count_of_families">
                                 <option value="0">აირჩიეთ ოჯახების რაოდენობა</option>
-                                <option value="2">1</option>
-                                <option value="3">2</option>
-                                <option value="4">3</option>
-                                <option value="5">4</option>
-                                <option value="6">5</option>
-                                <option value="7">6</option>
-                                <option value="8">7</option>
-                                <option value="9">8</option>
-                                <option value="10">9</option>
-                                <option value="11">10</option>
+                                <option value="2">1 ოჯახში</option>
+                                <option value="3">2 ოჯახში</option>
+                                <option value="4">3 ოჯახში</option>
+                                <option value="5">4 ოჯახში</option>
+                                <option value="6">5 ოჯახში</option>
+                                <option value="7">6 ოჯახში</option>
+                                <option value="8">7 ოჯახში</option>
+                                <option value="9">8 ოჯახში</option>
+                                <option value="10">9 ოჯახში</option>
+                                <option value="11">10 ოჯახში</option>
                              </select>
                           </div>
                        </div>
@@ -1534,33 +1541,349 @@
                  </div>
                  <br>
                  <div class="resume-form-row">
-                    <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
-                       <div class="bloko-form-item"><label class="bloko-form-legend ">მინიმუმ რა ასაკიდან ბავშვთან გიმუშავიათ</label></div>
+                                <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
+                                <div class="bloko-form-item"><label class="bloko-form-legend ">რა ასაკიდან ბავშვებთან გიმუშავიათ</label></div>
+                                </div>
+                                <div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="resume-short-label">რა ასაკიდან ბავშვებთან გიმუშავიათ</label></div>
+                                <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6 bloko-column_container">
+                                <div class="resume-remove-item-gap">
+                                    <input type="hidden" name="experience.endDate" class="HH-Resume-Experiences-EndDate" value="endDate">
+                                    <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
+                                            <div class="resume-section-controls HH-Form-Element-TooltipElement">
+                                                    
+                                                    <div class="resume-checkbox-wrapper">
+                                                        <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                        <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                        <span class="bloko-checkbox__text">1 წლის ასაკიდან</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="resume-checkbox-wrapper">
+                                                        <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                        <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                        <span class="bloko-checkbox__text">2 წლის ასაკიდან</span>
+                                                        </label>
+                                                    </div>
+                            
+                                                    <div class="resume-checkbox-wrapper">
+                                                        <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                        <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                        <span class="bloko-checkbox__text">3 წლის ასაკიდან</span>
+                                                        </label>
+                                                    </div>
+                            
+                                                    <div class="resume-checkbox-wrapper">
+                                                        <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                        <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                        <span class="bloko-checkbox__text">4 წლის ასაკიდან</span>
+                                                        </label>
+                                                    </div>
+                            
+                                                    <div class="resume-checkbox-wrapper">
+                                                        <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                        <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                        <span class="bloko-checkbox__text">5 წლის ასაკიდან</span>
+                                                        </label>
+                                                    </div>
+                            
+                                                    <div class="resume-checkbox-wrapper">
+                                                        <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                        <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                        <span class="bloko-checkbox__text">6 წლის ასაკიდან</span>
+                                                        </label>
+                                                    </div>
+                            
+                                                    <div class="resume-checkbox-wrapper">
+                                                        <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                        <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                        <span class="bloko-checkbox__text">7 წლის ასაკიდან</span>
+                                                        </label>
+                                                    </div>
+                            
+                                                    <div class="resume-checkbox-wrapper">
+                                                        <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                        <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                        <span class="bloko-checkbox__text">8 წლის ასაკიდან</span>
+                                                        </label>
+                                                    </div>
+                            
+                                                    <div class="resume-checkbox-wrapper">
+                                                        <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                        <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                        <span class="bloko-checkbox__text">9 წლის ასაკიდან</span>
+                                                        </label>
+                                                    </div>
+                            
+                                                    <div class="resume-checkbox-wrapper">
+                                                        <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                        <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                        <span class="bloko-checkbox__text">10 წლის ასაკიდან</span>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="resume-checkbox-wrapper">
+                                                                <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                                <span class="bloko-checkbox__text">10 წლიდან ზემოთ</span>
+                                                                </label>
+                                                            </div>
+                            
+                            
+                                                </div>
+                                    </div>
+                                    <div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="bloko-input-wrapper HH-Resume-Experiences-EndDate-TooltipElement"><input type="month" class="bloko-input HH-Resume-Experiences-EndDate-Date" value=""><span class="bloko-icon bloko-icon_calendar"></span></label></div>
+                                </div>
+                                </div>
+                            </div>
+                 <br><br>
+                 <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
+                    <div class="bloko-form-item">
+                       <label class="bloko-form-legend bloko-form-legend_for-baseline">ხომ არ გიმუშავიათ რეპეტიტორად</label>
                     </div>
-                    <div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="resume-short-label">მინიმუმ რა ასაკიდან ბავშვთან გიმუშავიათ</label></div>
-                    <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6 bloko-column_container">
-                       <div class="resume-remove-item-gap">
-                          <input type="hidden" name="experience.endDate" class="HH-Resume-Experiences-EndDate" value="endDate">
-                          <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
-                             <div class="bloko-control-group                     bloko-control-group_auto-size                     HH-Resume-Experiences-EndDate-TooltipElement">
-                                <div class="bloko-control-group__content-sized">
-                                   <input name="min_age_of_baby" placeholder="ასაკი" value="" data-hh-autosave-without-name="experience-end-date" maxlength="4" size="4" data-GAFormStatistic-name="experience.endDate" class="bloko-input bloko-input_sized HH-YearAutocomplete-Control HH-Resume-Experiences-EndDate-Year  HH-AutoSave-WithoutName ">
-                                </div>
-                                <div class="bloko-control-group__content-sized">
-                                   <select name="min_age_of_baby_select" data-hh-autosave-without-name="experience-end-month" data-GAFormStatistic-name="experience.endDate"  class="bloko-select bloko-select_flexible HH-Resume-Experiences-EndDate-Month  HH-AutoSave-WithoutName " style="width:235px;">
-                                      <option value="01">დღის ასაკიდან</option>
-                                      <option value="02">კვირის ასაკიდან</option>
-                                      <option value="03">თვის ასაკიდან</option>
-                                      <option value="04">წლის ასაკიდან</option>
-                                   </select>
-                                </div>
-                             </div>
+                 </div>
+                 <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4">
+                    <div class="HH-Form-Element-TooltipElement " data-qa="resume-section-controls">
+                       <div class="bloko-gap bloko-gap_right">
+                          <div class="resume-checkbox-wrapper">
+                             <label class="bloko-radio" data-qa="resume-relocation-no_relocation">
+                             <input type="radio" value="yes" class="bloko-radio__input HH-Resume-RelocationAreas-Switcher" name="repett">
+                             <span class="bloko-radio__text">დიახ</span>
+                             </label>
                           </div>
-                          <div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="bloko-input-wrapper HH-Resume-Experiences-EndDate-TooltipElement"><input type="month" class="bloko-input HH-Resume-Experiences-EndDate-Date" value=""><span class="bloko-icon bloko-icon_calendar"></span></label></div>
+                          <div class="resume-checkbox-wrapper">
+                             <label class="bloko-radio" data-qa="resume-relocation-relocation_possible">
+                             <input type="radio" value="no" class="bloko-radio__input HH-Resume-RelocationAreas-Switcher" name="repett">
+                             <span class="bloko-radio__text">არა</span>
+                             </label>
+                          </div>
                        </div>
                     </div>
                  </div>
+                 
                  <br>
+                 <div class="repetmimushavia" style="display:none">
+                                <div class="resume-form-row">
+                                                <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
+                                                <div class="bloko-form-item">
+                                                    <label class="bloko-form-legend bloko-form-legend_for-baseline">
+                                                    რამდენ ოჯახში გიმუშავიათ რეპეტიტორად?</label>
+                                                </div>
+                                                </div>
+                                                <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6 bloko-column_container">
+                                                <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6" style="padding-left: 20px;padding-right: 32px;">
+                                                    <div class="HH-Resume-Title-Container">
+                                                        <select class="bloko-select width" name="count_of_families">
+                                                            <option value="0">აირჩიეთ ოჯახების რაოდენობა</option>
+                                                            <option value="2">1</option>
+                                                            <option value="3">2</option>
+                                                            <option value="4">3</option>
+                                                            <option value="5">4</option>
+                                                            <option value="6">5</option>
+                                                            <option value="7">6</option>
+                                                            <option value="8">7</option>
+                                                            <option value="9">8</option>
+                                                            <option value="10">9</option>
+                                                            <option value="11">10</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="resume-form-row">
+                                                        <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
+                                                        <div class="bloko-form-item"><label class="bloko-form-legend ">რომელი კლასის მოსწავლეებთან გიმუშავიათ</label></div>
+                                                        </div>
+                                                        <div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="resume-short-label">რომელი კლასის მოსწავლეებთან გიმუშავიათ</label></div>
+                                                        <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6 bloko-column_container">
+                                                        <div class="resume-remove-item-gap">
+                                                            <input type="hidden" name="experience.endDate" class="HH-Resume-Experiences-EndDate" value="endDate">
+                                                            <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
+                                                                    <div class="resume-section-controls HH-Form-Element-TooltipElement">
+                                                                            
+                                                                            <div class="resume-checkbox-wrapper">
+                                                                                <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                                <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                                                <span class="bloko-checkbox__text">მე-III კლასი</span>
+                                                                                </label>
+                                                                            </div>
+                                                                            <div class="resume-checkbox-wrapper">
+                                                                                <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                                <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                                                <span class="bloko-checkbox__text">მე-IV კლასი</span>
+                                                                                </label>
+                                                                            </div>
+                                                    
+                                                                            <div class="resume-checkbox-wrapper">
+                                                                                <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                                <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                                                <span class="bloko-checkbox__text">მე-Vკლასი</span>
+                                                                                </label>
+                                                                            </div>
+                                                    
+                                                                            <div class="resume-checkbox-wrapper">
+                                                                                <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                                <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                                                <span class="bloko-checkbox__text">მე-VI კლასი</span>
+                                                                                </label>
+                                                                            </div>
+                                                    
+                                                                            <div class="resume-checkbox-wrapper">
+                                                                                <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                                <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                                                <span class="bloko-checkbox__text">მე-VII კლასი</span>
+                                                                                </label>
+                                                                            </div>
+                                                    
+                                                                            <div class="resume-checkbox-wrapper">
+                                                                                <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                                <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                                                <span class="bloko-checkbox__text">მე-VIII კლასი</span>
+                                                                                </label>
+                                                                            </div>
+                                                    
+                                                                            <div class="resume-checkbox-wrapper">
+                                                                                <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                                <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                                                <span class="bloko-checkbox__text">მე-IX კლასი</span>
+                                                                                </label>
+                                                                            </div>
+                                                    
+                                                                            <div class="resume-checkbox-wrapper">
+                                                                                <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                                <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                                                <span class="bloko-checkbox__text">მე-X კლასი</span>
+                                                                                </label>
+                                                                            </div>
+                                                    
+                                                                            <div class="resume-checkbox-wrapper">
+                                                                                <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                                <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                                                <span class="bloko-checkbox__text">მე-XI კლასი</span>
+                                                                                </label>
+                                                                            </div>
+                                                    
+                                                                            <div class="resume-checkbox-wrapper">
+                                                                                <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                                <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                                                <span class="bloko-checkbox__text">მე-XII კლასი</span>
+                                                                                </label>
+                                                                            </div>
+
+                                                                            <div class="resume-checkbox-wrapper">
+                                                                                        <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                                        <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                                                        <span class="bloko-checkbox__text">აბიტურიენტებთან</span>
+                                                                                        </label>
+                                                                                    </div>
+                                                    
+                                                    
+                                                                        </div>
+                                                            </div>
+                                                            <div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="bloko-input-wrapper HH-Resume-Experiences-EndDate-TooltipElement"><input type="month" class="bloko-input HH-Resume-Experiences-EndDate-Date" value=""><span class="bloko-icon bloko-icon_calendar"></span></label></div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="resume-form-row HH-Resume-Constructor-Employment sagnebi">
+                                                                <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
+                                                                <div class="bloko-form-item"><label class="bloko-form-legend bloko-form-legend_for-baseline">რომელი საგნების რეპეტიტორი იყავით</label></div>
+                                                                </div>
+                                                                <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
+                                                                <div class="resume-section-controls HH-Form-Element-TooltipElement">
+                                                                    <div class="resume-checkbox-wrapper">
+                                                                        <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                        <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                                        <span class="bloko-checkbox__text">დაწყებითი</span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="part" name="nurse_duties" data-qa="createresume__employment-PART"><span class="bloko-checkbox__text">ინგლისური</span></label></div>
+                                                                    <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="project" name="nurse_duties" data-qa="createresume__employment-PROJECT"><span class="bloko-checkbox__text">რუსული </span></label></div>
+                                                                    <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="volunteer" name="nurse_duties" data-qa="createresume__employment-VOLUNTEER"><span class="bloko-checkbox__text">გერმანული </span></label></div>
+                                                                    <div class="resume-checkbox-wrapper">
+                                                                        <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                        <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                                        <span class="bloko-checkbox__text">თურქული</span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="resume-checkbox-wrapper">
+                                                                        <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                        <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                                        <span class="bloko-checkbox__text">მათემატიკა</span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="resume-checkbox-wrapper">
+                                                                        <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                        <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                                        <span class="bloko-checkbox__text">ფიზიკა</span>
+                                                                        </label>
+                                                                    </div>
+                                            
+                                                                    <div class="resume-checkbox-wrapper">
+                                                                        <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                        <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                                        <span class="bloko-checkbox__text">ქიმია</span>
+                                                                        </label>
+                                                                    </div>
+                                            
+                                                                    <div class="resume-checkbox-wrapper">
+                                                                        <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                        <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                                        <span class="bloko-checkbox__text">ბიოლოგია</span>
+                                                                        </label>
+                                                                    </div>
+                                            
+                                                                    <div class="resume-checkbox-wrapper">
+                                                                        <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                        <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                                        <span class="bloko-checkbox__text">ქართული</span>
+                                                                        </label>
+                                                                    </div>
+                                            
+                                                                    <div class="resume-checkbox-wrapper">
+                                                                        <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                        <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                                        <span class="bloko-checkbox__text">ხელოვნება</span>
+                                                                        </label>
+                                                                    </div>
+                                            
+                                                                    <div class="resume-checkbox-wrapper">
+                                                                        <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                        <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                                        <span class="bloko-checkbox__text">მუსიკა</span>
+                                                                        </label>
+                                                                    </div>
+                                            
+                                                                    <div class="resume-checkbox-wrapper">
+                                                                        <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                        <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                                        <span class="bloko-checkbox__text">ისტორია</span>
+                                                                        </label>
+                                                                    </div>
+                                            
+                                                                    <div class="resume-checkbox-wrapper">
+                                                                        <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                        <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                                        <span class="bloko-checkbox__text">გეოგრაფია</span>
+                                                                        </label>
+                                                                    </div>
+                                            
+                                                                    <div class="resume-checkbox-wrapper">
+                                                                        <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                                        <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                                        <span class="bloko-checkbox__text">უნარები</span>
+                                                                        </label>
+                                                                    </div>
+                                            
+                                            
+                                                                </div>
+                                                                </div>
+                                                            </div>
+
+
+
+
+                 </div>
                  <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
                     <div class="bloko-form-item">
                        <label class="bloko-form-legend bloko-form-legend_for-baseline">გიმუშავიათ თუ არა ტყუპებთან</label>
@@ -1705,12 +2028,7 @@
                           <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="part" name="nurse_duties" data-qa="createresume__employment-PART"><span class="bloko-checkbox__text">ოჯახის სადილი</span></label></div>
                           <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="project" name="nurse_duties" data-qa="createresume__employment-PROJECT"><span class="bloko-checkbox__text">ოჯახის სარეცხი </span></label></div>
                           <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="volunteer" name="nurse_duties" data-qa="createresume__employment-VOLUNTEER"><span class="bloko-checkbox__text">ტანსაცმლის დაუთოვება </span></label></div>
-                          <div class="resume-checkbox-wrapper">
-                             <label class="bloko-checkbox HH-Resume-Employment-Label">
-                             <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
-                             <span class="bloko-checkbox__text">აუტისტი</span>
-                             </label>
-                          </div>
+                          
                        </div>
                     </div>
                  </div>
@@ -2249,16 +2567,16 @@
                               <div class="HH-Resume-Title-Container">
                                  <select class="bloko-select width" name="count_of_families">
                                     <option value="0">აირჩიეთ ოჯახების რაოდენობა</option>
-                                    <option value="2">1</option>
-                                    <option value="3">2</option>
-                                    <option value="4">3</option>
-                                    <option value="5">4</option>
-                                    <option value="6">5</option>
-                                    <option value="7">6</option>
-                                    <option value="8">7</option>
-                                    <option value="9">8</option>
-                                    <option value="10">9</option>
-                                    <option value="11">10</option>
+                                    <option value="2">1 ოჯახში </option>
+                                    <option value="3">2 ოჯახში </option>
+                                    <option value="4">3 ოჯახში </option>
+                                    <option value="5">4 ოჯახში </option>
+                                    <option value="6">5 ოჯახში </option>
+                                    <option value="7">6 ოჯახში </option>
+                                    <option value="8">7 ოჯახში </option>
+                                    <option value="9">8 ოჯახში </option>
+                                    <option value="10">9 ოჯახში </option>
+                                    <option value="11">10 ოჯახში </option>
                                  </select>
                               </div>
                            </div>
@@ -2280,11 +2598,79 @@
                                   <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="part" name="nurse_duties" data-qa="createresume__employment-PART"><span class="bloko-checkbox__text">ოჯახის სადილი</span></label></div>
                                   <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="project" name="nurse_duties" data-qa="createresume__employment-PROJECT"><span class="bloko-checkbox__text">ოჯახის სარეცხი </span></label></div>
                                   <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="volunteer" name="nurse_duties" data-qa="createresume__employment-VOLUNTEER"><span class="bloko-checkbox__text">ტანსაცმლის დაუთოვება </span></label></div>
+                                  <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="volunteer" name="nurse_duties" data-qa="createresume__employment-VOLUNTEER"><span class="bloko-checkbox__text">სველი წერტილების დალაგება </span></label></div>
                                  
                                </div>
                             </div>
                          </div>
                          <br>
+
+                         <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
+                                        <div class="bloko-form-item"><label class="bloko-form-legend bloko-form-legend_for-baseline">ჩამოთვლითაგან რომელ კერძებს ფლობთ?</label></div>
+                                     </div>
+                                     <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
+                                                       
+                    
+                    
+                                                <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
+                                                     
+                                                    </div>
+                                                    <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
+                                                      
+                                                  <div class="resume-checkbox-wrapper">
+                                                       <label class="bloko-checkbox HH-Resume-Employment-Label">
+                                                       <input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="full" name="nurse_duties" data-qa="createresume__employment-FULL">
+                                                       <span class="bloko-checkbox__text">ქართული ცივი</span>
+                                                       </label>
+                                                    </div>
+ 
+                                                    <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="part" name="nurse_duties" data-qa="createresume__employment-PART"><span class="bloko-checkbox__text">ქართული ცხელი</span></label></div>
+ 
+ 
+                                                    <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="project" name="nurse_duties" data-qa="createresume__employment-PROJECT"><span class="bloko-checkbox__text">ევროპული</span></label></div>
+ 
+ 
+                                                    <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="volunteer" name="nurse_duties" data-qa="createresume__employment-VOLUNTEER"><span class="bloko-checkbox__text">აზიური</span></label></div>
+
+                                                    <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="volunteer" name="nurse_duties" data-qa="createresume__employment-VOLUNTEER"><span class="bloko-checkbox__text">რუსული</span></label></div>
+
+                                                    <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="volunteer" name="nurse_duties" data-qa="createresume__employment-VOLUNTEER"><span class="bloko-checkbox__text">სალათი</span></label></div>
+
+
+                                                    <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="volunteer" name="nurse_duties" data-qa="createresume__employment-VOLUNTEER"><span class="bloko-checkbox__text">მწვადი</span></label></div>
+
+
+                                                    <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="volunteer" name="nurse_duties" data-qa="createresume__employment-VOLUNTEER"><span class="bloko-checkbox__text">ქაბაბი</span></label></div>
+
+                                                    <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="volunteer" name="nurse_duties" data-qa="createresume__employment-VOLUNTEER"><span class="bloko-checkbox__text">ხინკალი</span></label></div>
+
+                                                    <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="volunteer" name="nurse_duties" data-qa="createresume__employment-VOLUNTEER"><span class="bloko-checkbox__text">შაურმა</span></label></div>
+
+
+                                                    <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="volunteer" name="nurse_duties" data-qa="createresume__employment-VOLUNTEER"><span class="bloko-checkbox__text">ჰამბურგერი/ჩიზბურგერი</span></label></div>
+
+                                                    <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="volunteer" name="nurse_duties" data-qa="createresume__employment-VOLUNTEER"><span class="bloko-checkbox__text">ხაჭაპური</span></label></div>
+
+                                                    <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="volunteer" name="nurse_duties" data-qa="createresume__employment-VOLUNTEER"><span class="bloko-checkbox__text">ფენოვანი</span></label></div>
+
+                                                    <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="volunteer" name="nurse_duties" data-qa="createresume__employment-VOLUNTEER"><span class="bloko-checkbox__text">პიცა</span></label></div>
+
+                                                    <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="volunteer" name="nurse_duties" data-qa="createresume__employment-VOLUNTEER"><span class="bloko-checkbox__text">ნამცხვარი</span></label></div>
+
+                                                    <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="volunteer" name="nurse_duties" data-qa="createresume__employment-VOLUNTEER"><span class="bloko-checkbox__text">მესხური პური</span></label></div>
+
+
+                                                    <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="volunteer" name="nurse_duties" data-qa="createresume__employment-VOLUNTEER"><span class="bloko-checkbox__text">ბერძნული პური</span></label></div>
+
+                                                    <div class="resume-checkbox-wrapper"><label class="bloko-checkbox HH-Resume-Employment-Label"><input type="checkbox" class="bloko-checkbox__input HH-Resume-Employments-Item HH-Resume-Employment-Checkbox" value="volunteer" name="nurse_duties" data-qa="createresume__employment-VOLUNTEER"><span class="bloko-checkbox__text">კახური შოთი</span></label></div>
+       
+                                                          
+                                                         
+                                                       </div>
+                                                    </div>
+                                                    <br>
+                                                    <br>
+                                                    <br>
 
 
 
@@ -2359,6 +2745,31 @@
                              </div>
 
                      <br>
+
+                     <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
+                                <div class="bloko-form-item">
+                                   <label class="bloko-form-legend bloko-form-legend_for-baseline">სველი წერტილების დალაგებას შეძლებთ?</label>
+                                </div>
+                             </div>
+                             <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4">
+                                <div class="HH-Form-Element-TooltipElement " data-qa="resume-section-controls">
+                                   <div class="bloko-gap bloko-gap_right">
+                                      <div class="resume-checkbox-wrapper">
+                                         <label class="bloko-radio" data-qa="resume-relocation-no_relocation" >
+                                         <input type="radio" value="yes" class="bloko-radio__input HH-Resume-RelocationAreas-Switcher" name="">
+                                         <span class="bloko-radio__text">დიახ</span>
+                                         </label>
+                                      </div>
+                                      <div class="resume-checkbox-wrapper">
+                                         <label class="bloko-radio" data-qa="resume-relocation-relocation_possible">
+                                         <input type="radio" value="no" class="bloko-radio__input HH-Resume-RelocationAreas-Switcher" name="">
+                                         <span class="bloko-radio__text">არაა</span>
+                                         </label>
+                                      </div>
+                                   </div>
+                                </div>
+                             </div>
+                             <br>
                      
                      
                      
@@ -10192,6 +10603,8 @@
                $(this).parent().parent().parent().parent().siblings('.inkluziuri-box').toggleClass('active');
            }
          });
+
+       
          
          
          
@@ -10415,6 +10828,18 @@
          $('.inkluziuri-box').css('display','none');
          }
          });
+
+
+         $('input:radio[name="repett"]').change(function(){
+                if($(this).val() == 'yes'){
+                $('.repetmimushavia').css('display','block');
+                }
+                if($(this).val() == 'no'){
+                $('.repetmimushavia').css('display','none');
+                }
+                });
+
+           
          
          
          $('input:radio[name="mxolod_dzidza"]').change(function(){
