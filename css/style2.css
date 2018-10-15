@@ -910,7 +910,7 @@
     width: 40px;
     height: 40px
 }
-.navi-item_toggle:before {
+/*.navi-item_toggle:before {
     content: "";
     position: absolute;
     display: block;
@@ -922,7 +922,7 @@
     left: 0;
     right: 0;
     margin: auto
-}
+}*/
 .navi_expanded .navi-item_toggle:before {
     background-position: 0 -15px
 }
