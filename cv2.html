@@ -35,6 +35,7 @@
          
          };
       </script>
+      <meta charset="UTF-8">
       <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="css/style2.css">
       <link rel="stylesheet" href="css/employer.css">
@@ -75,11 +76,23 @@
          .lang{
           position: relative;
          }
+         .daterangepicker{
+          top: 1479px !important;
+         }
       </style>
-      <script  src="js/libs.js"></script>
-      <script src="js/combined.js"></script>
+      <!-- <script  src="js/libs.js"></script> -->
+      <!-- <script src="js/combined.js"></script> -->
+
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
    </head>
    <body class="l-ambient s-friendly xs-friendly custom-font-allowed">
+
+
+
       <div class="navi HH-VacancyMainSearchInfoTip-Navi navi_index">
          <script data-name="HH/Bloko/Toggle" data-params='
             {
@@ -700,7 +713,8 @@
                                 <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6 bloko-column_container">
                                    <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6" style="padding-left: 20px;padding-right: 32px;">
                                       <div class="HH-Resume-Title-Container">
-                                         <input type="date">
+                                        <input type="text" name="datetimes" />
+                                       
                                       </div>
                                    </div>
                                 </div>
@@ -796,6 +810,22 @@
                                                         </div>
                                                      </div>
                                                      <br>
+                                                     <div class="resume-form-row">
+                                                        <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
+                                                           <div class="bloko-form-item">
+                                                              <label class="bloko-form-legend bloko-form-legend_for-baseline">
+                                                              რა ვადით გესაჭიროებათ ძიძა</label>
+                                                           </div>
+                                                        </div>
+                                                        <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6 bloko-column_container">
+                                                           <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6" style="padding-left: 20px;padding-right: 32px;">
+                                                              <div class="HH-Resume-Title-Container">
+                                                                <input type="text" name="datetimes" />
+                                                               
+                                                              </div>
+                                                           </div>
+                                                        </div>
+                                                     </div>
                                                     
                         
                          <br><br>
@@ -3671,8 +3701,8 @@
                                                  <div class="Bloko-CompositeSelection-TagList"></div>
                                                  <div id="cont"></div>
                                                  <div class="bloko-input-wrapper">
-                                                    <input class="bloko-input Bloko-CompositeSelection-Suggest" type="text" name="areaName" autocomplete="off">
-                                                    <span class="bloko-icon-dynamic">
+                                                    <input class="bloko-input Bloko-CompositeSelection-Suggest" type="text" name="areaName" autocomplete="off" style="width: 278px;">
+                                                    <span class="bloko-icon-dynamic" style="left: 237px;">
                                                     <button id="m" type="button" class="bloko-icon-link Bloko-CompositeSelection-TreeSelectorPopup" data-qa="createvacancy__city-list" title="">
                                                     <span class="bloko-icon
                                                        bloko-icon_list-more
@@ -3867,7 +3897,7 @@
                                                $(document).on('click', '.add-lang',function (event) {
 
                                                 $('.lang-sec').append(`<div class="lang">
-                                                    <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4" style="   margin-top: -10px;">
+                                                    <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-4 bloko-column_l-4" style="padding-left:0;">
                                                        <div class="HH-Form-Element-TooltipElement " data-qa="resume-section-controls">
                                                           <div class="resume-remove-item-wrapper resume-remove-item-wrapper_language">
                                                              <div class="bloko-column bloko-column_xs-4 bloko-column_s-6 bloko-column_m-6 bloko-column_l-6">
@@ -3980,7 +4010,7 @@
                                       <div class="HH-Resume-PreferredContact-Contact">
                                          <div class="HH-Resume-FormattedPhones-Content ">
                                             <div class="bloko-form-item">
-                                              <input type="date">
+                                              <input type="date"/>
                                           </div>
                                          </div>
                                       </div>
@@ -3993,6 +4023,9 @@
                                     $('#selectdate').show();
                                   });
                                 </script>
+
+
+                               
 
 
                                
@@ -4945,6 +4978,25 @@
 
          
 
+        </script>
+        <script>
+        $(document).on('mouseover', '.navi-item ', function() {
+          $('.navi-item__dropdown').addClass('g-hidden').removeClass('g-show');
+          $(this).find('.navi-item__dropdown').addClass('g-show').removeClass('g-hidden');
+          
+        });
+      </script>
+       <script>
+        $(function() {
+          $('input[name="datetimes"]').daterangepicker({
+            timePicker: false,
+            startDate: moment().startOf('hour'),
+            endDate: moment().startOf('hour').add(32, 'hour'),
+            locale: {
+              format: 'M/DD/Y'
+            }
+          });
+        });
         </script>
    </body>
 </html>
