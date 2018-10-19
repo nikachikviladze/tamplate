@@ -45,12 +45,10 @@
                                     right: 30px;
                                     width: 30px;
                                     height: 30px;
-                                    background: url(https://i.hh.ru/bloko/css/popup.icons.svg) 0 0 no-repeat;
                                     z-index: 1004;
                                     cursor: pointer;
                                     }
                                     .promo-page-popup-close:hover {
-                                    /*background: #cc0000 url(https://hhcdn.ru/ichameleon/02877.png) no-repeat;*/
                                     }
                                     /*--/popup--*/
                                     .promo-page-background {position:absolute;z-index:-1;top:0;right:-9999px;left:-9999px;overflow:hidden;width:100vw;min-width:680px;height:100%;margin:0 auto;background-repeat:no-repeat;background-position:center center;background-size:cover;}
@@ -90,7 +88,7 @@
                                     .gui-highlighting {padding:3px 2px;background-color:#fff450;}
                                     .promo-page {position:relative;color:#333333;}
                                     .promo-page-banner {position:relative;z-index:0;height:440px;padding:0;color:rgb(255,255,255);font:normal 14px/24px Arial,sans-serif;}
-                                    .promo-page-banner__background {background-image:url(https://hhcdn.ru/icms/10035953.jpeg);}
+                                    .promo-page-banner__background {background-image:url();}
                                     .promo-page-banner__container {padding-top:108px;text-align:center;}
                                     .promo-page-banner__title {margin:0;padding:0;font:bold 42px/46px ProximaNovaCond,Arial,sans-serif;}
                                     .promo-page-banner__text {margin-top:30px;}
@@ -117,7 +115,8 @@
                                     .promo-page-types__price:hover {background-color:#509deb;color:#ffffff;text-decoration:none;}
                                     .promo-page-freebie {position:relative;z-index:0;min-height:153px;padding:67px 0 30px;}
                                     .promo-page-freebie:after {content:'';clear:both;display:table;}
-                                    .promo-page-freebie__background {background-image:url(https://hhcdn.ru/icms/10035958.jpeg);}
+                                    .promo-page-freebie__background {background-image:url(
+                                          );}
                                     .promo-page-freebie__canvas {float:left;width:30%;padding-top:10px;text-align:center;}
                                     .promo-page-freebie__info {float:left;width:70%;}
                                     .promo-page-freebie__info_active {}
@@ -156,7 +155,7 @@
                                     .promo-page-responses__toggler {position:absolute;top:0;right:0;}
                                     .promo-page-graphic {position:relative;min-height:422px;}
                                     .promo-page-graphic__area {position:relative;}
-                                    .promo-page-graphic__measure {position:absolute;top:31px;right:5px;padding-right:14px;background:url(https://hhcdn.ru/icms/10036902.svgz) top right no-repeat;color:rgba(153,153,153, 0.73);font:11px/26px Arial, sans-serif;}
+                                    .promo-page-graphic__measure {position:absolute;top:31px;right:5px;padding-right:14px;background:url() top right no-repeat;color:rgba(153,153,153, 0.73);font:11px/26px Arial, sans-serif;}
                                     .promo-page-graphic__canvas {position:relative;z-index:2;display: block;width:100%;height:262px;}
                                     .promo-page-graphic__tooltips {position:absolute;z-index:10;opacity:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;width:100%;padding:0 5px;
                                     -webkit-transition:opacity 0.5s ease;

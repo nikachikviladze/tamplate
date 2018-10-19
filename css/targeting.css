@@ -46,13 +46,11 @@
 							right: 30px;
 							width: 30px;
 							height: 30px;
-							background: url(https://i.hh.ru/bloko/css/popup.icons.svg) 0 0 no-repeat;
+							background: url(/css/popup.icons.svg) 0 0 no-repeat;
 							z-index: 1004;
 							cursor: pointer;
 							}
-							.promo-page-popup-close:hover {
-							/*background: #cc0000 url(https://hhcdn.ru/ichameleon/02877.png) no-repeat;*/
-							}
+							
 							/*--/popup--*/
 							.promo-page-select {
 							display: inline-block;
@@ -71,7 +69,6 @@
 							border-color: #cbd1d4;
 							padding-right: 23px;
 							background-color: #f9f9f9;
-							background-image: url(https://hhcdn.ru/icms/10063842.svgz);
 							background-repeat: no-repeat;
 							background-position: right center;
 							outline: none;
@@ -120,7 +117,7 @@
 							transition-timing-function: ease-in-out;
 							} 
 							.promo-icon {display:inline-block;vertical-align:middle;}
-							.promo-icon_fb {width:16px;height:16px;background:url(https://hhcdn.ru/icms/10036071.png) no-repeat;}
+							.promo-icon_fb {width:16px;height:16px;background:url() no-repeat;}
 							.promo-page-button_transparent {background:none;border-color:#ffffff;}
 							.promo-page-button_transparent:hover {background:#ffffff;border-color:#ffffff;color:#333333;}
 							.promo-page-button_transparent:active {background:#ffffff;border-color:#ffffff;color:#333333;}
@@ -129,7 +126,7 @@
 							.gui-highlighting_alternate {background-color:#ffec8d;}
 							.promo-page {position:relative;color:#333333;}
 							.promo-page-banner {position:relative;z-index:0;height:440px;padding:0;color:rgb(255,255,255);font:normal 14px/24px Arial,sans-serif;}
-							.promo-page-banner__background {background-image:url(https://hhcdn.ru/icms/10086563.jpeg);}
+							.promo-page-banner__background {background-image:url();}
 							.promo-page-banner__background:before {content:'';position:absolute;left:0;top:0;right:0;bottom:0;background:#000;opacity:0.5;}
 							.promo-page-banner__container {padding-top:108px;text-align:center;}
 							.promo-page-banner__title {margin:0;padding:0;font:bold 42px/46px ProximaNovaCond,Arial,sans-serif;}
@@ -179,7 +176,7 @@
 							.promo-page-slider-list {position:relative;min-height:450px;padding:0;list-style:none;overflow:hidden;}
 							.promo-page-slider-list__item {position:absolute;z-index:1;top:0;left:0;width:100%;}
 							.promo-page-slider-list__logo {width:130px;height:130px;border-radius:50%;}
-							.promo-page-slider-list__text {max-width:750px;margin:20px auto 0;padding:0 80px;background:url(https://hhcdn.ru/icms/10045024.svgz) left 5px no-repeat, url(https://hhcdn.ru/icms/10045025.svgz) right 5px no-repeat;font-size:16px;line-height:24px;}
+							.promo-page-slider-list__text {max-width:750px;margin:20px auto 0;padding:0 80px;background:url() left 5px no-repeat, url() right 5px no-repeat;font-size:16px;line-height:24px;}
 							.promo-page-slider-list__author {margin-top:35px;color:#d8def5;font-size:14px;line-height:21px;}
 							.promo-page-slider-directs {position:relative;margin:0;padding:0;list-style:none;text-align:center;}
 							.promo-page-slider-directs__item {display:inline-block;vertical-align:top;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;width:20px;height:20px;border-radius:50%;background-color:transparent;border:1px solid #ffffff;cursor:pointer; -webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}

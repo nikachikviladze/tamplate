@@ -10254,7 +10254,7 @@ define("bloko/blocks/treeSelector/treeSelectorModelsHandler", ["jquery", "backbo
                             duration: n.duration,
                             requestId: window.globalVars.requestId,
                             userId: window.globalVars.userId,
-                            containerSrc: (i = t(n.attribution[0].containerSrc), ["hhcdn.ru"].includes(i.hostname) ? i.hostname + i.pathname : i.hostname)
+                            containerSrc: (i = t(n.attribution[0].containerSrc), ["hrbaia.ge"].includes(i.hostname) ? i.hostname + i.pathname : i.hostname)
                         };
                         e.post("/performance_stat", JSON.stringify(n.toJSON()), {
                             params: o,

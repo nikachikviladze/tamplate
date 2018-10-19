@@ -728,7 +728,7 @@ require([], function() {try {;
                              }
                      
                              var $itemActive = this.$items.filter('[data-filter="' + this.filterItemActive + '"]'),
-                                   $childActive = jQuery('<span xmlns:hha="http://hh.ru/articles" class="' + $itemActive.children('a').attr('class') + '">' + $itemActive.text() + '</span>');
+                                   $childActive = jQuery('<span class="' + $itemActive.children('a').attr('class') + '">' + $itemActive.text() + '</span>');
                      
                              $itemActive
                                  .addClass(this.cssItemActive)

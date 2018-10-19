@@ -1198,7 +1198,7 @@
     width: 28px;
     height: 23px;
     content: "";
-    background: url(../blocks/navi/images/avatar__min_.svg) 0 0 no-repeat;
+    /*background: url(../blocks/navi/images/avatar__min_.svg) 0 0 no-repeat;*/
     background-size: 100%
 }
 @media(max-width:699px) {
@@ -9601,7 +9601,7 @@ small {
     left:0;
 }
 .index-dashboard_domain-hh-ru{
-    background-image: url(https://i.hh.ru/css/globals/blocks/index-dashboard/images/anonymous-background-builders-new__min_.jpg);
+    background-image: url(../images/anonymous-background-builders-new__min_.jpg);
 }
 @media(min-width:1020px) {
     /* .index-dashboard_domain-hh-ru {
@@ -10317,7 +10317,7 @@ small {
     top: 6px;
     width: 17px;
     height: 17px;
-    background: url(../blocks/my-events/informers__min_.svg?30.04.2015) no-repeat;
+    /*background: url(../blocks/my-events/informers__min_.svg?30.04.2015) no-repeat;*/
     background-size: 130px 43px;
     opacity: .2
 }
@@ -12819,7 +12819,7 @@ small {
 .supernova-footer-nav-logo {
     width: 50px;
     height: 50px;
-    background: url(../../../logos/svg/hh.ru-gray__min_.svg) 0 0 no-repeat
+    background: url() 0 0 no-repeat
 }
 .supernova-footer-nav-info {
     color: #999

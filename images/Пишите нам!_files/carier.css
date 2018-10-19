@@ -82,7 +82,7 @@ background: url(../images/10073869.svgz) center 0 no-repeat;
 .promo-page-consultation__text {padding-right:65px;color:#d9d9d9;}
 .promo-page-consultation__right-text {color:#999999;font-size:14px;line-height:1.43;}
 .promo-page-consultation__right-text p {margin-top:6px;}
-.promo-page-consultation__book {width:190px;height:133px;margin-top:9px;margin-bottom:9px;background:url(https://hhcdn.ru/icms/10071657.png) no-repeat left top / cover;}
+.promo-page-consultation__book {width:190px;height:133px;margin-top:9px;margin-bottom:9px;background:url() no-repeat left top / cover;}
 .promo-page-consultation__toolbar {max-width:270px;margin-top:22px;}
 .promo-page-consultation__background {background-color:#1e2834;position: absolute;top:0;left: 50%;height: 100%; z-index: -1;}
 .promo-page-experts {margin-top:86px;}
@@ -128,10 +128,7 @@ background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000);
 .promo-page-examiner__item {display:inline-block;vertical-align:top;box-sizing:border-box;width:50%;margin-bottom:44px;padding:0 10px;font-size:14px;}
 .promo-page-examiner__item-wrapp {padding-right:70px;}
 .promo-page-examiner__image {float:left;width:60px;height:60px;margin-right:20px;}
-.promo-page-examiner__image_1 {background:url(https://hhcdn.ru/icms/10070971.png) no-repeat left top / cover;}
-.promo-page-examiner__image_2 {background:url(https://hhcdn.ru/icms/10070972.png) no-repeat left top / cover;}
-.promo-page-examiner__image_3 {background:url(https://hhcdn.ru/icms/10070973.png) no-repeat left top / cover;}
-.promo-page-examiner__image_4 {background:url(https://hhcdn.ru/icms/10070974.png) no-repeat left top / cover;}
+
 .promo-page-examiner__subtitle {padding-top:9px;color:#d8d8d8;font:italic bold 18px/1 Georgia, Arial, sans-serif;overflow: hidden;}
 .promo-page-examiner__text {margin-top:9px;color:#999999;line-height:1.43;overflow: hidden;}
 .promo-page-examiner__text p {margin-top:5px;}
@@ -317,17 +314,6 @@ white-space: normal;
 .promo-page-reviews__title {
 margin-bottom: 20px;
 }
-}
-@media (-webkit-min-device-pixel-ratio: 2) {
-.promo-page-background-main:before {background:url(https://hhcdn.ru/icms/10071685.png) no-repeat right top / cover;}
-.promo-page-consultation__book {background-image:url(https://hhcdn.ru/icms/10071711.png);}
-.promo-page-experts__item_1:before {background-image:url(https://hhcdn.ru/icms/10071708.png);}
-.promo-page-experts__item_2:before {background-image:url(https://hhcdn.ru/icms/10071709.png);}
-.promo-page-experts__item_3:before {background-image:url(https://hhcdn.ru/icms/10071710.png);}
-.promo-page-examiner__image_1 {background-image:url(https://hhcdn.ru/icms/10071695.png);}
-.promo-page-examiner__image_2 {background-image:url(https://hhcdn.ru/icms/10071696.png);}
-.promo-page-examiner__image_3 {background-image:url(https://hhcdn.ru/icms/10071697.png);}
-.promo-page-examiner__image_4 {background-image:url(https://hhcdn.ru/icms/10071698.png);}
 }
 @media (-webkit-min-device-pixel-ratio: 2) and (max-width: 480px) {
 .promo-page-background-main:before {background-size:155% auto;background-position:right -45%;}

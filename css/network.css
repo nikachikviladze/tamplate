@@ -56,13 +56,13 @@ body {-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
     right: 30px;
     width: 30px;
     height: 30px;
-    background: url(http://i.hh.ru/bloko/css/popup.icons.svg) 0 0 no-repeat;
+    /*background: url(css/popup.icons.svg) 0 0 no-repeat;*/
     z-index: 1004;
     cursor: pointer;
   }
 
   .promo-page-popup-close:hover {
-    /*background: #cc0000 url(http://hh.ru/ichameleon/02877.png) no-repeat;*/
+    /*background: #cc0000 url(02877.png) no-repeat;*/
   }
 
   /*--/popup--*/
