@@ -666,8 +666,9 @@
                                    <div class="bloko-form-item"><label class="bloko-form-legend ">რა ასაკის ბავშვისთვის გესაჭიროებათ ძიძა?</label></div>
                                 </div>
                                 
-                                <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6 bloko-column_container">
-                                   <div class="resume-remove-item-gap">
+                                <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6 bloko-column_container add-section">
+
+                                   <div class="resume-remove-item-gap" style="margin-bottom: 10px;">
                                       <input type="hidden" name="experience.endDate" class="HH-Resume-Experiences-EndDate" value="endDate">
                                       <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
                                          <div class="bloko-control-group                     bloko-control-group_auto-size                     HH-Resume-Experiences-EndDate-TooltipElement">
@@ -695,11 +696,18 @@
                                                </select>
                                             </div>
                                          </div>
-                                         <span class="add-year">დამატება</span>
+                                         
                                       </div>
                                    </div>
+
+
+                                   <span class="add-year" >დამატება</span>
+
                                 </div>
+
                              </div>
+
+                             
                              <div class="innerhtml"></div>
                              <br>
                              <div class="resume-form-row">
@@ -770,8 +778,8 @@
                                                            <div class="bloko-form-item"><label class="bloko-form-legend ">რა ასაკის ბავშვისთვის გესაჭიროებათ გუვერნანტი?</label></div>
                                                         </div>
                                                         
-                                                        <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6 bloko-column_container">
-                                                           <div class="resume-remove-item-gap">
+                                                        <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6 bloko-column_container guvernant-section">
+                                                           <div class="resume-remove-item-gap" style="margin-bottom: 10px;">
                                                               <input type="hidden" name="experience.endDate" class="HH-Resume-Experiences-EndDate" value="endDate">
                                                               <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
                                                                  <div class="bloko-control-group                     bloko-control-group_auto-size                     HH-Resume-Experiences-EndDate-TooltipElement">
@@ -802,7 +810,10 @@
                                                               </div>
                                                               <div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="bloko-input-wrapper HH-Resume-Experiences-EndDate-TooltipElement"><input type="month" class="bloko-input HH-Resume-Experiences-EndDate-Date" value=""><span class="bloko-icon bloko-icon_calendar"></span></label></div>
                                                            </div>
+
+															<span class="add-guvernant">დამატება</span>
                                                         </div>
+
                                                      </div>
                                                      <br>
                                                      <div class="resume-form-row">
@@ -874,7 +885,7 @@
                                                            <div class="bloko-form-item"><label class="bloko-form-legend ">რა ასაკის ბავშვისთვის გესაჭიროებათ რეპეტიტორი?</label></div>
                                                         </div>
                                                         
-                                                        <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6 bloko-column_container">
+                                                        <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6 bloko-column_container repetitori-section">
                                                            <div class="resume-remove-item-gap">
                                                               <input type="hidden" name="experience.endDate" class="HH-Resume-Experiences-EndDate" value="endDate">
                                                               <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
@@ -903,6 +914,9 @@
                                                               </div>
                                                               <div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="bloko-input-wrapper HH-Resume-Experiences-EndDate-TooltipElement"><input type="month" class="bloko-input HH-Resume-Experiences-EndDate-Date" value=""><span class="bloko-icon bloko-icon_calendar"></span></label></div>
                                                            </div>
+
+                                                           <span class="add-repetitori">დამატება</span>
+                                                           
                                                         </div>
                                                      </div>
                                                      <br>
@@ -5050,5 +5064,116 @@
           });
         });
         </script>
+        <script>
+                             	$('.add').on('click', function(event) {
+                             		console.log(1);
+                             	});
+                             </script>
+
+
+                             <script>
+                                                        	$('.add-guvernant').on('click', function(event) {
+                                                        		$('.guvernant-section').prepend(`<div class="resume-remove-item-gap" style="margin-bottom: 10px;">
+                                                              <input type="hidden" name="experience.endDate" class="HH-Resume-Experiences-EndDate" value="endDate">
+                                                              <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
+                                                                 <div class="bloko-control-group                     bloko-control-group_auto-size                     HH-Resume-Experiences-EndDate-TooltipElement">
+                                                                    <div class="bloko-control-group__content-sized">
+                                                                        <select name="min_age_of_baby_select" data-hh-autosave-without-name="experience-end-month" data-GAFormStatistic-name="experience.endDate"  class="bloko-select bloko-select_flexible HH-Resume-Experiences-EndDate-Month  HH-AutoSave-WithoutName " style="    width: 60px;
+                                                                        margin-left: 5px;">
+                                                                                <option value="01">1</option>
+                                                                                <option value="02">2</option>
+                                                                                <option value="03">3</option>
+                                                                                <option value="04">4</option>
+                                                                                <option value="05">5</option>
+                                                                                <option value="05">6</option>
+                                                                                <option value="05">7</option>
+                                                                                <option value="05">8</option>
+                                                                                <option value="05">9</option>
+                                                                                <option value="05">10</option>
+                                                                             </select>
+                                                                    </div>
+                                                                    <div class="bloko-control-group__content-sized">
+                                                                       <select name="min_age_of_baby_select" data-hh-autosave-without-name="experience-end-month" data-GAFormStatistic-name="experience.endDate"  class="bloko-select bloko-select_flexible HH-Resume-Experiences-EndDate-Month  HH-AutoSave-WithoutName " style="width:235px;">
+                                                                          <option value="01">დღის</option>
+                                                                          <option value="02">კვირის</option>
+                                                                          <option value="03">თვის</option>
+                                                                          <option value="04">წლის</option>
+                                                                       </select>
+                                                                    </div>
+                                                                 </div>
+                                                              </div>
+                                                              <div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="bloko-input-wrapper HH-Resume-Experiences-EndDate-TooltipElement"><input type="month" class="bloko-input HH-Resume-Experiences-EndDate-Date" value=""><span class="bloko-icon bloko-icon_calendar"></span></label></div>
+                                                           </div>`);
+                                                        	});
+                                                        </script>
+                                                        <script>
+                             	$('.add-year').on('click', function(event) {
+
+                             		$('.add-section').prepend(`<div class="resume-remove-item-gap" style="margin-bottom: 10px;">
+                                      <input type="hidden" name="experience.endDate" class="HH-Resume-Experiences-EndDate" value="endDate">
+                                      <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
+                                         <div class="bloko-control-group                     bloko-control-group_auto-size                     HH-Resume-Experiences-EndDate-TooltipElement">
+                                            <div class="bloko-control-group__content-sized">
+                                                <select name="min_age_of_baby_select" data-hh-autosave-without-name="experience-end-month" data-GAFormStatistic-name="experience.endDate"  class="bloko-select bloko-select_flexible HH-Resume-Experiences-EndDate-Month  HH-AutoSave-WithoutName " style="    width: 60px;
+                                                margin-left: 5px;">
+                                                        <option value="01">1</option>
+                                                        <option value="02">2</option>
+                                                        <option value="03">3</option>
+                                                        <option value="04">4</option>
+                                                        <option value="05">5</option>
+                                                        <option value="05">6</option>
+                                                        <option value="05">7</option>
+                                                        <option value="05">8</option>
+                                                        <option value="05">9</option>
+                                                        <option value="05">10</option>
+                                                     </select>
+                                            </div>
+                                            <div class="bloko-control-group__content-sized">
+                                               <select name="min_age_of_baby_select" data-hh-autosave-without-name="experience-end-month" data-GAFormStatistic-name="experience.endDate"  class="bloko-select bloko-select_flexible HH-Resume-Experiences-EndDate-Month  HH-AutoSave-WithoutName " style="width:235px;">
+                                                  <option value="01">დღის</option>
+                                                  <option value="02">კვირის</option>
+                                                  <option value="03">თვის</option>
+                                                  <option value="04">წლის</option>
+                                               </select>
+                                            </div>
+                                         </div>
+                                         
+                                      </div>
+                                   </div>`);
+                             	});
+                             </script>
+                             <script>
+                                                        	$('.add-repetitori').on('click', function(event) {
+                                                        		$('.repetitori-section').prepend(`<div class="resume-remove-item-gap" style="margin-bottom:10px;">
+                                                              <input type="hidden" name="experience.endDate" class="HH-Resume-Experiences-EndDate" value="endDate">
+                                                              <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
+                                                                 <div class="bloko-control-group                     bloko-control-group_auto-size                     HH-Resume-Experiences-EndDate-TooltipElement">
+                                                                    <div class="bloko-control-group__content-sized">
+                                                                        <select name="min_age_of_baby_select" data-hh-autosave-without-name="experience-end-month" data-GAFormStatistic-name="experience.endDate"  class="bloko-select bloko-select_flexible HH-Resume-Experiences-EndDate-Month  HH-AutoSave-WithoutName " style="    width: 60px;
+                                                                        margin-left: 5px;">
+                                                                                <option value="01">1</option>
+                                                                                <option value="02">2</option>
+                                                                                <option value="03">3</option>
+                                                                                <option value="04">4</option>
+                                                                                <option value="05">5</option>
+                                                                                <option value="05">6</option>
+                                                                                <option value="05">7</option>
+                                                                                <option value="05">8</option>
+                                                                                <option value="05">9</option>
+                                                                                <option value="05">10</option>
+                                                                             </select>
+                                                                    </div>
+                                                                    <div class="bloko-control-group__content-sized">
+                                                                       <select name="min_age_of_baby_select" data-hh-autosave-without-name="experience-end-month" data-GAFormStatistic-name="experience.endDate"  class="bloko-select bloko-select_flexible HH-Resume-Experiences-EndDate-Month  HH-AutoSave-WithoutName " style="width:235px;">
+                                                                          <option value="01">წლის ასაკიდან</option>
+                                                                       </select>
+                                                                    </div>
+                                                                 </div>
+                                                              </div>
+                                                              <div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="bloko-input-wrapper HH-Resume-Experiences-EndDate-TooltipElement"><input type="month" class="bloko-input HH-Resume-Experiences-EndDate-Date" value=""><span class="bloko-icon bloko-icon_calendar"></span></label></div>
+                                                           </div>`);
+                                                        	});
+                                                        </script>
+
    </body>
 </html>
