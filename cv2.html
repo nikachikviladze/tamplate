@@ -5044,7 +5044,7 @@
 
                              <script>
                                                         	$('.add-guvernant').on('click', function(event) {
-                                                        		$('.guvernant-section').prepend(`<div class="resume-remove-item-gap" style="margin-bottom: 10px;">
+                                                        		$('.guvernant-section').prepend(`<div class="resume-remove-item-gap" style="margin-bottom: 10px; position: relative;">
                                                               <input type="hidden" name="experience.endDate" class="HH-Resume-Experiences-EndDate" value="endDate">
                                                               <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
                                                                  <div class="bloko-control-group                     bloko-control-group_auto-size                     HH-Resume-Experiences-EndDate-TooltipElement">
@@ -5074,16 +5074,18 @@
                                                                  </div>
                                                               </div>
                                                               <div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="bloko-input-wrapper HH-Resume-Experiences-EndDate-TooltipElement"><input type="month" class="bloko-input HH-Resume-Experiences-EndDate-Date" value=""><span class="bloko-icon bloko-icon_calendar"></span></label></div>
+
+                                                              <div  class="removesection resume-remove-item__button HH-Form-Element-Remove" style="    position: absolute;right: 26%;top: 8px;"><span class="bloko-icon-dynamic"><span data-qa="resume-remove-item" class="bloko-icon-link HH-Form-Element-RemoveLink"><span class="bloko-icon                                      bloko-icon_cancel                                      bloko-icon_initial-impact                                      bloko-icon_highlighted-tertiary"></span></span></span></div>
                                                            </div>`);
                                                         	});
                                                         </script>
                                                         <script>
                              	$('.add-year').on('click', function(event) {
 
-                             		$('.add-section').prepend(`<div class="resume-remove-item-gap" style="margin-bottom: 10px;">
+                             		$('.add-section').prepend(`  <div class="resume-remove-item-gap" style="margin-bottom: 10px;">
                                       <input type="hidden" name="experience.endDate" class="HH-Resume-Experiences-EndDate" value="endDate">
-                                      <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
-                                         <div class="bloko-control-group                     bloko-control-group_auto-size                     HH-Resume-Experiences-EndDate-TooltipElement">
+                                      <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6" style="position: relative;">
+                                         <div class="bloko-control-group                     bloko-control-group_auto-size                     HH-Resume-Experiences-EndDate-TooltipElement" >
                                             <div class="bloko-control-group__content-sized">
                                                 <select name="min_age_of_baby_select" data-hh-autosave-without-name="experience-end-month" data-GAFormStatistic-name="experience.endDate"  class="bloko-select bloko-select_flexible HH-Resume-Experiences-EndDate-Month  HH-AutoSave-WithoutName " style="    width: 60px;
                                                 margin-left: 5px;">
@@ -5108,14 +5110,16 @@
                                                </select>
                                             </div>
                                          </div>
-                                         
+
+                                         <div id="remove-dziza" class="resume-remove-item__button HH-Form-Element-Remove" style="position: absolute;    right: 29%;    top: 8px;"><span class="bloko-icon-dynamic"><span data-qa="resume-remove-item" class="bloko-icon-link HH-Form-Element-RemoveLink"><span class="bloko-icon                                      bloko-icon_cancel                                      bloko-icon_initial-impact                                      bloko-icon_highlighted-tertiary"></span></span></span></div>
                                       </div>
+
                                    </div>`);
                              	});
                              </script>
                              <script>
-                                                        	$('.add-repetitori').on('click', function(event) {
-                                                        		$('.repetitori-section').prepend(`<div class="resume-remove-item-gap" style="margin-bottom:10px;">
+                            	$('.add-repetitori').on('click', function(event) {
+                            		$('.repetitori-section').prepend(`<div class="resume-remove-item-gap" style="position: relative;">
                                                               <input type="hidden" name="experience.endDate" class="HH-Resume-Experiences-EndDate" value="endDate">
                                                               <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
                                                                  <div class="bloko-control-group                     bloko-control-group_auto-size                     HH-Resume-Experiences-EndDate-TooltipElement">
@@ -5142,9 +5146,21 @@
                                                                  </div>
                                                               </div>
                                                               <div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="bloko-input-wrapper HH-Resume-Experiences-EndDate-TooltipElement"><input type="month" class="bloko-input HH-Resume-Experiences-EndDate-Date" value=""><span class="bloko-icon bloko-icon_calendar"></span></label></div>
+
+                                                               <div  class="removesection resume-remove-item__button HH-Form-Element-Remove" style="    position: absolute;right: 25%; top: 8px;"><span class="bloko-icon-dynamic"><span data-qa="resume-remove-item" class="bloko-icon-link HH-Form-Element-RemoveLink"><span class="bloko-icon                                      bloko-icon_cancel                                      bloko-icon_initial-impact                                      bloko-icon_highlighted-tertiary"></span></span></span></div>
                                                            </div>`);
-                                                        	});
-                                                        </script>
+                            	});
+
+$(document).on('click', '#remove-dziza ', function(evt) {
+  $(this).parent().parent().remove();  
+});
+
+$(document).on('click', '.removesection', function() {
+  $(this).parent().remove();  
+});
+
+
+                            </script>
 
    </body>
 </html>
