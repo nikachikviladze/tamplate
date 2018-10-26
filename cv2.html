@@ -670,6 +670,7 @@
                                 </div>
                                 
                                 <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6 bloko-column_container add-section">
+                                  <div id="valera-shegveshvi-she-siro"></div>
 
                                    <div class="resume-remove-item-gap" style="margin-bottom: 10px;">
                                       <input type="hidden" name="experience.endDate" class="HH-Resume-Experiences-EndDate" value="endDate">
@@ -704,9 +705,10 @@
                                    </div>
 
 
-                                   <span class="add-year bloko-link-switch HH-Form-Collection-Add HH-Resume-Autosave-AddItem add-lang" >დამატება</span>
 
                                 </div>
+                                <span class="add-year bloko-link-switch HH-Form-Collection-Add HH-Resume-Autosave-AddItem add-lang" >დამატება</span>
+
 
                              </div>
 
@@ -782,6 +784,7 @@
                                                         </div>
                                                         
                                                         <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6 bloko-column_container guvernant-section">
+                                                          <div id="sayleveti-saagento"></div>
                                                            <div class="resume-remove-item-gap" style="margin-bottom: 10px;">
                                                               <input type="hidden" name="experience.endDate" class="HH-Resume-Experiences-EndDate" value="endDate">
                                                               <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
@@ -814,8 +817,8 @@
                                                               <div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="bloko-input-wrapper HH-Resume-Experiences-EndDate-TooltipElement"><input type="month" class="bloko-input HH-Resume-Experiences-EndDate-Date" value=""><span class="bloko-icon bloko-icon_calendar"></span></label></div>
                                                            </div>
 
-															<span class="add-guvernant bloko-link-switch HH-Form-Collection-Add HH-Resume-Autosave-AddItem add-lang">დამატება</span>
                                                         </div>
+                                                        <span class="add-guvernant bloko-link-switch HH-Form-Collection-Add HH-Resume-Autosave-AddItem add-lang">დამატება</span>
 
                                                      </div>
                                                      <br>
@@ -887,8 +890,12 @@
                                                         <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-3 bloko-column_l-3">
                                                            <div class="bloko-form-item"><label class="bloko-form-legend ">რა ასაკის ბავშვისთვის გესაჭიროებათ რეპეტიტორი?</label></div>
                                                         </div>
+
                                                         
                                                         <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6 bloko-column_container repetitori-section">
+
+                                                          <span id="mainc-gakotrdebi-ver-gishvelis-es-saiti"></span>
+
                                                            <div class="resume-remove-item-gap">
                                                               <input type="hidden" name="experience.endDate" class="HH-Resume-Experiences-EndDate" value="endDate">
                                                               <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
@@ -918,9 +925,10 @@
                                                               <div class="bloko-column bloko-column_xs-4 bloko-column_s-0 bloko-column_m-0 bloko-column_l-0"><label class="bloko-input-wrapper HH-Resume-Experiences-EndDate-TooltipElement"><input type="month" class="bloko-input HH-Resume-Experiences-EndDate-Date" value=""><span class="bloko-icon bloko-icon_calendar"></span></label></div>
                                                            </div>
 
-                                                           <span class="add-repetitori bloko-link-switch HH-Form-Collection-Add HH-Resume-Autosave-AddItem add-lang">დამატება</span>
                                                            
                                                         </div>
+                                                        <span class="add-repetitori bloko-link-switch HH-Form-Collection-Add HH-Resume-Autosave-AddItem add-lang">დამატება</span>
+
                                                      </div>
                                                      <br>
                                                      
@@ -5035,16 +5043,12 @@
           });
         });
         </script>
-        <script>
-                             	$('.add').on('click', function(event) {
-                             		console.log(1);
-                             	});
-                             </script>
+
 
 
                              <script>
                                                         	$('.add-guvernant').on('click', function(event) {
-                                                        		$('.guvernant-section').prepend(`<div class="resume-remove-item-gap" style="margin-bottom: 10px; position: relative;">
+                                                        		$('#sayleveti-saagento').prepend(`<div class="resume-remove-item-gap" style="margin-bottom: 10px; position: relative;">
                                                               <input type="hidden" name="experience.endDate" class="HH-Resume-Experiences-EndDate" value="endDate">
                                                               <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
                                                                  <div class="bloko-control-group                     bloko-control-group_auto-size                     HH-Resume-Experiences-EndDate-TooltipElement">
@@ -5082,7 +5086,7 @@
                                                         <script>
                              	$('.add-year').on('click', function(event) {
 
-                             		$('.add-section').prepend(`  <div class="resume-remove-item-gap" style="margin-bottom: 10px;">
+                             		$('#valera-shegveshvi-she-siro').prepend(`  <div class="resume-remove-item-gap" style="margin-bottom: 10px;">
                                       <input type="hidden" name="experience.endDate" class="HH-Resume-Experiences-EndDate" value="endDate">
                                       <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6" style="position: relative;">
                                          <div class="bloko-control-group                     bloko-control-group_auto-size                     HH-Resume-Experiences-EndDate-TooltipElement" >
@@ -5119,7 +5123,7 @@
                              </script>
                              <script>
                             	$('.add-repetitori').on('click', function(event) {
-                            		$('.repetitori-section').prepend(`<div class="resume-remove-item-gap" style="position: relative;">
+                            		$('#mainc-gakotrdebi-ver-gishvelis-es-saiti').prepend(`<div class="resume-remove-item-gap" style="position: relative; margin-bottom:10px;">
                                                               <input type="hidden" name="experience.endDate" class="HH-Resume-Experiences-EndDate" value="endDate">
                                                               <div class="bloko-column bloko-column_xs-0 bloko-column_s-8 bloko-column_m-6 bloko-column_l-6">
                                                                  <div class="bloko-control-group                     bloko-control-group_auto-size                     HH-Resume-Experiences-EndDate-TooltipElement">
